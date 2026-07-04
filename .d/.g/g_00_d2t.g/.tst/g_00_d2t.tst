@@ -61,14 +61,10 @@ fn_22965_15167() {
 	# echo "$(eval echo "\$dr_pth_fn_${rnd}")"
 	# {{body}}
 
-	#? flow gig file $(eval echo "\$dr_pth_fn_${rnd}")/.tst1/res.d/res.f
-	local prnt_dr=$(readlink -m "\$(eval echo "\$dr_pth_fn_${rnd}")/..")
-	echo "\$prnt_dr=$prnt_dr"
-
 	eval "local prnt_dr_${rnd}=$(readlink -m "\$(eval echo "\\\$dr_pth_fn_${rnd}")/..")"
-	echo "\$prnt_dr_22965_15167=$prnt_dr_22965_15167"
+	echo $(eval echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd})
 
-	. $(eval echo "\$dr_pth_fn_${rnd}")/.tst1/is.tst1
+	#.. . $(eval echo "\$dr_pth_fn_${rnd}")/.tst1/is.tst1
 
 	return 0
 
