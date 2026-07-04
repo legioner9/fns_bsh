@@ -2,9 +2,9 @@
 
 fn_22965_15167() {
 
-	local fl_pth_fn_22965_15167="${HOME}/fns_bsh/.d/.g/g_00_d2t.g/.tst/g_00_d2t.tst"
-	local dr_pth_fn_22965_15167=$(dirname ${HOME}/fns_bsh/.d/.g/g_00_d2t.g/.tst/g_00_d2t.tst)
-	local fl_nm_fn_22965_15167=$(basename ${HOME}/fns_bsh/.d/.g/g_00_d2t.g/.tst/g_00_d2t.tst)
+	local fl_pth_fn_22965_15167="${HOME}/fns_bsh/.d/.g/g_xx_d2t.g/.tst/g_xx_d2t.tst"
+	local dr_pth_fn_22965_15167=$(dirname ${HOME}/fns_bsh/.d/.g/g_xx_d2t.g/.tst/g_xx_d2t.tst)
+	local fl_nm_fn_22965_15167=$(basename ${HOME}/fns_bsh/.d/.g/g_xx_d2t.g/.tst/g_xx_d2t.tst)
 	local rnd=22965_15167
 
 	# [[ -z "$1" ]] && {
@@ -61,14 +61,12 @@ fn_22965_15167() {
 	# echo "$(eval echo "\$dr_pth_fn_${rnd}")"
 	# {{body}}
 
-	#? flow gig file $(eval echo "\$dr_pth_fn_${rnd}")/.tst1/res.d/res.f
-	local prnt_dr=$(readlink -m "\$(eval echo "\$dr_pth_fn_${rnd}")/..")
-	echo "\$prnt_dr=$prnt_dr"
-
-	eval "local prnt_dr_${rnd}=$(readlink -m "\$(eval echo "\\\$dr_pth_fn_${rnd}")/..")"
-	echo "\$prnt_dr_22965_15167=$prnt_dr_22965_15167"
+	# flow gig file $(eval echo "\$dr_pth_fn_${rnd}")/.tst1/res.d/res.f
 
 	. $(eval echo "\$dr_pth_fn_${rnd}")/.tst1/is.tst1
+
+
+
 
 	return 0
 

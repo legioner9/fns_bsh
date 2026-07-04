@@ -1,0 +1,14 @@
+# STANDART ENV THAT FILE
+# parent file pth : $(eval echo \$fl_pth_fn_${rnd})
+# dr pth parent file : $(eval echo \$dr_pth_fn_${rnd})
+# file pth nm : $(eval echo \$fl_nm_fn_${rnd})
+
+# arg1 in_runtime fn : $(eval echo \$arg_1_fn_${rnd})
+# arg2 in_runtime fn : $(eval echo \$arg_2_fn_${rnd})
+# arg3 in_runtime fn : $(eval echo \$arg_3_fn_${rnd})
+
+# example :: var with dr_pth_fn :
+# echo "$(eval echo "\$dr_pth_fn_${rnd}")"
+
+# init_tst_body
+echo "that body.tml"
