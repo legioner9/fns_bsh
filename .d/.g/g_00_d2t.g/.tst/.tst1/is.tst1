@@ -68,7 +68,7 @@ fn_21259_30322() {
 		return 0
 	else
 		diff $res_pth $exp_pth
-		l_00_echo_fail "FAIL :: $res_pth !== $exp_pth ; return 1"
+		l_00_echo_fail "FAIL :: $res_pth !== $exp_pth ; return 1" >&2
 		return 1
 	fi
 	return 0
