@@ -4,7 +4,7 @@ fn_vewthhg5231vdsfv454gfvs() {
 
 	DDir=$(pwd)
 	# aer="aer_foe"
-	aer="tml_a"
+	aer="fns_bsh"
 
 	cd "$HOME/$aer"
 
