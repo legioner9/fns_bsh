@@ -38,9 +38,15 @@ g_00_d2t(){
 	#! ptr_path
 	local ptr_path_1="$arg_1_fn_28635_15732"
 	ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
-	
+
 	eval "echo arg_1_fn_${rnd}= \$ptr_path_1"
 	eval "echo arg_2_fn_${rnd}= \$arg_2_fn_${rnd}"
+
+	#-- $(eval "echo \$arg_1_fn_${rnd})" 	:: arg1
+	#-- $(eval "echo \$arg_2_fn_${rnd})" 	::arg2
+	#-- $(eval "echo \$fl_pth_fn_${rnd})" 	::fl_pth_fn
+	#-- $(eval "echo \$dr_pth_fn_${rnd})" 	::dr_pth_fn
+	#-- $(eval "echo \$fl_nm_fn_${rnd})" 	::fl_nm_fn
  
     # l_02_fs2f ins.f {{pre_str_in_rcv.f}} rcv.f
     # l_02_s2f :: reciver_string: $1 inserter_string: $2 [@ - empty string] in reciver_result_file: $3 
@@ -64,6 +70,8 @@ g_00_d2t(){
 	#-- eval "local prnt_dr_${rnd}=\$(readlink -m \$(eval echo "\\\$dr_pth_fn_${rnd}")/..)"
 	#-- eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 	# {{body}}
+
+
 
     return 0
 

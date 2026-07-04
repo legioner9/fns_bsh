@@ -64,7 +64,7 @@ fn_22965_15167() {
 	# {{body}}
 
 	eval "local prnt_dr_${rnd}=\$(readlink -m \$(eval echo "\\\$dr_pth_fn_${rnd}")/..)"
-	eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
+	eval "echo \\\$prnt_dr_${rnd}= \$prnt_dr_${rnd}"
 
 	#* get real g_00_d2t() 
 	. $(eval "echo \$prnt_dr_${rnd}/g_00_d2t.sh")
