@@ -1,1 +1,19 @@
-# expectation result v:1 :: fns_bsh/.d/.g/g_00_d2t.g/.tst/.wrk.tst/v1.exp1 
+# plan::
+## .d/.g/g_00_d2t.g/g_00_d2t.sh generate gig_frame : gigXXX.g.d with gig1.g.sh
+
+## gig_frame generate gig_dir wich will be filling content and generate dr with projects
+    - example gig_dir :: .d/.frp/make_014.frp
+        - generator dr with projects :: .d/.osdn/ora_c.pts/.frm.14.v3
+            - dr with prg .d/.osdn/ora_c.pts/007_R_primat_org/001_scanf_printf_v1
+
+## abstract plan ::
+    - (g. - gig .frm) nmg.g 
+    - ->(.frm - gig .p) mnf.nmg.g.frm 
+    - ->(.p - gig .e exemplar) mnf.nmg.g.frm.p 
+    - -> mnf.nmg.g.frm.p.e
+
+## that wse born simpe task - generate branch_of_generators  .d/.frp/make_014.frp
+
+
+
+### expectation result v:1 :: fns_bsh/.d/.g/g_00_d2t.g/.tst/.wrk.tst/v1.exp1 
