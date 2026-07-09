@@ -1,0 +1,1 @@
+# expectation result v:1 :: fns_bsh/.d/.g/g_00_d2t.g/.tst/.wrk.tst/v1.exp1 
