@@ -7,13 +7,13 @@
             - dr with prg .d/.osdn/ora_c.pts/007_R_primat_org/001_scanf_printf_v1
 
 ## abstract plan ::
-    - (g. - gig .frm) nmg.g 
-    - ->(.frm - gig .p) mnf.nmg.g.frm 
-    - ->(.p - gig .e exemplar) mnf.nmg.g.frm.p 
-    - -> mnf.nmg.g.frm.p.e
+    - (g. - gig .frm) nmg.g {.g}
+    - ->(.frm - gig .p) mnf.nmg.g.frm {.gf}
+    - ->(.p - gig .e exemplar) mnf.nmg.g.frm.p {.gfp}
+    - -> mnf.nmg.g.frm.p.e {.gfpe}
 
 ## that wse born simpe task - generate branch_of_generators  .d/.frp/make_014.frp
 
 
 
-### expectation result v:1 :: fns_bsh/.d/.g/g_00_d2t.g/.tst/.wrk.tst/v1.exp1 
+### expectation result v:1 :: fns_bsh/.d/.g/g_00_d2t.g/.tst/.wrk.tst/v1.exp1  
