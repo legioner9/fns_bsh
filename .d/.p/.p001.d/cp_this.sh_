@@ -1,12 +1,11 @@
 #!/bin/bash
 
-fn_2436_31385(){
+fn_2219_9919() {
 
-    local fl_pth_fn_2436_31385="${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh"
-    local dr_pth_fn_2436_31385=$(dirname ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
-    local fl_nm_fn_2436_31385=$(basename ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
-    local rnd=2436_31385
-
+	local fl_pth_fn_2219_9919="${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh"
+	local dr_pth_fn_2219_9919=$(dirname ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
+	local fl_nm_fn_2219_9919=$(basename ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
+	local rnd=2219_9919
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -19,7 +18,7 @@ fn_2436_31385(){
 
 	[[ "$1" == "-h" ]] && {
 		echo -e "
-        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+        this -h for fl_pth_fn_2219_9919 ::
         doing :: 
 			\$1 - 
 			\$2 - 
@@ -85,8 +84,8 @@ fn_2436_31385(){
 
 	# {{body}}
 
-    return 0
+	return 0
 
 }
 
-fn_2436_31385 $@
+fn_2219_9919 $@

@@ -7,7 +7,7 @@ fns_bsh_001_tst_fn() {
 fns_bsh_001_dt5f() {
 	[[ "$1" != "-h" ]] || {
 		echo -e "
-        lfoe_dt5f :: create file from [path_p]/[nm_fl.ext].p1
+        fns_bsh_001_dt5f :: create file from [path_p]/[nm_fl.ext].p1
 			\$1 :: [path_p]/[nm_fl.ext].p1
 				nm_fl__ext gig nm_fl.ext (__ is .)
 
