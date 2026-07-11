@@ -8,9 +8,9 @@
 
 ## abstract plan ::
     - (g. - gig .frm) nmg.g {.g}
-    - ->(.frm - gig .p) mnf.nmg.g.frm {.gf}
-    - ->(.p - gig .e exemplar) mnf.nmg.g.frm.p {.gfp}
-    - -> mnf.nmg.g.frm.p.e {.gfpe}
+    - ->(.frm - gig .p) mnf.nmg.g.frm {.fg}
+    - ->(.p - gig .e exemplar) mnf.nmg.g.frm.p {.pfg} or {.pf}
+    - -> mnf.nmg.g.frm.p.e {.epfg} or {.ep}
 
 ## that wse born simpe task - generate branch_of_generators  .d/.frp/make_014.frp
 
