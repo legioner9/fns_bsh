@@ -89,9 +89,21 @@ fn_2436_31385() {
 	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/.p001
 
 	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")
-		
-	# l_00_echo_code "mv $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
-	# mv $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	# l_00_echo_code "mv $(eval "echo \$arg_1_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	mv $(eval "echo \$arg_1_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	# l_01_prs_f -n2 $(eval "echo \$arg_1_fn_${rnd}")
+
+	eval "local nm_fn_${rnd}=\$(l_01_prs_f -n2 \$arg_1_fn_${rnd})"
+
+	eval "echo \\\$nm_fn_${rnd}=\$nm_fn_${rnd}"
+
+	# $(eval "echo \$nm_fn_${rnd}")
+	l_00_echo_code "cd $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	cd $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	#? eval "mv fl_nm.* \$nm_fn_${rnd}.*"
 
 	return 0
 
