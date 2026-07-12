@@ -1,2 +1,4 @@
-# fns_bsh_001_dt5f ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.tst.d/fns_bsh_001_dt5f.tst.d/fns_bsh_001_dt5f.p001 \
-	# ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.tst.d/fns_bsh_001_dt5f.tst.d/.tst/dst 
+#.. . ~/fns_bsh/.d/.sh/.lib.sh/fns_bsh_001.lib.sh
+
+#.. fns_bsh_001_dt5f ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.tst.d/fns_bsh_001_dt5f.tst.d/fns_bsh_001_dt5f.p001 \
+#.. 	~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.tst.d/fns_bsh_001_dt5f.tst.d/.tst/dst
