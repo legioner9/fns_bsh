@@ -1,12 +1,11 @@
 #!/bin/bash
 
-fn_2436_31385(){
+fn_2436_31385() {
 
-    local fl_pth_fn_2436_31385="${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh"
-    local dr_pth_fn_2436_31385=$(dirname ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
-    local fl_nm_fn_2436_31385=$(basename ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
-    local rnd=2436_31385
-
+	local fl_pth_fn_2436_31385="${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh"
+	local dr_pth_fn_2436_31385=$(dirname ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
+	local fl_nm_fn_2436_31385=$(basename ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
+	local rnd=2436_31385
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -84,8 +83,17 @@ fn_2436_31385(){
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
 	# {{body}}
+	l_00_echo_code "cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")"
 
-    return 0
+	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/.p001
+
+	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")
+		
+	# l_00_echo_code "mv $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	# mv $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	return 0
 
 }
 
