@@ -2,9 +2,9 @@
 
 fn_2436_31385() {
 
-	local fl_pth_fn_2436_31385="${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh"
-	local dr_pth_fn_2436_31385=$(dirname ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
-	local fl_nm_fn_2436_31385=$(basename ${HOME}/fns_bsh/.d/.p/.p001.d/cp_this.sh)
+	local fl_pth_fn_2436_31385="${HOME}/fns_bsh/.d/.p.ax/.p001.d/cp_this.sh"
+	local dr_pth_fn_2436_31385=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p001.d/cp_this.sh)
+	local fl_nm_fn_2436_31385=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p001.d/cp_this.sh)
 	local rnd=2436_31385
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
