@@ -85,7 +85,7 @@ fns_bsh_001_dt5f() {
 
 	# {{body}}
 
-	eval "echo "that \$fn_nm_${rnd}""
+	eval "echo "that 1 \$fn_nm_${rnd}""
 
 	return 0
 
