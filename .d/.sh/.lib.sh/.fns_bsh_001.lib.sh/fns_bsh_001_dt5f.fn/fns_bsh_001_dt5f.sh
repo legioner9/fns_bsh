@@ -21,8 +21,10 @@ fns_bsh_001_dt5f() {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
         doing :: 
-			\$1 - 
-			\$2 - 
+			\$1 - ins dr with ins_fl::
+				001_str_rcv.tml :: {{str_rcv}} rcv str for ins_fl 001_str_rcv.tml
+				...
+			\$2 - rcv fl
 			\$3 - 
             exa use ::
             far use ::
@@ -85,8 +87,25 @@ fns_bsh_001_dt5f() {
 
 	# {{body}}
 
-	eval "echo "that 1 \$fn_nm_${rnd}""
+	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
+	l_00_echo_code "cp $(eval "echo \$arg_1_fn_${rnd}")/fl_nm.tml $(eval "echo \$arg_2_fn_${rnd}")"
+	cp $(eval "echo \$arg_1_fn_${rnd}")/fl_nm.tml $(eval "echo \$arg_2_fn_${rnd}")
+
+	local item=
+	for item in $(l_02_d2e $(eval "echo \$arg_1_fn_${rnd}")/fl_nm.tml.d "tml"); do
+		echo $item
+		eval "rcv_str_${rnd}=\$(l_01_prs_f -n $item)"
+		eval "echo \\\$rcv_str_${rnd}=\$rcv_str_${rnd}"
+
+		l_02_fs2f $(eval "echo \$arg_1_fn_${rnd}")/fl_nm.tml.d/$item \
+			{{$(eval "echo \$rcv_str_${rnd}")}} \
+			$(eval "echo \$arg_2_fn_${rnd}")
+
+		l_02_s2f {{$(eval "echo \$rcv_str_${rnd}")}} \
+			~$(eval "echo \$rcv_str_${rnd}")~ \
+			$(eval "echo \$arg_2_fn_${rnd}")
+	done
 	return 0
 
 }
