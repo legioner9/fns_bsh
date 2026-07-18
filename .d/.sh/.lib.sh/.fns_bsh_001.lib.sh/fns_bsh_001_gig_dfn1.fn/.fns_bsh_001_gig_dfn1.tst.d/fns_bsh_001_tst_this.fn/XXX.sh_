@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fn_5746_9273() {
+XXX() {
 
-	local fl_pth_fn_5746_9273="${HOME}/fns_bsh/.d/.p.ax/.p002.d/cp_this.sh"
-	local dr_pth_fn_5746_9273=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p002.d/cp_this.sh)
-	local fl_nm_fn_5746_9273=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p002.d/cp_this.sh)
-	local rnd=5746_9273
+	local fl_pth_fn_24248_10619="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/fns_bsh_001_dt5f.sh"
+	local dr_pth_fn_24248_10619=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/fns_bsh_001_dt5f.sh)
+	local fl_nm_fn_24248_10619=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/fns_bsh_001_dt5f.sh)
+	local rnd=24248_10619
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -21,8 +21,10 @@ fn_5746_9273() {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
         doing :: 
-			\$1 - prn_dr
-			\$2 - result dr_nm
+			\$1 - ins dr with ins_fl::
+				001_str_rcv.tml :: {{str_rcv}} rcv str for ins_fl 001_str_rcv.tml
+				...
+			\$2 - rcv fl
 			\$3 - 
             exa use ::
             far use ::
@@ -79,32 +81,18 @@ fn_5746_9273() {
 
 	#* use l_ ::
 	# l_02_fs2f ins.f {{pre_str_in_rcv.f}} rcv.f
-	# l_02_s2f :: reciver_string: $2 inserter_string: $1 [@ - empty string] in reciver_result_file: $3
+	# l_02_s2f :: reciver_string: $1 inserter_string: $2 [@ - empty string] in reciver_result_file: $3
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
-
+	
 	# {{body}}
 
-	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/XXX.fn ]]; then
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} DR_EXIST : '[[ -d $(eval "echo \$arg_1_fn_${rnd}")/XXX.fn ]]', return 1${NRM}" >&2
-		return 1
-	fi
 
-	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} DR_EXIST : '[[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]', return 1${NRM}" >&2
-		return 1
-	fi
-
-	l_00_echo_code "cp -r $(eval "echo \$dr_pth_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")"
-	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")
-
-	l_00_echo_code "mv $(eval "echo \$arg_1_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
-	mv $(eval "echo \$arg_1_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 
 	return 0
 
 }
 
-fn_5746_9273 $@
+# fns_bsh_001_dt5f $@
