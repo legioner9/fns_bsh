@@ -1,11 +1,12 @@
 #!/bin/bash
 
-fns_bsh_001_gig_dfn1() {
+fn_19911_16425(){
 
-	local fl_pth_fn_19997_13549="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/fns_bsh_001_gig_dfn1.sh"
-	local dr_pth_fn_19997_13549=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/fns_bsh_001_gig_dfn1.sh)
-	local fl_nm_fn_19997_13549=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/fns_bsh_001_gig_dfn1.sh)
-	local rnd=19997_13549
+    local fl_pth_fn_19911_16425="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/_gig_fn_fns_bsh_001.sh"
+    local dr_pth_fn_19911_16425=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/_gig_fn_fns_bsh_001.sh)
+    local fl_nm_fn_19911_16425=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/_gig_fn_fns_bsh_001.sh)
+    local rnd=19911_16425
+
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -21,8 +22,8 @@ fns_bsh_001_gig_dfn1() {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
         doing :: 
-			\$1 - dr for nm_fn.fn
-			\$2 - nm_fn
+			\$1 - nm_fn :: fns_bsh_001_\$1
+			\$2 - 
 			\$3 - 
             exa use ::
             far use ::
@@ -47,11 +48,11 @@ fns_bsh_001_gig_dfn1() {
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -z "$1" ]] && {
+		# snp "out_err"
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+		return 1
+	}
 
 	#! ptr_path
 	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
@@ -83,44 +84,16 @@ fns_bsh_001_gig_dfn1() {
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
+	eval "echo \"that 1 \$fn_nm_${rnd}\""
+
+	fns_bsh_001_gig_dfn1 $(eval "echo \$dr_pth_fn_${rnd}") fns_bsh_001_$(eval "echo \$arg_1_fn_${rnd}")
+
 	# {{body}}
 
-	#* fn_root_ ::
-	#* $(eval "echo \$fn_root_${rnd}")
 
-	eval "echo \"that 2 \$fn_nm_${rnd}\""
 
-	eval "fn_root_${rnd}=\$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}").fn"
-	eval "echo \"fn_root_${rnd}=\$fn_root_${rnd}\""
-
-	if ! [[ -d $(eval "echo \$fn_root_${rnd}") ]]; then
-		. ~/fns_bsh/.d/.p.ax/.p002.d/cp_this.sh \
-			$(eval "echo \$arg_1_fn_${rnd}") \
-			$(eval "echo \$arg_2_fn_${rnd}").fn
-	fi
-
-	#* .XXX.dta.d
-	mv $(eval "echo \$fn_root_${rnd}")/.XXX.dta.d $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").dta.d
-
-	#* .XXX.tst.d
-	mv $(eval "echo \$fn_root_${rnd}")/.XXX.tst.d $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d
-
-	#* .tst_this.tst.d/XXX.tst.sh
-
-	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d \
-		$(eval "echo \$arg_2_fn_${rnd}").tst.sh
-
-	#* /.tst_this.tst.d/.tst/tst.sh
-
-	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d/.tst \
-		tst.sh
-
-	#* XXX.sh
-
-	lfoe_gig_fn $(eval "echo \$fn_root_${rnd}") $(eval "echo \$arg_2_fn_${rnd}").sh
-
-	return 0
+    return 0
 
 }
 
-# fn_19997_13549 $@
+fn_19911_16425 $@

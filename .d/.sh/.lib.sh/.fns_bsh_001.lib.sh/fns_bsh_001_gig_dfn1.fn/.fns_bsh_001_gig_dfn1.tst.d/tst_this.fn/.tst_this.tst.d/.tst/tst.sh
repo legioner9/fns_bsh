@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fn_14666_25201(){
+fn_29844_14455(){
 
-    local fl_pth_fn_14666_25201="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/.tst/tst.sh"
-    local dr_pth_fn_14666_25201=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/.tst/tst.sh)
-    local fl_nm_fn_14666_25201=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/.tst/tst.sh)
-    local rnd=14666_25201
+    local fl_pth_fn_29844_14455="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/.tst/tst.sh"
+    local dr_pth_fn_29844_14455=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/.tst/tst.sh)
+    local fl_nm_fn_29844_14455=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/.tst/tst.sh)
+    local rnd=29844_14455
 
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -85,11 +85,11 @@ fn_14666_25201(){
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
-	
+
 	# {{body}}
 
     return 0
 
 }
 
-fn_14666_25201 $@
+fn_29844_14455 $@
