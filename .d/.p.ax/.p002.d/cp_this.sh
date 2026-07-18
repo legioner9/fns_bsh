@@ -92,16 +92,20 @@ fn_5746_9273() {
 		return 1
 	fi
 
-	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} DR_EXIST : '[[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]', return 1${NRM}" >&2
-		return 1
-	fi
+	# if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} DR_EXIST : '[[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	l_00_echo_code "cp -r $(eval "echo \$dr_pth_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")"
 	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")
 
 	l_00_echo_code "mv $(eval "echo \$arg_1_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
 	mv $(eval "echo \$arg_1_fn_${rnd}")/XXX.fn $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	eval "tst_this_dr_${rnd}=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+
+	eval "echo \"tst_this_dr_=\$tst_this_dr_${rnd}\""
 
 	return 0
 
