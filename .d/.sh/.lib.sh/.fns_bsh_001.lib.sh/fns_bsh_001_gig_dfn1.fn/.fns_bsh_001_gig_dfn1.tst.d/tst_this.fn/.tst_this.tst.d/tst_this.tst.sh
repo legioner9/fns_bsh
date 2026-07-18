@@ -1,11 +1,12 @@
 #!/bin/bash
 
-XXX() {
+fn_17036_7843(){
 
-	local fl_pth_fn_24248_10619="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/fns_bsh_001_dt5f.sh"
-	local dr_pth_fn_24248_10619=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/fns_bsh_001_dt5f.sh)
-	local fl_nm_fn_24248_10619=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/fns_bsh_001_dt5f.sh)
-	local rnd=24248_10619
+    local fl_pth_fn_17036_7843="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh"
+    local dr_pth_fn_17036_7843=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh)
+    local fl_nm_fn_17036_7843=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh)
+    local rnd=17036_7843
+
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -21,10 +22,8 @@ XXX() {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
         doing :: 
-			\$1 - ins dr with ins_fl::
-				001_str_rcv.tml :: {{str_rcv}} rcv str for ins_fl 001_str_rcv.tml
-				...
-			\$2 - rcv fl
+			\$1 - 
+			\$2 - 
 			\$3 - 
             exa use ::
             far use ::
@@ -81,7 +80,7 @@ XXX() {
 
 	#* use l_ ::
 	# l_02_fs2f ins.f {{pre_str_in_rcv.f}} rcv.f
-	# l_02_s2f :: reciver_string: $1 inserter_string: $2 [@ - empty string] in reciver_result_file: $3
+	# l_02_s2f :: reciver_string: $2 inserter_string: $1 [@ - empty string] in reciver_result_file: $3
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
@@ -89,10 +88,8 @@ XXX() {
 	
 	# {{body}}
 
-
-
-	return 0
+    return 0
 
 }
 
-# fns_bsh_001_dt5f $@
+fn_17036_7843 $@

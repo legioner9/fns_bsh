@@ -8,4 +8,4 @@
 # 	XXX.fn
 
 fns_bsh_001_gig_dfn1 ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d \
-	tst_this.fn
+	tst_this

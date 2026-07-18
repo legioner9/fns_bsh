@@ -85,11 +85,35 @@ fns_bsh_001_gig_dfn1() {
 
 	# {{body}}
 
+	#* fn_root_ ::
+	#* $(eval "echo \$fn_root_${rnd}")
+
 	eval "echo \"that 2 \$fn_nm_${rnd}\""
 
-	. ~/fns_bsh/.d/.p.ax/.p002.d/cp_this.sh \
-		$(eval "echo \$arg_1_fn_${rnd}") \
-		$(eval "echo \$arg_2_fn_${rnd}").fn
+	eval "fn_root_${rnd}=\$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}").fn"
+	eval "echo \"fn_root_${rnd}=\$fn_root_${rnd}\""
+
+	if ! [[ -d $(eval "echo \$fn_root_${rnd}") ]]; then
+		. ~/fns_bsh/.d/.p.ax/.p002.d/cp_this.sh \
+			$(eval "echo \$arg_1_fn_${rnd}") \
+			$(eval "echo \$arg_2_fn_${rnd}").fn
+	fi
+
+	#* .XXX.dta.d
+	mv $(eval "echo \$fn_root_${rnd}")/.XXX.dta.d $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").dta.d
+
+	#* .XXX.tst.d
+	mv $(eval "echo \$fn_root_${rnd}")/.XXX.tst.d $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d
+
+	#* .tst_this.tst.d/XXX.tst.sh
+
+	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d \
+		$(eval "echo \$arg_2_fn_${rnd}").tst.sh
+
+	#* /.tst_this.tst.d/.tst/tst.sh_
+
+	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d/.tst \
+		tst.sh
 
 	return 0
 
