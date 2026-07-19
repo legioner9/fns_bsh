@@ -1,1 +1,3 @@
 # init .pXXX dr for projects
+    - 001 with .tml (for fns_bsh_001_dt5f.fn ...)
+    - 002 gig fn.sh dr env
