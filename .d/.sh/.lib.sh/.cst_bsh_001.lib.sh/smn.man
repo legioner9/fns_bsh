@@ -1,0 +1,27 @@
+/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh
+├── fns_bsh_001_dt5f.fn
+│   ├── .d
+│   │   └── _vrs.fn
+│   ├── .fns_bsh_001_dt5f.dta.d
+│   │   └── .tml
+│   └── .fns_bsh_001_dt5f.tst.d
+│       ├── fns_bsh_001_dt5f.p001
+│       │   └── fl_nm.tml.d
+│       └── .tst
+└── fns_bsh_001_gig_dfn1.fn
+    ├── .d
+    │   └── _vrs.fn
+    ├── .fns_bsh_001_gig_dfn1.dta.d
+    │   └── .tml
+    └── .fns_bsh_001_gig_dfn1.tst.d
+        ├── .tst
+        └── tst_this.fn
+            ├── .d
+            │   └── _vrs.fn
+            ├── .tst_this.dta.d
+            │   └── .tml
+            └── .tst_this.tst.d
+                └── .tst
+
+/home/st/fns_bsh/.d/.sh/.lib.sh/.cst_bsh_001.lib.sh
+└── fns_bsh_001_gig_fl_sh_001.cst
