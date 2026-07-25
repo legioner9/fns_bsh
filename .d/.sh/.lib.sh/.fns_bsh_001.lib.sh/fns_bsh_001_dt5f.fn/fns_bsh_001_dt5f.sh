@@ -20,11 +20,11 @@ fns_bsh_001_dt5f() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
-			\$1 - ins dr with ins_fl::
+        doing :: gig \$2 fl as \$1 .p sruct fl_nm.tml.d+fl_nm.tml 
+			\$1 - pth .p sruct fl_nm.tml.d+fl_nm.tml ::
 				001_str_rcv.tml :: {{str_rcv}} rcv str for ins_fl 001_str_rcv.tml
 				...
-			\$2 - rcv fl
+			\$2 - pth rcv fl
 			\$3 - 
             exa use ::
             far use ::

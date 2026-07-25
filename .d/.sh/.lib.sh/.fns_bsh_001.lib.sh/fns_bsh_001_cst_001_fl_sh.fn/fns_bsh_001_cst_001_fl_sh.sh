@@ -87,11 +87,7 @@ fns_bsh_001_cst_001_fl_sh() {
 
 	# {{body}}
 
-	. ~/fns_bsh/.d/.p.ax/.p003.d/cp_this.sh \
-		~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/.fns_bsh_001_cst_001_fl_sh.dta.d \
-		fns_bsh_001_cst_001_fl_sh.p
-
-
+	fns_bsh_001_dt5f ~/fns_bsh/.d/.p.ax/.p003.d/.p001
 
 	return 0
 
