@@ -22,7 +22,7 @@ fn_19911_16425(){
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
         doing :: 
-			\$1 - nm_fn :: fns_bsh_001_\$1
+			\$1 - gig dr fns_bsh_001_\$1.fn in root fns_bsh_001 lib
 			\$2 - 
 			\$3 - 
             exa use ::
@@ -50,7 +50,7 @@ fn_19911_16425(){
 
 	[[ -z "$1" ]] && {
 		# snp "out_err"
-		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_1_NOT_DEFINE is `\$1 - gig dr fns_bsh_001_\$1.fn in root fns_bsh_001 lib`, return 1${NRM}" >&2
 		return 1
 	}
 

@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fn_11233_24472(){
+fn_31484_2120(){
 
-    local fl_pth_fn_11233_24472="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh"
-    local dr_pth_fn_11233_24472=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh)
-    local fl_nm_fn_11233_24472=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh)
-    local rnd=11233_24472
+    local fl_pth_fn_31484_2120="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh"
+    local dr_pth_fn_31484_2120=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh)
+    local fl_nm_fn_31484_2120=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_dfn1.fn/.fns_bsh_001_gig_dfn1.tst.d/tst_this.fn/.tst_this.tst.d/tst_this.tst.sh)
+    local rnd=31484_2120
 
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -92,4 +92,4 @@ fn_11233_24472(){
 
 }
 
-fn_11233_24472 $@
+fn_31484_2120 $@
