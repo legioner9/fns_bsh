@@ -1,11 +1,12 @@
 #!/bin/bash
 
-fn_4231_1355() {
+fn_2621_21023(){
 
-	local fl_pth_fn_4231_1355="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/.fns_bsh_001_cst_001_fl_sh.tst.d/fns_bsh_001_cst_001_fl_sh.tst.sh"
-	local dr_pth_fn_4231_1355=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/.fns_bsh_001_cst_001_fl_sh.tst.d/fns_bsh_001_cst_001_fl_sh.tst.sh)
-	local fl_nm_fn_4231_1355=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/.fns_bsh_001_cst_001_fl_sh.tst.d/fns_bsh_001_cst_001_fl_sh.tst.sh)
-	local rnd=4231_1355
+    local fl_pth_fn_2621_21023="${HOME}/fns_bsh/.d/.p.ax/.p003.d/cp_this.sh"
+    local dr_pth_fn_2621_21023=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p003.d/cp_this.sh)
+    local fl_nm_fn_2621_21023=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p003.d/cp_this.sh)
+    local rnd=2621_21023
+
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -20,9 +21,9 @@ fn_4231_1355() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
-			\$1 - 
-			\$2 - 
+        doing :: cp $(eval "echo \$dr_pth_fn_${rnd}")/.p001 to \$1 dr with \$2 nm_dr 
+			\$1 - dst pth prnt_dr
+			\$2 - dst nm dr
 			\$3 - 
             exa use ::
             far use ::
@@ -47,11 +48,11 @@ fn_4231_1355() {
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -z "$2" ]] && {
+		# snp "out_err"
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is \$2 - nm_dr, return 1${NRM}" >&2
+		return 1
+	}
 
 	#! ptr_path
 	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
@@ -86,13 +87,32 @@ fn_4231_1355() {
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
 	# {{body}}
-	# up_to_mem
-	. ~/fns_bsh/.d/.sh/.lib.sh/fns_bsh_001.lib.sh
 
-	fns_bsh_001_cst_001_fl_sh $(eval "echo \$dr_pth_fn_${rnd}")/.tst dst.sh
+		l_00_echo_code "cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")"
 
-	return 0
+	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/.p001
+
+	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")
+
+	# l_00_echo_code "mv $(eval "echo \$arg_1_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	mv $(eval "echo \$arg_1_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	# l_01_prs_f -n2 $(eval "echo \$arg_1_fn_${rnd}")
+
+	eval "local nm_fn_${rnd}=\$(l_01_prs_f -n2 \$arg_1_fn_${rnd})"
+
+	eval "echo \\\$nm_fn_${rnd}=\$nm_fn_${rnd}"
+
+	# $(eval "echo \$nm_fn_${rnd}")
+	l_00_echo_code "cd $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	cd $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	#? eval "mv fl_nm.* \$nm_fn_${rnd}.*"
+
+
+    return 0
 
 }
 
-fn_4231_1355 $@
+fn_2621_21023 $@

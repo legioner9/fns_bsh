@@ -1,12 +1,11 @@
 #!/bin/bash
 
-fns_bsh_001_cst_001_fl_sh(){
+fns_bsh_001_cst_001_fl_sh() {
 
-    local fl_pth_fn_30941_16282="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/fns_bsh_001_cst_001_fl_sh.sh"
-    local dr_pth_fn_30941_16282=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/fns_bsh_001_cst_001_fl_sh.sh)
-    local fl_nm_fn_30941_16282=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/fns_bsh_001_cst_001_fl_sh.sh)
-    local rnd=30941_16282
-
+	local fl_pth_fn_30941_16282="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/fns_bsh_001_cst_001_fl_sh.sh"
+	local dr_pth_fn_30941_16282=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/fns_bsh_001_cst_001_fl_sh.sh)
+	local fl_nm_fn_30941_16282=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/fns_bsh_001_cst_001_fl_sh.sh)
+	local rnd=30941_16282
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -21,9 +20,9 @@ fns_bsh_001_cst_001_fl_sh(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
-			\$1 - gig fl.sh by flw::001
-			\$2 - 
+        doing :: gig fl.sh by flw::001 [use ~/fns_bsh/.d/.p.ax/.p003.d]
+			\$1 - dr root
+			\$2 - nm fl (with .ext)
 			\$3 - 
             exa use ::
             far use ::
@@ -88,7 +87,13 @@ fns_bsh_001_cst_001_fl_sh(){
 
 	# {{body}}
 
-    return 0
+	. ~/fns_bsh/.d/.p.ax/.p003.d/cp_this.sh \
+		~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_cst_001_fl_sh.fn/.fns_bsh_001_cst_001_fl_sh.dta.d \
+		fns_bsh_001_cst_001_fl_sh.p
+
+
+
+	return 0
 
 }
 
