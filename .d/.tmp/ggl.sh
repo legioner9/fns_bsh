@@ -1,11 +1,11 @@
 #!/bin/bash
 
-{{head}}(){
+ggl(){
 
-    local fl_pth_{{fn_nm}}="{{fl_nm}}"
-    local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
-    local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
-    local rnd={{rnd}}
+    local fl_pth_fn_31586_18126="${HOME}/fns_bsh/.d/.tmp/ggl.sh"
+    local dr_pth_fn_31586_18126=$(dirname ${HOME}/fns_bsh/.d/.tmp/ggl.sh)
+    local fl_nm_fn_31586_18126=$(basename ${HOME}/fns_bsh/.d/.tmp/ggl.sh)
+    local rnd=31586_18126
 
 	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -23,8 +23,19 @@
 	#     return 1
 	# }
 
-	#--{{help}}
-
+	#--~help~
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+        doing :: 
+			\$1 - 
+			\$2 - 
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
 	#? [[ "$1" == "-h" ]] && {
 	#?	echo -e "
     #?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
@@ -39,7 +50,6 @@
 	#? }
 
 	#* value indicator
-	echo "rnd=$rnd"
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
@@ -92,7 +102,7 @@
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	echo "that 1 fn_nm::<${FUNCNAME[0]}>"
+	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
 	#-- {{body}}
 
@@ -100,7 +110,7 @@
 
 }
 #-- ~after~
-{{fn_nm}} $@
+# fn_31586_18126 $@
 
 # {{after2}}
-#? {{fn_nm}} $@
+#? fn_31586_18126 $@

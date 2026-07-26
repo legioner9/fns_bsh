@@ -91,7 +91,12 @@ fn_17512_18579() {
 
 	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
+	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+
 	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+
+	# l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+	# . $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
 	return 0
 

@@ -87,10 +87,17 @@ fn_13965_28989() {
 
 	# {{body}}
 	l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
-	
+
 	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
+	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
 	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+
+	l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+	. $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
+	l_00_echo_code "res"
+	res
 
 	return 0
 

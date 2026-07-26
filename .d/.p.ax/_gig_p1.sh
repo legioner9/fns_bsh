@@ -1,11 +1,11 @@
 #!/bin/bash
 
-{{head}}(){
+fn_15043_19228(){
 
-    local fl_pth_{{fn_nm}}="{{fl_nm}}"
-    local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
-    local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
-    local rnd={{rnd}}
+    local fl_pth_fn_15043_19228="${HOME}/fns_bsh/.d/.p.ax/_gig_p1.sh"
+    local dr_pth_fn_15043_19228=$(dirname ${HOME}/fns_bsh/.d/.p.ax/_gig_p1.sh)
+    local fl_nm_fn_15043_19228=$(basename ${HOME}/fns_bsh/.d/.p.ax/_gig_p1.sh)
+    local rnd=15043_19228
 
 	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -23,8 +23,19 @@
 	#     return 1
 	# }
 
-	#--{{help}}
-
+	#--~help~
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+        doing :: cp .p004 to .p[\$1]
+			\$1 - num as NNN
+			\$2 - 
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
 	#? [[ "$1" == "-h" ]] && {
 	#?	echo -e "
     #?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
@@ -96,11 +107,13 @@
 
 	#-- {{body}}
 
+
+
     return 0
 
 }
 #-- ~after~
-{{fn_nm}} $@
+fn_15043_19228 $@
 
 # {{after2}}
-#? {{fn_nm}} $@
+#? fn_15043_19228 $@

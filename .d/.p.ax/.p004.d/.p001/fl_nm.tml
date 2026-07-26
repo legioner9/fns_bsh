@@ -35,6 +35,7 @@
 	#? }
 
 	#* value indicator
+	echo "rnd=$rnd"
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
@@ -87,7 +88,7 @@
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	eval "echo \"that 1 \$fn_nm_${rnd}\""
+	echo "that 1 fn_nm::<${FUNCNAME[0]}>"
 
 	#-- {{body}}
 

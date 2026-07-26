@@ -1,11 +1,11 @@
 #!/bin/bash
 
-res(){
+fn_18608_7273(){
 
-    local fl_pth_fn_31586_18126="${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl"
-    local dr_pth_fn_31586_18126=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
-    local fl_nm_fn_31586_18126=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
-    local rnd=31586_18126
+    local fl_pth_fn_18608_7273="${HOME}/fns_bsh/.d/.p.ax/.p004.d/.tst/res.fl"
+    local dr_pth_fn_18608_7273=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p004.d/.tst/res.fl)
+    local fl_nm_fn_18608_7273=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p004.d/.tst/res.fl)
+    local rnd=18608_7273
 
 	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -50,6 +50,7 @@ res(){
 	#? }
 
 	#* value indicator
+	echo "rnd=$rnd"
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
@@ -102,7 +103,7 @@ res(){
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	eval "echo \"that 1 \$fn_nm_${rnd}\""
+	echo "that 1 fn_nm::<${FUNCNAME[0]}>"
 
 	#-- {{body}}
 
@@ -110,7 +111,7 @@ res(){
 
 }
 #-- ~after~
-# fn_31586_18126 $@
+fn_18608_7273 $@
 
 # {{after2}}
-#? fn_31586_18126 $@
+#? fn_18608_7273 $@

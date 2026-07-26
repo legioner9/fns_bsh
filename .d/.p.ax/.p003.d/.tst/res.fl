@@ -2,17 +2,17 @@
 
 res(){
 
-    local fl_pth_fn_31586_18126="${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl"
-    local dr_pth_fn_31586_18126=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
-    local fl_nm_fn_31586_18126=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
-    local rnd=31586_18126
+    local fl_pth_fn_21274_31867="${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl"
+    local dr_pth_fn_21274_31867=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
+    local fl_nm_fn_21274_31867=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
+    local rnd=21274_31867
 
 	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
-# {{genv2}}	
+# {{genv2}}
 	#? eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	#? eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
 	#? eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
@@ -50,6 +50,7 @@ res(){
 	#? }
 
 	#* value indicator
+	echo "rnd=$rnd"
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
@@ -110,7 +111,7 @@ res(){
 
 }
 #-- ~after~
-# fn_31586_18126 $@
+# fn_21274_31867 $@
 
 # {{after2}}
-#? fn_31586_18126 $@
+#? fn_21274_31867 $@

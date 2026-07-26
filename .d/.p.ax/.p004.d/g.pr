@@ -47,11 +47,17 @@ fn_3896_792() {
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -z "$2" ]] && {
+		# snp "out_err"
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is nm_fl, return 1${NRM}" >&2
+		return 1
+	}
+
+	[[ ! -d "$1" ]] && {
+		# snp "out_err"
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_1_NOT_DIR is root for res fl, return 1${NRM}" >&2
+		return 1
+	}
 
 	#! ptr_path
 	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
@@ -86,7 +92,7 @@ fn_3896_792() {
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
 	# {{body}}
-
+	l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/001_gig_tml.us.sh"
 	. $(eval "echo \$dr_pth_fn_${rnd}")/.us/001_gig_tml.us.sh
 	# # chaine .p001 to .p002
 	# fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p001 \
@@ -95,28 +101,8 @@ fn_3896_792() {
 	# # final treat .p002
 	# fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p002 \
 	# 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
-
+	l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/002_f2f.us.sh"
 	. $(eval "echo \$dr_pth_fn_${rnd}")/.us/002_f2f.us.sh
-	# local fl_nm="$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
-	# local fn_nm="fn_${rnd}"
-
-	# l_00_echo_code "fn_head=$(l_01_prs_f -n "$(eval "echo \$arg_2_fn_${rnd}")")"
-	# local fn_head=$(l_01_prs_f -n "$(eval "echo \$arg_2_fn_${rnd}")")
-	# l_00_echo_code "fn_head=$fn_head"
-
-	# l_00_echo_code "l_02_s2f {{fl_nm}} ${fl_nm} ${fl_nm}"
-	# l_02_s2f "{{fl_nm}}" "${fl_nm}" "${fl_nm}"
-
-	# l_00_echo_code "l_02_s2f {{fn_nm}} ${fn_nm} ${fl_nm}"
-	# l_02_s2f "{{fn_nm}}" "${fn_nm}" "${fl_nm}"
-
-	# l_00_echo_code "l_02_s2f {{head}} ${fn_head} ${fl_nm}"
-	# l_02_s2f "{{head}}" "${fn_head}" "${fl_nm}"
-
-	# l_00_echo_code "l_02_s2f {{rnd}} ${rnd} ${fl_nm}"
-	# l_02_s2f "{{rnd}}" "${rnd}" "${fl_nm}"
-
-	# lfoe_path_to_var "${fl_nm}"
 
 	return 0
 

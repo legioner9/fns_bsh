@@ -1,11 +1,11 @@
 #!/bin/bash
 
-{{head}}(){
+fn_26424_6986(){
 
-    local fl_pth_{{fn_nm}}="{{fl_nm}}"
-    local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
-    local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
-    local rnd={{rnd}}
+    local fl_pth_fn_26424_6986="${HOME}/fns_bsh/.d/.p.ax/_gig_p1.arg.sh"
+    local dr_pth_fn_26424_6986=$(dirname ${HOME}/fns_bsh/.d/.p.ax/_gig_p1.arg.sh)
+    local fl_nm_fn_26424_6986=$(basename ${HOME}/fns_bsh/.d/.p.ax/_gig_p1.arg.sh)
+    local rnd=26424_6986
 
 	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -23,8 +23,19 @@
 	#     return 1
 	# }
 
-	#--{{help}}
-
+	#--~help~
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+        doing :: 
+			\$1 - 
+			\$2 - 
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
 	#? [[ "$1" == "-h" ]] && {
 	#?	echo -e "
     #?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
@@ -100,7 +111,7 @@
 
 }
 #-- ~after~
-{{fn_nm}} $@
+fn_26424_6986 $@
 
 # {{after2}}
-#? {{fn_nm}} $@
+#? fn_26424_6986 $@
