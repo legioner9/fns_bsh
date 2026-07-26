@@ -86,14 +86,38 @@ fn_31586_18126() {
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
 	# {{body}}
-	# chaine .p001 to .p002
-	fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p001 \
-		$(eval "echo \$dr_pth_fn_${rnd}")/.p002/fl_nm.tml
 
-	# final treat .p002
-	fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p002 \
-		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
-		
+	. $(eval "echo \$dr_pth_fn_${rnd}")/.us/001_gig_tml.us.sh
+	# # chaine .p001 to .p002
+	# fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p001 \
+	# 	$(eval "echo \$dr_pth_fn_${rnd}")/.p002/fl_nm.tml
+
+	# # final treat .p002
+	# fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p002 \
+	# 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	. $(eval "echo \$dr_pth_fn_${rnd}")/.us/002_f2f.us.sh
+	# local fl_nm="$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	# local fn_nm="fn_${rnd}"
+
+	# l_00_echo_code "fn_head=$(l_01_prs_f -n "$(eval "echo \$arg_2_fn_${rnd}")")"
+	# local fn_head=$(l_01_prs_f -n "$(eval "echo \$arg_2_fn_${rnd}")")
+	# l_00_echo_code "fn_head=$fn_head"
+
+	# l_00_echo_code "l_02_s2f {{fl_nm}} ${fl_nm} ${fl_nm}"
+	# l_02_s2f "{{fl_nm}}" "${fl_nm}" "${fl_nm}"
+
+	# l_00_echo_code "l_02_s2f {{fn_nm}} ${fn_nm} ${fl_nm}"
+	# l_02_s2f "{{fn_nm}}" "${fn_nm}" "${fl_nm}"
+
+	# l_00_echo_code "l_02_s2f {{head}} ${fn_head} ${fl_nm}"
+	# l_02_s2f "{{head}}" "${fn_head}" "${fl_nm}"
+
+	# l_00_echo_code "l_02_s2f {{rnd}} ${rnd} ${fl_nm}"
+	# l_02_s2f "{{rnd}}" "${rnd}" "${fl_nm}"
+
+	# lfoe_path_to_var "${fl_nm}"
+
 	return 0
 
 }

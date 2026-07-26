@@ -1,11 +1,11 @@
 #!/bin/bash
 
-{{head}}(){
+res(){
 
-    local fl_pth_{{fn_nm}}="{{fl_nm}}"
-    local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
-    local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
-    local rnd={{rnd}}
+    local fl_pth_fn_31586_18126="${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl"
+    local dr_pth_fn_31586_18126=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
+    local fl_nm_fn_31586_18126=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p003.d/.tst/res.fl)
+    local rnd=31586_18126
 
 	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -110,7 +110,7 @@
 
 }
 #-- ~after~
-# {{fn_nm}} $@
+# fn_31586_18126 $@
 
 # {{after2}}
-#? {{fn_nm}} $@
+#? fn_31586_18126 $@
