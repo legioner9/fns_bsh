@@ -110,6 +110,10 @@ fns_bsh_001_gig_dfn1() {
 	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d \
 		$(eval "echo \$arg_2_fn_${rnd}").tst.sh
 
+	#* .tst_this.tst.d/XXX.tst.arg.sh
+	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d \
+		$(eval "echo \$arg_2_fn_${rnd}").tst.arg.sh
+
 	#* /.tst_this.tst.d/.tst/tst.sh
 
 	lfoe_gig_sh $(eval "echo \$fn_root_${rnd}")/.$(eval "echo \$arg_2_fn_${rnd}").tst.d/.tst \

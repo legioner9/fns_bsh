@@ -1,0 +1,12 @@
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+        doing :: 
+			\$1 - 
+			\$2 - 
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}

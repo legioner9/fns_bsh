@@ -1,15 +1,21 @@
 #!/bin/bash
 
-fn_26779_811() {
+{{head}}(){
 
-	local fl_pth_fn_26779_811="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_fn_sh.fn/.fns_bsh_001_gig_fn_sh.tst.d/fns_bsh_001_gig_fn_sh.tst.sh"
-	local dr_pth_fn_26779_811=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_fn_sh.fn/.fns_bsh_001_gig_fn_sh.tst.d/fns_bsh_001_gig_fn_sh.tst.sh)
-	local fl_nm_fn_26779_811=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_fn_sh.fn/.fns_bsh_001_gig_fn_sh.tst.d/fns_bsh_001_gig_fn_sh.tst.sh)
-	local rnd=26779_811
+    local fl_pth_{{fn_nm}}="{{fl_nm}}"
+    local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
+    local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
+    local rnd={{rnd}}
 
+	#-- ~genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
+
+# {{genv2}}	
+	#? eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
+	#? eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
+	#? eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
@@ -17,6 +23,7 @@ fn_26779_811() {
 	#     return 1
 	# }
 
+	#--~help~
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
@@ -29,6 +36,18 @@ fn_26779_811() {
         "
 		return 0
 	}
+	#? [[ "$1" == "-h" ]] && {
+	#?	echo -e "
+    #?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+    #?     doing :: 
+	#? 		\$1 - 
+	#? 		\$2 - 
+	#? 		\$3 - 
+    #?         exa use ::
+    #?         far use ::
+    #?     "
+	#? 	return 0
+	#? }
 
 	#* value indicator
 	eval "local arg_1_fn_${rnd}=\"\$1\""
@@ -85,15 +104,13 @@ fn_26779_811() {
 
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
-	# {{body}}
-	if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.tst/dst.sh ]]; then
-		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/.tst/dst.sh"
-		rm $(eval "echo \$dr_pth_fn_${rnd}")/.tst/dst.sh
-	fi
-	fns_bsh_001_gig_fn_sh $(eval "echo \$dr_pth_fn_${rnd}")/.tst \
-		dst.sh
-	return 0
+	#-- {{body}}
+
+    return 0
 
 }
+#-- ~after~
+# {{fn_nm}} $@
 
-fn_26779_811 $@
+# {{after2}}
+#? {{fn_nm}} $@

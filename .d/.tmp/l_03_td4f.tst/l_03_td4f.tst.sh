@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fn_26779_811() {
+l_03_td4f.tst() {
 
-	local fl_pth_fn_26779_811="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_fn_sh.fn/.fns_bsh_001_gig_fn_sh.tst.d/fns_bsh_001_gig_fn_sh.tst.sh"
-	local dr_pth_fn_26779_811=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_fn_sh.fn/.fns_bsh_001_gig_fn_sh.tst.d/fns_bsh_001_gig_fn_sh.tst.sh)
-	local fl_nm_fn_26779_811=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_gig_fn_sh.fn/.fns_bsh_001_gig_fn_sh.tst.d/fns_bsh_001_gig_fn_sh.tst.sh)
-	local rnd=26779_811
+	local fl_pth_fn_5648_6412="${HOME}/fns_bsh/.d/.tmp/l_03_td4f.tst/l_03_td4f.tst.sh"
+	local dr_pth_fn_5648_6412=$(dirname ${HOME}/fns_bsh/.d/.tmp/l_03_td4f.tst/l_03_td4f.tst.sh)
+	local fl_nm_fn_5648_6412=$(basename ${HOME}/fns_bsh/.d/.tmp/l_03_td4f.tst/l_03_td4f.tst.sh)
+	local rnd=5648_6412
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -86,14 +86,17 @@ fn_26779_811() {
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
 	# {{body}}
-	if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.tst/dst.sh ]]; then
-		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/.tst/dst.sh"
-		rm $(eval "echo \$dr_pth_fn_${rnd}")/.tst/dst.sh
+
+	if [[ -d $(eval "echo \$dr_pth_fn_${rnd}")/.p001 ]]; then
+		rm -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001
 	fi
-	fns_bsh_001_gig_fn_sh $(eval "echo \$dr_pth_fn_${rnd}")/.tst \
-		dst.sh
+
+	cp -r ~/fns_bsh/.d/.p.ax/.p001.d/.p001 $(eval "echo \$dr_pth_fn_${rnd}")
+
+	l_03_td4f $(eval "echo \$dr_pth_fn_${rnd}")/.p001/fl_nm.tml $(eval "echo \$dr_pth_fn_${rnd}")/.p001/fl_nm.tml.d
+
 	return 0
 
 }
 
-fn_26779_811 $@
+l_03_td4f.tst $@

@@ -7,10 +7,11 @@
     local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
     local rnd={{rnd}}
 
-
-	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
-	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
-	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
+	#-- {{genv}}
+	
+	#? eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
+	#? eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
+	#? eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
@@ -18,20 +19,20 @@
 	#     return 1
 	# }
 
-	
+	#--{{help}}
 
-	[[ "$1" == "-h" ]] && {
-		echo -e "
-        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
-			\$1 - 
-			\$2 - 
-			\$3 - 
-            exa use ::
-            far use ::
-        "
-		return 0
-	}
+	#? [[ "$1" == "-h" ]] && {
+	#?	echo -e "
+    #?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+    #?     doing :: 
+	#? 		\$1 - 
+	#? 		\$2 - 
+	#? 		\$3 - 
+    #?         exa use ::
+    #?         far use ::
+    #?     "
+	#? 	return 0
+	#? }
 
 	#* value indicator
 	eval "local arg_1_fn_${rnd}=\"\$1\""
@@ -88,10 +89,11 @@
 
 	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
-	# {{body}}
+	#-- {{body}}
 
     return 0
 
 }
+#-- {{after}}
 
-{{fn_nm}} $@
+#? {{fn_nm}} $@
