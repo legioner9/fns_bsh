@@ -1,21 +1,16 @@
 #!/bin/bash
 
-fn_26424_6986() {
+fn_257_18517(){
 
-	local fl_pth_fn_26424_6986="${HOME}/fns_bsh/.d/.p.ax/_gig_p1.arg.sh"
-	local dr_pth_fn_26424_6986=$(dirname ${HOME}/fns_bsh/.d/.p.ax/_gig_p1.arg.sh)
-	local fl_nm_fn_26424_6986=$(basename ${HOME}/fns_bsh/.d/.p.ax/_gig_p1.arg.sh)
-	local rnd=26424_6986
+    local fl_pth_fn_257_18517="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/.fns_bsh_001_df2f.tst.d/.tst/tst.sh"
+    local dr_pth_fn_257_18517=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/.fns_bsh_001_df2f.tst.d/.tst/tst.sh)
+    local fl_nm_fn_257_18517=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/.fns_bsh_001_df2f.tst.d/.tst/tst.sh)
+    local rnd=257_18517
 
-	#-- ~genv~
+
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
-
-	# {{genv2}}
-	#? eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
-	#? eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
-	#? eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
@@ -23,7 +18,6 @@ fn_26424_6986() {
 	#     return 1
 	# }
 
-	#--~help~
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
@@ -36,21 +30,8 @@ fn_26424_6986() {
         "
 		return 0
 	}
-	#? [[ "$1" == "-h" ]] && {
-	#?	echo -e "
-	#?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-	#?     doing ::
-	#? 		\$1 -
-	#? 		\$2 -
-	#? 		\$3 -
-	#?         exa use ::
-	#?         far use ::
-	#?     "
-	#? 	return 0
-	#? }
 
 	#* value indicator
-	echo "rnd=$rnd"
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
@@ -103,21 +84,12 @@ fn_26424_6986() {
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	echo "that 1 fn_nm::<${FUNCNAME[0]}>"
+	eval "echo \"that 1 \$fn_nm_${rnd}\""
 
-	#-- {{body}}
+	# {{body}}
 
-	local str_arg=". $(eval "echo \$dr_pth_fn_${rnd}")/_gig_p1.sh $(eval "echo \$arg_1_fn_${rnd}")"
-
-	date >$(eval "echo \$dr_pth_fn_${rnd}")/_gig_p1.sh.lgs
-	echo $str_arg >$(eval "echo \$dr_pth_fn_${rnd}")/_gig_p1.sh.lgs
-
-	. $str_arg 
-	return 0
+    return 0
 
 }
-#-- ~after~
-fn_26424_6986 $@
 
-# {{after2}}
-#? fn_26424_6986 $@
+fn_257_18517 $@
