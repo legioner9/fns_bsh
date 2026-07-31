@@ -21,18 +21,18 @@
 
 	#--{{help}}
 
-	#? [[ "$1" == "-h" ]] && {
-	#?	echo -e "
-    #?     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-    #?     doing :: 
-	#? 		\$1 - 
-	#? 		\$2 - 
-	#? 		\$3 - 
-    #?         exa use ::
-    #?         far use ::
-    #?     "
-	#? 	return 0
-	#? }
+	# [[ "$1" == "-h" ]] && {
+	#	echo -e "
+    #     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+    #     doing :: 
+	# 		\$1 - 
+	# 		\$2 - 
+	# 		\$3 - 
+    #         exa use ::
+    #         far use ::
+    #     "
+	# 	return 0
+	# }
 
 	#* value indicator
 	echo "rnd=$rnd"
@@ -88,7 +88,7 @@
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	echo "that 1 fn_nm::<${FUNCNAME[0]}>"
+	echo "this_fn_nm :: <${FUNCNAME[0]}>"
 
 	#-- {{body}}
 
