@@ -9,7 +9,7 @@
     local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
     local rnd={{rnd}}
 
-	#-- {{001_genv}}
+	#-- {{genv}}
 
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
@@ -17,7 +17,7 @@
 	#     return 1
 	# }
 
-	#--{{001_help}}
+	#--{{help}}
 
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
@@ -32,7 +32,7 @@
 	# 	return 0
 	# }
 
-	#-- {{001_val_ind}}
+	#-- {{val_ind}}
 
 	# [[ -z "$2" ]] && {
 	# 	# snp "out_err"
@@ -46,19 +46,21 @@
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	#-- {{001_stn_env}}
+	#-- {{stn_env}}
 
-	#-- {{001_use_l}}
+	#-- {{use_l}}
 
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
-	#-- {{001_body}}
+	#-- {{body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
     return 0
 
 }
-#-- {{001_after}}
+#-- ~after~
+# {{fn_nm}} $@
 
+# {{after2}}
 #? {{fn_nm}} $@

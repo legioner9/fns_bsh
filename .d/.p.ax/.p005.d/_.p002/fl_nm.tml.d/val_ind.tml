@@ -1,0 +1,17 @@
+	#* value indicator
+	echo "rnd=$rnd"
+	eval "local arg_1_fn_${rnd}=\"\$1\""
+	eval "echo \\\$1=\$arg_1_fn_${rnd}"
+	eval "local arg_2_fn_${rnd}=\"\$2\""
+	eval "echo \\\$2=\$arg_2_fn_${rnd}"
+	eval "local arg_3_fn_${rnd}=\"\$3\""
+	eval "echo \\\$3=\$arg_3_fn_${rnd}"
+
+	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
+	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
+	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
+	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
+	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
+
+	#* indicate with ${rnd}
+	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"

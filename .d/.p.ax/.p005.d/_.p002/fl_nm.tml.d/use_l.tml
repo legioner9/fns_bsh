@@ -1,0 +1,15 @@
+	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
+	# l_02_s2f :: reciver_string: $2 inserter_string: $1 [@ - empty string] in reciver_result_file: $3
+	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
+	# l_01_prs_f :: pars $1 path - stdout part
+	# 	path=/the/path/_foo.bar.ext.txt      
+	# 	$(l_01_prs_f -d /the/path/_foo.bar.ext.txt)   : /the/path 
+	# 	$(l_01_prs_f -ne /the/path/_foo.bar.ext.txt)  : _foo.bar.ext.txt   
+	# 	$(l_01_prs_f -n /the/path/_foo.bar.ext.txt)   : _foo.bar.ext   
+	# 	$(l_01_prs_f -n2 /the/path/_foo.bar.ext.txt)  : _foo.bar   
+	# 	$(l_01_prs_f -e /the/path/_foo.bar.ext.txt)   : txt   
+	# 	$(l_01_prs_f -e2 /the/path/_foo.bar.ext.txt)  : ext 
+	# 	$(l_01_prs_f -pr /the/path/_foo.bar.ext.txt)  : _   
+	# 	$(l_01_prs_f -po /the/path/_foo.bar.ext.txt)  : foo.bar.ext.txt   
+	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
+	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
