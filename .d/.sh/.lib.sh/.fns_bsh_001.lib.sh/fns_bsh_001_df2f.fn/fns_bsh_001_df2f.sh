@@ -55,6 +55,12 @@ fns_bsh_001_df2f() {
 	# 	return 1
 	# }
 
+	[[ ! -d "$1" ]] && {
+		# snp "out_err"
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DIR is ins dr, return 1${NRM}" >&2
+		return 1
+	}
+
 	#! ptr_path
 	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
@@ -88,6 +94,11 @@ fns_bsh_001_df2f() {
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
 	# {{body}}
+
+	local item_dr_nm=
+	for item_dr_nm in $(l_02_d2e $(eval "echo \$arg_1_fn_${rnd}")); do
+		echo $item_dr_nm
+	done
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 	return 0
