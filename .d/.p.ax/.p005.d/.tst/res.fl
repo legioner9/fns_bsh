@@ -4,10 +4,10 @@ res(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_15948_24364="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
-    local dr_pth_fn_15948_24364=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local fl_nm_fn_15948_24364=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local rnd=15948_24364
+    local fl_pth_fn_16594_9840="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
+    local dr_pth_fn_16594_9840=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local fl_nm_fn_16594_9840=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local rnd=16594_9840
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -21,9 +21,24 @@ res(){
 	#     return 1
 	# }
 
-	#--{{001_help}}
+	#--~001_help~
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+        doing :: 
+			\$1 - 
+			\$2 - 
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
 
-	# [[ "$1" == "-h" ]] && {
+	# ~002_key~
+l_00_echo_code "002_key :: <${FUNCNAME[0]}>"
+
+# {{003_key}}	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
     #     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
     #     doing :: 
@@ -38,13 +53,16 @@ res(){
 
 	#-- ~001_val_ind~
 	#* value indicator
-	echo "rnd=$rnd"
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
 	eval "echo \\\$2=\$arg_2_fn_${rnd}"
 	eval "local arg_3_fn_${rnd}=\"\$3\""
 	eval "echo \\\$3=\$arg_3_fn_${rnd}"
+	eval "local arg_4_fn_${rnd}=\"\$4\""
+	eval "echo \\\$4=\$arg_4_fn_${rnd}"
+	eval "local arg_5_fn_${rnd}=\"\$5\""
+	eval "echo \\\$5=\$arg_5_fn_${rnd}"
 
 	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
 	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
@@ -105,7 +123,10 @@ res(){
 	# {{002_use_l}}
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
-	#-- {{001_body}}
+	#-- ~001_body~
+	l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
+
+    # {{002_body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
@@ -113,7 +134,7 @@ res(){
 
 }
 #-- ~001_after~
-# fn_15948_24364 $@
+# fn_16594_9840 $@
 
 # {{002_after}}
-#? fn_15948_24364 $@
+#? fn_16594_9840 $@
