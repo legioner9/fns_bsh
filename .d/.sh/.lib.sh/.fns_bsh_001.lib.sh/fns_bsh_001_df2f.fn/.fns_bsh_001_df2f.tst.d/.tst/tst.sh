@@ -102,7 +102,7 @@ fn_257_18517() {
 
 	cd $(eval "echo \$dr_pth_fn_${rnd}")
 	: >dst
-
+	cp init dst
 	# up_mem fn [func].tst.sh
 	# like :: . $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/fns_bsh_001_dt5f.tst.sh >/dev/null
 	# search [func].tst.sh

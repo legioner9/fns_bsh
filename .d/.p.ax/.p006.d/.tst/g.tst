@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fn_15391_5013() {
+fn_17512_18579() {
 
-	local fl_pth_fn_15391_5013="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/.fns_bsh_001_dt5f.tst.d/.tst/tst.sh"
-	local dr_pth_fn_15391_5013=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/.fns_bsh_001_dt5f.tst.d/.tst/tst.sh)
-	local fl_nm_fn_15391_5013=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_dt5f.fn/.fns_bsh_001_dt5f.tst.d/.tst/tst.sh)
-	local rnd=15391_5013
+	local fl_pth_fn_17512_18579="${HOME}/fns_bsh/.d/.p.ax/.p006.d/.tst/g.tst"
+	local dr_pth_fn_17512_18579=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p006.d/.tst/g.tst)
+	local fl_nm_fn_17512_18579=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p006.d/.tst/g.tst)
+	local rnd=17512_18579
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -31,18 +31,18 @@ fn_15391_5013() {
 	}
 
 	#* value indicator
-	# eval "local arg_1_fn_${rnd}=\"\$1\""
-	# eval "echo \\\$1=\$arg_1_fn_${rnd}"
-	# eval "local arg_2_fn_${rnd}=\"\$2\""
-	# eval "echo \\\$2=\$arg_2_fn_${rnd}"
-	# eval "local arg_3_fn_${rnd}=\"\$3\""
-	# eval "echo \\\$3=\$arg_3_fn_${rnd}"
+	eval "local arg_1_fn_${rnd}=\"\$1\""
+	eval "echo \\\$1=\$arg_1_fn_${rnd}"
+	eval "local arg_2_fn_${rnd}=\"\$2\""
+	eval "echo \\\$2=\$arg_2_fn_${rnd}"
+	eval "local arg_3_fn_${rnd}=\"\$3\""
+	eval "echo \\\$3=\$arg_3_fn_${rnd}"
 
-	# eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
-	# eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
-	# eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
-	# eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
-	# eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
+	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
+	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
+	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
+	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
+	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
 
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
@@ -83,26 +83,23 @@ fn_15391_5013() {
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
+	eval "echo \"that 1 \$fn_nm_${rnd}\""
+
 	# {{body}}
-	cd $(eval "echo \$dr_pth_fn_${rnd}")
-	: >dst
 
-	cp 
+	l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
 
-	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/fns_bsh_001_dt5f.tst.sh >/dev/null
+	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
-	cd $(eval "echo \$dr_pth_fn_${rnd}")
-	if diff -q dst src; then
-		echo -e "${ECHO_SUCC}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_SUCC : 'diff -q dst src', return 0${NRM}"
-		return 0
-	else
-		diff dst src
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'diff -q dst src', return 1${NRM}" >&2
-		return 1
-	fi
+	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+
+	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+
+	# l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+	# . $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
 	return 0
 
 }
 
-fn_15391_5013 $@
+fn_17512_18579 $@
