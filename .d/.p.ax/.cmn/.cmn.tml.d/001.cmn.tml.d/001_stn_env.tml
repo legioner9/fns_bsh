@@ -15,3 +15,4 @@
 	# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
 	# prnt2_dr_pth_fn ::
 	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+	#-- {{002_stn_env}}
