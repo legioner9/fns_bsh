@@ -19,14 +19,19 @@ fns_bsh_001_dt5f $(eval "echo \$dr_pth_fn_${rnd}")/.p001 \
 # fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
 # 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 
-l_00_echo_warn "fns_bsh_001_df2f $(eval "echo \$arg_3_fn_${rnd}") $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
-fns_bsh_001_df2f $(eval "echo \$arg_3_fn_${rnd}") \
-	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+if [[ -n "$(eval "echo \$arg_3_fn_${rnd}")" ]]; then
+
+	l_00_echo_warn "fns_bsh_001_df2f $(eval "echo \$arg_3_fn_${rnd}") $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+	fns_bsh_001_df2f $(eval "echo \$arg_3_fn_${rnd}") \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+fi
 
 # add domain code
 
 if [[ -n "$(eval "echo \$arg_4_fn_${rnd}")" ]]; then
+
 	l_00_echo_warn "fns_bsh_001_df2f $(eval "echo \$arg_4_fn_${rnd}") $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
 	fns_bsh_001_df2f $(eval "echo \$arg_4_fn_${rnd}") \
 		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+		
 fi

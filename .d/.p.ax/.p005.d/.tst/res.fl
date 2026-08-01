@@ -4,10 +4,10 @@ res(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_16594_9840="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
-    local dr_pth_fn_16594_9840=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local fl_nm_fn_16594_9840=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local rnd=16594_9840
+    local fl_pth_fn_5093_3735="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
+    local dr_pth_fn_5093_3735=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local fl_nm_fn_5093_3735=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local rnd=5093_3735
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -15,6 +15,7 @@ res(){
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	#-- {{002_genv}}
+	
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
@@ -36,9 +37,11 @@ res(){
 	}
 
 	# ~002_key~
-l_00_echo_code "002_key :: <${FUNCNAME[0]}>"
+# that 003_key
 
-# {{003_key}}	# [[ "$1" == "-h" ]] && {
+# {{003_key}}
+	
+	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
     #     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
     #     doing :: 
@@ -93,6 +96,10 @@ l_00_echo_code "002_key :: <${FUNCNAME[0]}>"
 	# $(eval "echo \$arg_2_fn_${rnd}")
 	# arg3 ::
 	# $(eval "echo \$arg_3_fn_${rnd}")
+	# arg4 ::
+	# $(eval "echo \$arg_4_fn_${rnd}")
+	# arg5 ::
+	# $(eval "echo \$arg_5_fn_${rnd}")
 	# fl_pth_fn ::
 	# $(eval "echo \$fl_pth_fn_${rnd}")
 	# dr_pth_fn ::
@@ -104,6 +111,7 @@ l_00_echo_code "002_key :: <${FUNCNAME[0]}>"
 	# prnt2_dr_pth_fn ::
 	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 	#-- {{002_stn_env}}
+
 	#-- ~001_use_l~
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
 	# l_02_s2f :: reciver_string: $2 inserter_string: $1 [@ - empty string] in reciver_result_file: $3
@@ -134,7 +142,8 @@ l_00_echo_code "002_key :: <${FUNCNAME[0]}>"
 
 }
 #-- ~001_after~
-# fn_16594_9840 $@
+# fn_5093_3735 $@
 
 # {{002_after}}
-#? fn_16594_9840 $@
+
+#? fn_5093_3735 $@
