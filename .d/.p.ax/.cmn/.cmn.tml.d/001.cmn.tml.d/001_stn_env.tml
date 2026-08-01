@@ -5,6 +5,10 @@
 	# $(eval "echo \$arg_2_fn_${rnd}")
 	# arg3 ::
 	# $(eval "echo \$arg_3_fn_${rnd}")
+	# arg4 ::
+	# $(eval "echo \$arg_4_fn_${rnd}")
+	# arg5 ::
+	# $(eval "echo \$arg_5_fn_${rnd}")
 	# fl_pth_fn ::
 	# $(eval "echo \$fl_pth_fn_${rnd}")
 	# dr_pth_fn ::
