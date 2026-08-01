@@ -2,6 +2,8 @@
 
 {{head}}(){
 
+	l_00_echo_code "start :: <${FUNCNAME[0]}>"
+
     local fl_pth_{{fn_nm}}="{{fl_nm}}"
     local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
     local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
@@ -88,10 +90,11 @@
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	echo "this_fn_nm :: <${FUNCNAME[0]}>"
+	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
 	#-- {{body}}
 
+	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
     return 0
 
 }

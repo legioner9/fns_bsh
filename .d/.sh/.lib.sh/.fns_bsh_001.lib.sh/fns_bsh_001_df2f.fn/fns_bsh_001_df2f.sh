@@ -1,12 +1,13 @@
 #!/bin/bash
 
-fns_bsh_001_df2f(){
+fns_bsh_001_df2f() {
 
-    local fl_pth_fn_29503_7313="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/fns_bsh_001_df2f.sh"
-    local dr_pth_fn_29503_7313=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/fns_bsh_001_df2f.sh)
-    local fl_nm_fn_29503_7313=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/fns_bsh_001_df2f.sh)
-    local rnd=29503_7313
+	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
+	local fl_pth_fn_29503_7313="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/fns_bsh_001_df2f.sh"
+	local dr_pth_fn_29503_7313=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/fns_bsh_001_df2f.sh)
+	local fl_nm_fn_29503_7313=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/fns_bsh_001_df2f.fn/fns_bsh_001_df2f.sh)
+	local rnd=29503_7313
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -84,11 +85,12 @@ fns_bsh_001_df2f(){
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
-	eval "echo \"that 1 \$fn_nm_${rnd}\""
+	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
 	# {{body}}
 
-    return 0
+	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+	return 0
 
 }
 
