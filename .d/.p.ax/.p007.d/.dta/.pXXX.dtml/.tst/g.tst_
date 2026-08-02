@@ -1,11 +1,11 @@
 #!/bin/bash
 
-fn_3896_792() {
+fn_17512_18579() {
 
-	local fl_pth_fn_3896_792="${HOME}/fns_bsh/.d/.p.ax/.p007.d/g.pr"
-	local dr_pth_fn_3896_792=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p007.d/g.pr)
-	local fl_nm_fn_3896_792=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p007.d/g.pr)
-	local rnd=3896_792
+	local fl_pth_fn_17512_18579="${HOME}/fns_bsh/.d/.p.ax/.p007.d/.tst/g.tst"
+	local dr_pth_fn_17512_18579=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p007.d/.tst/g.tst)
+	local fl_nm_fn_17512_18579=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p007.d/.tst/g.tst)
+	local rnd=17512_18579
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -20,7 +20,7 @@ fn_3896_792() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: (\$1 num from .p[num].d) cp $(eval "echo \$dr_pth_fn_${rnd}")/.dta/.pXXX.dtml to $(eval "echo \$dr_pth_fn_${rnd}")/.p\$1.d
+        doing :: 
 			\$1 - 
 			\$2 - 
 			\$3 - 
@@ -37,10 +37,6 @@ fn_3896_792() {
 	eval "echo \\\$2=\$arg_2_fn_${rnd}"
 	eval "local arg_3_fn_${rnd}=\"\$3\""
 	eval "echo \\\$3=\$arg_3_fn_${rnd}"
-	eval "local arg_4_fn_${rnd}=\"\$4\""
-	eval "echo \\\$4=\$arg_4_fn_${rnd}"
-	eval "local arg_5_fn_${rnd}=\"\$5\""
-	eval "echo \\\$5=\$arg_5_fn_${rnd}"
 
 	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
 	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
@@ -53,13 +49,7 @@ fn_3896_792() {
 
 	# [[ -z "$2" ]] && {
 	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is nm_fl, return 1${NRM}" >&2
-	# 	return 1
-	# }
-
-	# [[ ! -d "$1" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_1_NOT_DIR is root for res fl, return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }
 
@@ -97,27 +87,26 @@ fn_3896_792() {
 
 	# {{body}}
 
-	# l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/001_gig_tml.us.sh"
-	# . $(eval "echo \$dr_pth_fn_${rnd}")/.us/001_gig_tml.us.sh
+	l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
 
-	# l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/002_f2f.us.sh"
-	# . $(eval "echo \$dr_pth_fn_${rnd}")/.us/002_f2f.us.sh
+	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
-	local item_us=
-	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
-		if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us && $(l_01_prs_f -e $item_us) == "sh" ]]; then
-			l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us"
-			if . $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us; then
-				:
-			else
-				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us', return 1${NRM}" >&2
-				return 1
-			fi
-		fi
-	done
+	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr \
+		$(eval "echo \$dr_pth_fn_${rnd}") \
+		res.fl \
+		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d
 
+	l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+	. $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
+	# l_00_echo_code "res"
+	# res
+
+	return 0
 	return 0
 
 }
 
-fn_3896_792 $@
+fn_17512_18579 $@

@@ -118,12 +118,14 @@ fn_32030_6219() {
 
 	#-- {{001_body}}
 
-	rm -rf $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d
+	#! rm in code
+	# rm -rf $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d
 
-	l_00_echo_code
+	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr 999"
 	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr 999
 
 	l_00_echo_code ". $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/.tst/g.tst"
+	. $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/.tst/g.tst
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
