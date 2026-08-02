@@ -1,2 +1,0 @@
-# echo "insert::rnd=${rnd}"
-
