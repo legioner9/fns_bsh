@@ -1,12 +1,11 @@
 #!/bin/bash
 
-fn_2621_21023(){
+fn_2621_21023() {
 
-    local fl_pth_fn_2621_21023="${HOME}/fns_bsh/.d/.p.ax/.p006.d/cp_this.sh"
-    local dr_pth_fn_2621_21023=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p006.d/cp_this.sh)
-    local fl_nm_fn_2621_21023=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p006.d/cp_this.sh)
-    local rnd=2621_21023
-
+	local fl_pth_fn_2621_21023="${HOME}/fns_bsh/.d/.p.ax/.p006.d/cp_this.sh"
+	local dr_pth_fn_2621_21023=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p006.d/cp_this.sh)
+	local fl_nm_fn_2621_21023=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p006.d/cp_this.sh)
+	local rnd=2621_21023
 
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
@@ -88,7 +87,7 @@ fn_2621_21023(){
 
 	# {{body}}
 
-		l_00_echo_code "cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")"
+	l_00_echo_code "cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.p001 $(eval "echo \$arg_1_fn_${rnd}")"
 
 	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 	rm -rf $(eval "echo \$arg_1_fn_${rnd}")/.p001
@@ -110,8 +109,7 @@ fn_2621_21023(){
 
 	#? eval "mv fl_nm.* \$nm_fn_${rnd}.*"
 
-
-    return 0
+	return 0
 
 }
 

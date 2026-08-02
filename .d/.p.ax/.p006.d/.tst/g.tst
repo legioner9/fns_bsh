@@ -92,12 +92,19 @@ fn_17512_18579() {
 	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
 	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr \
+		$(eval "echo \$dr_pth_fn_${rnd}") \
+		res.fl \
+		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d
 
-	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+	l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+	. $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
 
-	# l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
-	# . $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+	# l_00_echo_code "res"
+	# res
 
+	return 0
 	return 0
 
 }

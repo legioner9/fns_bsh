@@ -4,10 +4,10 @@ res(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_5093_3735="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
-    local dr_pth_fn_5093_3735=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local fl_nm_fn_5093_3735=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local rnd=5093_3735
+    local fl_pth_fn_15605_9698="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
+    local dr_pth_fn_15605_9698=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local fl_nm_fn_15605_9698=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local rnd=15605_9698
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -142,8 +142,8 @@ res(){
 
 }
 #-- ~001_after~
-# fn_5093_3735 $@
+# fn_15605_9698 $@
 
 # {{002_after}}
 
-#? fn_5093_3735 $@
+#? fn_15605_9698 $@

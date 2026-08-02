@@ -9,11 +9,7 @@
     local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
     local rnd={{rnd}}
 
-	#-- {{genv}}
-	
-	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
-	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
-	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
+	#-- {{001_genv}}
 
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
@@ -21,11 +17,11 @@
 	#     return 1
 	# }
 
-	#--{{help}}
+	#--{{001_help}}
 
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
-    #     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+    #     this -h for <${FUNCNAME[0]}> ::
     #     doing :: 
 	# 		\$1 - 
 	# 		\$2 - 
@@ -36,23 +32,7 @@
 	# 	return 0
 	# }
 
-	#* value indicator
-	echo "rnd=$rnd"
-	eval "local arg_1_fn_${rnd}=\"\$1\""
-	eval "echo \\\$1=\$arg_1_fn_${rnd}"
-	eval "local arg_2_fn_${rnd}=\"\$2\""
-	eval "echo \\\$2=\$arg_2_fn_${rnd}"
-	eval "local arg_3_fn_${rnd}=\"\$3\""
-	eval "echo \\\$3=\$arg_3_fn_${rnd}"
-
-	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
-	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
-	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
-	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
-	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
-
-	#* indicate with ${rnd}
-	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
+	#-- {{001_val_ind}}
 
 	# [[ -z "$2" ]] && {
 	# 	# snp "out_err"
@@ -66,39 +46,19 @@
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	#* STANDART ENV THAT FILE
-	# arg1 ::
-	# $(eval "echo \$arg_1_fn_${rnd}")
-	# arg2 ::
-	# $(eval "echo \$arg_2_fn_${rnd}")
-	# arg3 ::
-	# $(eval "echo \$arg_3_fn_${rnd}")
-	# fl_pth_fn ::
-	# $(eval "echo \$fl_pth_fn_${rnd}")
-	# dr_pth_fn ::
-	# $(eval "echo \$dr_pth_fn_${rnd}")
-	# fl_nm_fn ::
-	# $(eval "echo \$fl_nm_fn_${rnd}")
-	# prnt1_dr_pth_fn ::
-	# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
-	# prnt2_dr_pth_fn ::
-	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+	#-- {{001_stn_env}}
 
-	#* use l_ ::
-	# l_02_fs2f ins.f {{pre_str_in_rcv.f}} rcv.f
-	# l_02_s2f :: reciver_string: $2 inserter_string: $1 [@ - empty string] in reciver_result_file: $3
-	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
-	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
-	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
+	#-- {{001_use_l}}
 
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
-	#-- {{body}}
+	#-- {{001_body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+
     return 0
 
 }
-#-- {{after}}
+#-- {{001_after}}
 
 #? {{fn_nm}} $@

@@ -21,7 +21,7 @@
 
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
-    #     this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
+    #     this -h for <${FUNCNAME[0]}> ::
     #     doing :: 
 	# 		\$1 - 
 	# 		\$2 - 

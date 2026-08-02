@@ -20,7 +20,7 @@ fn_31586_18126() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: gig in \$1 dr \$2 fl[with .ext]  use ~/fns_bsh/.d/.p.ax/.p005.d (like .p003.d) \$3 cmn.d [\$4 dom.d]
+        doing :: fns_bsh_001_als_gig_fn_sh \$@ :: in (\$1: dr) gig (\$2: fl_nm[with .ext]) use ~/fns_bsh/.d/.p.ax/.p005.d (like .p003.d) [,\$3 cmn.d [,\$4 dom.d]]
 			\$1 - 
 			\$2 - 
 			\$3 - 
