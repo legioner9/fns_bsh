@@ -1,4 +1,4 @@
-l_00_echo_info "that :: 001_gig_tml.us.sh"
+l_00_echo_info "that :: 001_init.us.sh"
 
 echo "dr_pth_fn=$(eval "echo \$dr_pth_fn_${rnd}")"             # ~/fns_bsh/.d/.p.ax/.p007.d
 echo "prnt1_dr_pth_fn=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")" # ~/fns_bsh/.d/.p.ax
@@ -20,3 +20,5 @@ cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.dta/.pXXX.dtml $(eval "echo \$prnt1_dr_
 
 l_00_echo_code "mv -r $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.pXXX.dtml $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d"
 mv $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.pXXX.dtml $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d
+
+
