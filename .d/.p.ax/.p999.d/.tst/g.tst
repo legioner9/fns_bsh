@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_25395_1061(){
+fn_18865_18963(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_25395_1061="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_25395_1061=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_25395_1061=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=25395_1061
+    local fl_pth_fn_18865_18963="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
+    local dr_pth_fn_18865_18963=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local fl_nm_fn_18865_18963=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local rnd=18865_18963
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -41,7 +41,7 @@ fn_25395_1061(){
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
     #     this -h for <${FUNCNAME[0]}> ::
-    #     doing :: 
+    #     doingX :: 
 	# 		\$1 - 
 	# 		\$2 - 
 	# 		\$3 - 
@@ -148,8 +148,8 @@ fn_25395_1061(){
 
 }
 #-- ~001_after~
-fn_25395_1061 $@
+fn_18865_18963 $@
 
 # {{002_after}}
 
-#? fn_25395_1061 $@
+#? fn_18865_18963 $@

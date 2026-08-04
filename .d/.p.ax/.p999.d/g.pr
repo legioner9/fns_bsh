@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_26145_26337(){
+fn_10679_4956(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_26145_26337="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
-    local dr_pth_fn_26145_26337=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local fl_nm_fn_26145_26337=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local rnd=26145_26337
+    local fl_pth_fn_10679_4956="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
+    local dr_pth_fn_10679_4956=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local fl_nm_fn_10679_4956=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local rnd=10679_4956
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -22,12 +22,26 @@ fn_26145_26337(){
 	#     return 1
 	# }
 
-	#--{{001_help}}
+	#--~001_help~
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing :: giged from .p007.d:g.tst as exa 
+			\$1 - 
+			\$2 - 
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
 
+	#-- {{002_key}}
+	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
     #     this -h for <${FUNCNAME[0]}> ::
-    #     doing :: 
+    #     doingX :: 
 	# 		\$1 - 
 	# 		\$2 - 
 	# 		\$3 - 
@@ -139,8 +153,8 @@ fn_26145_26337(){
 
 }
 #-- ~001_after~
-fn_26145_26337 $@
+fn_10679_4956 $@
 
 # {{002_after}}
 
-#? fn_26145_26337 $@
+#? fn_10679_4956 $@
