@@ -1,0 +1,9 @@
+	l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+
+	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
+	l_00_echo_info "example if infs for gig tst_result is :: [. g.pr dr_res res.fl]"
+	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+	
+    #-- {{002_body}}
