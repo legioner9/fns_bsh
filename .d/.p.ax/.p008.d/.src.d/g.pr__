@@ -20,7 +20,7 @@ fn_3896_792() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: (\$1 num from .p[num].d) cp $(eval "echo \$dr_pth_fn_${rnd}")/.dta/.pXXX.dtml to $(eval "echo \$dr_pth_fn_${rnd}")/.p\$1.d
+        doing :: gig_fl_sh : (\$1 num from .p[num].d) cp $(eval "echo \$dr_pth_fn_${rnd}")/.dta/.pXXX.dtml to $(eval "echo \$dr_pth_fn_${rnd}")/.p\$1.d
 			\$1 - 
 			\$2 - 
 			\$3 - 

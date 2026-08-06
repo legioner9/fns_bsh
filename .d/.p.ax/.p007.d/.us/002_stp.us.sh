@@ -8,7 +8,7 @@ l_00_echo_info "gig $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg
 
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d \
 	g.pr \
-	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d \
 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d
 
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d/.tst \

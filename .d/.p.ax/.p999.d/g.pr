@@ -1,21 +1,26 @@
 #!/bin/bash
 
-fn_9823_5754(){
+fn_13528_96(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_9823_5754="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
-    local dr_pth_fn_9823_5754=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local fl_nm_fn_9823_5754=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local rnd=9823_5754
+    local fl_pth_fn_13528_96="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
+    local dr_pth_fn_13528_96=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local fl_nm_fn_13528_96=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local rnd=13528_96
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
-	#-- {{002_genv}}
-	
+	#-- ~002_genv~
+	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
+	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
+	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
+
+	#-- {{003_genv}}
+		
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
@@ -72,8 +77,12 @@ fn_9823_5754(){
 
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
-	#-- {{002_val_ind}}
-	# [[ -z "$2" ]] && {
+	#-- ~002_val_ind~
+	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	eval "echo \"us_pth_fn=\$us_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+
+	#-- {{003_val_ind}}	# [[ -z "$2" ]] && {
 	# 	# snp "out_err"
 	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
 	# 	return 1
@@ -153,8 +162,8 @@ fn_9823_5754(){
 
 }
 #-- ~001_after~
-fn_9823_5754 $@
+fn_13528_96 $@
 
 # {{002_after}}
 
-#? fn_9823_5754 $@
+#? fn_13528_96 $@

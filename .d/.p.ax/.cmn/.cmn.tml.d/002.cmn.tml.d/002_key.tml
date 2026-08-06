@@ -1,0 +1,15 @@
+	[[ "$1" == "_tst" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
+
+	#-- {{003_key}}
+	

@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_10533_10282(){
+fn_12683_9953(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_10533_10282="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_10533_10282=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_10533_10282=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=10533_10282
+    local fl_pth_fn_12683_9953="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
+    local dr_pth_fn_12683_9953=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local fl_nm_fn_12683_9953=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local rnd=12683_9953
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -15,7 +15,10 @@ fn_10533_10282(){
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	#-- {{002_genv}}
-	
+		
+	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
+	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
+	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
@@ -148,8 +151,8 @@ fn_10533_10282(){
 
 }
 #-- ~001_after~
-fn_10533_10282 $@
+fn_12683_9953 $@
 
 # {{002_after}}
 
-#? fn_10533_10282 $@
+#? fn_12683_9953 $@

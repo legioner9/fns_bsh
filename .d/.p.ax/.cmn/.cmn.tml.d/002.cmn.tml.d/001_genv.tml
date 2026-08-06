@@ -3,7 +3,3 @@
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	#-- {{002_genv}}
-		
-	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
-	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
-	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
