@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_24109_7409(){
+fn_1759_1199(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_24109_7409="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_24109_7409=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_24109_7409=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=24109_7409
+    local fl_pth_fn_1759_1199="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst"
+    local dr_pth_fn_1759_1199=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst)
+    local fl_nm_fn_1759_1199=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst)
+    local rnd=1759_1199
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -153,8 +153,8 @@ fn_24109_7409(){
 
 }
 #-- ~001_after~
-fn_24109_7409 $@
+fn_1759_1199 $@
 
 # {{002_after}}
 
-#? fn_24109_7409 $@
+#? fn_1759_1199 $@

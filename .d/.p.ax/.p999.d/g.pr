@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_13528_96(){
+fn_12174_25254(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_13528_96="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
-    local dr_pth_fn_13528_96=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local fl_nm_fn_13528_96=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local rnd=13528_96
+    local fl_pth_fn_12174_25254="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
+    local dr_pth_fn_12174_25254=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local fl_nm_fn_12174_25254=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local rnd=12174_25254
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -40,8 +40,6 @@ fn_13528_96(){
         "
 		return 0
 	}
-
-	#-- {{002_key}}
 	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
@@ -55,6 +53,23 @@ fn_13528_96(){
     #     "
 	# 	return 0
 	# }
+
+	#--~001_key~
+	[[ "$1" == "_tst" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		return 0
+	}
+
+	#-- {{002_key}}
+		
 
 	#-- ~001_val_ind~
 	#* value indicator
@@ -162,8 +177,8 @@ fn_13528_96(){
 
 }
 #-- ~001_after~
-fn_13528_96 $@
+fn_12174_25254 $@
 
 # {{002_after}}
 
-#? fn_13528_96 $@
+#? fn_12174_25254 $@

@@ -129,6 +129,9 @@ fn_32030_6219() {
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
+	l_00_echo_code "code $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr"
+	code $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr
+
 	return 0
 
 }
