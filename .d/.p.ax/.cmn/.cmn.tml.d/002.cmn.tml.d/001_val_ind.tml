@@ -19,3 +19,4 @@
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 	#-- {{002_val_ind}}
+	
