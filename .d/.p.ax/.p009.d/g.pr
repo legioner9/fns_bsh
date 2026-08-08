@@ -32,11 +32,14 @@ fn_6391_28520() {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
         doing :: gig fl.vis 
-			\$1 - 
-			\$2 - 
+			flow :: fns_bsh_001_df2f tml_dr \$1/\$2
+				tml_fl->$(eval "echo \$dr_pth_fn_${rnd}")/.dta/.p001/fl_nm.tml 
+				tml_dr->$(eval "echo \$dr_pth_fn_${rnd}")/.dta/.p001/fl_nm.tml.d 
+			\$1 - dr_pth
+			\$2 - fl_nm
 			\$3 - 
-            exa use ::
-            far use ::
+			exa use ::
+			far use ::
         "
 		return 0
 	}
@@ -58,7 +61,7 @@ fn_6391_28520() {
 	[[ "$1" == "_tst" ]] && {
 		echo -e "
         this [. .tst] for <${FUNCNAME[0]}> ::
-        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+        doingX :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
 			\$1 - dr_res
 			\$2 - res.fl
 			\$3 - 
@@ -71,7 +74,7 @@ fn_6391_28520() {
 	[[ "$1" == "_vis" ]] && {
 		echo -e "
         this [cat .vis] for <${FUNCNAME[0]}> ::
-        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+        doingX :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
 			\$1 - dr_res
 			\$2 - res.fl
 			\$3 - 

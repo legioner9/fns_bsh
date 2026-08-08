@@ -140,8 +140,15 @@ fn_1759_1199(){
 	l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
 
 	rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+# did res.fl as init 
+# prnt1_dr_pth_fn=~/fns_bsh/.d/.p.ax/.p009.d
+# ~/fns_bsh/.d/.p.ax/.p009.d/.dta/.p001/fl_nm.tml
+
+ 	cp $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/.p001/fl_nm.tml $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
 
 	l_00_echo_info "example if infs for gig tst_result is :: [. g.pr dr_res res.fl]"
+	#  /home/st/fns_bsh/.d/.p.ax/.p009.d/.dta/.p001/fl_nm.tml
 	l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
 	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
 	

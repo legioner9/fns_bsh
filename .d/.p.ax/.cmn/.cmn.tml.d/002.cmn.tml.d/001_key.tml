@@ -1,7 +1,7 @@
 	[[ "$1" == "_tst" ]] && {
 		echo -e "
         this [. .tst] for <${FUNCNAME[0]}> ::
-        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+        doing_tst :: 
 			\$1 - dr_res
 			\$2 - res.fl
 			\$3 - 
@@ -14,7 +14,7 @@
 		[[ "$1" == "_vis" ]] && {
 		echo -e "
         this [cat .vis] for <${FUNCNAME[0]}> ::
-        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+        doing_vis :: 
 			\$1 - dr_res
 			\$2 - res.fl
 			\$3 - 
