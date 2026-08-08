@@ -15,3 +15,11 @@ fns_bsh_001_als_gig_fl_sh $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo
 	g.tst \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d
+
+# gig fl.vis  /.g.d/g.vis
+l_00_echo_warn ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p009.d/g.pr \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d/.g.d \
+	g.vis"
+. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p009.d/g.pr \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d/.g.d \
+	g.vis

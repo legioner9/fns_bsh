@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_24109_7409(){
+fn_26458_10220(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_24109_7409="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_24109_7409=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_24109_7409=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=24109_7409
+    local fl_pth_fn_26458_10220="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
+    local dr_pth_fn_26458_10220=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local fl_nm_fn_26458_10220=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local rnd=26458_10220
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -116,7 +116,7 @@ fn_24109_7409(){
 
 	#-- ~001_use_l~
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
-	# l_02_s2f :: reciver_string: $2 inserter_string: $1 [@ - empty string] in reciver_result_file: $3
+	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
 	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
 	# l_01_prs_f :: pars $1 path - stdout part
 	# 	path=/the/path/_foo.bar.ext.txt      
@@ -153,8 +153,8 @@ fn_24109_7409(){
 
 }
 #-- ~001_after~
-fn_24109_7409 $@
+fn_26458_10220 $@
 
 # {{002_after}}
 
-#? fn_24109_7409 $@
+#? fn_26458_10220 $@
