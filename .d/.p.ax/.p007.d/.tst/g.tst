@@ -132,6 +132,18 @@ fn_32030_6219() {
 	l_00_echo_code "code $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr"
 	code $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr
 
+	l_00_echo_warn ". $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr"
+	. $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr
+
+	l_00_echo_warn ". $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr -h"
+	. $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr -h
+
+	l_00_echo_warn ". $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr _tst"
+	. $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr _tst
+
+	l_00_echo_warn ". $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr _vis"
+	. $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.p999.d/g.pr _vis
+
 	return 0
 
 }

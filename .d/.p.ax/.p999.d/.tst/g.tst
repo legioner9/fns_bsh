@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_26458_10220(){
+fn_17788_24348(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_26458_10220="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_26458_10220=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_26458_10220=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=26458_10220
+    local fl_pth_fn_17788_24348="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
+    local dr_pth_fn_17788_24348=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local fl_nm_fn_17788_24348=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local rnd=17788_24348
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -36,6 +36,7 @@ fn_26458_10220(){
             exa use ::
             far use ::
         "
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
 	}
 
@@ -153,8 +154,8 @@ fn_26458_10220(){
 
 }
 #-- ~001_after~
-fn_26458_10220 $@
+fn_17788_24348 $@
 
 # {{002_after}}
 
-#? fn_26458_10220 $@
+#? fn_17788_24348 $@

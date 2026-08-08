@@ -6,9 +6,14 @@
 			\$2 - res.fl
 			\$3 - 
             exa use ::
-            far use ::
+            far use ::			
         "
+		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
+		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
+		
 	}
 
 		[[ "$1" == "_vis" ]] && {
@@ -21,7 +26,12 @@
             exa use ::
             far use ::
         "
+		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
+		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
+		
 	}
 
 	#-- {{002_key}}

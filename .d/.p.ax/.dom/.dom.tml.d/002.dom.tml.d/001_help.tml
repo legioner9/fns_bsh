@@ -8,6 +8,7 @@
             exa use ::
             far use ::
         "
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
 	}
 	

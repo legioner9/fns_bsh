@@ -1,13 +1,13 @@
 #!/bin/bash
 
-fn_22114_21373(){
+fn_32629_4007(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_22114_21373="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
-    local dr_pth_fn_22114_21373=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local fl_nm_fn_22114_21373=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local rnd=22114_21373
+    local fl_pth_fn_32629_4007="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
+    local dr_pth_fn_32629_4007=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local fl_nm_fn_32629_4007=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local rnd=32629_4007
 
 	#-- ~001_genv~
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -17,7 +17,7 @@ fn_22114_21373(){
 	#-- ~002_genv~
 	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
 	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
-	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
+	eval "us_dr_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 
 	#-- {{003_genv}}
 		
@@ -38,6 +38,7 @@ fn_22114_21373(){
             exa use ::
             far use ::
         "
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
 	}
 	
@@ -63,9 +64,14 @@ fn_22114_21373(){
 			\$2 - res.fl
 			\$3 - 
             exa use ::
-            far use ::
+            far use ::			
         "
+		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
+		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
+		
 	}
 
 		[[ "$1" == "_vis" ]] && {
@@ -78,7 +84,12 @@ fn_22114_21373(){
             exa use ::
             far use ::
         "
+		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
+		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
+		
 	}
 
 	#-- {{002_key}}
@@ -108,7 +119,7 @@ fn_22114_21373(){
 	#-- ~002_val_ind~
 	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
 	eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"us_pth_fn=\$us_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
 
 	#-- {{003_val_ind}}
 		
@@ -146,6 +157,13 @@ fn_22114_21373(){
 	# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
 	# prnt2_dr_pth_fn ::
 	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+	# fl_tst_pth_fn ::
+	# $(eval "echo \$fl_tst_pth_fn_${rnd}")
+	# g_d_pth_fn ::
+	# $(eval "echo \$g_d_pth_fn_${rnd}")
+	# us_dr_pth_fn ::
+	# $(eval "echo \$us_dr_pth_fn_${rnd}")
+
 	#-- {{002_stn_env}}
 
 	#-- ~001_use_l~
@@ -193,8 +211,8 @@ fn_22114_21373(){
 
 }
 #-- ~001_after~
-fn_22114_21373 $@
+fn_32629_4007 $@
 
 # {{002_after}}
 
-#? fn_22114_21373 $@
+#? fn_32629_4007 $@
