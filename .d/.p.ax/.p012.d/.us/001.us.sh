@@ -19,9 +19,15 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	fi
 
 	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  IS_DIR : 'root_dr \$1 not_exist', return 1${NRM}" >&2
-		return 1
+		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"; then
+			l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+			rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+		else
+			l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  IS_DIR : 'res_dr \$2 is_exist', return 1${NRM}" >&2
+			return 1
+		fi
 	fi
 
 	# ~/fns_bsh/.d/.p.ax/.p012.d/.dta/cp_to_dst.d = $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d

@@ -163,7 +163,7 @@ fn_12063_29670(){
 	if [[ $flw == "dr" ]]; then
 		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d"
 
-		rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
+		#! rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
 
 		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr prn_dr res.dr]"
 		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d"
