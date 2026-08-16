@@ -1,0 +1,39 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml/tst_dst.tml
+	# in ifs [fns_bsh_001.lib.sh] for [fn_name].tst.d/.tst/tst.sh
+	# ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/[fn_name].fn/.[fn_name].tst.d
+	#├── fns_bsh_001_df2f.tst.arg.sh
+	#├── fns_bsh_001_df2f.tst.sh
+	#├── .tst
+	#│   ├── _0
+	#│   ├── dst
+	#│   ├── init
+	#│   ├── src
+	#│   ├── tst.sh
+	#│   └── tst.sh_
+	#└── XXX.tst.sh_
+
+	cd $(eval "echo \$dr_pth_fn_${rnd}")
+	: >dst
+
+	# up_mem fn [func].tst.sh
+	# like :: . $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/fns_bsh_001_dt5f.tst.sh >/dev/null
+	# search [func].tst.sh
+	local tst_sh=
+	echo start
+	for tst_sh in $(l_02_d2e $(eval "echo \$prnt1_dr_pth_fn_${rnd}")); do
+
+		if [[ "$(l_01_prs_f -e $tst_sh)" == "sh" && "$(l_01_prs_f -e2 $tst_sh)" == "tst" ]]; then
+			. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$tst_sh
+		fi
+
+	done
+
+	cd $(eval "echo \$dr_pth_fn_${rnd}")
+	if diff -q dst src; then
+		echo -e "${ECHO_SUCC}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_SUCC : 'diff -q dst src', return 0${NRM}"
+		return 0
+	else
+		diff dst src
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'diff -q dst src', return 1${NRM}" >&2
+		return 1
+	fi

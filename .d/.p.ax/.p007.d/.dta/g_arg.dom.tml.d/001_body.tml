@@ -1,0 +1,4 @@
+	# that 001_body
+	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr arg1 arg2
+
+    # {{002_body}}

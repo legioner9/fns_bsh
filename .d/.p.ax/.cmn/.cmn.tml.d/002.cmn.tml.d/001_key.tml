@@ -1,0 +1,39 @@
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
+	[[ "$1" == "_tst" ]] && {
+		echo -e "
+        this [. .tst] for <${FUNCNAME[0]}> ::
+        doing_tst :: 
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::			
+        "
+		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
+		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+		
+	}
+
+		[[ "$1" == "_vis" ]] && {
+		echo -e "
+        this [cat .vis] for <${FUNCNAME[0]}> ::
+        doing_vis :: 
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
+		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+		
+	}
+
+	#-- {{002_key}}
+	

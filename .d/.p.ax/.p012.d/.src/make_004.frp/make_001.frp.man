@@ -1,0 +1,4 @@
+&&&dr creater fss with .c and makefile v 001
+
+
+@@@cli tst copy frp to any dir ::: . '${HOME}/aer_foe/.d/.frp/make_004.frp/.tst_frp2dr/start_tst_2.sh'

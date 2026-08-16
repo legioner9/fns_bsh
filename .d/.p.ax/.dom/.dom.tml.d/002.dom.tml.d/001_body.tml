@@ -1,0 +1,24 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
+		echo -e " $(date)
+. $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
+	$(eval "echo \$arg_1_fn_${rnd}") \
+	$(eval "echo \$arg_2_fn_${rnd}") \
+	$(eval "echo \$arg_3_fn_${rnd}")
+	" >> \
+		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+	
+	local item_us=
+	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
+		if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us && $(l_01_prs_f -e $item_us) == "sh" ]]; then
+			l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us"
+			if . $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us; then
+				:
+			else
+				l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us', return 1${NRM}" >&2
+				return 1
+			fi
+		fi
+	done
+
+    #-- {{002_body}}
