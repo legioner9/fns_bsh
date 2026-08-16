@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_591_4914(){
+fn_31151_19465(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_591_4914="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_591_4914=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_591_4914=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=591_4914
+    local fl_pth_fn_31151_19465="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
+    local dr_pth_fn_31151_19465=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local fl_nm_fn_31151_19465=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local rnd=31151_19465
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -179,10 +179,10 @@ fn_591_4914(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_591_4914 $@
+fn_31151_19465 $@
 
 # {{002_after}}
 
-#? fn_591_4914 $@
+#? fn_31151_19465 $@
 
 # stck :: fns_bsh_001_als_gig_fl_sh /home/st/fns_bsh/.d/.p.ax/.p999.d/.tst 	g.tst 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d

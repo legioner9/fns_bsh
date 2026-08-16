@@ -50,6 +50,6 @@ echo -e "
 	~/fns_bsh/.d/.p.ax/.p007.d/.dta/g_arg.dom.tml.d" >> \
 	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d/.g.d/g.arg
 
-# gig  fns_bsh_001_df2f .d/.p.ax/.p007.d/.us/001.us.sh
-fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/004.dmn.tml.d \
+# gig  ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d
+fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d \
 	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d/.us/001.us.sh
