@@ -190,8 +190,15 @@ fn_14268_3111() {
 
 	local ar_pth=(~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d)
 	local item=
+	local item2=
+	local item_dr=
 	for item in ${ar_pth[@]}; do
-		find  $item _readline.man 
+		for item2 in $(find $item -type f -name _readline.man); do
+			l_00_echo_info fl:: file://$item2
+			l_00_echo_info dr:: file://$(dirname $item2)
+			cat $item2
+			echo
+		done
 	done
 
 	return 0
