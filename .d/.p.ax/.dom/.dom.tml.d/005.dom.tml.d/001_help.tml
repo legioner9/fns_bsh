@@ -1,0 +1,23 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/005.dom.tml.d/001_help.tml
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing :: IFS::spc
+			args:: 
+				_sh - . .spc.sh
+				_ln - cat line.man
+				_rd - cat readme.man
+				_an - cat anc.lst
+				_tg - cat tag.lst
+				_edt - edit this .spc dr
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+	}
+
+	
