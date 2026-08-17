@@ -38,6 +38,6 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 fi
 
-read -p "in ~/fns_bsh/.d/.p.ax/.p009.d/.us/001.us.sh"
+# read -p "in ~/fns_bsh/.d/.p.ax/.p009.d/.us/001.us.sh"
 	#-- {{002_001_us_sh}}
 		
