@@ -1,4 +1,5 @@
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/004.dom.tml.d/001_001_us_sh.tml
+	# first:: for .p007.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 echo -e " arg_flow ::

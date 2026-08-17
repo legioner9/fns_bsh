@@ -1,4 +1,5 @@
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
+	# first:: gig g.pr
 		echo -e " $(date)
 . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
 	$(eval "echo \$arg_1_fn_${rnd}") \
