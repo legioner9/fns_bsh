@@ -35,7 +35,7 @@ fn_3833_8689(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - giger dr v.1 (g.pr->g.sh) (ally .psh) like .pXXX.d but free root_pth 
+        doing :: - giger dr v.1 (g.pr->g.sh) (usually .psh) like .pXXX.d but free root_pth 
 			\$1 - root_dr
 			\$2 - dr_psh_nm
 			\$3 - 

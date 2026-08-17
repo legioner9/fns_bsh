@@ -4,10 +4,10 @@ l_00_echo_info "that :: 002.us.sh"
 #.. cp from .p007.d $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p$(eval "echo \$arg_1_fn_${rnd}").d -> \
 #.. 	 $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 
-l_00_echo_info "gig $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/g.pr"
+l_00_echo_info "gig $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/g.sh"
 
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") \
-	g.pr \
+	g.sh \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d \
 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d
 
@@ -27,12 +27,12 @@ echo -e "
 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d" >> \
 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}").d/.tst/g.tst
 
-# gig fl.vis  /.g.d/g.vis
-l_00_echo_warn ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p009.d/g.pr \
-	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.g.d \
-	g.vis"
+#! todo .p014.d ->> gig fl.vis  /.g.d/g.vis
+# l_00_echo_warn ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p014.d/g.pr \
+# 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.g.d \
+# 	g.vis"
 
-#? . $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p009.d/g.pr \
+#? . $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.p014.d/g.pr \
 # 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.g.d \
 # 	g.vis
 
