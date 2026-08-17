@@ -20,7 +20,7 @@ fn_31586_18126() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: DPR [gig in \$1 dr \$2 fl[with .ext] use ~/fns_bsh/.d/.p.ax/.p003.d]
+        doing :: - DPR [gig in \$1 dr \$2 fl[with .ext] use ~/fns_bsh/.d/.p.ax/.p003.d]
 			\$1 - 
 			\$2 - 
 			\$3 - 

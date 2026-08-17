@@ -31,7 +31,7 @@ fn_16572_17185() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: gig clang pr v1 ()
+        doing :: + gig clang pr v1 ()
 			\$1 - dr_pth
 			\$2 - nm_pr (nm rot_dr)
 			\$3 - 

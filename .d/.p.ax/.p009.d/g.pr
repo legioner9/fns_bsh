@@ -31,7 +31,7 @@ fn_6391_28520() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: gig fl.vis 
+        doing :: + gig fl.vis
 			flow :: fns_bsh_001_df2f tml_dr \$1/\$2
 				tml_fl->$(eval "echo \$dr_pth_fn_${rnd}")/.dta/.p001/fl_nm.tml 
 				tml_dr->$(eval "echo \$dr_pth_fn_${rnd}")/.dta/.p001/fl_nm.tml.d 

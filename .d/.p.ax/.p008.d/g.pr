@@ -26,9 +26,9 @@ fn_15425_29126(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: gig universal .gr 
+        doing :: - gig universal .gr
 			\$1 - 
-			\$2 - 
+			\$2 -
 			\$3 - 
             exa use ::
             far use ::

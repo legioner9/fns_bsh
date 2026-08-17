@@ -35,7 +35,7 @@ fn_6010_21647(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: giged from .p007.d :: min clng pr \$1 root_dr \$2 nm_pr
+        doing :: + giged from .p007.d :: min clng pr \$1 root_dr \$2 nm_pr
 			\$1 - 
 			\$2 - 
 			\$3 - 
