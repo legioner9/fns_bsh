@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_3833_8689(){
+fn_15563_29424(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_3833_8689="${HOME}/fns_bsh/.d/.p.ax/.p009.d/g.pr"
-    local dr_pth_fn_3833_8689=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/g.pr)
-    local fl_nm_fn_3833_8689=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/g.pr)
-    local rnd=3833_8689
+    local fl_pth_fn_15563_29424="${HOME}/fns_bsh/.d/.p.ax/.p015.d/.g.d/g.vis/g.sh"
+    local dr_pth_fn_15563_29424=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.g.d/g.vis/g.sh)
+    local fl_nm_fn_15563_29424=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.g.d/g.vis/g.sh)
+    local rnd=15563_29424
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -35,9 +35,9 @@ fn_3833_8689(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: + giger fl_sh(not fn_sh) dr v.1 (g.pr->g.sh) (usually .psh) like .pXXX.d but free root_pth
-			\$1 - root_dr
-			\$2 - dr_psh_nm
+        doing :: ? giged from .p007.d:g.tst as exa 
+			\$1 - 
+			\$2 - 
 			\$3 - 
             exa use ::
             far use ::
@@ -200,6 +200,7 @@ fn_3833_8689(){
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
+	# first:: gig g.pr
 		echo -e " $(date)
 . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
 	$(eval "echo \$arg_1_fn_${rnd}") \
@@ -231,8 +232,8 @@ fn_3833_8689(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_3833_8689 $@
+fn_15563_29424 $@
 
 # {{002_after}}
 
-#? fn_3833_8689 $@
+#? fn_15563_29424 $@
