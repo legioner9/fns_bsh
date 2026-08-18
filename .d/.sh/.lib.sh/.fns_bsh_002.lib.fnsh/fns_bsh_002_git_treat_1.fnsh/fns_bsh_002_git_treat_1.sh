@@ -1,14 +1,14 @@
 #!/bin/bash
-# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
+# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml
 
-fn_10060_28859(){
+fns_bsh_002_git_treat_1(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_10060_28859="${HOME}/fns_bsh/.d/.p.ax/.p015.d/g.pr"
-    local dr_pth_fn_10060_28859=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p015.d/g.pr)
-    local fl_nm_fn_10060_28859=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p015.d/g.pr)
-    local rnd=10060_28859
+    local fl_pth_fn_29330_10588="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
+    local dr_pth_fn_29330_10588=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
+    local fl_nm_fn_29330_10588=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
+    local rnd=29330_10588
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -35,9 +35,9 @@ fn_10060_28859(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: + giger fn_sh(not fl_sh) dr v.1 (g.pr->|nm_dr=\$2.fnsh =>fn_nm_fl=\$2.sh) like .pXXX.d but free root_dr_pth
-			\$1 - root_dir
-			\$2 - dr_nm; nm_fn is dr_nm without .ext usually dr_nm=XXX.fnsh => fn_nm_fl=XXX.sh => fn_nm=XXX
+        doing :: ? giged from .p007.d:g.tst as exa 
+			\$1 - 
+			\$2 - 
 			\$3 - 
             exa use ::
             far use ::
@@ -59,49 +59,9 @@ fn_10060_28859(){
 	# 	return 0
 	# }
 
-	#--~001_key~
-# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
-	[[ "$1" == "_tst" ]] && {
-		echo -e "
-        this [. .tst] for <${FUNCNAME[0]}> ::
-        doing_tst :: 
-			\$1 - dr_res
-			\$2 - res.fl
-			\$3 - 
-            exa use ::
-            far use ::			
-        "
-		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
-		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
-
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
-		return 0
-		
-	}
-
-		[[ "$1" == "_vis" ]] && {
-		echo -e "
-        this [cat .vis] for <${FUNCNAME[0]}> ::
-        doing_vis :: 
-			\$1 - dr_res
-			\$2 - res.fl
-			\$3 - 
-            exa use ::
-            far use ::
-        "
-		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
-		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
-
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
-		return 0
-		
-	}
-
-	#-- {{002_key}}
-		
-		#X
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
+
 	#* value indicator
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
@@ -120,9 +80,7 @@ fn_10060_28859(){
 	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
 	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
 	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
-
-	#* indicate with ${rnd}
-	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
+	
 	#-- ~002_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
 	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
@@ -174,7 +132,6 @@ fn_10060_28859(){
 	# $(eval "echo \$us_dr_pth_fn_${rnd}")
 	# fn_nm::
 	# $(eval "echo \$fn_nm_${rnd}")
-
 
 	#-- {{002_stn_env}}
 
@@ -235,9 +192,9 @@ fn_10060_28859(){
 
 }
 #-- ~001_after~
-# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_10060_28859 $@
+# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
+# fn_29330_10588 $@
 
 # {{002_after}}
 
-#? fn_10060_28859 $@
+#? fn_29330_10588 $@
