@@ -1,0 +1,155 @@
+#!/bin/bash
+
+fn_vewthhg5231454gfvs() {
+
+	#!  start RM BAD DIR ------------
+
+	if [[ -d $HOME/aer_foe/.d/.depo/ifo.d/ifo ]]; then
+		echo "bad strin"
+		. $HOME/aer_foe/.d/.depo/ifo.d/down $HOME/aer_foe/.d/.depo/ifo.d
+		if [[ -d $HOME/aer_foe/.d/.depo/ifo ]]; then
+			echo -e "${ECHO_RET1}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -d $HOME/aer_foe/.d/.depo/ifo.d/ifo ]]' in $(pwd), 'RESUME :: BAD dir steel EXIST' return 1${NRM}" >&2
+			return 1
+		fi
+	fi
+	#! end ------------------------
+
+	#! start lfoe_rpo2git
+
+	DDir=$(pwd)
+	cd "$HOME/aer_foe"
+
+	git remote add gh git@github.com:legioner9/aer_foe.git
+	git remote add gf git@gitflic.ru:legioner9/aer_foe.git
+	git remote add alt ssh://forgejo@altlinux.space/legioner9/aer_foe.git
+
+	lfoe_this_dir_git2e || {
+		echo -e "${ECHO_RET1}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ $(lfoe_this_dir_git2e) == $HOME/aer_foe ]]' in $(pwd), 'RESUME :: $(pwd) IS_NOT git dir' return 1${NRM}" >&2
+		return 1
+	}
+
+	git pull gf master || {
+		echo -e "${ECHO_RET1}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO} :: EXEC : 'git pull gf master', 'RESUME :: gf ERROR' return 1${NRM}" >&2
+		return 1
+	}
+
+	cd $HOME/aer_foe
+
+	if [[ -n "$(git status -s)" ]]; then
+
+		git add .
+		git commit -m "<>"
+
+		git push gf master
+		git push alt master
+		git push gh master
+
+	else
+		echo "gs is NULL"
+	fi
+
+	#! end lfoe_rpo2git
+
+	#! far any function
+
+	local repo_all_arr_234543htrbg=(aer_foe edu_clng edu_dta edu_lnx tml_a cmn_lex)
+	local repo_any_arr_234543htrbg=(edu_clng edu_dta edu_lnx tml_a cmn_lex)
+
+	cd ${DDir}
+	check_repo_adcae_12344() {
+
+		if [[ ! -d $HOME/$adcae_12344 ]]; then
+			echo -e "${ECHO_WARN}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO} edu_lnx REPO_NOT_EXIST return 1${NRM}" >&2
+			cd ~
+			git clone git@gitflic.ru:legioner9/$adcae_12344.git
+			cd $HOME/$adcae_12344
+			git remote add gh git@github.com:legioner9/$adcae_12344.git
+			git remote add gf git@gitflic.ru:legioner9/$adcae_12344.git
+			git remote add alt ssh://forgejo@altlinux.space/legioner9/$adcae_12344.git
+		fi
+	}
+	local item=
+
+	echo "LIST ALL rpo_nm:"
+
+	for item in ${repo_all_arr_234543htrbg[@]}; do
+		echo $item
+	done
+
+	echo "STP:: add remote to ANY rpo"
+	unset IFS
+	local item_132456125=
+	for item_132456125 in ${repo_any_arr_234543htrbg[@]}; do
+
+		echo "--- treat $item_132456125 ---"
+		adcae_12344=$item_132456125
+		check_repo_adcae_12344
+
+	done
+
+	adcae_12344=
+
+	start_all_rpo2git_32eggsd() {
+		if [[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]; then
+			. $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh
+		else
+			echo -e "${ECHO_WARN}in file://$HOME\$nm_rpo2git_2345ff\.d\.sh\rpo2git.sh , line=${LINENO}  EXEC : '[[ -f $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh ]]' in $(pwd), 'RESUME :: $HOME/$nm_rpo2git_2345ff/.d/.sh/rpo2git.sh IS_NOT file' return 1${NRM}" >&2
+
+		fi
+	}
+
+	local item4=
+
+	echo "STP:: start rpo2git.sh in ANY rpo"
+
+	local nm_rpo2git_2345ff=
+
+	for item4 in ${repo_any_arr_234543htrbg[@]}; do
+		echo "in ${item4}"
+		nm_rpo2git_2345ff=${item4}
+		start_all_rpo2git_32eggsd
+	done
+
+	add_local_repo_56277647() {
+
+		echo "\$part_bare=$part_bare"
+
+		if [[ -d "$part_bare/" ]]; then
+			echo "STP:: for ALL rpo - init bare if not exist"
+			local item2=
+			for item2 in ${repo_all_arr_234543htrbg[@]}; do
+				echo "in $item2"
+				if ! [[ -d "$part_bare/new_bare/${item2}" ]]; then
+					mkdir -p "$part_bare/new_bare/${item2}"
+					cd "$part_bare/new_bare/${item2}"
+					git init --bare
+				fi
+			done
+
+			echo "STP:: git push to local bare ALL rpo"
+
+			local item3=
+			for item3 in ${repo_all_arr_234543htrbg[@]}; do
+				echo "---in ~/${item3}---"
+				cd ~/${item3}
+				git push $part_bare/new_bare/${item3} master
+			done
+
+		fi
+	}
+
+	# in .gitconfig :
+	# [safe]
+	# directory = G:/new_bare/aer_foe
+	# directory = G:/new_bare/edu_clang
+	# directory = G:/new_bare/aer_dta
+	# directory = G:/new_bare/aer_lnx
+
+	local part_bare="G:"
+	add_local_repo_56277647
+
+	part_bare="/run/media/$USER/MY_ONE"
+	add_local_repo_56277647
+}
+
+fn_vewthhg5231454gfvs $@
