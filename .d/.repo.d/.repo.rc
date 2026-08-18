@@ -1,7 +1,8 @@
 #!/bin/bash
 
 fn_caewmjfh345etr4g() {
-
+	. ~/fns_bsh/.d/.sh/.lib.sh/lfoe.lib.sh
+	. ~/fns_bsh/.d/.sh/.lib.sh/l.sh
 	lfoe_repo_up_rc fns_bsh
 
 	# [[ $(type -t fns_bsh_001_tst_fn) == "function" ]] || {
