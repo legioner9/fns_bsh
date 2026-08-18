@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_3440_1257(){
+fn_11761_9039(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_3440_1257="${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst"
-    local dr_pth_fn_3440_1257=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst)
-    local fl_nm_fn_3440_1257=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst)
-    local rnd=3440_1257
+    local fl_pth_fn_11761_9039="${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst"
+    local dr_pth_fn_11761_9039=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local fl_nm_fn_11761_9039=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local rnd=11761_9039
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -147,8 +147,8 @@ fn_3440_1257(){
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
 	# first:: for .p007.d g.tst
-	# local flw="fl" #if res is fl
-	local flw="dr" #if res is dr
+	local flw="fl" #if res is fl
+	#*local flw="dr" #if res is dr
 
 	if [[ $flw == "fl" ]]; then
 		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
@@ -181,10 +181,8 @@ fn_3440_1257(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_3440_1257 $@
+fn_11761_9039 $@
 
 # {{002_after}}
 
-#? fn_3440_1257 $@
-
-# stck :: fns_bsh_001_als_gig_fl_sh /home/st/fns_bsh/.d/.p.ax/.p015.d/.tst 	g.tst 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d
+#? fn_11761_9039 $@

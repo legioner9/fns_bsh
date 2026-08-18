@@ -26,5 +26,7 @@
 	# $(eval "echo \$g_d_pth_fn_${rnd}")
 	# us_dr_pth_fn ::
 	# $(eval "echo \$us_dr_pth_fn_${rnd}")
+	# fn_nm::
+	# $(eval "echo \$fn_nm_${rnd}")
 
 	#-- {{002_stn_env}}

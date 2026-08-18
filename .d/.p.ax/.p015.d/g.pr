@@ -117,6 +117,7 @@ fn_10060_28859(){
 	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
 	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
 	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
+	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
 	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
 	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
 
@@ -171,6 +172,9 @@ fn_10060_28859(){
 	# $(eval "echo \$g_d_pth_fn_${rnd}")
 	# us_dr_pth_fn ::
 	# $(eval "echo \$us_dr_pth_fn_${rnd}")
+	# fn_nm::
+	# $(eval "echo \$fn_nm_${rnd}")
+
 
 	#-- {{002_stn_env}}
 
