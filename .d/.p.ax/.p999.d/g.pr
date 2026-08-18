@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_31872_8724(){
+fn_10350_14243(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_31872_8724="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
-    local dr_pth_fn_31872_8724=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local fl_nm_fn_31872_8724=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
-    local rnd=31872_8724
+    local fl_pth_fn_10350_14243="${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr"
+    local dr_pth_fn_10350_14243=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local fl_nm_fn_10350_14243=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/g.pr)
+    local rnd=10350_14243
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -102,6 +102,7 @@ fn_31872_8724(){
 		#X
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
+
 	#* value indicator
 	eval "local arg_1_fn_${rnd}=\"\$1\""
 	eval "echo \\\$1=\$arg_1_fn_${rnd}"
@@ -117,11 +118,10 @@ fn_31872_8724(){
 	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
 	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
 	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
+	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
 	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
 	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
-
-	#* indicate with ${rnd}
-	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
+	
 	#-- ~002_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
 	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
@@ -171,6 +171,8 @@ fn_31872_8724(){
 	# $(eval "echo \$g_d_pth_fn_${rnd}")
 	# us_dr_pth_fn ::
 	# $(eval "echo \$us_dr_pth_fn_${rnd}")
+	# fn_nm::
+	# $(eval "echo \$fn_nm_${rnd}")
 
 	#-- {{002_stn_env}}
 
@@ -200,6 +202,7 @@ fn_31872_8724(){
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
+	# first:: gig g.pr
 		echo -e " $(date)
 . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
 	$(eval "echo \$arg_1_fn_${rnd}") \
@@ -231,8 +234,8 @@ fn_31872_8724(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_31872_8724 $@
+fn_10350_14243 $@
 
 # {{002_after}}
 
-#? fn_31872_8724 $@
+#? fn_10350_14243 $@

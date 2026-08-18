@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_14332_27645(){
+fn_9022_20941(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_14332_27645="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.arg"
-    local dr_pth_fn_14332_27645=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.arg)
-    local fl_nm_fn_14332_27645=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.arg)
-    local rnd=14332_27645
+    local fl_pth_fn_9022_20941="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.g.d/g.arg"
+    local dr_pth_fn_9022_20941=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.g.d/g.arg)
+    local fl_nm_fn_9022_20941=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.g.d/g.arg)
+    local rnd=9022_20941
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -140,10 +140,10 @@ fn_14332_27645(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_14332_27645 $@
+fn_9022_20941 $@
 
 # {{002_after}}
 
-#? fn_14332_27645 $@
+#? fn_9022_20941 $@
 
-# stck :: fns_bsh_001_als_gig_fl_sh /home/st/fns_bsh/.d/.p.ax/.p999.d/.g.d 	g.arg 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d 	~/fns_bsh/.d/.p.ax/.p007.d/.dta/g_arg.dom.tml.d
+# stck :: fns_bsh_001_als_gig_fl_sh /home/st/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.g.d 	g.arg 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d 	~/fns_bsh/.d/.p.ax/.p007.d/.dta/g_arg.dom.tml.d

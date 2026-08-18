@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_32705_18997(){
+fn_21422_32413(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_32705_18997="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
-    local dr_pth_fn_32705_18997=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local fl_nm_fn_32705_18997=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
-    local rnd=32705_18997
+    local fl_pth_fn_21422_32413="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst"
+    local dr_pth_fn_21422_32413=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local fl_nm_fn_21422_32413=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.tst/g.tst)
+    local rnd=21422_32413
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -29,6 +29,7 @@ fn_32705_18997(){
 
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_help.tml
+	# first:: for .p007.d g.tst
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
@@ -145,6 +146,7 @@ fn_32705_18997(){
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
+	# first:: for .p007.d g.tst
 	local flw="fl" #if res is fl
 	#*local flw="dr" #if res is dr
 
@@ -179,10 +181,10 @@ fn_32705_18997(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_32705_18997 $@
+fn_21422_32413 $@
 
 # {{002_after}}
 
-#? fn_32705_18997 $@
+#? fn_21422_32413 $@
 
 # stck :: fns_bsh_001_als_gig_fl_sh /home/st/fns_bsh/.d/.p.ax/.p999.d/.tst 	g.tst 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d

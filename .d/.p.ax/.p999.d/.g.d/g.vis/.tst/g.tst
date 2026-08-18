@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_14332_27645(){
+fn_21853_8159(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_14332_27645="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.arg"
-    local dr_pth_fn_14332_27645=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.arg)
-    local fl_nm_fn_14332_27645=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.arg)
-    local rnd=14332_27645
+    local fl_pth_fn_21853_8159="${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.tst/g.tst"
+    local dr_pth_fn_21853_8159=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.tst/g.tst)
+    local fl_nm_fn_21853_8159=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p999.d/.g.d/g.vis/.tst/g.tst)
+    local rnd=21853_8159
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -27,8 +27,24 @@ fn_14332_27645(){
 	#     return 1
 	# }
 
-	#--{{001_help}}
+	#--~001_help~
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_help.tml
+	# first:: for .p007.d g.tst
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+	}
 
+	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
     #     this -h for <${FUNCNAME[0]}> ::
@@ -129,10 +145,35 @@ fn_14332_27645(){
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
 	#-- ~001_body~
-	# that 001_body
-	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr arg1 arg2
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
+	# first:: for .p007.d g.tst
+	local flw="fl" #if res is fl
+	#*local flw="dr" #if res is dr
 
-    # {{002_body}}
+	if [[ $flw == "fl" ]]; then
+		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+
+		rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
+		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr dr_res res.fl]"
+		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+
+	fi
+
+	if [[ $flw == "dr" ]]; then
+		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d"
+
+		rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
+
+		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr prn_dr res.dr]"
+		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d"
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d
+
+	fi
+	
+    #-- {{002_body}}
+
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
     return 0
@@ -140,10 +181,8 @@ fn_14332_27645(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_14332_27645 $@
+fn_21853_8159 $@
 
 # {{002_after}}
 
-#? fn_14332_27645 $@
-
-# stck :: fns_bsh_001_als_gig_fl_sh /home/st/fns_bsh/.d/.p.ax/.p999.d/.g.d 	g.arg 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d 	~/fns_bsh/.d/.p.ax/.p007.d/.dta/g_arg.dom.tml.d
+#? fn_21853_8159 $@
