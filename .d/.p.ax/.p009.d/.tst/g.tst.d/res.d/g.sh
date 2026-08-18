@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_13223_16377(){
+fn_23387_25222(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_13223_16377="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/g.sh"
-    local dr_pth_fn_13223_16377=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/g.sh)
-    local fl_nm_fn_13223_16377=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/g.sh)
-    local rnd=13223_16377
+    local fl_pth_fn_23387_25222="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/g.sh"
+    local dr_pth_fn_23387_25222=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/g.sh)
+    local fl_nm_fn_23387_25222=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/g.sh)
+    local rnd=23387_25222
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -232,8 +232,8 @@ fn_13223_16377(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_13223_16377 $@
+fn_23387_25222 $@
 
 # {{002_after}}
 
-#? fn_13223_16377 $@
+#? fn_23387_25222 $@

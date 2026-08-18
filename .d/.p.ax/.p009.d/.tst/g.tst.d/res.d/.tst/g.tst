@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_10699_3267(){
+fn_10317_30318(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_10699_3267="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst"
-    local dr_pth_fn_10699_3267=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
-    local fl_nm_fn_10699_3267=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
-    local rnd=10699_3267
+    local fl_pth_fn_10317_30318="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst"
+    local dr_pth_fn_10317_30318=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local fl_nm_fn_10317_30318=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local rnd=10317_30318
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -181,8 +181,8 @@ fn_10699_3267(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_10699_3267 $@
+fn_10317_30318 $@
 
 # {{002_after}}
 
-#? fn_10699_3267 $@
+#? fn_10317_30318 $@
