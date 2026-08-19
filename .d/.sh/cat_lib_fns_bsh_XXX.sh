@@ -5,9 +5,9 @@ fn_31442_25654() {
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-	local fl_pth_fn_31442_25654="${HOME}/fns_bsh/.d/.sh/.lib.sh/cat_lib_fns_bsh_XXX.sh"
-	local dr_pth_fn_31442_25654=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/cat_lib_fns_bsh_XXX.sh)
-	local fl_nm_fn_31442_25654=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/cat_lib_fns_bsh_XXX.sh)
+	local fl_pth_fn_31442_25654="${HOME}/fns_bsh/.d/.sh/cat_lib_fns_bsh_XXX.sh"
+	local dr_pth_fn_31442_25654=$(dirname ${HOME}/fns_bsh/.d/.sh/cat_lib_fns_bsh_XXX.sh)
+	local fl_nm_fn_31442_25654=$(basename ${HOME}/fns_bsh/.d/.sh/cat_lib_fns_bsh_XXX.sh)
 	local rnd=31442_25654
 
 	#-- ~001_genv~
@@ -221,7 +221,8 @@ fn_31442_25654() {
 	for item in ${arr_lib_nm_weqr3442[@]}; do
 
 		if [[ -d "${HOME}/fns_bsh/.d/.sh/.lib.sh/$item" ]]; then
-			# echo $item
+			l_00_echo_ques "lib :: $(l_01_prs_f -n "$item")"
+			l_00_echo_info "file://${HOME}/fns_bsh/.d/.sh/.lib.sh/$item"
 			# l_02_d2e ${HOME}/fns_bsh/.d/.sh/.lib.sh/$item
 			for item1 in $(l_02_d2e "${HOME}/fns_bsh/.d/.sh/.lib.sh/$item"); do
 				# echo $item1
@@ -229,7 +230,8 @@ fn_31442_25654() {
 				if [[ -d ${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1 ]]; then
 					for item2 in $(l_02_d2e ${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1); do
 						if [[ -f ${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1/$item2 ]] && [[ $(l_01_prs_f -e ${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1/$item2) == "sh" ]]; then
-							l_00_echo_info file://${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1/$item2
+							l_00_echo_ques "		fn :: $(l_01_prs_f -n "$item2")"
+							l_00_echo_info "		file://${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1/$item2"
 							cat ${HOME}/fns_bsh/.d/.sh/.lib.sh/$item/$item1/$item2 | grep "doing ::"
 						fi
 					done

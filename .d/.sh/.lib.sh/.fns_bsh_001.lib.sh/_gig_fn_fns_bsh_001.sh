@@ -21,7 +21,7 @@ fn_19911_16425(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
+        doing :: gig dr fns_bsh_001_\$1.fn in root fns_bsh_001 lib
 			\$1 - gig dr fns_bsh_001_\$1.fn in root fns_bsh_001 lib
 			\$2 - 
 			\$3 - 

@@ -145,33 +145,14 @@ fn_9550_10446(){
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
 	#-- ~001_body~
-	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
-	# first:: for .p007.d g.tst
-	local flw="fl" #if res is fl
-	#*local flw="dr" #if res is dr
 
-	if [[ $flw == "fl" ]]; then
-		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+	# define env for fns_bsh_002_git_treat_1
 
-		rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+	local fns_bsh_002_git_treat_1_arr_remote_addr=(git@github.com:legioner9 git@gitflic.ru:legioner9 ssh://forgejo@altlinux.space/legioner9)
 
-		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr dr_res res.fl]"
-		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
-		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
 
-	fi
+	fns_bsh_002_git_treat_1
 
-	if [[ $flw == "dr" ]]; then
-		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d"
-
-		rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
-
-		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr prn_dr res.dr]"
-		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d"
-		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d
-
-	fi
-	
     #-- {{002_body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"

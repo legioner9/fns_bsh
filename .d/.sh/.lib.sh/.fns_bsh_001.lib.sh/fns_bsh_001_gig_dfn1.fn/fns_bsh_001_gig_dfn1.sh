@@ -20,7 +20,7 @@ fns_bsh_001_gig_dfn1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
+        doing :: [DPR] gig dr fns_bsh_001_\$1.fn in root fns_bsh_001 lib
 			\$1 - gig dr fns_bsh_001_\$1.fn in root fns_bsh_001 lib
 			\$2 - nm_fn
 			\$3 - 

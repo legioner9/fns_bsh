@@ -35,7 +35,7 @@ fns_bsh_002_git_treat_1(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: ? giged from .p007.d:g.tst as exa 
+        doing :: - treat git repo (main process for user)
 			\$1 - 
 			\$2 - 
 			\$3 - 
@@ -162,13 +162,16 @@ fns_bsh_002_git_treat_1(){
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr
-		echo -e " $(date)
-. $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
-	$(eval "echo \$arg_1_fn_${rnd}") \
-	$(eval "echo \$arg_2_fn_${rnd}") \
-	$(eval "echo \$arg_3_fn_${rnd}")
-	" >> \
-		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+# 		echo -e " $(date)
+# . $(eval "echo \$dr_pth_fn_${rnd}")/<${FUNCNAME[0]}> \
+# 	$(eval "echo \$arg_1_fn_${rnd}") \
+# 	$(eval "echo \$arg_2_fn_${rnd}") \
+# 	$(eval "echo \$arg_3_fn_${rnd}")
+# 	" >> \
+# 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+
+
+	local item=
 	
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do

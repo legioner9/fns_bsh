@@ -21,7 +21,7 @@ fns_bsh_001_gig_fl_sh(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: 
+        doing :: ??
 			\$1 - 
 			\$2 - 
 			\$3 - 
