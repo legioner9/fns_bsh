@@ -172,6 +172,11 @@ fns_bsh_002_git_treat_1(){
 
 
 	local item=
+	local item1=
+	local item2=
+	local item3=
+	local item4=
+	local item5=
 	
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
