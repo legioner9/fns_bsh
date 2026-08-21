@@ -10,13 +10,13 @@
     local fl_nm_{{fn_nm}}=$(basename {{fl_nm}})
     local rnd={{rnd}}
 
-	#-- {{001_genv}}
-
-	# [[ -z "$1" ]] && {
+	# [[ -z "$2" ]] && {
 	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://$fl_pth_{{fn_nm}} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://{{fl_nm}} , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
+
+	#-- {{001_genv}}
 
 	#--{{001_help}}
 
@@ -35,17 +35,17 @@
 
 	#-- {{001_val_ind}}
 
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fl_pth_{{fn_nm}} , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
-
 	#! ptr_path
 	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
+
+	# [[ -d "$2" ]] || {
+	# 	# snp "out_err"
+	# 	echo -e "${ECHO_RET1}in file://{{fl_nm}} , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	return 1
+	# }
 
 	#-- {{001_stn_env}}
 

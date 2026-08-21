@@ -213,6 +213,8 @@ fn_15124_13924() {
 		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
 		read -p "3 check result"
 
+		l_00_echo_sys "tst_set4 arg1 not dr :: exp - error"
+		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src"X "$dst" -err
 	fi
 
 	#-- {{002_body}}

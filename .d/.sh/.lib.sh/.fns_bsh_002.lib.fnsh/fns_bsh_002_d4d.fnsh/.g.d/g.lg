@@ -136,3 +136,24 @@
  Сб 22 авг 2026 01:37:16 +07
 . /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.dta/cp_to_dst.d 	.tst/g.tst.d/res.d 	-err
 	
+ Сб 22 авг 2026 01:55:20 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.dta/cp_to_dst.d 	/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.tst/g.tst.d/res.d 	-int
+	
+ Сб 22 авг 2026 01:55:49 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	.dta/cp_to_dst.d 	.tst/g.tst.d/res.d 	-rm
+	
+ Сб 22 авг 2026 01:55:50 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	.dta/cp_to_dst.d 	.tst/g.tst.d/res.d 	-err
+	
+ Сб 22 авг 2026 01:55:55 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	.dta/cp_to_dst.d 	.tst/g.tst.d/res.d 	-err
+	
+ Сб 22 авг 2026 01:56:45 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.dta/cp_to_dst.d 	/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.tst/g.tst.d/res.d 	-int
+	
+ Сб 22 авг 2026 01:56:48 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	.dta/cp_to_dst.d 	.tst/g.tst.d/res.d 	-rm
+	
+ Сб 22 авг 2026 01:56:50 +07
+. /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/g.pr 	.dta/cp_to_dst.d 	.tst/g.tst.d/res.d 	-err
+	
