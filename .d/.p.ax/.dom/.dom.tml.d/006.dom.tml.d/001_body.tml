@@ -1,0 +1,30 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d/001_body.tml
+	# first:: for .p007.d g.tst
+	# local flw="fl" #if res is fl
+	local flw="dr" #if res is dr
+
+	if [[ $flw == "fl" ]]; then
+		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+
+		rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
+		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr dr_res res.fl]"
+		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+
+	fi
+
+	if [[ $flw == "dr" ]]; then
+		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d"
+
+		rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
+
+		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr prn_dr res.dr]"
+		l_00_echo_info "up2mem:: $(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}"))"
+		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")).sh $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d"
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")).sh $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d
+		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d
+
+	fi
+	
+    #-- {{002_body}}
