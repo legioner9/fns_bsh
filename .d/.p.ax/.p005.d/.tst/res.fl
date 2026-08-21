@@ -5,10 +5,10 @@ res(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_26595_14553="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
-    local dr_pth_fn_26595_14553=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local fl_nm_fn_26595_14553=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
-    local rnd=26595_14553
+    local fl_pth_fn_12114_28795="${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl"
+    local dr_pth_fn_12114_28795=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local fl_nm_fn_12114_28795=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p005.d/.tst/res.fl)
+    local rnd=12114_28795
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -23,7 +23,7 @@ res(){
 	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://$fn_nm_fn_26595_14553 , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://$fl_pth_fn_12114_28795 , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -87,7 +87,7 @@ res(){
 	#-- {{002_val_ind}}
 	# [[ -z "$2" ]] && {
 	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_26595_14553 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://$fl_pth_fn_12114_28795 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }
 
@@ -158,8 +158,8 @@ res(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_26595_14553 $@
+# fn_12114_28795 $@
 
 # {{002_after}}
 
-#? fn_26595_14553 $@
+#? fn_12114_28795 $@
