@@ -1,11 +1,13 @@
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
 	[[ "$1" == "_tst" ]] && {
 		echo -e "
-        this [. .tst] for <${FUNCNAME[0]}> ::
+        this -h for <${FUNCNAME[0]}> ::
         doing_tst :: 
 			\$1 - dr_res
 			\$2 - res.fl
 			\$3 - 
+			flow_FN ::
+			flow_tst ::
             exa use ::
             far use ::			
         "

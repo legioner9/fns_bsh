@@ -1,1 +1,1 @@
-gig_FL res.d in .tst/g.tst.d
+for g.tst gig_FL res.d in .tst/g.tst.d

@@ -1,1 +1,1 @@
-check anc cp from .dta
+flow_fn:: cp cp_to_dst.d to work.dr

@@ -1,1 +1,1 @@
-gig_FN res.d in .tst/g.tst.d
+for g.tst :: gig_FN res.d in .tst/g.tst.d

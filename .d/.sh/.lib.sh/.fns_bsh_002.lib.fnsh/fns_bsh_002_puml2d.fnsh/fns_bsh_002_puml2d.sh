@@ -5,10 +5,10 @@ fns_bsh_002_puml2d(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_30990_12978="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh"
-    local dr_pth_fn_30990_12978=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
-    local fl_nm_fn_30990_12978=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
-    local rnd=30990_12978
+    local fl_pth_fn_25579_25877="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh"
+    local dr_pth_fn_25579_25877=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
+    local fl_nm_fn_25579_25877=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
+    local rnd=25579_25877
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -35,7 +35,7 @@ fns_bsh_002_puml2d(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: trat \$1 file to root_dr/.pudta/\$1.png ... e.c.
+        doing :: ? giged from .p007.d:g.tst as exa 
 			\$1 - 
 			\$2 - 
 			\$3 - 
@@ -193,8 +193,8 @@ fns_bsh_002_puml2d(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_30990_12978 $@
+# fn_25579_25877 $@
 
 # {{002_after}}
 
-#? fn_30990_12978 $@
+#? fn_25579_25877 $@

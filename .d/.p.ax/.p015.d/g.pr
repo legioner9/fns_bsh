@@ -35,10 +35,12 @@ fn_10060_28859(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: + giger fn_sh(not fl_sh) dr v.1 (g.pr->|nm_dr=\$2.fnsh =>fn_nm_fl=\$2.sh) like .pXXX.d but free root_dr_pth
+        doing :: - g:: FN_sh in root_dr \$1 v.1, \$2 nm_dr(usually nm_fn.fnsh)->fn_nm_fl=(l_02_prs -n \$2).sh) like .pXXX.d but free root_dr_pth
 			\$1 - root_dir
 			\$2 - dr_nm(with .ext); nm_fn is dr_nm without .ext usually dr_nm=XXX.fnsh => fn_nm_fl=XXX.sh => fn_nm=XXX
 			\$3 - 
+			flow_FN ::
+			flow_tst ::
             exa use :: check after_gig:: . /home/st/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst
             far use ::
         "
