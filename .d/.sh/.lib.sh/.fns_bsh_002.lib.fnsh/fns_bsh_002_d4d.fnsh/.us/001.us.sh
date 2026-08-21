@@ -23,12 +23,28 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	l_00_echo_code "[[ -d file://$(eval "echo \$arg_2_fn_${rnd}") ]]"
 	file $(eval "echo \$arg_2_fn_${rnd}")
-	if [[ -d $(eval "echo \$arg_2_fn_${rnd}") ]]; then
-		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_2_fn_${rnd}")"; then
-			l_00_echo_code "rm -r $(eval "echo \$arg_2_fn_${rnd}")"
-			rm -r $(eval "echo \$arg_2_fn_${rnd}")
+	if [[ "$(eval "echo \$arg_3_fn_${rnd}")" == "-int" ]]; then
+		if [[ -d $(eval "echo \$arg_2_fn_${rnd}") ]]; then
+			if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_2_fn_${rnd}")"; then
+				l_00_echo_code "rm -r $(eval "echo \$arg_2_fn_${rnd}")"
+				rm -r $(eval "echo \$arg_2_fn_${rnd}")
 
-		else
+			else
+				l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  IS_DIR : 'res_dr \$2 is_exist', return 1${NRM}" >&2
+				return 1
+			fi
+		fi
+	fi
+
+	if [[ "$(eval "echo \$arg_3_fn_${rnd}")" == "-rm" ]]; then
+		if [[ -d $(eval "echo \$arg_2_fn_${rnd}") ]]; then
+			rm -r $(eval "echo \$arg_2_fn_${rnd}")
+		fi
+	fi
+
+	if [[ "$(eval "echo \$arg_3_fn_${rnd}")" == "-err" ]]; then
+		if [[ -d $(eval "echo \$arg_2_fn_${rnd}") ]]; then
 			l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  IS_DIR : 'res_dr \$2 is_exist', return 1${NRM}" >&2
 			return 1
@@ -45,10 +61,20 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	local dst_nm_dr=$(basename $(eval "echo \$arg_2_fn_${rnd}"))
 
 	l_00_echo_code "cp -r file://$src_d file://$dst_root_dr"
-	cp -r $src_d $dst_root_dr
-	l_00_echo_code "mv file://$dst_root_dr/$src_nm_dr file://$dst_d"
-	mv $dst_root_dr/$src_nm_dr $dst_d
+	cp -r $src_d $dst_root_dr || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  ERROR : 'cp -r $src_d $dst_root_dr', return 1${NRM}" >&2
+		return 1
+	}
+	:
 
+	l_00_echo_code "mv file://$dst_root_dr/$src_nm_dr file://$dst_d"
+	mv $dst_root_dr/$src_nm_dr $dst_d || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  ERROR : 'cp -r $src_d $dst_root_dr', return 1${NRM}" >&2
+		return 1
+	}
+	:
 fi
 
 #-- {{002_001_us_sh}}

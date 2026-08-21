@@ -24,7 +24,7 @@ fns_bsh_002_d4d(){
 
 	#-- {{003_genv}}
 		
-	[[ -z "$2" ]] && {
+	[[ -z "$3" ]] && {
 	    # snp "out_err"
 	    echo -e "${ECHO_RET1}in file://$fl_pth_fn_32343_4159 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
 	    return 1
@@ -35,11 +35,14 @@ fns_bsh_002_d4d(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: cp \$1:dr_upath to \$2:dr_upath
+        doing :: cp \$1:dr_upath to \$2:dr_upath (-int|-rm|-err)
 			\$1 - 
 			\$2 - 
 			\$3 - 
-			flow_FN :: if \$2 exist->is_ques
+			flow_FN :: if \$3 ::
+				-int {exist dst->is_ques before rm dst}
+				-rm {exist dst->remove dst} 
+				-err {exist dst->return err} 
 			flow_tst ::
             exa use ::
             far use ::
