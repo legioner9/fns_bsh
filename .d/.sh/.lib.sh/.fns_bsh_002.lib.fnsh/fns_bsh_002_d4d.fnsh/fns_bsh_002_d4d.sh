@@ -35,7 +35,7 @@ fns_bsh_002_d4d() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: cp \$1:dr_upath to \$2:dr_upath (-int|-rm|-err)
+        doing :: cp \$1:dr_upath to \$2:dr_upath \$3:(-int|-rm|-err)
 			\$1 - 
 			\$2 - 
 			\$3 - 
