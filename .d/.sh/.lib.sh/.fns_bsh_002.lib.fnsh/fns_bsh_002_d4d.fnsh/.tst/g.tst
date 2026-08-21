@@ -178,25 +178,41 @@ fn_15124_13924() {
 		#* dst=$prnt1_dr_pth_fn/.tst/g.tst.d/res.d
 		#* src=$prnt1_dr_pth_fn/.dta/cp_to_dst.d
 
-		l_00_echo_warn tst_set1
+		l_00_echo_sys "tst_set1 :: abs_path arg3=-int"
 
 		local src=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
 		local dst=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
 
-		# rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
-		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src" "$dst"
-		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d
+		l_00_echo_code "rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*"
+		rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*
+		l_00_echo_code "tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d"
+		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
+		read -p "0 check result"
+
+		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src" "$dst" -int
+		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
 		read -p "1 check result"
 
-		l_00_echo_warn tst_set2
+		l_00_echo_sys "tst_set2 :: upath from $(eval "echo \$prnt1_dr_pth_fn_${rnd}") arg3=-rm"
+
 		cd $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
 		src=.dta/cp_to_dst.d
 		dst=.tst/g.tst.d/res.d
 
-		# rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
-		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src" "$dst"
-		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d
+		l_00_echo_code "rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*"
+		rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*
+		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src" "$dst" -rm
+		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
 		read -p "2 check result"
+
+		l_00_echo_sys "tst_set3 :: arg3=-err :: exp - error"
+
+		l_00_echo_code "rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*"
+		rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*
+		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src" "$dst" -err
+		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
+		read -p "3 check result"
+
 	fi
 
 	#-- {{002_body}}
