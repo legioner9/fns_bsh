@@ -1,8 +1,8 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
 l_00_echo_info "that :: 001.us.sh"
 # ~001_001_us_sh~
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/004.dom.tml.d/001_001_us_sh.tml
-	# first:: for .p007.d gig 001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/004.dom.tml.d/001_001_us_sh.tml
+# first:: for .p007.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 echo -e " arg_flow ::
@@ -21,10 +21,12 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		return 1
 	fi
 
-	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
-		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"; then
-			l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
-			rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+	l_00_echo_code "[[ -d file://$(eval "echo \$arg_2_fn_${rnd}") ]]"
+	file $(eval "echo \$arg_2_fn_${rnd}")
+	if [[ -d $(eval "echo \$arg_2_fn_${rnd}") ]]; then
+		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_2_fn_${rnd}")"; then
+			l_00_echo_code "rm -r $(eval "echo \$arg_2_fn_${rnd}")"
+			rm -r $(eval "echo \$arg_2_fn_${rnd}")
 
 		else
 			l_00_echo_code "exit :: <${FUNCNAME[0]}>"
@@ -34,10 +36,19 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	fi
 
 	# ~/fns_bsh/.d/.p.ax/.p012.d/.dta/cp_to_dst.d = $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
-	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d $(eval "echo \$arg_1_fn_${rnd}")
-	mv $(eval "echo \$arg_1_fn_${rnd}")/cp_to_dst.d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+
+	local src_d=$(eval "echo \$arg_1_fn_${rnd}")
+	local dst_d=$(eval "echo \$arg_2_fn_${rnd}")
+
+	local src_nm_dr=$(basename $(eval "echo \$arg_1_fn_${rnd}"))
+	local dst_root_dr=$(dirname $(eval "echo \$arg_2_fn_${rnd}"))
+	local dst_nm_dr=$(basename $(eval "echo \$arg_2_fn_${rnd}"))
+
+	l_00_echo_code "cp -r file://$src_d file://$dst_root_dr"
+	cp -r $src_d $dst_root_dr
+	l_00_echo_code "mv file://$dst_root_dr/$src_nm_dr file://$dst_d"
+	mv $dst_root_dr/$src_nm_dr $dst_d
 
 fi
 
-	#-- {{002_001_us_sh}}
-		
+#-- {{002_001_us_sh}}
