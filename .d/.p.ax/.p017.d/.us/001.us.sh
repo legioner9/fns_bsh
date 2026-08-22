@@ -17,6 +17,7 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	. ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")
+	. ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst
 
 fi
 
