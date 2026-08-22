@@ -1,0 +1,37 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/009.dom.tml.d/001_body.tml
+	# first:: for .p007.d g.tst
+	# readline :: for g.tst .p015.d v.3 with choice flow_tst :: gig flow_tst_...
+	# exa :: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.tst/g.tst
+
+	# local flw="fl" #if res is fl
+	local flw="dr" #if res is dr
+
+	if [[ $flw == "fl" ]]; then
+		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
+
+		rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl
+
+		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr dr_res res.fl]"
+		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl"
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr $(eval "echo \$dr_pth_fn_${rnd}") res.fl
+
+	fi
+
+	if [[ $flw == "dr" ]]; then
+		#! mast correct block
+		local item_tst_us=
+		for item_tst_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.us); do
+			if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_tst_us && $(l_01_prs_f -e $item_tst_us) == "sh" ]]; then
+				l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_tst_us"
+				if . $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_tst_us; then
+					:
+				else
+					l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+					echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us', return 1${NRM}" >&2
+					return 1
+				fi
+			fi
+		done
+	fi
+	
+    #-- {{002_body}}

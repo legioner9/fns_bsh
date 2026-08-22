@@ -1,0 +1,17 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d/001_help.tml
+	# first:: for .p007.d g.tst
+	[[ "$1" == "-h" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+	}
+
+	

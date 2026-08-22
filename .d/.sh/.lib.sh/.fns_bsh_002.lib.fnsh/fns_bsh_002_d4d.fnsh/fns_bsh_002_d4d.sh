@@ -26,7 +26,7 @@ fns_bsh_002_d4d() {
 
 	[[ -z "$3" ]] && {
 		# snp "out_err"
-		echo -e "${ECHO_RET1}in file://$fl_pth_fn_32343_4159 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$fl_pth_fn_32343_4159 , line=${LINENO} :: ARG_3_NOT_DEFINE is ..., return 1${NRM}" >&2
 		return 1
 	}
 

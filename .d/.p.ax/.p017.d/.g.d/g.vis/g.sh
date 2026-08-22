@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_19322_1637(){
+fn_5687_6801(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_19322_1637="${HOME}/fns_bsh/.d/.p.ax/.p016.d/g.pr"
-    local dr_pth_fn_19322_1637=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p016.d/g.pr)
-    local fl_nm_fn_19322_1637=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p016.d/g.pr)
-    local rnd=19322_1637
+    local fl_pth_fn_5687_6801="${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh"
+    local dr_pth_fn_5687_6801=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh)
+    local fl_nm_fn_5687_6801=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh)
+    local rnd=5687_6801
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -26,7 +26,7 @@ fn_19322_1637(){
 		
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p016.d/g.pr , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -36,8 +36,8 @@ fn_19322_1637(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: [EXA] add to .p015.d - gig only dr .tst where g.tst with g.tst.us 
-			\$1 - fpath (like as //.tst)
+        doing :: ? giged from .p007.d:g.tst as exa 
+			\$1 - 
 			\$2 - 
 			\$3 - 
 			flow_FN ::
@@ -144,7 +144,7 @@ fn_19322_1637(){
 
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p016.d/g.pr , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }	
 
@@ -241,8 +241,8 @@ fn_19322_1637(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_19322_1637 $@
+fn_5687_6801 $@
 
 # {{002_after}}
 
-#? fn_19322_1637 $@
+#? fn_5687_6801 $@
