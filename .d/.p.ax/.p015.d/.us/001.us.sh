@@ -20,7 +20,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  NOT_DIR : 'root_dr \$1 not_exist', return 1${NRM}" >&2
 		return 1
 	fi
-
+	l_00_echo_code "[[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]"
 	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
 		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"; then
 			l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"

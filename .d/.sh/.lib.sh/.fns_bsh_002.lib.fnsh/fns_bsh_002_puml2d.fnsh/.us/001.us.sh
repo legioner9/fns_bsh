@@ -21,6 +21,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		return 1
 	fi
 
+	l_00_echo_code "[[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]"
 	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
 		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"; then
 			l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"

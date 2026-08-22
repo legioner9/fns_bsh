@@ -5,10 +5,16 @@ fns_bsh_002_puml2d(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_25579_25877="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh"
-    local dr_pth_fn_25579_25877=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
-    local fl_nm_fn_25579_25877=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
-    local rnd=25579_25877
+    local fl_pth_fn_6758_7615="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh"
+    local dr_pth_fn_6758_7615=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
+    local fl_nm_fn_6758_7615=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
+    local rnd=6758_7615
+
+	# [[ -z "$2" ]] && {
+	#     # snp "out_err"
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
+	# }
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -24,12 +30,6 @@ fns_bsh_002_puml2d(){
 
 	#-- {{003_genv}}
 		
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_help.tml
 	[[ "$1" == "-h" ]] && {
@@ -39,6 +39,8 @@ fns_bsh_002_puml2d(){
 			\$1 - 
 			\$2 - 
 			\$3 - 
+			flow_FN ::
+			flow_tst ::
             exa use ::
             far use ::
         "
@@ -89,17 +91,17 @@ fns_bsh_002_puml2d(){
 
 	#-- {{003_val_ind}}
 		
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
-
 	#! ptr_path
-	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
+	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
+
+	# [[ -d "$2" ]] || {
+	# 	# snp "out_err"
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	return 1
+	# }
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
@@ -193,8 +195,8 @@ fns_bsh_002_puml2d(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_25579_25877 $@
+# fn_6758_7615 $@
 
 # {{002_after}}
 
-#? fn_25579_25877 $@
+#? fn_6758_7615 $@

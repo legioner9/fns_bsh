@@ -16,11 +16,24 @@ fns_bsh_001_als_gig_fn_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_
 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d
 
 # read -p "01 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
+#! dir cp_to_dst.d -> workdr
+local flow_tst_gig="dir"
+#! g.tst flow_XXX
+# local flow_tst_gig="many"
 
+if [[ "dir" == "$flow_tst_gig" ]] ;then
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
 	g.tst \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
 	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d
+fi
+
+if [[ "many" == "$flow_tst_gig" ]] ;then
+fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
+	g.tst \
+	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d
+fi
 
 # read -p "02 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
 

@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_6119_5974(){
+fn_28302_13906(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_6119_5974="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst"
-    local dr_pth_fn_6119_5974=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst)
-    local fl_nm_fn_6119_5974=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst)
-    local rnd=6119_5974
+    local fl_pth_fn_28302_13906="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst"
+    local dr_pth_fn_28302_13906=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst)
+    local fl_nm_fn_28302_13906=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst)
+    local rnd=28302_13906
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -23,7 +23,7 @@ fn_6119_5974(){
 	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -59,7 +59,8 @@ fn_6119_5974(){
 	# }
 
 	#--{{001_key}}
-
+	
+		#X
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_val_ind.tml
 	#* value indicator
@@ -83,17 +84,17 @@ fn_6119_5974(){
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 	#-- {{002_val_ind}}
+	# [[ -z "$2" ]] && {
+	# 	# snp "out_err"
+	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+	# 	return 1
+	# }
+
 	#! ptr_path
 	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
-
-	# [[ -d "$2" ]] || {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/.tst/g.tst , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }	
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_stn_env.tml
@@ -124,9 +125,7 @@ fn_6119_5974(){
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_use_l.tml
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
 	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
-	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
-	# l_01_prs_f :: pars $1 path - stdout part
-	# 	path=/the/path/_foo.bar.ext.txt      
+	# l_02_d2e :: prevent stl_dir (_) stdout stl_name .d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh_/.dta/cp_to_dst.d/init1.pumltxt      
 	# 	$(l_01_prs_f -d /the/path/_foo.bar.ext.txt)   : /the/path 
 	# 	$(l_01_prs_f -ne /the/path/_foo.bar.ext.txt)  : _foo.bar.ext.txt   
 	# 	$(l_01_prs_f -n /the/path/_foo.bar.ext.txt)   : _foo.bar.ext   
@@ -180,11 +179,10 @@ fn_6119_5974(){
     return 0
 
 }
-
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_6119_5974 $@
+fn_28302_13906 $@
 
 # {{002_after}}
 
-#? fn_6119_5974 $@
+#? fn_28302_13906 $@

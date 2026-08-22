@@ -1,0 +1,1 @@
+for g.tst .p015.d :: gig_FN res.d in .tst/g.tst.d
