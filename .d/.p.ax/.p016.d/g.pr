@@ -36,7 +36,7 @@ fn_19322_1637(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: is .p015.d v.2 where g.tst with g.tst.us
+        doing :: add to .p015.d - gig only dr .tst where g.tst with g.tst.us 
 			\$1 - 
 			\$2 - 
 			\$3 - 
