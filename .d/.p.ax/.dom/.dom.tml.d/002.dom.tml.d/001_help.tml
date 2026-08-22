@@ -1,4 +1,5 @@
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_help.tml
+	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
@@ -7,6 +8,8 @@
 			\$2 - 
 			\$3 - 
 			flow_FN ::
+				HAND_SWITCH in /.us/00N.us.sh :: choce ::
+					- word1 ...
 			flow_tst ::
             exa use ::
             far use ::

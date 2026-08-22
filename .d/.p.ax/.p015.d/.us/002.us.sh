@@ -22,6 +22,7 @@ local flow_tst_gig="dir"
 # local flow_tst_gig="many"
 
 if [[ "dir" == "$flow_tst_gig" ]] ;then
+l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d"
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
 	g.tst \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
@@ -29,6 +30,7 @@ fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_
 fi
 
 if [[ "many" == "$flow_tst_gig" ]] ;then
+l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d"
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
 	g.tst \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \

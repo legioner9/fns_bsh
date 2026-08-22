@@ -39,8 +39,8 @@ fn_10060_28859() {
 			\$1 - root_dir
 			\$2 - dr_nm(with .ext); nm_fn is dr_nm without .ext usually dr_nm=XXX.fnsh => fn_nm_fl=XXX.sh => fn_nm=XXX
 			\$3 - 
-			flow_FN :: in ~/fns_bsh/.d/.p.ax/.p015.d/.us/002.us.sh
-				choce::
+			flow_FN ::
+				HAND_SWITCH in ~/fns_bsh/.d/.p.ax/.p015.d/.us/002.us.sh :: choce::
 					dir - cp_to_dst.d -> workdr :: use :: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d
 					many - g.tst flow_XXX :: use :: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d
 			flow_tst ::
