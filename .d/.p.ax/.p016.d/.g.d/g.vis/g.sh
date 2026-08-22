@@ -1,20 +1,14 @@
 #!/bin/bash
-# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml
+# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fns_bsh_002_puml2d(){
+fn_28364_15713(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_21332_16376="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh"
-    local dr_pth_fn_21332_16376=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
-    local fl_nm_fn_21332_16376=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh)
-    local rnd=21332_16376
-
-	# [[ -z "$2" ]] && {
-	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
+    local fl_pth_fn_28364_15713="${HOME}/fns_bsh/.d/.p.ax/.p016.d/.g.d/g.vis/g.sh"
+    local dr_pth_fn_28364_15713=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p016.d/.g.d/g.vis/g.sh)
+    local fl_nm_fn_28364_15713=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p016.d/.g.d/g.vis/g.sh)
+    local rnd=28364_15713
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -30,15 +24,21 @@ fns_bsh_002_puml2d(){
 
 	#-- {{003_genv}}
 		
+	# [[ -z "$1" ]] && {
+	#     # snp "out_err"
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p016.d/.g.d/g.vis/g.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
+	# }
+
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_help.tml
 	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - gig dr_res from \$1 puml_fl , in \$2 choice ::(@ in root | pth_to_res_dr) 
-			\$1 - gig dr_res from \$1 puml_fl
-			\$2 - choice ::(@ in root | pth_to_res_dr)
+        doing :: ? giged from .p007.d:g.tst as exa 
+			\$1 - 
+			\$2 - 
 			\$3 - 
 			flow_FN ::
 				HAND_SWITCH in /.us/00N.us.sh :: choce ::
@@ -64,6 +64,48 @@ fns_bsh_002_puml2d(){
 	# 	return 0
 	# }
 
+	#--~001_key~
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
+	[[ "$1" == "_tst" ]] && {
+		echo -e "
+        this -h for <${FUNCNAME[0]}> ::
+        doing_tst :: 
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+			flow_FN ::
+			flow_tst ::
+            exa use ::
+            far use ::			
+        "
+		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
+		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+		
+	}
+
+		[[ "$1" == "_vis" ]] && {
+		echo -e "
+        this [cat .vis] for <${FUNCNAME[0]}> ::
+        doing_vis :: 
+			\$1 - dr_res
+			\$2 - res.fl
+			\$3 - 
+            exa use ::
+            far use ::
+        "
+		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
+		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		return 0
+		
+	}
+
+	#-- {{002_key}}
+	
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
 
@@ -95,16 +137,16 @@ fns_bsh_002_puml2d(){
 	#-- {{003_val_ind}}
 		
 	#! ptr_path
-	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
+	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_puml2d.fnsh/fns_bsh_002_puml2d.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p016.d/.g.d/g.vis/g.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
-	# }
+	# }	
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
@@ -196,10 +238,11 @@ fns_bsh_002_puml2d(){
     return 0
 
 }
+
 #-- ~001_after~
-# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_21332_16376 $@
+# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
+fn_28364_15713 $@
 
 # {{002_after}}
 
-#? fn_21332_16376 $@
+#? fn_28364_15713 $@

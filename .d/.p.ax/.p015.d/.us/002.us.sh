@@ -17,9 +17,9 @@ fns_bsh_001_als_gig_fn_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_
 
 # read -p "01 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
 #! dir cp_to_dst.d -> workdr
-local flow_tst_gig="dir"
+# local flow_tst_gig="dir"
 #! g.tst flow_XXX
-# local flow_tst_gig="many"
+local flow_tst_gig="many"
 
 if [[ "dir" == "$flow_tst_gig" ]] ;then
 l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d"
@@ -34,7 +34,7 @@ l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d"
 fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
 	g.tst \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
-	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d
+	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/008.dom.tml.d
 fi
 
 # read -p "02 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
@@ -43,7 +43,7 @@ echo -e "
 # stck :: fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
 	g.tst \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
-	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d" >> \
+	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/008.dom.tml.d" >> \
 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}").d/.tst/g.tst
 
 #! todo .p014.d ->> gig fl.vis  /.g.d/g.vis

@@ -1,7 +1,7 @@
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
 	# first:: for .p007.d g.tst
-	local flw="fl" #if res is fl
-	#*local flw="dr" #if res is dr
+	#* local flw="fl" #if res is fl
+	local flw="dr" #if res is dr
 
 	if [[ $flw == "fl" ]]; then
 		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
