@@ -59,8 +59,15 @@ echo -e "
 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.g.d/g.arg
 
 # gig  ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d
-fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d \
-	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
+#.. default beh::
+if [[ -z "$(eval "echo \$arg_3_fn_${rnd}")" ]]; then
+	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
+fi
 
+if [[ "-tst" == "$(eval "echo \$arg_3_fn_${rnd}")" ]]; then
+	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/010.dom.tml.d \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
+fi
 
 # read -p "05 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"

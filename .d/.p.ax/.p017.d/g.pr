@@ -36,7 +36,7 @@ fn_31464_14620(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - g::p015.d->FN_sh in root_dr \$1 v.1, \$2 nm_dr ; in this .tst g::.p009.d->g.pr (instead g.tst); TST=>fns_bsh_002__p015_d__tst.fnsh
+        doing :: - g::p015.d->FN_sh in root_dr \$1 v.1, \$2 nm_dr ; in this .tst g::.p018.d->g.pr (instead g.tst); TST=>fns_bsh_002__p015_d__tst.fnsh
 			\$1 - 
 			\$2 - 
 			\$3 - 

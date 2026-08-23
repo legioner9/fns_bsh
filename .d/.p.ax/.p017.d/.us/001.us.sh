@@ -17,7 +17,8 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	. ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")
-	. ~/fns_bsh/.d/.p.ax/.p018.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst
+	l_00_echo_err "CHECK! . ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst"
+	. ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst
 
 fi
 

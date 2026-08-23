@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_10317_30318(){
+fn_20037_18202(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_10317_30318="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst"
-    local dr_pth_fn_10317_30318=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
-    local fl_nm_fn_10317_30318=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
-    local rnd=10317_30318
+    local fl_pth_fn_20037_18202="${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst"
+    local dr_pth_fn_20037_18202=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local fl_nm_fn_20037_18202=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local rnd=20037_18202
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -21,12 +21,6 @@ fn_10317_30318(){
 	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
 	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
 	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_help.tml
 	# first:: for .p007.d g.tst
@@ -59,8 +53,7 @@ fn_10317_30318(){
 	# }
 
 	#--{{001_key}}
-	
-		#X
+
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_val_ind.tml
 	#* value indicator
@@ -84,10 +77,10 @@ fn_10317_30318(){
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 	#-- {{002_val_ind}}
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
+	# [[ -z "$1" ]] && {
+	#     # snp "out_err"
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
 	# }
 
 	#! ptr_path
@@ -95,6 +88,12 @@ fn_10317_30318(){
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
+
+	# [[ -d "$2" ]] || {
+	# 	# snp "out_err"
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p009.d/.tst/g.tst.d/res.d/.tst/g.tst , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	return 1
+	# }	
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_stn_env.tml
@@ -147,8 +146,8 @@ fn_10317_30318(){
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
 	# first:: for .p007.d g.tst
-	local flw="fl" #if res is fl
-	#*local flw="dr" #if res is dr
+	#* local flw="fl" #if res is fl
+	local flw="dr" #if res is dr
 
 	if [[ $flw == "fl" ]]; then
 		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"
@@ -179,10 +178,11 @@ fn_10317_30318(){
     return 0
 
 }
+
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_10317_30318 $@
+fn_20037_18202 $@
 
 # {{002_after}}
 
-#? fn_10317_30318 $@
+#? fn_20037_18202 $@
