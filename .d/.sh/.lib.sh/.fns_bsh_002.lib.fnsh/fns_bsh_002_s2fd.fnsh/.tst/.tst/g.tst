@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_8374_22256(){
+fn_10810_9009(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_8374_22256="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst"
-    local dr_pth_fn_8374_22256=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst)
-    local fl_nm_fn_8374_22256=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst)
-    local rnd=8374_22256
+    local fl_pth_fn_10810_9009="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst"
+    local dr_pth_fn_10810_9009=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst)
+    local fl_nm_fn_10810_9009=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst)
+    local rnd=10810_9009
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -21,12 +21,6 @@ fn_8374_22256(){
 	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
 	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
 	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_help.tml
 	# first:: for .p007.d g.tst
@@ -83,6 +77,12 @@ fn_8374_22256(){
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 	#-- {{002_val_ind}}
+	# [[ -z "$1" ]] && {
+	#     # snp "out_err"
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/.tst/g.tst , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
+	# }
+
 	#! ptr_path
 	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
@@ -181,8 +181,8 @@ fn_8374_22256(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_8374_22256 $@
+fn_10810_9009 $@
 
 # {{002_after}}
 
-#? fn_8374_22256 $@
+#? fn_10810_9009 $@

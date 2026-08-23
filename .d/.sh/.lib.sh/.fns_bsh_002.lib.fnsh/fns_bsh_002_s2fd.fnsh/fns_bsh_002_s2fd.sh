@@ -5,10 +5,10 @@ fns_bsh_002_s2fd(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_29561_16018="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/fns_bsh_002_s2fd.sh"
-    local dr_pth_fn_29561_16018=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/fns_bsh_002_s2fd.sh)
-    local fl_nm_fn_29561_16018=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/fns_bsh_002_s2fd.sh)
-    local rnd=29561_16018
+    local fl_pth_fn_2911_22758="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/fns_bsh_002_s2fd.sh"
+    local dr_pth_fn_2911_22758=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/fns_bsh_002_s2fd.sh)
+    local fl_nm_fn_2911_22758=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/fns_bsh_002_s2fd.sh)
+    local rnd=2911_22758
 
 	# [[ -z "$2" ]] && {
 	#     # snp "out_err"
@@ -36,7 +36,7 @@ fns_bsh_002_s2fd(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - ins_str \$1 , rcv_str \$2 , dr \$3 with fl (all in dr) with rcv_str 
+        doing :: ? giged from .p007.d:g.tst as exa 
 			\$1 - 
 			\$2 - 
 			\$3 - 
@@ -144,6 +144,7 @@ fns_bsh_002_s2fd(){
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_use_l.tml
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
 	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
+	# l_03_s2Ad :: insert $1 str into str $2 in ALL LEX(4.5) LEX(4.6) recurce file from dir $3
 	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
 	# l_01_prs_f :: pars $1 path - stdout part
 	# 	path=/the/path/_foo.bar.ext.txt      
@@ -198,8 +199,8 @@ fns_bsh_002_s2fd(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_29561_16018 $@
+# fn_2911_22758 $@
 
 # {{002_after}}
 
-#? fn_29561_16018 $@
+#? fn_2911_22758 $@

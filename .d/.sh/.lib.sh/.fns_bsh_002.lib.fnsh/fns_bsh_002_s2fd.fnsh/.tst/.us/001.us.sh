@@ -15,12 +15,28 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
-	local rcv_str=rcv_fwferfasdas
-	local ins_str=ins_LLLLLLLL
+	if [[ ! -d $(eval "echo \$arg_1_fn_${rnd}") ]]; then
+		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  NOT_DIR : 'root_dr \$1 not_exist', return 1${NRM}" >&2
+		return 1
+	fi
 
-	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
+	l_00_echo_code "[[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]"
+	if [[ -d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") ]]; then
+		if ! l_01_is_yes "QUES:: rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"; then
+			l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")"
+			rm -r $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 
-	
+		else
+			l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  IS_DIR : 'res_dr \$2 is_exist', return 1${NRM}" >&2
+			return 1
+		fi
+	fi
+
+	# ~/fns_bsh/.d/.p.ax/.p012.d/.dta/cp_to_dst.d = $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
+	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d $(eval "echo \$arg_1_fn_${rnd}")
+	mv $(eval "echo \$arg_1_fn_${rnd}")/cp_to_dst.d $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 
 fi
 

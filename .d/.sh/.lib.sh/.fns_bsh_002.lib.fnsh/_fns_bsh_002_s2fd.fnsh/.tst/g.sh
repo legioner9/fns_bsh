@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_5687_6801(){
+fn_4063_19895(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_5687_6801="${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh"
-    local dr_pth_fn_5687_6801=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh)
-    local fl_nm_fn_5687_6801=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh)
-    local rnd=5687_6801
+    local fl_pth_fn_4063_19895="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/g.sh"
+    local dr_pth_fn_4063_19895=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/g.sh)
+    local fl_nm_fn_4063_19895=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/g.sh)
+    local rnd=4063_19895
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -26,7 +26,7 @@ fn_5687_6801(){
 		
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/g.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -144,7 +144,7 @@ fn_5687_6801(){
 
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p017.d/.g.d/g.vis/g.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_s2fd.fnsh/.tst/g.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }	
 
@@ -187,6 +187,7 @@ fn_5687_6801(){
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
 	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
 	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
+	# l_03_s2Ad :: insert $1 str into str $2 in ALL LEX(4.5) LEX(4.6) recurce file from dir $3
 	# l_01_prs_f :: pars $1 path - stdout part
 	# 	path=/the/path/_foo.bar.ext.txt      
 	# 	$(l_01_prs_f -d /the/path/_foo.bar.ext.txt)   : /the/path 
@@ -241,8 +242,8 @@ fn_5687_6801(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_5687_6801 $@
+fn_4063_19895 $@
 
 # {{002_after}}
 
-#? fn_5687_6801 $@
+#? fn_4063_19895 $@
