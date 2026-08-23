@@ -1,4 +1,4 @@
-# from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.p009.d/.dta/cp_to_dst.d/.us/001.us.sh
 l_00_echo_info "that :: 001.us.sh"
 # ~001_001_us_sh~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/010.dom.tml.d/001_001_us_sh.tml
@@ -16,12 +16,25 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
+	local fn_sh_fl_pth=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")").sh
+	l_00_echo_info "fn_sh_fl_pth=file://$fn_sh_fl_pth"
+	l_00_echo_warn "up_to_mem:: . file://$fn_sh_fl_pth"
+	. "$fn_sh_fl_pth" || {
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. "$fn_sh_fl_pth"', return 1${NRM}" >&2
+		return 1
+	}
+	:
+
+	l_00_echo_sys "	fns_bsh_002_d4d \
+		file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d \
+		file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d \
+		-rm"
+
 	# cp $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d
 	fns_bsh_002_d4d \
 		$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d \
 		$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d \
 		-rm
-		
 fi
 
 	#-- {{002_001_us_sh}}

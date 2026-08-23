@@ -1,1 +1,1 @@
-flow_fn:: cp cp_to_dst.d to g.sh(this in .tst) for 001.us.sh
+flow_pr_tst:: cp cp_to_dst.d to g.sh(this in .tst) for 001.us.sh
