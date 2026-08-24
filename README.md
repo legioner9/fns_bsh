@@ -16,9 +16,9 @@
 
 ### set repo
 
-    https://gitflic.ru/project/legioner9
-    https://github.com/legioner9
-    https://altlinux.space/legioner9
+https://gitflic.ru/project/legioner9
+https://github.com/legioner9
+https://altlinux.space/legioner9
 
 ## big shorts
 
