@@ -36,7 +36,7 @@ fns_bsh_002_puml2d(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: ? giged from .p007.d:g.tst as exa 
+        doing :: - in r_dr 
 			\$1 - 
 			\$2 - 
 			\$3 - 
