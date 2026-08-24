@@ -10,7 +10,7 @@
 
 $ . ~/fns_bsh/.d/.sh/cat_lib_fns_bsh_XXX.sh
 
-### catalog internal g
+### catalog internal GIR
 
 $ . ~/fns_bsh/.d/.p.ax/_cat_pXXX.sh
 
