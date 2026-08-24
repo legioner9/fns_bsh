@@ -16,10 +16,10 @@
 
 ### set repo
 
-    https://gitflic.ru/project/legioner9/
+    https://gitflic.ru/project/legioner9
     https://github.com/legioner9
     https://altlinux.space/legioner9
 
 ## big shorts
 
-    $ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
