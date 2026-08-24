@@ -1,0 +1,59 @@
+# from:: ~/fns_bsh/.d/.p.ax/.p009.d/.dta/cp_to_dst.d/.us/001.us.sh
+l_00_echo_info "that :: 001.us.sh"
+# ~001_001_us_sh~
+	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/010.dom.tml.d/001_001_us_sh.tml
+	# first:: for .p007.d gig 001.us.sh
+
+# check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+echo -e " arg_flow ::
+if src_dir :: $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
+\$1 root_dr \$2 ::
+dr - result dr
+fl - result fl
+"
+
+# arg1 ::
+# $(eval "echo \$arg_1_fn_${rnd}")
+# arg2 ::
+# $(eval "echo \$arg_2_fn_${rnd}")
+
+# fl_pth_fn ::
+# $(eval "echo \$fl_pth_fn_${rnd}")
+# dr_pth_fn ::
+# $(eval "echo \$dr_pth_fn_${rnd}")
+# fl_nm_fn ::
+# $(eval "echo \$fl_nm_fn_${rnd}")
+# prnt1_dr_pth_fn ::
+# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
+# prnt2_dr_pth_fn ::
+# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+
+eval "flow_1_${rnd}=dr"
+# $(eval "echo \$flow_1_${rnd}")
+
+if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
+
+	local fn_sh_fl_pth=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.sh
+	#! for PR up_to_mem not define
+	# l_00_echo_info "fn_sh_fl_pth=file://$fn_sh_fl_pth"
+	# l_00_echo_warn "up_to_mem:: . file://$fn_sh_fl_pth"
+	# . "$fn_sh_fl_pth" || {
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. "$fn_sh_fl_pth"', return 1${NRM}" >&2
+	# 	return 1
+	# }
+	# :
+
+	l_00_echo_sys "	fns_bsh_002_d4d \
+		file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d \
+		file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d \
+		-rm"
+
+	# cp $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d
+	fns_bsh_002_d4d \
+		$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d \
+		$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d \
+		-rm
+fi
+
+	#-- {{002_001_us_sh}}
+		

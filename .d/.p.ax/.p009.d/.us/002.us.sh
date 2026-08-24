@@ -75,4 +75,9 @@ if [[ "-tst" == "$(eval "echo \$arg_3_fn_${rnd}")" ]]; then
 		# read -p "check file://$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/002.us.sh"
 fi
 
+if [[ "$(eval "echo \$arg_3_fn_${rnd}")" == "-v2" ]]; then
+	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/012.dom.tml.d \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
+fi
+
 # read -p "05 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"

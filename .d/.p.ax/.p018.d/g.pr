@@ -5,9 +5,9 @@ fn_31464_14620(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_31464_14620="${HOME}/fns_bsh/.d/.p.ax/.p017.d/g.pr"
-    local dr_pth_fn_31464_14620=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p017.d/g.pr)
-    local fl_nm_fn_31464_14620=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p017.d/g.pr)
+    local fl_pth_fn_31464_14620="${HOME}/fns_bsh/.d/.p.ax/.p018.d/g.pr"
+    local dr_pth_fn_31464_14620=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p018.d/g.pr)
+    local fl_nm_fn_31464_14620=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p018.d/g.pr)
     local rnd=31464_14620
 
 	#-- ~001_genv~
@@ -26,7 +26,7 @@ fn_31464_14620(){
 		
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p017.d/g.pr , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p018.d/g.pr , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -36,7 +36,7 @@ fn_31464_14620(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: +- G[FN_DR+PR_DR{as .tst}] g::p015.d->FN_sh in root_dr \$1 v.1, \$2 nm_dr ; in this .tst g::.p009.d \"-tst\"->g.pr (instead g.tst); TST=>fns_bsh_002__p015_d__tst.fnsh
+        doing :: +- G[PR_DR+PR_DR{as .tst}] g::p009.d->PR_sh in root_dr \$1 v.1, \$2 nm_dr ; in this .tst g::.p009.d \"-tst\"->g.pr (instead g.tst); TST=>fns_bsh_002__p015_d__tst.fnsh
 			\$1 - 
 			\$2 - 
 			\$3 - 
@@ -144,7 +144,7 @@ fn_31464_14620(){
 
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p017.d/g.pr , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p018.d/g.pr , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }	
 
