@@ -21,20 +21,20 @@ fns_bsh_001_als_gig_fn_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_
 #! g.tst flow_XXX
 local flow_tst_gig="many"
 
-if [[ "dir" == "$flow_tst_gig" ]] ;then
-l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d"
-fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
-	g.tst \
-	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
-	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d
+if [[ "dir" == "$flow_tst_gig" ]]; then
+	l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d"
+	fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
+		g.tst \
+		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d
 fi
 
-if [[ "many" == "$flow_tst_gig" ]] ;then
-l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d"
-fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
-	g.tst \
-	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
-	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/008.dom.tml.d
+if [[ "many" == "$flow_tst_gig" ]]; then
+	l_00_echo_sys "use ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/007.dom.tml.d"
+	fns_bsh_001_als_gig_fl_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.tst \
+		g.tst \
+		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/008.dom.tml.d
 fi
 
 # read -p "02 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
@@ -78,8 +78,12 @@ echo -e "
 	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.g.d/g.arg
 
 # gig  ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d
-fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d \
-	$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
-
-
+if [[ -z "$(eval "echo \$arg_3_fn_${rnd}")" ]]; then
+	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/004.dom.tml.d \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
+fi
+if [[ "$(eval "echo \$arg_3_fn_${rnd}")" == "-v2" ]]; then
+	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/012.dom.tml.d \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/001.us.sh
+fi
 # read -p "05 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"

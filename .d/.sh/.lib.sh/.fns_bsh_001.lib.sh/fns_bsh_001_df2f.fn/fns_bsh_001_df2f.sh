@@ -57,7 +57,7 @@ fns_bsh_001_df2f() {
 
 	[[ ! -d "$1" ]] && {
 		# snp "out_err"
-		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DIR is ins dr, return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_1_NOT_DIR is ins dr, return 1${NRM}" >&2
 		return 1
 	}
 

@@ -4,6 +4,7 @@
 
 l_00_echo_info "res_dr=file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d"
 
+l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
 $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
 
 #-- {{002_002_us_sh}}
