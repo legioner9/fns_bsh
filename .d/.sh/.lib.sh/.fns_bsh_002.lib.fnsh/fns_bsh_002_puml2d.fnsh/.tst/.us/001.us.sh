@@ -11,6 +11,23 @@ if src_dir :: $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
 dr - result dr
 fl - result fl
 "
+
+# arg1 ::
+# $(eval "echo \$arg_1_fn_${rnd}")
+# arg2 ::
+# $(eval "echo \$arg_2_fn_${rnd}")
+
+# fl_pth_fn ::
+# $(eval "echo \$fl_pth_fn_${rnd}")
+# dr_pth_fn ::
+# $(eval "echo \$dr_pth_fn_${rnd}")
+# fl_nm_fn ::
+# $(eval "echo \$fl_nm_fn_${rnd}")
+# prnt1_dr_pth_fn ::
+# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
+# prnt2_dr_pth_fn ::
+# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
