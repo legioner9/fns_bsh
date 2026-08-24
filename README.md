@@ -22,4 +22,4 @@
 
 ## big shorts
 
-   $ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+    $ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
