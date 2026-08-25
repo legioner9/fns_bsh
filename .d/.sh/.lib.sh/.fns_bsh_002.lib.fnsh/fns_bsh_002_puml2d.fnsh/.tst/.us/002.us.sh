@@ -23,7 +23,7 @@ echo -e "@startmindmap
 </code>
 ;
 @endmindmap" >"${res_dr_6734sadc}/init.puml"
-l_00_echo_warn "START_TST:: in puml : .bashrc2; flw_cr: -f"
+l_00_echo_warn "START_TST:: in puml : .bashrc2; flw_chr: -f"
 l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") ${res_dr_6734sadc} init.puml @ -f"
 
 $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") \
