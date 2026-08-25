@@ -36,20 +36,23 @@ fns_bsh_002_puml2d(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - EN=fl.puml \$1=*{EN} \$2=&{EN}
-			\$1 - *{EN}
-			\$2 - &{EN}
-			\$3 - ((^^{EN}=*{EN})=>@|(^^{EN}!=*{EN}))
-			\$4 - flw_char
-				-f - gig *{EN}/&{EN}.png
-				-d - gig *{EN}/&{EN}.d/&{EN}.png
+        doing :: - IEN=fl.puml REN=fl.puml.png \$1=*{IEN} \$2=&{IEN}
+			REN=fl.puml.png
+			\$1 - *{IEN}
+			\$2 - &{IEN}
+			\$3 - if(*{REN}==*{IEN});then\$3=@;else \$3=*{REN};fi
+			\$4 - flw_char : 
+				-f - {REN}=*{REN}/&{IEN}.png
+				-d - {REN}=*{REN}/&{IEN}.d/&{IEN}.png
 			flow_FN ::
 				HAND_SWITCH in /.us/00N.us.sh :: choce ::
 					- word1 ...
 			flow_tst ::
             exa use ::
             far use ::
-        "
+			see about big short (IEN, REN, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+"
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
 	}

@@ -3,16 +3,19 @@
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: ? giged from .p007.d:g.tst as exa 
-			\$1 - 
-			\$2 - 
+        doing :: ? IEN= 
+			REN=
+			\$1 - ?*{IEN}
+			\$2 - ?&{IEN}
 			\$3 - 
 			flow_FN ::
-				HAND_SWITCH in /.us/00N.us.sh :: choce ::
+				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
 			flow_tst ::
             exa use ::
             far use ::
+			see about big short (IEN, REN, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
