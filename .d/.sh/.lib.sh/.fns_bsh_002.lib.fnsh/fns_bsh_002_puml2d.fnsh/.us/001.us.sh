@@ -1,8 +1,8 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
 l_00_echo_info "that :: 001.us.sh"
 # ~001_001_us_sh~
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
-	# first:: for .p015.d gig 001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
+# first:: for .p015.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 echo -e " arg_flow ::
@@ -32,9 +32,33 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	:
+	if [[ $(eval "echo \$arg_3_fn_${rnd}") == "@" ]]; then
+		eval "eval arg_3_fn_${rnd}=\$arg_1_fn_${rnd}"
+	fi
+
+	read -p "?TRUE:arg_3=$(eval "echo \$arg_3_fn_${rnd}")"
+
+	local ien_we3244fcer=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
+	local ren_nm_fewr25542=$(l_01_prs_f -ne "$ien_we3244fcer").png
+	local ren_3457rtver=$(eval "echo \$arg_3_fn_${rnd}")/${ren_nm_fewr25542}
+	local ren_if_d_3457rtver=$(eval "echo \$arg_3_fn_${rnd}")/$(l_01_prs_f -ne "$ien_we3244fcer").d/${ren_nm_fewr25542}
+	local jar_puml_24wef3434=~/fns_bsh/.d/.cdn.ax/java/plantuml.jar
+
+	if [[ $(eval "echo \$arg_4_fn_${rnd}") == "-f" ]]; then
+
+		cat "${ien_we3244fcer}" | java -jar ${jar_puml_24wef3434} -stdrpt:1 -pipe >${ren_3457rtver}
+
+	fi
+
+	if [[ $(eval "echo \$arg_4_fn_${rnd}") == "-d" ]]; then
+		if [[ ! -d $(eval "echo \$arg_3_fn_${rnd}")/$(l_01_prs_f -ne "$ien_we3244fcer").d ]]; then
+			l_00_echo_code "mkdir $(eval "echo \$arg_3_fn_${rnd}")/$(l_01_prs_f -ne "$ien_we3244fcer").d"
+			mkdir $(eval "echo \$arg_3_fn_${rnd}")/$(l_01_prs_f -ne "$ien_we3244fcer").d
+		fi
+		cat "${ien_we3244fcer}" | java -jar ${jar_puml_24wef3434} -stdrpt:1 -pipe >${ren_if_d_3457rtver}
+
+	fi
 
 fi
 
-	#-- {{002_001_us_sh}}
-		
+#-- {{002_001_us_sh}}
