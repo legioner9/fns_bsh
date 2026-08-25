@@ -161,7 +161,7 @@ fn_24623_32386() {
 
 	if [[ $flw == "dr" ]]; then
 
-		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh fns_bsh_003__p018_d__tst.prsh
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh fns_bsh_003__p009_d__tst.prsh
 
 	fi
 

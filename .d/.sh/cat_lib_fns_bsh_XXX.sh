@@ -214,7 +214,7 @@ fn_31442_25654() {
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
 	l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
-	local arr_lib_nm_weqr3442=(.fns_bsh_001.lib.sh .fns_bsh_002.lib.fnsh)
+	local arr_lib_nm_weqr3442=(.fns_bsh_001.lib.sh .fns_bsh_002.lib.fnsh .fns_bsh_003.lib.prsh)
 	local item=
 	local item1=
 	local item2=

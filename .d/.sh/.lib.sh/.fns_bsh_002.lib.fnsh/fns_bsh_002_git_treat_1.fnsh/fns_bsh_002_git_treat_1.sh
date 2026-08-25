@@ -5,10 +5,16 @@ fns_bsh_002_git_treat_1(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_29330_10588="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
-    local dr_pth_fn_29330_10588=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
-    local fl_nm_fn_29330_10588=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
-    local rnd=29330_10588
+    local fl_pth_fn_6505_31724="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
+    local dr_pth_fn_6505_31724=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
+    local fl_nm_fn_6505_31724=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
+    local rnd=6505_31724
+
+	# [[ -z "$2" ]] && {
+	#     # snp "out_err"
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
+	# }
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -24,23 +30,25 @@ fns_bsh_002_git_treat_1(){
 
 	#-- {{003_genv}}
 		
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_help.tml
+	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - treat git repo (main process for user)
-			\$1 - 
-			\$2 - 
+        doing :: (?) IEN= 
+			REN=
+			\$1 - ?*{IEN}
+			\$2 - ?&{IEN}
 			\$3 - 
+			flow_FN ::
+				SWITCH_ARG in /.us/00N.us.sh :: choce ::
+					- word1 ...
+			flow_tst ::
             exa use ::
             far use ::
+			see about big short (IEN, REN, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
@@ -89,17 +97,17 @@ fns_bsh_002_git_treat_1(){
 
 	#-- {{003_val_ind}}
 		
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
-
 	#! ptr_path
-	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
+	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
+
+	# [[ -d "$2" ]] || {
+	# 	# snp "out_err"
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	return 1
+	# }
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
@@ -139,6 +147,7 @@ fns_bsh_002_git_treat_1(){
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_use_l.tml
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
 	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
+	# l_03_s2Ad :: insert $1 str into str $2 in ALL LEX(4.5) LEX(4.6) recurce file from dir $3
 	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
 	# l_01_prs_f :: pars $1 path - stdout part
 	# 	path=/the/path/_foo.bar.ext.txt      
@@ -162,21 +171,13 @@ fns_bsh_002_git_treat_1(){
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr
-# 		echo -e " $(date)
-# . $(eval "echo \$dr_pth_fn_${rnd}")/<${FUNCNAME[0]}> \
-# 	$(eval "echo \$arg_1_fn_${rnd}") \
-# 	$(eval "echo \$arg_2_fn_${rnd}") \
-# 	$(eval "echo \$arg_3_fn_${rnd}")
-# 	" >> \
-# 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
-
-
-	local item=
-	local item1=
-	local item2=
-	local item3=
-	local item4=
-	local item5=
+		echo -e " $(date)
+. $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
+	$(eval "echo \$arg_1_fn_${rnd}") \
+	$(eval "echo \$arg_2_fn_${rnd}") \
+	$(eval "echo \$arg_3_fn_${rnd}")
+	" >> \
+		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 	
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
@@ -201,8 +202,8 @@ fns_bsh_002_git_treat_1(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_29330_10588 $@
+# fn_6505_31724 $@
 
 # {{002_after}}
 
-#? fn_29330_10588 $@
+#? fn_6505_31724 $@

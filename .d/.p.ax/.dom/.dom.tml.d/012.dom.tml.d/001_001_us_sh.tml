@@ -27,6 +27,9 @@ fl - result fl
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
+# up to_mem .env.sh dr
+l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
+
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	:
