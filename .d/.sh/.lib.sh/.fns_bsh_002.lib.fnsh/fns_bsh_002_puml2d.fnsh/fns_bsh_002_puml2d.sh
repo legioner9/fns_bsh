@@ -36,10 +36,13 @@ fns_bsh_002_puml2d(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: - in r_dr 
-			\$1 - 
-			\$2 - 
-			\$3 - 
+        doing :: - EN=fl.puml \$1=*{EN} \$2=&{EN}
+			\$1 - *{EN}
+			\$2 - &{EN}
+			\$3 - ((^^{EN}=*{EN})=>@|(^^{EN}!=*{EN}))
+			\$4 - flw_char
+				-f - gig *{EN}/&{EN}.png
+				-d - gig *{EN}/&{EN}.d/&{EN}.png
 			flow_FN ::
 				HAND_SWITCH in /.us/00N.us.sh :: choce ::
 					- word1 ...

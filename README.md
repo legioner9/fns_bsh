@@ -4,7 +4,9 @@
 
 ### extern libs: 
 - ~/fns_bsh/.d/.sh/.lib.sh/l.sh
+    - $ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=.d%2F.sh%2Fl.sh
 - ~/fns_bsh/.d/.sh/.lib.sh/lfoe.lib.sh
+    - $ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=.d%2F.sh%2F.lib.sh%2Flfoe.lib.sh
 
 ### catalog internal lib
 
