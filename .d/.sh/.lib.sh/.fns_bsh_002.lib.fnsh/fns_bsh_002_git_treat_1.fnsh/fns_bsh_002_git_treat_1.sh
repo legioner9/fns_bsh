@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml
 
-fns_bsh_002_git_treat_1(){
+fns_bsh_002_git_treat_1() {
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}>"
 
-    local fl_pth_fn_6505_31724="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
-    local dr_pth_fn_6505_31724=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
-    local fl_nm_fn_6505_31724=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
-    local rnd=6505_31724
+	local fl_pth_fn_6505_31724="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
+	local dr_pth_fn_6505_31724=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
+	local fl_nm_fn_6505_31724=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
+	local rnd=6505_31724
 
 	# [[ -z "$2" ]] && {
 	#     # snp "out_err"
@@ -29,7 +29,7 @@ fns_bsh_002_git_treat_1(){
 	eval "us_dr_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 
 	#-- {{003_genv}}
-		
+
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_help.tml
 	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
@@ -53,17 +53,17 @@ fns_bsh_002_git_treat_1(){
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
 	}
-	
+
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
-    #     this -h for <${FUNCNAME[0]}> ::
-    #     doingX :: 
-	# 		\$1 - 
-	# 		\$2 - 
-	# 		\$3 - 
-    #         exa use ::
-    #         far use ::
-    #     "
+	#     this -h for <${FUNCNAME[0]}> ::
+	#     doingX ::
+	# 		\$1 -
+	# 		\$2 -
+	# 		\$3 -
+	#         exa use ::
+	#         far use ::
+	#     "
 	# 	return 0
 	# }
 
@@ -88,15 +88,15 @@ fns_bsh_002_git_treat_1(){
 	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
 	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
 	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
-	
+
 	#-- ~002_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
 	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\""       #.d/.p.ax/.p999.d/.tst/g.tst
+	eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\""   #.d/.p.ax/.p999.d/.tst/g.tst
 
 	#-- {{003_val_ind}}
-		
+
 	#! ptr_path
 	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
@@ -146,39 +146,54 @@ fns_bsh_002_git_treat_1(){
 	#-- ~001_use_l~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_use_l.tml
 	# l_02_fs2f :: ins.f {{pre_str_in_rcv.f}} rcv.f
-	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file 
+	# l_02_s2f :: $1 reciver_string, $2 inserter_string[@ - empty string] in $3 reciver_result_file
 	# l_03_s2Ad :: insert $1 str into str $2 in ALL LEX(4.5) LEX(4.6) recurce file from dir $3
 	# l_02_d2e :: prevent stl_dir (_) stdout stl_name [,with $2 .ext] - like 'ls $1' - if in root_dir mst $1=@
 	# l_01_prs_f :: pars $1 path - stdout part
-	# 	path=/the/path/_foo.bar.ext.txt      
-	# 	$(l_01_prs_f -d /the/path/_foo.bar.ext.txt)   : /the/path 
-	# 	$(l_01_prs_f -ne /the/path/_foo.bar.ext.txt)  : _foo.bar.ext.txt   
-	# 	$(l_01_prs_f -n /the/path/_foo.bar.ext.txt)   : _foo.bar.ext   
-	# 	$(l_01_prs_f -n2 /the/path/_foo.bar.ext.txt)  : _foo.bar   
-	# 	$(l_01_prs_f -e /the/path/_foo.bar.ext.txt)   : txt   
-	# 	$(l_01_prs_f -e2 /the/path/_foo.bar.ext.txt)  : ext 
-	# 	$(l_01_prs_f -pr /the/path/_foo.bar.ext.txt)  : _   
-	# 	$(l_01_prs_f -po /the/path/_foo.bar.ext.txt)  : foo.bar.ext.txt  
+	# 	path=/the/path/_foo.bar.ext.txt
+	# 	$(l_01_prs_f -d /the/path/_foo.bar.ext.txt)   : /the/path
+	# 	$(l_01_prs_f -ne /the/path/_foo.bar.ext.txt)  : _foo.bar.ext.txt
+	# 	$(l_01_prs_f -n /the/path/_foo.bar.ext.txt)   : _foo.bar.ext
+	# 	$(l_01_prs_f -n2 /the/path/_foo.bar.ext.txt)  : _foo.bar
+	# 	$(l_01_prs_f -e /the/path/_foo.bar.ext.txt)   : txt
+	# 	$(l_01_prs_f -e2 /the/path/_foo.bar.ext.txt)  : ext
+	# 	$(l_01_prs_f -pr /the/path/_foo.bar.ext.txt)  : _
+	# 	$(l_01_prs_f -po /the/path/_foo.bar.ext.txt)  : foo.bar.ext.txt
 	# l_01_is_yes :: y if_err
-	# fns_bsh_001_als_gig_fn_sh :: gig in \$1 dr \$2 fn[with .ext] use ~/fns_bsh/.d/.p.ax/.p005.d (like .p003.d) [,\$3 cmn.d [,\$4 dom.d]] 
+	# fns_bsh_001_als_gig_fn_sh :: gig in \$1 dr \$2 fn[with .ext] use ~/fns_bsh/.d/.p.ax/.p005.d (like .p003.d) [,\$3 cmn.d [,\$4 dom.d]]
 	# fns_bsh_001_als_gig_fl_sh :: gig in \$1 dr \$2 fl[with .ext] use ~/fns_bsh/.d/.p.ax/.p006.d (like .p004.d) [,\$3 cmn.d [,\$4 dom.d]]
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 	# {{002_use_l}}
-	
+
 	l_00_echo_code "body :: <${FUNCNAME[0]}>"
 
 	#-- ~001_body~
+
+	local item=
+	local item1=
+	local item2=
+	local item3=
+	local item4=
+	local item5=
+
+	local fns_bsh_002_git_treat_1_arr_remote_addr=
+	local fns_bsh_002_git_treat_1_arr_remote_alias=
+	local fns_bsh_002_git_treat_1_arr_rpo_pth=
+	local fns_bsh_002_git_treat_1_arr_remote_local=
+	local fns_bsh_002_git_treat_1_arr_remote_local_alias=
+	local fns_bsh_002_git_treat_1_main_repo=
+
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr
-		echo -e " $(date)
+	echo -e " $(date)
 . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
 	$(eval "echo \$arg_1_fn_${rnd}") \
 	$(eval "echo \$arg_2_fn_${rnd}") \
 	$(eval "echo \$arg_3_fn_${rnd}")
 	" >> \
 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
-	
+
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
 		if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us && $(l_01_prs_f -e $item_us) == "sh" ]]; then
@@ -193,11 +208,11 @@ fns_bsh_002_git_treat_1(){
 		fi
 	done
 
-    #-- {{002_body}}
+	#-- {{002_body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
-    return 0
+	return 0
 
 }
 #-- ~001_after~
