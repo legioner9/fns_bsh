@@ -34,8 +34,10 @@ fns_bsh_002_git_treat_1_check_clone() {
 		dn=$(dirname "$1")
 		l_00_echo_info "dn=${dn}"
 		if [[ "$dn" != "." ]]; then # rpo not from home
+
 			l_00_echo_code "mkdir -p ${HOME}/${dn}"
 			mkdir -p ${HOME}/${dn}
+
 			l_00_echo_code "cd ${HOME}/${dn}"
 			cd ${HOME}/${dn} || {
 				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
@@ -50,11 +52,17 @@ fns_bsh_002_git_treat_1_check_clone() {
 					return 1
 				fi
 			fi
-			# git clone
+
+			l_00_echo_code "git clone ${main_repo_adr}/$(l_01_prs_f -n "$1").git"
+			git clone ${main_repo_adr}/$(l_01_prs_f -n "$1").git
+			tree -a -L 1 ${HOME}/"$1"
 
 		else
 			l_00_echo_code "cd ${HOME}"
 			cd "${HOME}"
+			l_00_echo_code "git clone ${main_repo_adr}/$1.git"
+			git clone ${main_repo_adr}/"$1".git
+			tree -a -L 1 ${HOME}/"$1"
 		fi
 
 	fi
