@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_3775_28494(){
+fn_16651_2606(){
 
-	l_00_echo_code "start :: <${FUNCNAME[0]}>"
+	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_3775_28494="${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst"
-    local dr_pth_fn_3775_28494=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst)
-    local fl_nm_fn_3775_28494=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst)
-    local rnd=3775_28494
+    local fl_pth_fn_16651_2606="${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst"
+    local dr_pth_fn_16651_2606=$(dirname ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local fl_nm_fn_16651_2606=$(basename ${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst)
+    local rnd=16651_2606
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -21,12 +21,6 @@ fn_3775_28494(){
 	eval "fl_tst_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.tst/g.tst"
 	eval "g_d_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.g.d"
 	eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	#     echo -e "${ECHO_RET1}in file://$fn_nm_{fn_nm} , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d/001_help.tml
 	# first:: for .p007.d g.tst
@@ -47,7 +41,7 @@ fn_3775_28494(){
 	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
-    #     this -h for <${FUNCNAME[0]}> ::
+    #     this -h for <${FUNCNAME[0]}> '$@' ::
     #     doingX :: 
 	# 		\$1 - 
 	# 		\$2 - 
@@ -59,8 +53,7 @@ fn_3775_28494(){
 	# }
 
 	#--{{001_key}}
-	
-		#X
+
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_val_ind.tml
 	#* value indicator
@@ -84,10 +77,11 @@ fn_3775_28494(){
 	#* indicate with ${rnd}
 	# eval "echo \\\$prnt_dr_${rnd}=\$prnt_dr_${rnd}"
 	#-- {{002_val_ind}}
-	# [[ -z "$2" ]] && {
-	# 	# snp "out_err"
-	# 	echo -e "${ECHO_RET1}in file://$fn_nm_fn_2219_9919 , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 	return 1
+	# [[ -z "$1" ]] && {
+	#     # snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
 	# }
 
 	#! ptr_path
@@ -95,6 +89,13 @@ fn_3775_28494(){
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
+
+	# [[ -d "$2" ]] || {
+	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.p.ax/.p015.d/.tst/g.tst.d/res.d/.tst/g.tst , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	return 1
+	# }	
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_stn_env.tml
@@ -142,11 +143,14 @@ fn_3775_28494(){
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 	# {{002_use_l}}
-	l_00_echo_code "body :: <${FUNCNAME[0]}>"
+	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/006.dom.tml.d/001_body.tml
 	# first:: for .p007.d g.tst
+	# readline :: for g.tst .p015.d v.3 with choice flow_tst :: gig flow_tst_...
+	# exa :: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.tst/g.tst
+
 	# local flw="fl" #if res is fl
 	local flw="dr" #if res is dr
 
@@ -161,30 +165,54 @@ fn_3775_28494(){
 
 	fi
 
-	if [[ $flw == "dr" ]]; then
-		l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d"
 
-		rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
+	if [[ $flw == "dr" ]]; then
+		#! mast correct block
+		# l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d"
+
+		# rm -r $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
+
+		file $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d/res.d
 
 		l_00_echo_info "example if infs for gig tst_result is :: [. g.pr prn_dr res.dr]"
 		l_00_echo_info "up2mem:: $(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}"))"
 		l_00_echo_code ". $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")).sh $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d"
-		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")).sh $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d
-		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d
+		. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")).sh
 
+		l_00_echo_code "$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) $(eval "echo \$dr_pth_fn_${rnd}")/g.tst.d res.d"
+		# prnt1_dr_pth_fn=${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh
+		# dst=${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d4d.fnsh/.tst/g.tst.d/res.d
+		#* dst=$prnt1_dr_pth_fn/.tst/g.tst.d/res.d
+		#* src=$prnt1_dr_pth_fn/.dta/cp_to_dst.d
+
+		l_00_echo_sys "tst_set1 :: abs_path arg3=-int"
+
+		local src=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
+		local dst=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
+
+		l_00_echo_code "rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*"
+		rm $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d/*
+		l_00_echo_code "tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d"
+		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
+		read -p "0 check result"
+
+		$(l_01_prs_f -n $(eval "echo \$prnt1_dr_pth_fn_${rnd}")) "$src" "$dst" -int
+		tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.tst/g.tst.d/res.d
+		read -p "1 check result"
 	fi
 	
     #-- {{002_body}}
 
-	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
 }
+
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_3775_28494 $@
+fn_16651_2606 $@
 
 # {{002_after}}
 
-#? fn_3775_28494 $@
+#? fn_16651_2606 $@

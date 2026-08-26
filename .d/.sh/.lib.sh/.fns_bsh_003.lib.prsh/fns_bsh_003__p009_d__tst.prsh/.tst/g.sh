@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_8838_9033(){
+fn_29279_24132(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_8838_9033="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh"
-    local dr_pth_fn_8838_9033=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
-    local fl_nm_fn_8838_9033=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
-    local rnd=8838_9033
+    local fl_pth_fn_29279_24132="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh"
+    local dr_pth_fn_29279_24132=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
+    local fl_nm_fn_29279_24132=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
+    local rnd=29279_24132
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -247,8 +247,8 @@ fn_8838_9033(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_8838_9033 $@
+fn_29279_24132 $@
 
 # {{002_after}}
 
-#? fn_8838_9033 $@
+#? fn_29279_24132 $@

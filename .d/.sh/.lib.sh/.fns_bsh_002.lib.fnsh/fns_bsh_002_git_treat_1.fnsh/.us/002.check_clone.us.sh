@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/002.us.sh
-l_00_echo_info "that :: 002.util.us.sh"
+l_00_echo_info "that :: 002.check_clone.us.sh"
 
 # check_repo_adcae_12344() {
 # 	l_00_echo_code "start::check_repo_adcae_12344"
