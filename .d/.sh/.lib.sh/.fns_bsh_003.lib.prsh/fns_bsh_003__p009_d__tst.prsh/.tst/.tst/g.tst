@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_22706_24819(){
+fn_31197_22674(){
 
-	l_00_echo_code "start :: <${FUNCNAME[0]}>"
+	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_22706_24819="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst"
-    local dr_pth_fn_22706_24819=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
-    local fl_nm_fn_22706_24819=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
-    local rnd=22706_24819
+    local fl_pth_fn_31197_22674="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst"
+    local dr_pth_fn_31197_22674=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
+    local fl_nm_fn_31197_22674=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
+    local rnd=31197_22674
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -26,7 +26,7 @@ fn_22706_24819(){
 	# first:: for .p007.d g.tst
 	[[ "$1" == "-h" ]] && {
 		echo -e "
-        this -h for <${FUNCNAME[0]}> ::
+        this -h for <${FUNCNAME[0]}> '$@' ::
         doing :: example if infs for gig tst_result is :: [. g.pr dr_res res.fl]
 			\$1 - dr_res
 			\$2 - res.fl
@@ -34,14 +34,14 @@ fn_22706_24819(){
             exa use ::
             far use ::
         "
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}
 
 	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
-    #     this -h for <${FUNCNAME[0]}> ::
+    #     this -h for <${FUNCNAME[0]}> '$@' ::
     #     doingX :: 
 	# 		\$1 - 
 	# 		\$2 - 
@@ -79,6 +79,7 @@ fn_22706_24819(){
 	#-- {{002_val_ind}}
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
 	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
@@ -91,6 +92,7 @@ fn_22706_24819(){
 
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
 	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }	
@@ -141,7 +143,7 @@ fn_22706_24819(){
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 	# {{002_use_l}}
-	l_00_echo_code "body :: <${FUNCNAME[0]}>"
+	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
@@ -173,7 +175,7 @@ fn_22706_24819(){
 	
     #-- {{002_body}}
 
-	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
@@ -181,8 +183,8 @@ fn_22706_24819(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_22706_24819 $@
+fn_31197_22674 $@
 
 # {{002_after}}
 
-#? fn_22706_24819 $@
+#? fn_31197_22674 $@

@@ -23,6 +23,7 @@ fns_bsh_002_git_treat_1_arr_remote_addr=(git@gitflic.ru:legioner9
 fns_bsh_002_git_treat_1_arr_remote_alias=(gf gh alt)
 
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
+	rpo/rpo_dta_001
 	tml_a
 )
 

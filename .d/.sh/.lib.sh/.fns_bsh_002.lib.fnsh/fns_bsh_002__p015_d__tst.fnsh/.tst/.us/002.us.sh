@@ -7,6 +7,24 @@ l_00_echo_info "that :: 002.us.sh"
 
 l_00_echo_info "res_dr=file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d"
 
+# echo -e "@startmindmap
+# *:init.sh
+
+# <code>
+# . .bashrc
+# </code>
+# ;
+# **:.bashrc
+
+# <code>
+# . .bashrc2
+# </code>
+# ;
+# @endmindmap" >"${res_dr_6734sadc}/init.puml"
+# l_00_echo_warn "START_TST:: in puml : .bashrc2; flw_chr: -f"
+
+l_00_echo_warn "START_TST:: ; flw_chr: (?)"
+
 l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
 $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
 

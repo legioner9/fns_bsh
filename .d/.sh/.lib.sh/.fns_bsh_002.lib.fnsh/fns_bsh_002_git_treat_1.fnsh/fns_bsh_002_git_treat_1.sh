@@ -3,7 +3,7 @@
 
 fns_bsh_002_git_treat_1() {
 
-	l_00_echo_code "start :: <${FUNCNAME[0]}>"
+	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
 	local fl_pth_fn_6505_31724="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
 	local dr_pth_fn_6505_31724=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh)
@@ -35,7 +35,7 @@ fns_bsh_002_git_treat_1() {
 	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
 		echo -e "
-        this -h for <${FUNCNAME[0]}> ::
+        this -h for <${FUNCNAME[0]}> '$@'::
         doing :: (?) IEN= 
 			REN=
 			\$1 - ?*{IEN}
@@ -50,7 +50,7 @@ fns_bsh_002_git_treat_1() {
 			see about big short (IEN, REN, e.c.):
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
         "
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}
 
@@ -166,7 +166,7 @@ fns_bsh_002_git_treat_1() {
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 	# {{002_use_l}}
 
-	l_00_echo_code "body :: <${FUNCNAME[0]}>"
+	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 
@@ -202,7 +202,7 @@ fns_bsh_002_git_treat_1() {
 			if . $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us; then
 				:
 			else
-				l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+				l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us', return 1${NRM}" >&2
 				return 1
 			fi
@@ -211,7 +211,7 @@ fns_bsh_002_git_treat_1() {
 
 	#-- {{002_body}}
 
-	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
 	return 0
 
