@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/002.us.sh
-l_00_echo_info "that :: 002.us.sh"
+l_00_echo_info "that :: 002.util.us.sh"
 
 # check_repo_adcae_12344() {
 # 	l_00_echo_code "start::check_repo_adcae_12344"
@@ -15,9 +15,12 @@ l_00_echo_info "that :: 002.us.sh"
 # 	l_00_echo_code "end::check_repo_adcae_12344"
 # }
 
+l_00_echo_ques "DFN:: fns_bsh_002_git_treat_1_check_clone()"
+
 fns_bsh_002_git_treat_1_check_clone() {
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	l_00_echo_info "check repo '$@'"
 
 	[[ -n "$1" ]] || {
 		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
@@ -25,7 +28,22 @@ fns_bsh_002_git_treat_1_check_clone() {
 		return 1
 	}
 
+	if [[ ! -d ${HOME}/"$1" ]];then
+echo -e "${ECHO_WARN}in file://$HOME\aer_foe\.d\.sh\rpo2git.sh , line=${LINENO} '$1' REPO_NOT_EXIST ${NRM}" >&2
+
+local dn=$(dirname $1)
+if [[ "$dn" != "."  ]] then # rpo not from home
+	mkdir -p ${HOME}/${dn}
+	cd ${HOME}/${dn} || {
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '...', return 1${NRM}" >&2
+		return 1
+	}
+fi
+
+
+	fi
+
 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 }
 
-fns_bsh_002_git_treat_1_check_clone csda
