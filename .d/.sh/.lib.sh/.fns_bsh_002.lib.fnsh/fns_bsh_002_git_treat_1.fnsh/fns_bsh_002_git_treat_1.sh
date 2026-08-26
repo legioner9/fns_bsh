@@ -185,6 +185,10 @@ fns_bsh_002_git_treat_1() {
 	local fns_bsh_002_git_treat_1_arr_remote_local_alias=
 	local fns_bsh_002_git_treat_1_num_str_main_repo=
 	local fns_bsh_002_git_treat_1_ping=
+
+	local main_repo_adr=
+	local main_repo_als=
+	
 	local dn=
 	local rpo_pth=
 
