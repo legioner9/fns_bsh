@@ -9,7 +9,7 @@ l_00_echo_info "that :: 002.us.sh"
 
 l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $HOME/fns_bsh/.d/.cdn.ax/.env.sh/fns_bsh_002_git_treat_1.v2.env.sh"
 
-# rm -rf ~/rpo/rpo_dta_001 ~/tml_a
+#  rm -rf ~/rpo/rpo_dta_001 ~/tml_a
 
 $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") "$HOME/fns_bsh/.d/.cdn.ax/.env.sh/fns_bsh_002_git_treat_1.v2.env.sh"
 
