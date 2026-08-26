@@ -183,6 +183,7 @@ fns_bsh_002_git_treat_1() {
 	local fns_bsh_002_git_treat_1_arr_remote_local=
 	local fns_bsh_002_git_treat_1_arr_remote_local_alias=
 	local fns_bsh_002_git_treat_1_main_repo=
+	local fns_bsh_002_git_treat_1_ping=
 
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr

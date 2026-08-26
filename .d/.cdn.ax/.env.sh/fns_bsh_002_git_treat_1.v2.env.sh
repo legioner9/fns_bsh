@@ -22,17 +22,9 @@ fns_bsh_002_git_treat_1_arr_remote_addr=(git@gitflic.ru:legioner9
 
 fns_bsh_002_git_treat_1_arr_remote_alias=(gf gh alt)
 
-fns_bsh_002_git_treat_1_arr_rpo_pth=(aer_foe
-	edu_clng
-	edu_dta_001
-	edu_dta_002
-	edu_lnx
+fns_bsh_002_git_treat_1_arr_rpo_pth=(
 	tml_a
-	cmn_lex
-	fns_bsh git_flw
-	rpo/rpo_dta_001
-	rpo/rpo_pax_001
-	rpo/rpo_pax_sh)
+)
 
 fns_bsh_002_git_treat_1_arr_remote_local=(/run/media/$USER/MY_ONE
 	/run/media/$USER/TOSH)
@@ -40,6 +32,7 @@ fns_bsh_002_git_treat_1_arr_remote_local=(/run/media/$USER/MY_ONE
 fns_bsh_002_git_treat_1_arr_remote_local_alias=(my_one tosh)
 
 fns_bsh_002_git_treat_1_main_repo="gf"
+fns_bsh_002_git_treat_1_ping="gitflic.ru"
 
 l_00_echo_ques "PART_PROGRAM_IS_START :: check env for fns_bsh_002_git_treat_1"
 
