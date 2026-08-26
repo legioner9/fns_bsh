@@ -178,12 +178,15 @@ fns_bsh_002_git_treat_1() {
 	local item5=
 
 	local fns_bsh_002_git_treat_1_arr_remote_addr=
+	local fns_bsh_002_git_treat_1_arr_remote=
 	local fns_bsh_002_git_treat_1_arr_remote_alias=
 	local fns_bsh_002_git_treat_1_arr_rpo_pth=
 	local fns_bsh_002_git_treat_1_arr_remote_local=
 	local fns_bsh_002_git_treat_1_arr_remote_local_alias=
-	local fns_bsh_002_git_treat_1_main_repo=
+	local fns_bsh_002_git_treat_1_num_str_main_repo=
 	local fns_bsh_002_git_treat_1_ping=
+	local dn=
+	local rpo_pth=
 
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr
