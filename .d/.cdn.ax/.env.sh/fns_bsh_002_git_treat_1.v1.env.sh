@@ -28,17 +28,20 @@ fns_bsh_002_git_treat_1_arr_remote_addr_and_alias=(
 	"alt ssh://forgejo@altlinux.space/legioner9"
 )
 
-fns_bsh_002_git_treat_1_arr_rpo_pth=(aer_foe
+fns_bsh_002_git_treat_1_arr_rpo_pth=(
+	aer_foe
 	edu_clng
 	edu_dta_001
 	edu_dta_002
 	edu_lnx
 	tml_a
 	cmn_lex
-	fns_bsh git_flw
+	fns_bsh 
+	git_flw
 	rpo/rpo_dta_001
 	rpo/rpo_pax_001
-	rpo/rpo_pax_sh)
+	rpo/rpo_pax_sh
+)
 
 fns_bsh_002_git_treat_1_arr_remote_local=(/run/media/$USER/MY_ONE
 	/run/media/$USER/TOSH)

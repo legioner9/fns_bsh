@@ -23,21 +23,19 @@ fns_bsh_002_git_treat_1_staus_push() {
 
 		git add .
 		git commit -m "<>"
-		# git push gf master
-		# git push alt master
-		# git push gh master
-		for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do
-
-			l_00_echo_info "	[$i,$j]=${fns_bsh_002_git_treat_1_arr_remote[$i, 0]}"
-
-			l_00_echo_code "git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master"
-			git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master
-
-		done
 
 	else
 		l_00_echo_warn "gs clear in $1 :: true?"
 	fi
+
+	for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do
+
+		l_00_echo_info "	[$i,$j]=${fns_bsh_002_git_treat_1_arr_remote[$i, 0]}"
+
+		l_00_echo_code "git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master"
+		git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master
+
+	done
 
 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 

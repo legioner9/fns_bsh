@@ -70,10 +70,10 @@ for item2 in ${fns_bsh_002_git_treat_1_arr_rpo_pth[@]}; do
 	l_00_echo_info "	$item2"
 done
 
-l_00_echo_sys "set_of_var :: fns_bsh_002_git_treat_1_ping ::"
+l_00_echo_sys "set_of_var :: ping ::"
 l_00_echo_info "	$fns_bsh_002_git_treat_1_ping"
 
-l_00_echo_sys "set_of_var :: fns_bsh_002_git_treat_1_bare_dr ::"
+l_00_echo_sys "set_of_var :: bare_dr ::"
 l_00_echo_info "	$fns_bsh_002_git_treat_1_bare_dr"
 
 l_00_echo_sys "set_of_var :: main_repo_adr ::"

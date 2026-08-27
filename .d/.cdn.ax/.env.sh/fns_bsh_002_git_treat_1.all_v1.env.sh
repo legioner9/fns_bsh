@@ -2,11 +2,51 @@
 
 l_00_echo_ques "PART_PROGRAM_IS_START :: get and check env for fns_bsh_002_git_treat_1"
 
-#! exa repo 
+#! check and cp to ~fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh
+# local item=
+# local item1=
+# local item2=
+# local item3=
+# local item4=
+# local item5=
+
+# local fns_bsh_002_git_treat_1_arr_remote_addr=
+# local fns_bsh_002_git_treat_1_arr_remote_alias=
+# local fns_bsh_002_git_treat_1_arr_rpo_pth=
+# local fns_bsh_002_git_treat_1_arr_remote_local=
+# local fns_bsh_002_git_treat_1_arr_remote_local_alias=
+# local fns_bsh_002_git_treat_1_main_repo=
+# local fns_bsh_002_git_treat_1_ping=
+
+# fns_bsh_002_git_treat_1_arr_remote_addr=(
+# 	git@gitflic.ru:legioner9
+# 	git@github.com:legioner9
+# 	ssh://forgejo@altlinux.space/legioner9)
+
+# fns_bsh_002_git_treat_1_arr_remote_alias=(gf gh alt)
+
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
-	rpo/1/exa
-	# TTT/tml_a
+	aer_foe
+	# rpo/edu_clng
+	#? rpo/edu_dta_001
+	#? rpo/edu_dta_002
+	# rpo/edu_lnx
+	# rpo/tml_a
+	# rpo/cmn_lex
+	fns_bsh
+	rpo/git_flw
+	rpo/rpo_dta_001
+	rpo/rpo_dta_002
+	rpo/rpo_pax_001
+	rpo/rpo_pax_002
+	rpo/rpo_pax_sh
 )
+
+# fns_bsh_002_git_treat_1_arr_remote_addr_and_alias=(
+# 	"gf git@gitflic.ru:legioner9"
+# 	"gh git@github.com:legioner9"
+# 	"alt ssh://forgejo@altlinux.space/legioner9"
+# )
 
 declare -A fns_bsh_002_git_treat_1_arr_remote
 
@@ -32,7 +72,6 @@ done
 # echo "все элементы массива: ${massiv[@]}"
 # echo "количество элементов массива: ${#massiv[@]}"
 
-#! mane repo is local !!!
 fns_bsh_002_git_treat_1_num_str_main_repo=0
 fns_bsh_002_git_treat_1_ping="gitflic.ru"
 fns_bsh_002_git_treat_1_bare_dr="new_bare"
