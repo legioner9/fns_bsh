@@ -177,18 +177,20 @@ fns_bsh_002_git_treat_1() {
 	local item4=
 	local item5=
 
-	local fns_bsh_002_git_treat_1_arr_remote_addr=
-	local fns_bsh_002_git_treat_1_arr_remote=
-	local fns_bsh_002_git_treat_1_arr_remote_alias=
-	local fns_bsh_002_git_treat_1_arr_rpo_pth=
-	local fns_bsh_002_git_treat_1_arr_remote_local=
-	local fns_bsh_002_git_treat_1_arr_remote_local_alias=
+	local fns_bsh_002_git_treat_1_arr_remote_addr=()
+	local fns_bsh_002_git_treat_1_arr_remote_alias=()
+	local fns_bsh_002_git_treat_1_arr_rpo_pth=()
+	local fns_bsh_002_git_treat_1_arr_remote_local=()
+	local fns_bsh_002_git_treat_1_arr_remote_local_alias=()
 	local fns_bsh_002_git_treat_1_num_str_main_repo=
 	local fns_bsh_002_git_treat_1_ping=
-
+	local fns_bsh_002_git_treat_1_bare_dr=
+	local fns_bsh_002_git_treat_1_adr=
+	local fns_bsh_002_git_treat_1_arr_local_adr=()
+	local fns_bsh_002_git_treat_1_arr_usb=()
 	local main_repo_adr=
 	local main_repo_als=
-	
+
 	local dn=
 	local rpo_pth=
 
