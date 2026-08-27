@@ -55,7 +55,7 @@ for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do
 
 done
 
-echo "fns_bsh_002_git_treat_1_arr_usb=(${fns_bsh_002_git_treat_1_arr_net[@]})"
+echo "fns_bsh_002_git_treat_1_arr_net=(${fns_bsh_002_git_treat_1_arr_net[@]})"
 
 l_00_echo_sys "check :: fns_bsh_002_git_treat_1_arr_usb ::"
 
@@ -72,7 +72,9 @@ for item3 in ${fns_bsh_002_git_treat_1_arr_usb[@]}; do
 	fi
 done
 
-l_00_echo_sys "check :: fns_bsh_002_git_treat_1_arr_net ::"
+echo "fns_bsh_002_git_treat_1_arr_usb=(${fns_bsh_002_git_treat_1_arr_usb[@]})"
+
+l_00_echo_sys "check net :: fns_bsh_002_git_treat_1_arr_net ::"
 
 unset item4
 for item4 in ${fns_bsh_002_git_treat_1_arr_net[@]}; do
@@ -85,5 +87,7 @@ for item4 in ${fns_bsh_002_git_treat_1_arr_net[@]}; do
 	fi
 	break
 done
+
+read -p "?TRUE :: check content2"
 
 #-- {{002_001_us_sh}}
