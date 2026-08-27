@@ -27,7 +27,7 @@ l_00_echo_ques "PART_PROGRAM_IS_START :: get and check env for fns_bsh_002_git_t
 
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
 	aer_foe
-	# rpo/edu_clng
+	rpo/edu_clng
 	#? rpo/edu_dta_001
 	#? rpo/edu_dta_002
 	rpo/edu_lnx
