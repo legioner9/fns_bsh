@@ -1,4 +1,4 @@
-#!/bin/bash
+.#!/bin/bash
 
 fn_vewthhg5231454gfvs() {
 	l_00_echo_code "start::fn_vewthhg5231454gfvs"

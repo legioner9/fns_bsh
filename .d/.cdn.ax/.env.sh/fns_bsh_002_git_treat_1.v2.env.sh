@@ -1,6 +1,6 @@
 #!/bin/bash
 
-l_00_echo_ques "PART_PROGRAM_IS_START :: check env for fns_bsh_002_git_treat_1"
+l_00_echo_ques "PART_PROGRAM_IS_START :: get and check env for fns_bsh_002_git_treat_1"
 
 #! check and cp to ~fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh
 # local item=
@@ -46,8 +46,8 @@ fns_bsh_002_git_treat_1_arr_remote[2, 0]=alt
 fns_bsh_002_git_treat_1_arr_remote[2, 1]=ssh://forgejo@altlinux.space/legioner9
 fns_bsh_002_git_treat_1_arr_remote[3, 0]=my_one
 fns_bsh_002_git_treat_1_arr_remote[3, 1]=/run/media/$USER/MY_ONE
-fns_bsh_002_git_treat_1_arr_remote[4, 0]=tosh
-fns_bsh_002_git_treat_1_arr_remote[4, 1]=/run/media/$USER/TOSH
+# fns_bsh_002_git_treat_1_arr_remote[4, 0]=tosh
+# fns_bsh_002_git_treat_1_arr_remote[4, 1]=/run/media/$USER/TOSH
 
 l_00_echo_sys "set_of_arr :: fns_bsh_002_git_treat_1_arr_remote ::"
 for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do

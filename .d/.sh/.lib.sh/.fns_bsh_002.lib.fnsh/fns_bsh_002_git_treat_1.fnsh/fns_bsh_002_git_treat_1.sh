@@ -170,12 +170,12 @@ fns_bsh_002_git_treat_1() {
 
 	#-- ~001_body~
 
-	local item=
-	local item1=
-	local item2=
-	local item3=
-	local item4=
-	local item5=
+	# local item=
+	# local item1=
+	# local item2=
+	# local item3=
+	# local item4=
+	# local item5=
 
 	local fns_bsh_002_git_treat_1_arr_remote_addr=()
 	local fns_bsh_002_git_treat_1_arr_remote_alias=()
@@ -187,7 +187,10 @@ fns_bsh_002_git_treat_1() {
 	local fns_bsh_002_git_treat_1_bare_dr=
 	local fns_bsh_002_git_treat_1_adr=
 	local fns_bsh_002_git_treat_1_arr_local_adr=()
+
 	local fns_bsh_002_git_treat_1_arr_usb=()
+	local fns_bsh_002_git_treat_1_arr_net=()
+
 	local main_repo_adr=
 	local main_repo_als=
 
@@ -204,7 +207,7 @@ fns_bsh_002_git_treat_1() {
 	" >> \
 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
-	local item_us=
+	unset item_us
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
 		if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us && $(l_01_prs_f -e $item_us) == "sh" ]]; then
 			l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us"

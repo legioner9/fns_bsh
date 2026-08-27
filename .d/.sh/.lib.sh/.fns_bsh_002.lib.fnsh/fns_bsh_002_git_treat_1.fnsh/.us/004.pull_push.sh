@@ -19,6 +19,54 @@ fns_bsh_002_git_treat_1_pull_push() {
 		return 1
 	}
 
+	l_00_echo_code "git pull $main_repo_als master"
+	git pull $main_repo_als master || {
+
+		echo -e "${ECHO_WARN}in file:// , \
+	line=${LINENO} :: EXEC : 'git pull $main_repo_als master', 'RESUME :: $main_repo_alsf ERROR' continue ${NRM}" >&2
+
+		l_00_echo_code "git pull $main_repo_als master | grep stash"
+
+		if git pull $main_repo_als master 2>&1 | grep stash; then
+			l_00_echo_code "git stash"
+			git stash
+			l_00_echo_code "git pull $main_repo_als master"
+			if git pull $main_repo_als master; then
+				l_00_echo_succ "continue"
+				git stash pop
+				if [[ -n "$(git status -s)" ]]; then
+
+					git add .
+					git commit -m "<>"
+					git push gf master
+					git push alt master
+					git push gh master
+
+				else
+					l_00_echo_warn "gs clear in $1 :: true?"
+				fi
+			else
+				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://, line=${LINENO} :: EXEC : 'git pull $main_repo_alsf master', 'RESUME :: $main_repo_alsf ERROR' return 1${NRM}" >&2
+				return 1
+			fi
+
+		fi
+		return 1
+	}
+
+	if [[ -n "$(git status -s)" ]]; then
+
+		git add .
+		git commit -m "<>"
+		git push gf master
+		git push alt master
+		git push gh master
+
+	else
+		l_00_echo_warn "gs clear in $1 :: true?"
+	fi
+
 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 
 }

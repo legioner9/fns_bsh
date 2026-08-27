@@ -5,12 +5,12 @@ l_00_echo_info "that :: 001.01.get_env.us.sh"
 # first:: for .p015.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
-echo -e " arg_flow ::
-if src_dir :: $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
-\$1 root_dr \$2 ::
-dr - result dr
-fl - result fl
-"
+# echo -e " arg_flow ::
+# if src_dir :: $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
+# \$1 root_dr \$2 ::
+# dr - result dr
+# fl - result fl
+# "
 # arg1 ::
 # $(eval "echo \$arg_1_fn_${rnd}")
 # arg2 ::
