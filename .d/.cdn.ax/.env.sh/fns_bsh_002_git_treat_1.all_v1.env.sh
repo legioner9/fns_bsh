@@ -26,20 +26,20 @@ l_00_echo_ques "PART_PROGRAM_IS_START :: get and check env for fns_bsh_002_git_t
 # fns_bsh_002_git_treat_1_arr_remote_alias=(gf gh alt)
 
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
-	aer_foe
-	rpo/edu_clng
-	rpo/edu_dta_001
+	# aer_foe
+	# rpo/edu_clng
+	# rpo/edu_dta_001
 	rpo/edu_dta_002
-	rpo/edu_lnx
-	rpo/tml_a
-	rpo/cmn_lex
+	# rpo/edu_lnx
+	# rpo/tml_a
+	# rpo/cmn_lex
 	fns_bsh
-	rpo/git_flw
-	# rpo/rpo_dta_001
-	# rpo/rpo_dta_002
-	rpo/rpo_pax_001
-	rpo/rpo_pax_002
-	rpo/rpo_pax_sh
+	# rpo/git_flw
+	#! rpo/rpo_dta_001
+	#! rpo/rpo_dta_002
+	# rpo/rpo_pax_001
+	# rpo/rpo_pax_002
+	# rpo/rpo_pax_sh
 )
 
 # fns_bsh_002_git_treat_1_arr_remote_addr_and_alias=(
