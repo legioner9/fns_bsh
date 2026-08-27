@@ -24,7 +24,7 @@ l_00_echo_ques "PART_PROGRAM_IS_START :: get and check env for fns_bsh_002_git_t
 # 	ssh://forgejo@altlinux.space/legioner9)
 
 # fns_bsh_002_git_treat_1_arr_remote_alias=(gf gh alt)
-
+#! exa repo 
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
 	rpo/exa
 	# TTT/tml_a
