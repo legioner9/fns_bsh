@@ -60,17 +60,6 @@ done
 # echo "все элементы массива: ${massiv[@]}"
 # echo "количество элементов массива: ${#massiv[@]}"
 
-l_00_echo_sys "get :: fns_bsh_002_git_treat_1_arr_usb ::"
-for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do
-
-	fns_bsh_002_git_treat_1_adr=${fns_bsh_002_git_treat_1_arr_remote[$i, 1]}
-
-	if [[ ${fns_bsh_002_git_treat_1_adr:0:1} == "/" ]]; then
-		echo "fns_bsh_002_git_treat_1_adr=$fns_bsh_002_git_treat_1_adr"
-		fns_bsh_002_git_treat_1_arr_usb+=($fns_bsh_002_git_treat_1_adr)
-	fi
-done
-
 fns_bsh_002_git_treat_1_num_str_main_repo=0
 fns_bsh_002_git_treat_1_ping="gitflic.ru"
 fns_bsh_002_git_treat_1_bare_dr="new_bare"
