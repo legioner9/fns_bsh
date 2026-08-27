@@ -23,7 +23,7 @@ code --install-extension ionutvmi.path-autocomplete
 # makefile tools
 code --install-extension ms-vscode.makefile-tools
 # todo tree
-code --install-extension Gruntfuggly.todo-tree
+# code --install-extension Gruntfuggly.todo-tree
 # todo color comments
 #? todo color comments
 #! todo color comments
