@@ -37,10 +37,10 @@ fns_bsh_002_d2md_1(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: IEN=\$1 REN=\$2
+        doing :: IEN=\$1(dr with struct) REN=\$2(.md with anc)
 			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - dr with struct
+			\$2 - fl.md with anc
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
