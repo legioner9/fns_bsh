@@ -199,13 +199,13 @@ fns_bsh_002_git_treat_1() {
 
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr
-	echo -e " $(date)
-. $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
-	$(eval "echo \$arg_1_fn_${rnd}") \
-	$(eval "echo \$arg_2_fn_${rnd}") \
-	$(eval "echo \$arg_3_fn_${rnd}")
-	" >> \
-		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+# 	echo -e " $(date)
+# . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
+# 	$(eval "echo \$arg_1_fn_${rnd}") \
+# 	$(eval "echo \$arg_2_fn_${rnd}") \
+# 	$(eval "echo \$arg_3_fn_${rnd}")
+# 	" >> \
+# 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
 	lfoe_path_to_var $(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
