@@ -7,4 +7,5 @@ code ~/aer_foe
 code ~/fns_bsh
 # code ~/edu_dta
 # code ~/tml_a
+code /run/media/st/TOSHIBA_EXT/_OLD_REPO_26+08/_unzip/
 
