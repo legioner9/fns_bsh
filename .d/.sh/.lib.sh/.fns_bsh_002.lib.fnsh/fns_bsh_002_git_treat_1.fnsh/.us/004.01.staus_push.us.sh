@@ -33,7 +33,11 @@ fns_bsh_002_git_treat_1_staus_push() {
 		l_00_echo_info "	[$i,$j]=${fns_bsh_002_git_treat_1_arr_remote[$i, 0]}"
 
 		l_00_echo_code "git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master"
-		git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master
+		git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master || {
+			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'git push ${fns_bsh_002_git_treat_1_arr_remote[$i, 0]} master', return 1${NRM}" >&2
+			return 1
+		}
 
 	done
 

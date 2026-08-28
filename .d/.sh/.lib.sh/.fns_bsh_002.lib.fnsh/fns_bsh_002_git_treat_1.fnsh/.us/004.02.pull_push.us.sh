@@ -33,8 +33,17 @@ fns_bsh_002_git_treat_1_pull_push() {
 			l_00_echo_code "git pull $main_repo_als master"
 			if git pull $main_repo_als master; then
 				l_00_echo_succ "continue"
-				git stash pop
-				fns_bsh_002_git_treat_1_staus_push $1
+				l_00_echo_code "git stash pop"
+				git stash pop || {
+					l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+					echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'git stash pop', return 1${NRM}" >&2
+					return 1
+				}
+				fns_bsh_002_git_treat_1_staus_push $1 || {
+					l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+					echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_002_git_treat_1_staus_push $1', return 1${NRM}" >&2
+					return 1
+				}
 				# if [[ -n "$(git status -s)" ]]; then
 
 				# 	git add .
@@ -48,7 +57,7 @@ fns_bsh_002_git_treat_1_pull_push() {
 				# fi
 			else
 				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-				echo -e "${ECHO_RET1}in file://, line=${LINENO} :: EXEC : 'git pull $main_repo_alsf master', 'RESUME :: $main_repo_alsf ERROR' return 1${NRM}" >&2
+				echo -e "${ECHO_RET1}in file://, line=${LINENO} :: EXEC : 'git pull $main_repo_als master', 'RESUME :: $main_repo_alsf ERROR' return 1${NRM}" >&2
 				return 1
 			fi
 
