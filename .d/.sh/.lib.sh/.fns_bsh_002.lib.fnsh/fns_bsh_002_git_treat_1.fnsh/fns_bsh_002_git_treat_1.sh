@@ -207,7 +207,7 @@ fns_bsh_002_git_treat_1() {
 # 	" >> \
 # 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
-	lfoe_path_to_var $(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+	# lfoe_path_to_var $(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
 	unset item_us
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
