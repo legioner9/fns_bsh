@@ -2,7 +2,7 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml
 
 fns_bsh_002_git_treat_1() {
-
+	
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
 	local fl_pth_fn_6505_31724="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_git_treat_1.fnsh/fns_bsh_002_git_treat_1.sh"
@@ -199,13 +199,13 @@ fns_bsh_002_git_treat_1() {
 
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
 	# first:: gig g.pr
-# 	echo -e " $(date)
-# . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
-# 	$(eval "echo \$arg_1_fn_${rnd}") \
-# 	$(eval "echo \$arg_2_fn_${rnd}") \
-# 	$(eval "echo \$arg_3_fn_${rnd}")
-# 	" >> \
-# 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+	# 	echo -e " $(date)
+	# . $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
+	# 	$(eval "echo \$arg_1_fn_${rnd}") \
+	# 	$(eval "echo \$arg_2_fn_${rnd}") \
+	# 	$(eval "echo \$arg_3_fn_${rnd}")
+	# 	" >> \
+	# 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
 	# lfoe_path_to_var $(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
 
