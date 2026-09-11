@@ -17,6 +17,13 @@ fns_bsh_002_d2md_1(){
 	#     return 1
 	# }
 
+	# [[ -z "$2" ]] && {
+	#     # snp "out_err"
+	#     l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     return 1
+	# }
+	
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
@@ -49,7 +56,7 @@ fns_bsh_002_d2md_1(){
             exa use ::
             far use ::
 			see about big short (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob?file=bshort.md&branch=master&mode=markdown
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
@@ -105,13 +112,19 @@ fns_bsh_002_d2md_1(){
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# [[ -d "$2" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -d "$1" ]] || {
+		# snp "out_err"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh , line=${LINENO} :: ARG_1_NOT_DR is IEN = src_dr, return 1${NRM}" >&2
+		return 1
+	}
 
+	[[ -d "$(l_01_prs_f -d "$2")" ]] || {
+		# snp "out_err"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh , line=${LINENO} :: ARG_2_NOT_DR is *{REN}, return 1${NRM}" >&2
+		return 1
+	}
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
 	#* STANDART ENV THAT FILE
