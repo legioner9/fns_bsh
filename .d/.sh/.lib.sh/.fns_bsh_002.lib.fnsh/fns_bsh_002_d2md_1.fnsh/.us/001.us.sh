@@ -36,7 +36,7 @@ l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	:
+	l_00_echo_info arg1=$(eval "echo \$arg_1_fn_${rnd}")
 
 fi
 
