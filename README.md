@@ -63,3 +63,13 @@ $ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
     fns_bsh_002_git_treat_1 \
         ~/fns_bsh/.d/.cdn.ax/.env.sh/fns_bsh_002_git_treat_1.all_v1.env.sh
 
+## G[FN_DR+PR_DR{as .tst}]
+
+### tst gig fns_bsh_002__p015_d__tst
+    . ~/fns_bsh/.d/.p.ax/.p017.d/.tst/g.tst
+
+## G[PR_DR+PR_DR{as .tst}]
+
+### tst gig ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh
+
+    . ~/fns_bsh/.d/.p.ax/.p018.d/.tst/g.tst
