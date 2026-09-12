@@ -18,6 +18,10 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	. ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}") -v2
 	l_00_echo_err "CHECK! . ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}") -v2"
+
+	l_00_echo_code "man=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$arg_2_fn_${rnd}")).man"
+	man=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$arg_2_fn_${rnd}")).man
+	echo "file://$man" >"$man"
 	read -p "1"
 
 	. ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst
