@@ -33,14 +33,25 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
+	: >"$(eval "echo \$arg_2_fn_${rnd}")"
+
 	#.. fns_bsh_002_d2md_1_arr_ext
+
 	fns_bsh_002_d2md_1_dr() {
 		# $1 :: $(eval "echo \$arg_1_fn_${rnd}")
 		: >"$2"
+		# $2 deep
+		local deep="$2"
+		l_00_echo_info "\$deep=$deep"
 		unset item
+		local item=
+
 		for item in $(l_02_d2e "$1"); do
 			l_00_echo_info "item=$item"
-			echo "$item" >>"$2"
+			if [[ -d "$1/$item" ]]; then
+				fns_bsh_002_d2md_1_dr "$1/$item" $(($deep + 1))
+			fi
+			echo "$item" >>"$(eval "echo \$arg_2_fn_${rnd}")"
 		done
 	}
 

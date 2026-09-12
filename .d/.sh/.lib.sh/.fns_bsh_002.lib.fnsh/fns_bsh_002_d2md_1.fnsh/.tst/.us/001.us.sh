@@ -43,6 +43,9 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	}
 	:
 
+	l_00_echo_ques "copy from file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d"
+	read -p "see copy"
+
 	l_00_echo_sys "	fns_bsh_002_d4d \
 		file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.dta/cp_to_tst.d \
 		file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d \
