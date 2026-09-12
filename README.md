@@ -16,6 +16,10 @@ $ . ~/fns_bsh/.d/.sh/cat_lib_fns_bsh_XXX.sh
 
 $ . ~/fns_bsh/.d/.p.ax/_cat_pXXX.sh
 
+### catalog all lib
+
+$ . ~/fns_bsh/.d/.sh/cat_all_work_lib.sh
+
 ### set repo
 
 https://gitflic.ru/project/legioner9

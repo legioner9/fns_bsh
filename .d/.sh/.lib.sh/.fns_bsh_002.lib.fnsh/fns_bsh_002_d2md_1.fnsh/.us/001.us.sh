@@ -34,9 +34,8 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	#.. fns_bsh_002_d2md_1_arr_ext
-	for item_pth in $(l_02_d2e $(eval "echo \$arg_1_fn_${rnd}"));doing
-
-	done
+	fns_bsh_002_d2md_1_dr $(eval "echo \$arg_1_fn_${rnd}") \
+		$(eval "echo \$arg_2_fn_${rnd}")
 
 fi
 
