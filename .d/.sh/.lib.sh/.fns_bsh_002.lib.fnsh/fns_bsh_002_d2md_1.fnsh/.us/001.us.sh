@@ -35,8 +35,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	#.. fns_bsh_002_d2md_1_arr_ext
 	fns_bsh_002_d2md_1_dr $(eval "echo \$arg_1_fn_${rnd}") \
-		0
-
+		1
 fi
 
 #-- {{002_001_us_sh}}

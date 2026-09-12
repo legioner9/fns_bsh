@@ -37,7 +37,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		# $1 dir $2 dip
 		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
-		echo "$2 $(cat "$1/_d.d")" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		echo "$rch $(cat "$1/_d.d")" $'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 	}
 

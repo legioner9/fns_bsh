@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.01.dr.us.sh"
+l_00_echo_info "that :: 001.04.fl.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_001_us_sh~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
@@ -33,36 +33,16 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	: >"$(eval "echo \$arg_2_fn_${rnd}")"
+	fns_bsh_002_d2md_1_fl() {
 
-	#.. fns_bsh_002_d2md_1_arr_ext
+		# $1 dir $2 dip
+		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
+		l_00_echo_warn "rch=$rch"
+		echo "$rch $(cat "$(fns_bsh_002_d2md_1_pth_tr_1 "$1")")"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		cat $1 >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
-	fns_bsh_002_d2md_1_dr() {
-		# $1 :: $(eval "echo \$arg_1_fn_${rnd}")
-		: >"$2"
-		# $2 deep
-		local deep="$2"
-		# l_00_echo_info "\$deep=$deep"
-		unset item
-		local item=
-
-		for item in $(l_02_d2e "$1"); do
-			# l_00_echo_info "item=$item"
-			if [[ -d "$1/$item" ]]; then
-
-				# cat "$1/$item"/_d.d >>"$(eval "echo \$arg_2_fn_${rnd}")"
-				fns_bsh_002_d2md_1_dd "$1/$item" $deep
-
-				fns_bsh_002_d2md_1_dr "$1/$item" $(($deep + 1))
-
-			fi
-
-			if [[ -f "$1/$item" ]]; then
-				fns_bsh_002_d2md_1_fl $1/$item $deep
-				# echo "$deep $item" >>"$(eval "echo \$arg_2_fn_${rnd}")"
-			fi
-
-		done
 	}
 
 fi
