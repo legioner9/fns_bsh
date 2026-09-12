@@ -2,8 +2,8 @@
 l_00_echo_info "that :: 001.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_001_us_sh~
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
-	# first:: for .p015.d gig 001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
+# first:: for .p015.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 echo -e " arg_flow ::
@@ -31,14 +31,13 @@ fl - result fl
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
-# up to_mem .env.sh dr
-l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
-
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	l_00_echo_info arg1=$(eval "echo \$arg_1_fn_${rnd}")
+	#.. fns_bsh_002_d2md_1_arr_ext
+	for item_pth in $(l_02_d2e $(eval "echo \$arg_1_fn_${rnd}"));doing
+
+	done
 
 fi
 
-	#-- {{002_001_us_sh}}
-		
+#-- {{002_001_us_sh}}

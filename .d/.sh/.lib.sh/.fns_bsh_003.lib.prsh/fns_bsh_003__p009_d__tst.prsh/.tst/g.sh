@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_29279_24132(){
+fn_5294_7517(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_29279_24132="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh"
-    local dr_pth_fn_29279_24132=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
-    local fl_nm_fn_29279_24132=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
-    local rnd=29279_24132
+    local fl_pth_fn_5294_7517="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh"
+    local dr_pth_fn_5294_7517=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
+    local fl_nm_fn_5294_7517=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/g.sh)
+    local rnd=5294_7517
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -222,6 +222,11 @@ fn_29279_24132(){
 	$(eval "echo \$arg_3_fn_${rnd}")
 	" >> \
 		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+
+		lfoe_path_to_var $(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+
+		# up to_mem .env.sh dr
+		l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
 	
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
@@ -247,8 +252,8 @@ fn_29279_24132(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_29279_24132 $@
+fn_5294_7517 $@
 
 # {{002_after}}
 
-#? fn_29279_24132 $@
+#? fn_5294_7517 $@
