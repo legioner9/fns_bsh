@@ -21,7 +21,9 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	l_00_echo_code "man=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$arg_2_fn_${rnd}")).man"
 	man=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$arg_2_fn_${rnd}")).man
-	echo "file://$man" >"$man"
+	echo "$man" >"$man"
+	lfoe_path_to_var "$man"
+	unset man
 	read -p "1"
 
 	. ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst
