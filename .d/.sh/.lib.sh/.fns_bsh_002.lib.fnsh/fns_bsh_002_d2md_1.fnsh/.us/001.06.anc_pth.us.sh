@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.04.fl.us.sh"
+l_00_echo_info "that :: 001.06.anc_pth.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_001_us_sh~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
@@ -33,20 +33,14 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_1_fl() {
+	fns_bsh_002_d2md_1_anc_pth() {
+		# realpath --relative-to=/путь/к/директории1 /путь/к/директории2
+		# $1=pth_fl "$(eval "echo \$arg_2_fn_${rnd}")"=pth_md $2=
+		# prto::$(eval "echo \$dr_pth_fn_${rnd}")/.src/exa_2/treat.sh
+		local res="$(realpath --relative-to="$(dirname "$(eval "echo \$arg_2_fn_${rnd}")")" "$(dirname "$1")")"/"$(basename "$1")"
+		echo "$res"
+		# echo " [$(basename "$1")]($res)"
 
-		# $1 fl $2 dip
-		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
-		l_00_echo_warn "rch=$rch"
-
-		local anc_pth=$(fns_bsh_002_d2md_1_anc_pth "$1")
-		local res_str="$rch [$(basename "$1")]("$anc_pth")"
-
-		echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
-
-		head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
-		
-		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
 	}
 
 fi

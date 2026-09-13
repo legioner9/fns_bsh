@@ -1,1 +1,4 @@
-# 
+# in files :
+- head is last (ont empty string) without two char (usually #@)
+# in dir :
+- head is _d.d file in dir
