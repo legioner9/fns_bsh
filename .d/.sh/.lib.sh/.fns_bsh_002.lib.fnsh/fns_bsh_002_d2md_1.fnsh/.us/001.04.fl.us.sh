@@ -38,11 +38,12 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# $1 dir $2 dip
 		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
 		l_00_echo_warn "rch=$rch"
-		echo "$rch $(cat "$(fns_bsh_002_d2md_1_pth_tr_1 "$1")")"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
-		cat $1 >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		local tail_1=$(tail -n 1 "$1")
+		# without tow char
+		local head=${tail_1:2}
+		echo "$rch $head"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
 		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
-		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
-
 	}
 
 fi
