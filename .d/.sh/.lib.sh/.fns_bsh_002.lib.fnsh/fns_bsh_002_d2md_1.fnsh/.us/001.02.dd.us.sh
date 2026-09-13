@@ -36,8 +36,15 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	fns_bsh_002_d2md_1_dd() {
 
 		# $1 dir $2 dip
+
+		local anc_pth=$(fns_bsh_002_d2md_1_anc_pth "$1")
+		local res_str="[$(basename "$1")]("$anc_pth")"
+
 		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
-		echo "$rch $(cat "$1/_d.d")" $'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		if [[ ! -f "$1/_d.d" ]]; then
+			echo "{$1}" >"$1/_d.d"
+		fi
+		echo "$rch $rch $(head -n 1 "$1/_d.d") <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 	}
 

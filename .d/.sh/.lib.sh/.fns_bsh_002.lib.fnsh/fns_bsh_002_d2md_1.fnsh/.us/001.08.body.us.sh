@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.05.pth_tr_1.us.sh"
+l_00_echo_info "that :: 001.08.body.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_001_us_sh~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
@@ -33,16 +33,10 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_1_pth_tr_1() {
-
-		# $1 pth
-		local pth="$(dirname "$1")/_$(basename "$1").f"
-		if [[ ! -f "$pth" ]]; then
-			echo "{file://$pth}" >"$pth"
-		fi
-
-		echo "$pth"
-
+	fns_bsh_002_d2md_1_body() {
+		echo '```'"$(l_01_prs_f -e "$1")"
+		head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		echo '```'
 	}
 
 fi

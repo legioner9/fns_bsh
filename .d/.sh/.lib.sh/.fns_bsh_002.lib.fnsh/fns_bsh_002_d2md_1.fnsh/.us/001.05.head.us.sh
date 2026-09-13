@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.04.fl.us.sh"
+l_00_echo_info "that :: 001.05.head.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_001_us_sh~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
@@ -33,25 +33,21 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_1_fl() {
+	fns_bsh_002_d2md_1_head() {
 
-		# $1 fl $2 dip
-		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
-		l_00_echo_warn "rch=$rch"
+		# $1 pth
+		local str_1=$(tail -n 1 "$1")
+		local ch_2=${str_1:1:1}
+		# l_00_echo_warn "str_1=$str_1"
+		# l_00_echo_warn "ch_2=$ch_2"
 
-		local anc_pth=$(fns_bsh_002_d2md_1_anc_pth "$1")
-		local res_str="[$(basename "$1")]("$anc_pth")"
+		if [[ ! $ch_2 == "@" ]]; then
+			echo "#@ {$1}" >>"$1"
+		fi
+		str_1=$(tail -n 1 "$1")
+		local head_1=${str_1:2}
+		echo "$head_1"
 
-		# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
-		echo "$rch $rch $(fns_bsh_002_d2md_1_head "$1") <- fl:: $res_str <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
-
-		# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
-
-		# head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
-
-		fns_bsh_002_d2md_1_body "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
-
-		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
 	}
 
 fi
