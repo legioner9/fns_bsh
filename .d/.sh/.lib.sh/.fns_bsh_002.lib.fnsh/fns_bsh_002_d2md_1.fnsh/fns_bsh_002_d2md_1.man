@@ -1,4 +1,6 @@
 # in files :
-- head is last (ont empty string) without two char (usually #@)
+- head is last (ont empty string) without two char (usually ^#@ , second char mast be @)
+    - if second char not @ - be add to file {"#@{EN}"} last string
 # in dir :
 - head is _d.d file in dir
+    - if _d.d not exist -> echo {"{EN}"} > {EN} - be add
