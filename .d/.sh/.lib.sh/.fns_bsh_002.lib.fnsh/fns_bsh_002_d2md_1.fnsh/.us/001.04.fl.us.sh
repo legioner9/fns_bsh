@@ -35,23 +35,38 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_1_fl() {
 
+		# fns_bsh_002_d2md_1_def_type "$1"
+		# read -p "fns_bsh_002_d2md_1_def_type"
+
 		# $1 fl $2 dip
 		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
 		l_00_echo_warn "rch=$rch"
 
-		local anc_pth=$(fns_bsh_002_d2md_1_anc_pth "$1")
-		local res_str="[$(basename "$1")]("$anc_pth")"
+		local anc_pth="$(fns_bsh_002_d2md_1_anc_pth "$1")"
+		local main_anc="[$(basename "$1")]("$anc_pth")"
 
-		# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
-		echo "$rch $rch $(fns_bsh_002_d2md_1_head "$1") <- fl:: $res_str <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "pic" ]]; then
 
-		# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			local anc_pic="![$(basename "$1")]("$anc_pth")"
 
-		# head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch $rch $(basename "$1") <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$anc_pic"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
-		fns_bsh_002_d2md_1_body "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		fi
 
-		echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "@" ]]; then
+
+			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch $rch $(fns_bsh_002_d2md_1_head "$1") <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			fns_bsh_002_d2md_1_body "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		fi
 	}
 
 fi
