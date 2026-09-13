@@ -42,5 +42,6 @@ tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1
 l_00_echo_code "cat $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md"
 
 cat $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md
+code $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md
 
 #-- {{002_002_us_sh}}

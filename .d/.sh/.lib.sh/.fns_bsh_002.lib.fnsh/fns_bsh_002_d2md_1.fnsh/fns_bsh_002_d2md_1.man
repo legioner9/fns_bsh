@@ -4,3 +4,5 @@
 # in dir :
 - head is _d.d file in dir
     - if _d.d not exist -> echo {"{EN}"} > {EN} - be add
+# def type file
+    - ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.env.sh/init.env.type_fl.sh
