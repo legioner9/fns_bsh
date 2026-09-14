@@ -54,10 +54,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		fi
 
-		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "cpd" ]]; then
-
-			local cpd=$()
-
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "non" ]]; then
+			:
 		fi
 
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "@" ]]; then

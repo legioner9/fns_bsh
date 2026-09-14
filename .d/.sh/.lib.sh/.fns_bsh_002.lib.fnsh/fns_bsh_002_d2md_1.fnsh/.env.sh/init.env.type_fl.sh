@@ -11,7 +11,7 @@ fns_bsh_002_d2md_1_type_fl[1, 1]=pic
 fns_bsh_002_d2md_1_type_fl[2, 0]=svg
 fns_bsh_002_d2md_1_type_fl[2, 1]=pic
 fns_bsh_002_d2md_1_type_fl[3, 0]=cpd
-fns_bsh_002_d2md_1_type_fl[3, 1]=cpd
+fns_bsh_002_d2md_1_type_fl[3, 1]=non
 
 l_00_echo_sys "set_of_arr :: fns_bsh_002_d2md_1_type_fl ::"
 for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
