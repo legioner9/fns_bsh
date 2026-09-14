@@ -54,6 +54,12 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		fi
 
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "cpd" ]]; then
+
+			local cpd=$()
+
+		fi
+
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "@" ]]; then
 
 			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
