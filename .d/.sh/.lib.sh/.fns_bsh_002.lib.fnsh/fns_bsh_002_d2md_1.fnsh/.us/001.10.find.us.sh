@@ -34,7 +34,10 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_1_find() {
-		for fl in find $(eval "echo \$arg_1_fn_${rnd}") -name ".cpd" -type f; do
+		l_00_echo_code "find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f"
+		find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f
+
+		for fl in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f); do
 			l_00_echo_warn "fl=$fl"
 			read -p "find"
 		done
