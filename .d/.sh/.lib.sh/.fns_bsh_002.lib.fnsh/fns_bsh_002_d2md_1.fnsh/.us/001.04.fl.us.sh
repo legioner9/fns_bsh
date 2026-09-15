@@ -45,6 +45,10 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		local anc_pth="$(fns_bsh_002_d2md_1_anc_pth "$1")"
 		local main_anc="[$(basename "$1")]("$anc_pth")"
 
+		l_00_echo_warn "fns_bsh_002_d2md_1_def_type $1"
+		fns_bsh_002_d2md_1_def_type "$1"
+		# read -p fns_bsh_002_d2md_1_def_type
+
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "pic" ]]; then
 
 			local anc_pic="![$(basename "$1")]("$anc_pth")"

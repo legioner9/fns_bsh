@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.09.def_type.us.sh"
+l_00_echo_info "that :: 001.10.f2eval_e.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_001_us_sh~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
@@ -33,27 +33,21 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_1_def_type() {
-		# $1 fl
-		local ext="$(l_01_prs_f -e "$1")"
-		# l_00_echo_warn "ext=$ext"
-		local cur_type=
-		for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
+	fns_bsh_002_d2md_1_f2eval_e() {
 
-			cur_type="${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
-			# l_00_echo_warn "cur_type=$cur_type"
-			if [[ "$cur_type" == "$ext" ]]; then
-				echo "${fns_bsh_002_d2md_1_type_fl[$i, 1]}"
+		if [[ -n $1 ]]; then
+			while IFS= read -r line; do
+				eval "echo \"$line\""
+			# done < <(grep -v '^ *#' <file.f)
+			done < <(grep -v '*' <"$1")
+		fi
 
-				# read -p fns_bsh_002_d2md_1_def_type
-
-				return 0
-			fi
-
-		done
-
-		echo "@"
-		return 0
+		if [[ -z $1 ]]; then
+			while IFS= read -r line; do
+				eval "echo \"$line\""
+				# done < <(grep -v '^ *#' <file.f)
+			done
+		fi
 
 	}
 
