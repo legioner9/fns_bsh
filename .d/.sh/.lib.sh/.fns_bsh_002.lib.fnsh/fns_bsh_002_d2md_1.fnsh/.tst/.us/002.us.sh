@@ -28,11 +28,13 @@ l_00_echo_warn "START_TST:: ; flw_chr: (?)"
 
 l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") \
 	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}") \
-	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md"
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md" \
+	$(eval "echo \$arg_2_fn_${rnd}")
 
 $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") \
 	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}") \
-	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md \
+	$(eval "echo \$arg_2_fn_${rnd}")
 
 l_00_echo_code "tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}")"
 

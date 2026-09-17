@@ -47,7 +47,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		l_00_echo_warn "fns_bsh_002_d2md_1_def_type $1"
 		fns_bsh_002_d2md_1_def_type "$1"
-		# read -p fns_bsh_002_d2md_1_def_type
+		read -p "fns_bsh_002_d2md_1_def_type 2"
 
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "pic" ]]; then
 
