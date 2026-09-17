@@ -48,7 +48,9 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			# echo i=$i
 			# l_00_echo_warn "cur_type=${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
 			cur_type="${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
-			# l_00_echo_warn "cur_type=$cur_type"
+			
+			[[ tst_var_def_type_1 -eq 1 ]] && l_00_echo_warn "cur_type=$cur_type"
+
 			if [[ "$cur_type" == "$ext" ]]; then
 				echo "${fns_bsh_002_d2md_1_type_fl[$i, 1]}"
 

@@ -1,8 +1,11 @@
 # in files :
 - head is last (ont empty string) without two char (usually ^#@ , second char mast be @)
     - if second char not @ - be add to file {"#@{EN}"} last string
+    
 # in dir :
 - head is _d.d file in dir
     - if _d.d not exist -> echo {"{EN}"} > {EN} - be add
-# def type file
-    - ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.env.sh/init.env.type_fl.sh
+
+# env :: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.env.sh
+## init.env.tst_var.sh - const define action_or_not in function
+## init.env.type_fl.sh - def array fns_bsh_002_d2md_1_type_fl for fns_bsh_002_d2md_1_def_type function
