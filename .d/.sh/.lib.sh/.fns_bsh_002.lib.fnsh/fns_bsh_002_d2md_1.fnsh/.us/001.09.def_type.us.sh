@@ -29,32 +29,32 @@ fl - result fl
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
 eval "flow_1_${rnd}=dr"
-# $(eval "echo \$flow_1_${rnd}")
-# l_00_echo_code "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
-# l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
-# read -p "l_01_c_up fns_bsh_002_d2md_1_def_type"
+$(eval "echo \$flow_1_${rnd}")
+l_00_echo_code "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
+l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
+read -p "l_01_c_up fns_bsh_002_d2md_1_def_type"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_1_def_type() {
-
+		source "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/init.env.type_fl.0.sh"
 		# $1 fl
 		local ext="$(l_01_prs_f -e "$1")"
-		# l_00_echo_warn "ext=$ext"
-		# echo "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
+		[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "ext=$ext \
+$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
 		local cur_type=
 		unset i
 		for ((i = 0; i < 4; i++)); do
 			# for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
 			# echo i=$i
-			# l_00_echo_warn "cur_type=${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
+			[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "\${fns_bsh_002_d2md_1_type_fl[$i, 0]}=${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
 			cur_type="${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
-			
-			[[ tst_var_def_type_1 -eq 1 ]] && l_00_echo_warn "cur_type=$cur_type"
+
+			[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "echo i=$i cur_type=$cur_type"
 
 			if [[ "$cur_type" == "$ext" ]]; then
 				echo "${fns_bsh_002_d2md_1_type_fl[$i, 1]}"
 
-				# read -p fns_bsh_002_d2md_1_def_type
+				[[ "$tst_var_def_type_1" -eq 1 ]] && read -p fns_bsh_002_d2md_1_def_type
 
 				return 0
 			fi

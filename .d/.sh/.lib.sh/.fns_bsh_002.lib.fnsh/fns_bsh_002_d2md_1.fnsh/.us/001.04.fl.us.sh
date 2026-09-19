@@ -38,16 +38,18 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# fns_bsh_002_d2md_1_def_type "$1"
 		# read -p "fns_bsh_002_d2md_1_def_type"
 
-		# $1 fl $2 dip
+		# $1 fl $2 dip tst_var_fl
 		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
-		l_00_echo_warn "rch=$rch"
+		[[ "$tst_var_fl" -eq 1 ]] && l_00_echo_warn "rch=$rch"
 
 		local anc_pth="$(fns_bsh_002_d2md_1_anc_pth "$1")"
 		local main_anc="[$(basename "$1")]("$anc_pth")"
 
-		l_00_echo_warn "fns_bsh_002_d2md_1_def_type $1"
-		fns_bsh_002_d2md_1_def_type "$1"
-		read -p "fns_bsh_002_d2md_1_def_type 2"
+		[[ "$tst_var_fl" -eq 1 ]] && {
+			l_00_echo_warn "fns_bsh_002_d2md_1_def_type $1"
+			fns_bsh_002_d2md_1_def_type "$1"
+			read -p "fns_bsh_002_d2md_1_def_type 2"
+		}
 
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "pic" ]]; then
 
