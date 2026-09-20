@@ -36,17 +36,28 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
+	:
+	fns_bsh_002_d2md_2_md2pdf() {
 
-	# fns_bsh_002_d2md_2_md2pdf() {
+		[[ -f "$1" ]] && {
+			# snp "out_err"
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/001.03.body.us.sh , line=${LINENO} :: ARG_1_NOT_FILE is file.md, return 1${NRM}" >&2
+			return 1
+		}
 
-	# 	[[ -z "$1" ]] && {
-	# 		# snp "out_err"
-	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 		echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/001.03.body.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 		return 1
-	# 	}
+		local res_pdf
+		
+		if [[ -f "$2" ]]; then
+			res_pdf="$2"
+		else
+			l_00_echo_warn "res_pdf=$1.pdf"
+			res_pdf="$1.pdf"
+		fi
 
-	# }
+		pandoc "$1" -o "$res_pdf"
+
+	}
 
 fi
 
