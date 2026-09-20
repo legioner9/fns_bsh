@@ -33,7 +33,8 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
-	fns_bsh_002_d2md_2_gig_d $(eval "echo \$arg_2_fn_${rnd}")
+	fns_bsh_002_d2md_2_gig_d
+	fns_bsh_002_d2md_2_body
 
 fi
 
