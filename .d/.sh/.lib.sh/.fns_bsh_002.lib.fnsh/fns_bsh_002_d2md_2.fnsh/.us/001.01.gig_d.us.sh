@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: _001.0X.fn.us.sh"
+l_00_echo_info "that :: 001.01.gig_d.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
@@ -34,8 +34,11 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	ns_bsh_002_d2md_2_gig_d() {
-		:
+	fns_bsh_002_d2md_2_gig_d() {
+		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))
+		local nm_dr=_$(l_01_prs_f -ne $(eval "echo \$arg_2_fn_${rnd}")).d
+		rm -f $pr_dr/$nm_dr
+		mkdir $pr_dr/$nm_dr
 	}
 
 fi

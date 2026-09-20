@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.us.sh"
+l_00_echo_info "that :: 001.02.body.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
@@ -33,7 +33,10 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
-	fns_bsh_002_d2md_2_gig_d $(eval "echo \$arg_2_fn_${rnd}")
+
+	fns_bsh_002_d2md_2_body() {
+		: > $(eval "echo \$arg_2_fn_${rnd}")
+	}
 
 fi
 
