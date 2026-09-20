@@ -1,5 +1,10 @@
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
-	# first:: for .p015.d gig 001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
+l_00_echo_info "that :: 001.03.md2pdf.us.sh"
+l_00_echo_ques "... DFN:: fn()...| BODY::..."
+
+# ~001_001_us_sh~
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
+# first:: for .p015.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 echo -e " arg_flow ::
@@ -24,17 +29,20 @@ fl - result fl
 # prnt2_dr_pth_fn ::
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
+#! gig_var
+#fns_bsh_002_d2md_2_dr_dta
+
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_xx() {
+	fns_bsh_002_d2md_2_md2pdf() {
 
 		[[ -z "$1" ]] && {
 			# snp "out_err"
 			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/yy.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+			echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/001.03.body.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
 			return 1
 		}
 
@@ -42,5 +50,4 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 fi
 
-	#-- {{002_001_us_sh}}
-		
+#-- {{002_001_us_sh}}
