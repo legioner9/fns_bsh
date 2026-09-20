@@ -37,16 +37,16 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_md2pdf() {
+	# fns_bsh_002_d2md_2_md2pdf() {
 
-		[[ -z "$1" ]] && {
-			# snp "out_err"
-			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/001.03.body.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-			return 1
-		}
+	# 	[[ -z "$1" ]] && {
+	# 		# snp "out_err"
+	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 		echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/001.03.body.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+	# 		return 1
+	# 	}
 
-	}
+	# }
 
 fi
 
