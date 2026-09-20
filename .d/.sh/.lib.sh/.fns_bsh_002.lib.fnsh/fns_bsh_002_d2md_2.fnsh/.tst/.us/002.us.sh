@@ -26,7 +26,27 @@ l_00_echo_info "res_dr=file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/r
 
 l_00_echo_warn "START_TST:: ; flw_chr: (?)"
 
-l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
-$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
+# l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
+# $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
+
+l_00_echo_sys "fns_bsh_002_d2md_1 \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}") \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md" \
+	$(eval "echo \$arg_2_fn_${rnd}")
+
+fns_bsh_002_d2md_1 \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}") \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md \
+	$(eval "echo \$arg_2_fn_${rnd}")
+
+l_00_echo_code "tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}")"
+
+tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}")
+
+#/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.dta/cp_to_tst.d/v1
+l_00_echo_code "cat $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md"
+
+cat $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md
+code $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.$(eval "echo \$arg_1_fn_${rnd}").d2md.md
 
 #-- {{002_002_us_sh}}

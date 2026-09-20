@@ -3,8 +3,8 @@ l_00_echo_info "that :: _001.0X.fn.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
-	# first:: for .p015.d gig 001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
+# first:: for .p015.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
 echo -e " arg_flow ::
@@ -34,9 +34,10 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	:
+	ns_bsh_002_d2md_2_gig_d() {
+		:
+	}
 
 fi
 
-	#-- {{002_001_us_sh}}
-		
+#-- {{002_001_us_sh}}
