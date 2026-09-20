@@ -50,16 +50,16 @@ declare -A fns_bsh_002_git_treat_1_arr_remote
 
 fns_bsh_002_git_treat_1_arr_remote[0, 0]=gf
 fns_bsh_002_git_treat_1_arr_remote[0, 1]=git@gitflic.ru:legioner9
-fns_bsh_002_git_treat_1_arr_remote[1, 0]=gh
-fns_bsh_002_git_treat_1_arr_remote[1, 1]=git@github.com:legioner9
-fns_bsh_002_git_treat_1_arr_remote[2, 0]=alt
-fns_bsh_002_git_treat_1_arr_remote[2, 1]=ssh://forgejo@altlinux.space/legioner9
-fns_bsh_002_git_treat_1_arr_remote[3, 0]=my_one
-fns_bsh_002_git_treat_1_arr_remote[3, 1]=/run/media/$USER/MY_ONE
+# fns_bsh_002_git_treat_1_arr_remote[1, 0]=gh
+# fns_bsh_002_git_treat_1_arr_remote[1, 1]=git@github.com:legioner9
+fns_bsh_002_git_treat_1_arr_remote[1, 0]=alt
+fns_bsh_002_git_treat_1_arr_remote[1, 1]=ssh://forgejo@altlinux.space/legioner9
+fns_bsh_002_git_treat_1_arr_remote[2, 0]=my_one
+fns_bsh_002_git_treat_1_arr_remote[2, 1]=/run/media/$USER/MY_ONE
 # fns_bsh_002_git_treat_1_arr_remote[4, 0]=tosh
 # fns_bsh_002_git_treat_1_arr_remote[4, 1]=/run/media/$USER/TOSH
-fns_bsh_002_git_treat_1_arr_remote[4, 0]=toshiba_ext
-fns_bsh_002_git_treat_1_arr_remote[4, 1]=/run/media/$USER/TOSHIBA_EXT
+fns_bsh_002_git_treat_1_arr_remote[3, 0]=toshiba_ext
+fns_bsh_002_git_treat_1_arr_remote[3, 1]=/run/media/$USER/TOSHIBA_EXT
 
 l_00_echo_sys "set_of_arr :: fns_bsh_002_git_treat_1_arr_remote ::"
 for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do
