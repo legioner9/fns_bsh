@@ -29,13 +29,18 @@ fl - result fl
 # prnt2_dr_pth_fn ::
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
+#! gig_var
+#fns_bsh_002_d2md_2_dr_dta
+
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_2_body() {
-		: > $(eval "echo \$arg_2_fn_${rnd}")
+
+		fns_bsh_002_d2md_1 $(eval "echo \$arg_1_fn_${rnd}") $fns_bsh_002_d2md_2_dr_dta/body.md
+
 	}
 
 fi

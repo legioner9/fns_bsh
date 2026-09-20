@@ -33,8 +33,16 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
-	fns_bsh_002_d2md_2_gig_d
+
+	fns_bsh_002_d2md_2_gig_d_mkdr
+
+	local fns_bsh_002_d2md_2_dr_dta=$(fns_bsh_002_d2md_2_gig_d_echo)
+
+	l_00_echo_warn "\$fns_bsh_002_d2md_2_dr_dta=$fns_bsh_002_d2md_2_dr_dta"
+
 	fns_bsh_002_d2md_2_body
+
+	: >"$(eval "echo \$arg_2_fn_${rnd}")"
 
 fi
 
