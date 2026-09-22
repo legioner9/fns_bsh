@@ -55,7 +55,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 			local anc_pic="![$(basename "$1")]("$anc_pth")"
 
-			echo "$rch $rch <!-- { --> $(basename "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(basename "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 			echo "$anc_pic"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 		fi
@@ -67,7 +67,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "@" ]]; then
 
 			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
-			echo "$rch $rch <!-- { --> $(fns_bsh_002_d2md_1_head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(fns_bsh_002_d2md_1_head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 			# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
