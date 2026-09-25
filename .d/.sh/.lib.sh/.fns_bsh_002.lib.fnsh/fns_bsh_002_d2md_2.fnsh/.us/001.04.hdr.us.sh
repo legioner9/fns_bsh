@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.05.hdr.us.sh"
+l_00_echo_info "that :: 001.04.hdr.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
@@ -39,8 +39,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_2_hdr() {
 
-		local hdr=$fns_bsh_002_d2md_2_dr_dta/hdr.md
-		
+		grep  "^#" $fns_bsh_002_d2md_2_dr_dta/body.md | grep -v "^#!" > $fns_bsh_002_d2md_2_dr_dta/hdr.md
 
 	}
 

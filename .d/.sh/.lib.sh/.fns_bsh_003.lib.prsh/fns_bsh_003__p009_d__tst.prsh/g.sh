@@ -1,14 +1,14 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_8144_25023(){
+fn_11422_32390(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_8144_25023="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh"
-    local dr_pth_fn_8144_25023=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh)
-    local fl_nm_fn_8144_25023=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh)
-    local rnd=8144_25023
+    local fl_pth_fn_11422_32390="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh"
+    local dr_pth_fn_11422_32390=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh)
+    local fl_nm_fn_11422_32390=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh)
+    local rnd=11422_32390
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
@@ -208,6 +208,20 @@ fn_8144_25023(){
 	# fns_bsh_001_als_gig_fl_sh :: gig in \$1 dr \$2 fl[with .ext] use ~/fns_bsh/.d/.p.ax/.p006.d (like .p004.d) [,\$3 cmn.d [,\$4 dom.d]]
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
+
+	# 	declare -A ass_arr
+	# ass_arr[0, 0]=png
+	# ass_arr[0, 1]=pic
+	# ass_arr[1, 0]=jpg
+	# ass_arr[1, 1]=pic
+
+	# l_00_echo_sys "set_of_arr :: ass_arr ::"
+	# for ((i = 0; i < "$((${#ass_arr[@]} / 2))"; i++)); do
+	# 	for ((j = 0; j < 2; j++)); do
+	# 		l_00_echo_info "	ass_arr[$i,$j]=${ass_arr[$i, $j]}"
+	# 	done
+	# done
+	
 	# {{002_use_l}}
 	
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
@@ -252,8 +266,8 @@ fn_8144_25023(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_8144_25023 $@
+fn_11422_32390 $@
 
 # {{002_after}}
 
-#? fn_8144_25023 $@
+#? fn_11422_32390 $@

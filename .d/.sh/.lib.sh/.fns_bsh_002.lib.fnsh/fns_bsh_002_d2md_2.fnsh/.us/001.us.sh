@@ -41,11 +41,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	l_00_echo_warn "\$fns_bsh_002_d2md_2_dr_dta=$fns_bsh_002_d2md_2_dr_dta"
 
 	fns_bsh_002_d2md_2_body
-
-	cp -f $fns_bsh_002_d2md_2_dr_dta/body.md $fns_bsh_002_d2md_2_dr_dta/toc.md
-
-	fns_bsh_002_d2md_2_toc
 	fns_bsh_002_d2md_2_hdr
+	fns_bsh_002_d2md_2_chpt
 
 	: >"$(eval "echo \$arg_2_fn_${rnd}")"
 

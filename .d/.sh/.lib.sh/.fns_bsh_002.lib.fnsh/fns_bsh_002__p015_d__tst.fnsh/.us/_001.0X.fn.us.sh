@@ -35,7 +35,7 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
 	# fns_bsh_002_xx() {
-
+	# :
 	# 	[[ -z "$1" ]] && {
 	# 		# snp "out_err"
 	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"

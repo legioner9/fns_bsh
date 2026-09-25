@@ -235,6 +235,10 @@ fn_13025_8431() {
 
 	grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
 
+	#.. tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16
+
+	
+
 	#-- {{002_body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
