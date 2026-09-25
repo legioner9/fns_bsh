@@ -231,13 +231,15 @@ fn_13025_8431() {
 	#-- cp toc.md
 	cp -f $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/_src/toc.md $(eval "echo \$dr_pth_fn_${rnd}")
 
-	grep  "^#" $(eval "echo \$dr_pth_fn_${rnd}")/toc.md | grep -v "^#!" > $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst
+	grep "^#" $(eval "echo \$dr_pth_fn_${rnd}")/toc.md | grep -v "^#!" >$(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst
 
-	grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
+	grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst >$(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
 
 	#.. tr -dc 'A-Za-z0-9' </dev/urandom | head -c 16
+	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.dta/.cdn/pre1.md
+	local init_str="<!-- { --> init <!-- } -->"
 
-	
+	echo "$init_str"
 
 	#-- {{002_body}}
 
