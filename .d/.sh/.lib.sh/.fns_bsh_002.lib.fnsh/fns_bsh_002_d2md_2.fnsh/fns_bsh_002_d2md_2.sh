@@ -37,7 +37,7 @@ fns_bsh_002_d2md_2(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing :: add toc to .md giged as fns_bsh_002_d2md_1 \$1 see exa : $(eval "echo \$dr_pth_fn_${rnd}")/.src/exa_1.d
 			REN=
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
