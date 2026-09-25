@@ -231,7 +231,7 @@ fn_13025_8431() {
 	#-- cp toc.md
 	cp -f $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/_src/toc.md $(eval "echo \$dr_pth_fn_${rnd}")
 
-	grep  "^#" $(eval "echo \$dr_pth_fn_${rnd}")/toc.md > $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst
+	grep  "^#" -v "^#!" $(eval "echo \$dr_pth_fn_${rnd}")/toc.md > $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst
 
 	grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
 

@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.us.sh"
+l_00_echo_info "that :: 001.05.hdr.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
@@ -29,25 +29,20 @@ fl - result fl
 # prnt2_dr_pth_fn ::
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
+#! gig_var
+#fns_bsh_002_d2md_2_dr_dta
+
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_gig_d_mkdr
+	fns_bsh_002_d2md_2_hdr() {
 
-	local fns_bsh_002_d2md_2_dr_dta=$(fns_bsh_002_d2md_2_gig_d_echo)
+		local hdr=$fns_bsh_002_d2md_2_dr_dta/hdr.md
+		
 
-	l_00_echo_warn "\$fns_bsh_002_d2md_2_dr_dta=$fns_bsh_002_d2md_2_dr_dta"
-
-	fns_bsh_002_d2md_2_body
-
-	cp -f $fns_bsh_002_d2md_2_dr_dta/body.md $fns_bsh_002_d2md_2_dr_dta/toc.md
-
-	fns_bsh_002_d2md_2_toc
-	fns_bsh_002_d2md_2_hdr
-
-	: >"$(eval "echo \$arg_2_fn_${rnd}")"
+	}
 
 fi
 
