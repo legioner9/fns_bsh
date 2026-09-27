@@ -35,6 +35,8 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_2_gig_d_mkdr() {
+
+		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))
 		local nm_dr=_$(l_01_prs_f -ne $(eval "echo \$arg_2_fn_${rnd}")).d
 
@@ -44,7 +46,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		) >/dev/null; then
 			return 1
 		fi
-
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 
 	fns_bsh_002_d2md_2_gig_d_echo() {

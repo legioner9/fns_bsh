@@ -38,9 +38,9 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_2_hdr() {
-
-		grep  "^#" $fns_bsh_002_d2md_2_dr_dta/body.md | grep -v "^#!" > $fns_bsh_002_d2md_2_dr_dta/hdr.md
-
+		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
+		grep "^#" $fns_bsh_002_d2md_2_dr_dta/body.md | grep -v "^#!" >$fns_bsh_002_d2md_2_dr_dta/hdr.md
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 
 fi

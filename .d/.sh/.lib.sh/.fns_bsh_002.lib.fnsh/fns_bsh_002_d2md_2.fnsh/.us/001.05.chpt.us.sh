@@ -38,11 +38,12 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_2_chpt() {
+		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		#-- $fns_bsh_002_d2md_2_dr_dta/hdr.md
 		#-- grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
 
 		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns_bsh_002_d2md_2_dr_dta/hdr.md >$fns_bsh_002_d2md_2_dr_dta/chpt.md
-		
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 
 fi

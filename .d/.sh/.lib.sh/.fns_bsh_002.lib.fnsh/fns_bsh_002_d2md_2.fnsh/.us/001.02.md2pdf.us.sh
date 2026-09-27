@@ -38,7 +38,7 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
 	fns_bsh_002_d2md_2_md2pdf() {
-
+		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		[[ -f "$1" ]] && {
 			# snp "out_err"
 			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
@@ -47,7 +47,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		}
 
 		local res_pdf
-		
+
 		if [[ -f "$2" ]]; then
 			res_pdf="$2"
 		else
@@ -56,7 +56,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		fi
 
 		pandoc "$1" -o "$res_pdf"
-
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 
 fi
