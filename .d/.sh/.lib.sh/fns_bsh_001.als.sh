@@ -35,3 +35,15 @@ fns_bsh_001_als_gig_fl_sh() {
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
 }
+
+fns_bsh_001_als_epm_upd_prog() {
+
+	epm play --update all
+
+}
+
+fns_bsh_001_als_epm_upd_pckg(){
+
+	epm update
+
+}
