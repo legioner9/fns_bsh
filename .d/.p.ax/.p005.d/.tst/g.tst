@@ -94,7 +94,7 @@ fn_13965_28989() {
 	. $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/g.pr \
 		$(eval "echo \$dr_pth_fn_${rnd}") \
 		res.fl \
-		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d \
+		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d \
 		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d
 
 	l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/res.fl"

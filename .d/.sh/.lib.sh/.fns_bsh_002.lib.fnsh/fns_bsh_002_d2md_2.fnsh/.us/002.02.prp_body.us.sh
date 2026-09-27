@@ -37,12 +37,12 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_toc2md() {
+	fns_bsh_002_d2md_2_prp_body() {
 
 		# $fns_bsh_002_d2md_2_dr_dta/chpt.md
 		# $fns_bsh_002_d2md_2_dr_dta/body.md
 		#! $fns_bsh_002_d2md_2_dr_dta/body_toc.md result
-		fns_bsh_002_d2md_2_prp_body
+		:
 
 	}
 
