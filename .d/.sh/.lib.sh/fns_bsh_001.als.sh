@@ -38,12 +38,13 @@ fns_bsh_001_als_gig_fl_sh() {
 
 fns_bsh_001_als_epm_upd_prog() {
 
-	epm play --update all
+	epm play --update all -y
 
 }
 
 fns_bsh_001_als_epm_upd_pckg(){
 
-	epm update
+	epm update -y
+	epm ei -y
 
 }
