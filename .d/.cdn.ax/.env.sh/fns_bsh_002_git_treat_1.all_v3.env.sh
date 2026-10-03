@@ -32,7 +32,7 @@ fns_bsh_002_git_treat_1_arr_rpo_pth=(
 	# rpo/edu_dta_002
 	rpo/edu_lnx
 	# rpo/tml_a
-	# rpo/cmn_lex
+	rpo/cmn_lex
 	fns_bsh
 	# rpo/git_flw
 	# rpo/rpo_pax_001
