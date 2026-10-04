@@ -51,6 +51,8 @@ fns_bsh_002_gig_dmd_1() {
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
 			see about error short ([casual]|[action])+[entety]+[vis] :
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
