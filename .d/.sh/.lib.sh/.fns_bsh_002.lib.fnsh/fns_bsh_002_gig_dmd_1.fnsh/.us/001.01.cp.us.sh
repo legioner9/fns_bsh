@@ -51,6 +51,10 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		fi
 
+		mkdir -v "$(eval "echo \$arg_2_fn_${rnd}")"
+		local pth_1=
+		for pth_1 in $(l_02)
+
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}
