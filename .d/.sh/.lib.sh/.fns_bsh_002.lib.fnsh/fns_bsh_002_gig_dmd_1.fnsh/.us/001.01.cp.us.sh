@@ -35,8 +35,21 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
 	fns_bsh_002_cp() {
-		
+
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+
+		if ! l_01_is_yes "DO? rm -rf $(eval "echo \$arg_2_fn_${rnd}")"; then
+
+			l_00_echo_code "rm -rf $(eval "echo \$arg_2_fn_${rnd}")"
+			rm -rf "$(eval "echo \$arg_2_fn_${rnd}")"
+
+		else
+
+			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'NT_DL+DR+{REN}', return 1${NRM}" >&2
+			return 1
+
+		fi
 
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
