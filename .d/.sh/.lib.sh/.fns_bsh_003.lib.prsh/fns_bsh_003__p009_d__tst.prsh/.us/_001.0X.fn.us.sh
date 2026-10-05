@@ -35,14 +35,16 @@ eval "flow_1_${rnd}=dr"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
 	# fns_bsh_002_xx() {
-	# :
-	# 	[[ -z "$1" ]] && {
-	# 		# snp "out_err"
-	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 		echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/yy.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
-	# 		return 1
-	# 	}
-
+		:
+		# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+		# [[ -z "$1" ]] && {
+		# 	# snp "out_err"
+		# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		# 	echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/yy.us.sh , line=${LINENO} :: ARG_2_NOT_DEFINE is ..., return 1${NRM}" >&2
+		# 	return 1
+		# }
+		# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		# return 0
 	# }
 
 fi

@@ -2,8 +2,9 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
 {{head}}(){
-
-	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	
+	#--{{001_start}}
+	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
     local fl_pth_{{fn_nm}}="{{fl_nm}}"
     local dr_pth_{{fn_nm}}=$(dirname {{fl_nm}})
@@ -55,11 +56,13 @@
 
 	#-- {{001_use_l}}
 
-	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	#-- {{001_into}}
+	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- {{001_body}}
-
-	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	
+	#-- {{001_exit}}
+	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 

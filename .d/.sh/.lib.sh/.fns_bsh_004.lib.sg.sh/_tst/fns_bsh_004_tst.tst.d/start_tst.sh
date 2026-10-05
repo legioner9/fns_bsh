@@ -1,14 +1,18 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_16626_2105(){
-
+fn_28838_7394(){
+	
+	#--~001_start~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_start}}
+			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_16626_2105="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh"
-    local dr_pth_fn_16626_2105=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
-    local fl_nm_fn_16626_2105=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
-    local rnd=16626_2105
+    local fl_pth_fn_28838_7394="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh"
+    local dr_pth_fn_28838_7394=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
+    local fl_nm_fn_28838_7394=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
+    local rnd=28838_7394
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -263,7 +267,11 @@ fn_16626_2105(){
 	
 	# {{002_use_l}}
 	
+	#-- ~001_into~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_into.tml
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_into}}
+			# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
@@ -278,8 +286,12 @@ fn_16626_2105(){
 	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
     #-- {{003_body}}
-
+	
+	#-- ~001_exit~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml
 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_exit}}
+			# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
@@ -287,8 +299,8 @@ fn_16626_2105(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_16626_2105 $@
+fn_28838_7394 $@
 
 # {{002_after}}
 
-#? fn_16626_2105 $@
+#? fn_28838_7394 $@

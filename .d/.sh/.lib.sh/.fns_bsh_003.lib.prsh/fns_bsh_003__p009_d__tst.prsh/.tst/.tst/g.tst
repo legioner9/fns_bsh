@@ -1,14 +1,15 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_3946_14273(){
+fn_5398_7419(){
+	
+	#--{{001_start}}
+	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
-
-    local fl_pth_fn_3946_14273="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst"
-    local dr_pth_fn_3946_14273=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
-    local fl_nm_fn_3946_14273=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
-    local rnd=3946_14273
+    local fl_pth_fn_5398_7419="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst"
+    local dr_pth_fn_5398_7419=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
+    local fl_nm_fn_5398_7419=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/.tst/.tst/g.tst)
+    local rnd=5398_7419
 
 	#-- ~001_genv~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -143,7 +144,8 @@ fn_3946_14273(){
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 	# {{002_use_l}}
-	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	#-- {{001_into}}
+	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/003.dom.tml.d/001_body.tml
@@ -174,8 +176,9 @@ fn_3946_14273(){
 	fi
 	
     #-- {{002_body}}
-
-	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	
+	#-- {{001_exit}}
+	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
@@ -183,8 +186,8 @@ fn_3946_14273(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_3946_14273 $@
+fn_5398_7419 $@
 
 # {{002_after}}
 
-#? fn_3946_14273 $@
+#? fn_5398_7419 $@
