@@ -1,14 +1,14 @@
 #!/bin/bash
-# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
+# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml
 
-fn_16626_2105(){
+fns_bsh_004_f-f2e(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_16626_2105="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh"
-    local dr_pth_fn_16626_2105=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
-    local fl_nm_fn_16626_2105=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
-    local rnd=16626_2105
+    local fl_pth_fn_18438_27306="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f-f2e.sh"
+    local dr_pth_fn_18438_27306=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f-f2e.sh)
+    local fl_nm_fn_18438_27306=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f-f2e.sh)
+    local rnd=18438_27306
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -63,55 +63,10 @@ fn_16626_2105(){
     #         exa use ::
     #         far use ::
     #     "
+	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	# 	return 0
 	# }
 
-	#--~001_key~
-# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
-	[[ "$1" == "_tst" ]] && {
-		echo -e "
-        this -h for <${FUNCNAME[0]}> '$@' ::
-        doing_tst :: 
-			\$1 - dr_res
-			\$2 - res.fl
-			\$3 - 
-			flow_FN ::
-			flow_tst ::
-            exa use ::
-            far use ::			
-        "
-		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
-		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
-
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		return 0
-		
-	}
-
-		[[ "$1" == "_vis" ]] && {
-		echo -e "
-        this [cat .vis] for <${FUNCNAME[0]}> '$@'::
-        doing_vis :: 
-			\$1 - dr_res
-			\$2 - res.fl
-			\$3 - 
-            exa use ::
-            far use ::
-        "
-		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
-		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
-
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		return 0
-		
-	}
-
-	#-- ~002_key~
-# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/002_key.tml
-# that 003_key
-
-#-- {{003_key}}
-	
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
 
@@ -170,26 +125,6 @@ fn_16626_2105(){
 
 	#-- {{003_val_ind}}
 		
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
-	#! ptr_path
-	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
-	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
-	# echo "\$ptr_path_1=$ptr_path_1"
-	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
-
-	# [[ -d "$2" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }	
-
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
 	#* STANDART ENV THAT FILE
@@ -269,26 +204,17 @@ fn_16626_2105(){
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
     l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
-    #-- ~002_body~
-	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/001_body.tml
-    # l_00_echo_code "002_body :: <${FUNCNAME[0]}>"
-
-    #.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
-	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
-
-    #-- {{003_body}}
+    #-- {{002_body}}
 
 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
 }
-
 #-- ~001_after~
-# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_16626_2105 $@
+# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
+# fn_18438_27306 $@
 
 # {{002_after}}
 
-#? fn_16626_2105 $@
+#? fn_18438_27306 $@

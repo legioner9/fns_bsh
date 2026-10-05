@@ -5,10 +5,10 @@ fns_bsh_004_tst(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_12231_438="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
-    local dr_pth_fn_12231_438=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local fl_nm_fn_12231_438=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local rnd=12231_438
+    local fl_pth_fn_30484_8757="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
+    local dr_pth_fn_30484_8757=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local fl_nm_fn_30484_8757=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local rnd=30484_8757
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -71,29 +71,29 @@ fns_bsh_004_tst(){
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
 
 	#* value indicator
-	eval "local arg_1_fn_${rnd}=\"\$1\""
-	eval "echo \\\$1=\$arg_1_fn_${rnd}"
-	eval "local arg_2_fn_${rnd}=\"\$2\""
-	eval "echo \\\$2=\$arg_2_fn_${rnd}"
-	eval "local arg_3_fn_${rnd}=\"\$3\""
-	eval "echo \\\$3=\$arg_3_fn_${rnd}"
-	eval "local arg_4_fn_${rnd}=\"\$4\""
-	eval "echo \\\$4=\$arg_4_fn_${rnd}"
-	eval "local arg_5_fn_${rnd}=\"\$5\""
-	eval "echo \\\$5=\$arg_5_fn_${rnd}"
+	# eval "local arg_1_fn_${rnd}=\"\$1\""
+	# eval "echo \\\$1=\$arg_1_fn_${rnd}"
+	# eval "local arg_2_fn_${rnd}=\"\$2\""
+	# eval "echo \\\$2=\$arg_2_fn_${rnd}"
+	# eval "local arg_3_fn_${rnd}=\"\$3\""
+	# eval "echo \\\$3=\$arg_3_fn_${rnd}"
+	# eval "local arg_4_fn_${rnd}=\"\$4\""
+	# eval "echo \\\$4=\$arg_4_fn_${rnd}"
+	# eval "local arg_5_fn_${rnd}=\"\$5\""
+	# eval "echo \\\$5=\$arg_5_fn_${rnd}"
 
-	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
-	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
-	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
-	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
-	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
-	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
+	# eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
+	# eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
+	# eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
+	# eval "echo \"fn_nm=\$fn_nm_${rnd}\""
+	# eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
+	# eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\"
 	
 	#-- ~002_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
-	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
 	#! ptr_path
 	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
@@ -202,7 +202,7 @@ fns_bsh_004_tst(){
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
-    l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
+    # l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
     #-- {{002_body}}
 
@@ -213,8 +213,8 @@ fns_bsh_004_tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_12231_438 $@
+# fn_30484_8757 $@
 
 # {{002_after}}
 
-#? fn_12231_438 $@
+#? fn_30484_8757 $@

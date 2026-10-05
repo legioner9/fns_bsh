@@ -1,0 +1,35 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
+	# eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	#! ptr_path
+	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
+	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
+	# echo "\$ptr_path_1=$ptr_path_1"
+	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
+
+	# [[ -f "$1" ]] || {
+	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
+	# 	return 1
+	# }
+
+	# [[ -n "$1" ]] && {
+	# 	[[ -f "$1" ]] || {
+	# 		# snp "out_err"
+	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
+	# 		return 1
+	# 	}
+	# }
+
+	# [[ -d "$(dirname "$2")" ]] || {
+	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_2 :: NT_EXT+DR+*{REN} :: [[ -d $(dirname \'$2\') ]] is *{REN}, return 1${NRM}" >&2
+	# 	return 1
+	# }
+
+	#-- {{003_val_ind}}
+	
