@@ -15,6 +15,15 @@
 	# 	return 1
 	# }
 
+	# [[ -n "$1" ]] && {
+	# 	[[ -f "$1" ]] || {
+	# 		# snp "out_err"
+	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
+	# 		return 1
+	# 	}
+	# }
+
 	# [[ -d "$(dirname "$2")" ]] || {
 	# 	# snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"

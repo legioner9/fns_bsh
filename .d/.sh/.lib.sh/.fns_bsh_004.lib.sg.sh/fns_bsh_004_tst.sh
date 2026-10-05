@@ -5,10 +5,10 @@ fns_bsh_004_tst(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_16025_7022="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
-    local dr_pth_fn_16025_7022=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local fl_nm_fn_16025_7022=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local rnd=16025_7022
+    local fl_pth_fn_19594_25808="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
+    local dr_pth_fn_19594_25808=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local fl_nm_fn_19594_25808=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local rnd=19594_25808
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -105,6 +105,15 @@ fns_bsh_004_tst(){
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
 	# 	return 1
+	# }
+
+	# [[ -n "$1" ]] && {
+	# 	[[ -f "$1" ]] || {
+	# 		# snp "out_err"
+	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
+	# 		return 1
+	# 	}
 	# }
 
 	# [[ -d "$(dirname "$2")" ]] || {
@@ -204,8 +213,8 @@ fns_bsh_004_tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_16025_7022 $@
+# fn_19594_25808 $@
 
 # {{002_after}}
 
-#? fn_16025_7022 $@
+#? fn_19594_25808 $@

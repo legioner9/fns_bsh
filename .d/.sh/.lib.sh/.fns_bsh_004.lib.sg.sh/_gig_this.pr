@@ -145,12 +145,12 @@ fn_9208_29592() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# [[ -f "$1" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -n "$1" ]] || {
+		# snp "out_err"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+ARG1+{IEN} :: [[ -n '\$1' ]] is {IEN}, return 1${NRM}" >&2
+		return 1
+	}
 
 	# [[ -d "$(dirname "$2")" ]] || {
 	# 	# snp "out_err"
@@ -269,6 +269,35 @@ fn_9208_29592() {
 			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} NT_DL+FL+REN : '"$(eval "echo \$dr_pth_fn_${rnd}")"/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").sh"', return 1${NRM}" >&2
 			return 1
 		fi
+
+	fi
+
+	gig_wdr_dwer34223drthtre34() {
+
+		mkdir "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d
+		fns_bsh_001_als_gig_fl_sh_2 "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d start_tst.sh
+
+		mkdir "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/init.d
+		touch "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/init.d/init.f
+
+
+	}
+
+	if [[ -d $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").tst.d ]]; then
+
+		if ! l_01_is_yes "DO? rm -fr $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")"; then
+			rm -fr "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d
+
+			gig_wdr_dwer34223drthtre34
+
+		else
+			l_00_echo_sys "NOT_RM :: $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")"
+			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+			return 0
+		fi
+	else
+
+		gig_wdr_dwer34223drthtre34
 
 	fi
 
