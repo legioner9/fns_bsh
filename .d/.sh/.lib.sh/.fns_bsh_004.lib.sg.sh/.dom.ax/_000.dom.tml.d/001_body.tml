@@ -1,0 +1,4 @@
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
+    l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
+
+    #-- {{002_body}}

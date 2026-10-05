@@ -5,10 +5,10 @@ fns_bsh_004_tst(){
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_19594_25808="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
-    local dr_pth_fn_19594_25808=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local fl_nm_fn_19594_25808=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local rnd=19594_25808
+    local fl_pth_fn_12231_438="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
+    local dr_pth_fn_12231_438=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local fl_nm_fn_12231_438=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local rnd=12231_438
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -213,8 +213,8 @@ fns_bsh_004_tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_19594_25808 $@
+# fn_12231_438 $@
 
 # {{002_after}}
 
-#? fn_19594_25808 $@
+#? fn_12231_438 $@
