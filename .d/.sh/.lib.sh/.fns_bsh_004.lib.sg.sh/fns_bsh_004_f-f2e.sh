@@ -217,7 +217,7 @@ fns_bsh_004_f-f2e() {
 
     # $(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh
 
-	local line
+	# local line
 	while IFS= read -r line; do
 		# eval "echo $line"
 		source "$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh"

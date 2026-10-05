@@ -280,25 +280,25 @@ fn_32078_297() {
 	# .. fl=$(eval "echo \$dr_pth_fn_${rnd}")/file
 
 	l_00_echo_code "fns_bsh_004_f-exec2e $(eval "echo \$dr_pth_fn_${rnd}")/file"
-	fns_bsh_004_f-exec2e "$(eval "echo \$dr_pth_fn_${rnd}")/file"
+	fns_bsh_004_f-f2e 1 "$(eval "echo \$dr_pth_fn_${rnd}")/file"
 
 	echo
 
 	# fl=~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-exec2e.tst.d/file
-	l_00_echo_code "cat $fl | fns_bsh_004_f-exec2e"
-	cat "$(eval "echo \$dr_pth_fn_${rnd}")/file" | fns_bsh_004_f-exec2e
+	l_00_echo_code "cat $(eval "echo \$dr_pth_fn_${rnd}")/file | fns_bsh_004_f-f2e 1 "
+	cat "$(eval "echo \$dr_pth_fn_${rnd}")/file" | fns_bsh_004_f-f2e 1 
 
 	echo
 
 	# fl=~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-exec2e.tst.d/file
-	l_00_echo_code "fns_bsh_004_f-exec2e <$(eval "echo \$dr_pth_fn_${rnd}")/file"
-	fns_bsh_004_f-exec2e <"$fl"
+	l_00_echo_code "fns_bsh_004_f-f2e 1  <$(eval "echo \$dr_pth_fn_${rnd}")/file"
+	fns_bsh_004_f-f2e 1  <"$(eval "echo \$dr_pth_fn_${rnd}")/file"
 
 	echo
 
 	# fl=~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-exec2e.tst.d/file
-	l_00_echo_code "fns_bsh_004_f-exec2e $$(eval "echo \$dr_pth_fn_${rnd}")/fileX"
-	fns_bsh_004_f-exec2e "$(eval "echo \$dr_pth_fn_${rnd}")/file"X
+	l_00_echo_code "fns_bsh_004_f-f2e 1 $(eval "echo \$dr_pth_fn_${rnd}")/fileX"
+	fns_bsh_004_f-f2e 1 $(eval "echo \$dr_pth_fn_${rnd}")/fileX
 
 	#-- ~002_body~
 	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/001_body.tml
@@ -306,7 +306,7 @@ fn_32078_297() {
 
 	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	# cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
 	#-- {{003_body}}
 
