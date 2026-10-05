@@ -1,14 +1,18 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_2861_13702(){
-
+fn_32078_297(){
+	
+	#--~001_start~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_start}}
+			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_2861_13702="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-f2e.tst.d/start_tst.sh"
-    local dr_pth_fn_2861_13702=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-f2e.tst.d/start_tst.sh)
-    local fl_nm_fn_2861_13702=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-f2e.tst.d/start_tst.sh)
-    local rnd=2861_13702
+    local fl_pth_fn_32078_297="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-f2e.tst.d/start_tst.sh"
+    local dr_pth_fn_32078_297=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-f2e.tst.d/start_tst.sh)
+    local fl_nm_fn_32078_297=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-f2e.tst.d/start_tst.sh)
+    local rnd=32078_297
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -263,7 +267,11 @@ fn_2861_13702(){
 	
 	# {{002_use_l}}
 	
+	#-- ~001_into~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_into.tml
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_into}}
+			# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
@@ -271,15 +279,19 @@ fn_2861_13702(){
 
     #-- ~002_body~
 	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/001_body.tml
-    l_00_echo_code "002_body :: <${FUNCNAME[0]}>"
+    # l_00_echo_code "002_body :: <${FUNCNAME[0]}>"
 
     #.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
-	l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
+	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
 	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
     #-- {{003_body}}
-
+	
+	#-- ~001_exit~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml
 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_exit}}
+			# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
@@ -287,8 +299,8 @@ fn_2861_13702(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_2861_13702 $@
+fn_32078_297 $@
 
 # {{002_after}}
 
-#? fn_2861_13702 $@
+#? fn_32078_297 $@
