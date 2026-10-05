@@ -40,7 +40,7 @@ fns_bsh_004_f-f2e() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: 
+        doing :: inner_sh :: $(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/\$1.sh [, treat file \$2]
 			\$1 - 
 			\$2 - 
 			\$3 - 
@@ -111,10 +111,10 @@ fns_bsh_004_f-f2e() {
 		return 1
 	}
 
-	[[ -f "$1" ]] || {
+	[[ -f "$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh" ]] || {
 		# snp "out_err"
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_FL+{IEN} :: [[ -f '$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh' ]] is {IEN}, return 1${NRM}" >&2
 		return 1
 	}
 
@@ -215,9 +215,12 @@ fns_bsh_004_f-f2e() {
 	#-- {{002_into}}
 	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
+    # $(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh
+
 	local line
 	while IFS= read -r line; do
-		eval "echo $line"
+		# eval "echo $line"
+		source "$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh"
 	done <"${2:-/dev/stdin}"
 
 	#-- ~001_body~
