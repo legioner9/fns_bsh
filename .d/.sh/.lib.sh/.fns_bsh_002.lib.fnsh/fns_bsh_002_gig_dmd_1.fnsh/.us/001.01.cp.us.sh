@@ -52,8 +52,36 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		fi
 
 		mkdir -v "$(eval "echo \$arg_2_fn_${rnd}")"
-		local pth_1=
-		for pth_1 in $(l_02)
+
+		local pth_2535vdfs=
+		local dr_nm_234451fsdf=
+		local new_dr_63425tdsfgs=
+
+		for pth_2535vdfs in $(l_02_f2e $(eval "echo \$arg_1_fn_${rnd}")); do
+
+			l_00_echo_info $pth_2535vdfs
+			l_00_echo_code "cp -r $pth_2535vdfs $(eval "echo \$arg_2_fn_${rnd}")"
+			cp -r "$pth_2535vdfs" "$(eval "echo \$arg_2_fn_${rnd}")" || {
+				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r $pth_1 $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
+				return 1
+			}
+
+			dr_nm_234451fsdf=$(basename $pth_2535vdfs)
+			l_00_echo_info $dr_nm_234451fsdf
+			# read -p dr_nm_234451fsdf
+			new_dr_63425tdsfgs=$(eval "echo \$arg_2_fn_${rnd}")/$dr_nm_234451fsdf
+
+			if [[ -f $new_dr_63425tdsfgs/.from ]]; then
+				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '[[ -f $new_dr_63425tdsfgs/.from ]], return 1${NRM}" >&2
+				return 1
+			fi
+
+			echo "$pth_2535vdfs" >"$new_dr_63425tdsfgs"/.from
+			lfoe_path_to_var "$new_dr_63425tdsfgs"/.from
+
+		done
 
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
