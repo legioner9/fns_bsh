@@ -1,3 +1,0 @@
-that file0.txt
-null
-#@that file0.txt head
