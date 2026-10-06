@@ -45,6 +45,11 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# }
 		# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		# return 0
+
+		fns_bsh_002_gig_dmd_1 $(eval "echo \$arg_1_fn_${rnd}") $(dirname $(eval "echo \$arg_1_fn_${rnd}"))/_res.$(basename $(eval "echo \$arg_1_fn_${rnd}")).d
+
+		fns_bsh_002_d2md_2 $(dirname $(eval "echo \$arg_1_fn_${rnd}"))/_res.$(basename $(eval "echo \$arg_1_fn_${rnd}")).d $(eval "echo \$arg_2_fn_${rnd}")
+
 	# }
 
 fi
