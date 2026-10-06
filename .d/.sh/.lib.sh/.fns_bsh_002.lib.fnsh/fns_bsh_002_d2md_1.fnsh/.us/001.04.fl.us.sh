@@ -77,6 +77,20 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 			echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
 		fi
+
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "fre" ]]; then
+
+			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(fns_bsh_002_d2md_1_head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# fns_bsh_002_d2md_1_body "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		fi
 	}
 
 fi
