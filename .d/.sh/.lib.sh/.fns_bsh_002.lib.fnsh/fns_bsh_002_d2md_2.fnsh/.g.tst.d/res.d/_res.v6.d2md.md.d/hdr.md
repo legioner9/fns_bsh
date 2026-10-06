@@ -1,3 +1,5 @@
+#  <!-- { --> #  {/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md} <!-- } --> <- fl:: [1.md](../v6/1.md) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md -->
+# /dev/urandom str_32
 # # that ch1 <- dr:: [ch1](../v6/ch1) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1 --> 
 ##  <!-- { --> ## that file1.code head <!-- } --> <- fl:: [file1.sh](../v6/ch1/file1.sh) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.sh -->
 ##  <!-- { --> ## that file1.txt head <!-- } --> <- fl:: [file1.txt](../v6/ch1/file1.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.txt -->
@@ -11,3 +13,4 @@
 ##  <!-- { --> ## that file2.txt head <!-- } --> <- fl:: [file2.txt](../v6/ch2/file2.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.txt -->
 ##  <!-- { --> ## kva.png <!-- } --> <- fl:: [kva.png](../v6/ch2/kva.png) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/kva.png -->
 #  <!-- { --> # that file0.txt head <!-- } --> <- fl:: [file0.txt](../v6/file0.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/file0.txt -->
+#  <!-- { --> #  {/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_3.fnsh/.g.tst.d/res.d/_res.cpl.dmd.d.f.d/bash/string/First_Word.pdf} <!-- } --> <- fl:: [First_Word.pdf](../v6/First_Word.pdf) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/First_Word.pdf -->
