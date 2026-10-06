@@ -104,28 +104,35 @@ fns_bsh_004_f-f2e() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	[[ -n "$1" ]] || {
-		# snp "out_err"
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+{IEN} :: [[ -n '$1' ]] is {IEN}, return 1${NRM}" >&2
-		return 1
-	}
+	# [[ -n "$1" ]] || {
+	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+{IEN} :: [[ -n '$1' ]] is {IEN}, return 1${NRM}" >&2
+	# 	return 1
+	# }
 
-	[[ -f "$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh" ]] || {
-		# snp "out_err"
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_FL+{IEN} :: [[ -f '$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh' ]] is {IEN}, return 1${NRM}" >&2
-		return 1
-	}
+	# [[ -f "$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh" ]] || {
+	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_FL+{IEN} :: [[ -f '$(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh' ]] is {IEN}, return 1${NRM}" >&2
+	# 	return 1
+	# }
 
-	[[ -n "$2" ]] && {
-		[[ -f "$2" ]] || {
-			# snp "out_err"
-			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
-			return 1
-		}
-	}
+	if ! fns_bsh_004_is_ex_a_fl "$1"; then
+
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl \$1', return 1${NRM}" >&2
+		return 1
+
+	fi
+
+	if ! fns_bsh_004_if_ex_tn_fl "$2"; then
+
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_if_ex_tn_fl \$2', return 1${NRM}" >&2
+		return 1
+
+	fi
 
 	# [[ -d "$(dirname "$2")" ]] || {
 	# 	# snp "out_err"
@@ -215,7 +222,7 @@ fns_bsh_004_f-f2e() {
 	#-- {{002_into}}
 	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
-    # $(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh
+	# $(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/$1.sh
 
 	# local line
 	while IFS= read -r line; do
