@@ -1,4 +1,4 @@
-#  <!-- { --> #  [/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/1.md] <!-- } --> <- fl:: [1.md](v6/1.md) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/1.md -->
+#  <!-- { --> # [/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/1.md] <!-- } --> <- fl:: [1.md](v6/1.md) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/1.md -->
 
 ```md
 # /dev/urandom str_32
@@ -29,7 +29,7 @@ one
 
 ![alt.svg](v6/ch2/alt.svg)
 
-## ## {/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v5/ch2/ch3} <- dr:: [ch3](v6/ch2/ch3) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
+## ## [/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3] <- dr:: [ch3](v6/ch2/ch3) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
 
 ###  <!-- { --> ### that file3.code head <!-- } --> <- fl:: [file3.sh](v6/ch2/ch3/file3.sh) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.sh -->
 
@@ -39,12 +39,13 @@ one
 echo "that file3.code"
 ```
 
-###  <!-- { --> ###  {/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v5/ch2/ch3/file3.txt} <!-- } --> <- fl:: [file3.txt](v6/ch2/ch3/file3.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt -->
+###  <!-- { --> ### [/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt] <!-- } --> <- fl:: [file3.txt](v6/ch2/ch3/file3.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt -->
 
 ```txt
 that file3.txt
 three
 xxx#@that file3.txt head
+
 ```
 
 ##  <!-- { --> ## e9l91.jpg <!-- } --> <- fl:: [e9l91.jpg](v6/ch2/e9l91.jpg) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/e9l91.jpg -->
@@ -77,5 +78,5 @@ that file0.txt
 null
 ```
 
-#  <!-- { --> #  {/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_3.fnsh/.g.tst.d/res.d/_res.cpl.dmd.d.f.d/bash/string/First_Word.pdf} <!-- } --> <- fl:: [First_Word.pdf](v6/First_Word.pdf) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/First_Word.pdf -->
+#  <!-- { --> # [/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/html_1.pdf] <!-- } --> <- fl:: [html_1.pdf](v6/html_1.pdf) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/html_1.pdf -->
 
