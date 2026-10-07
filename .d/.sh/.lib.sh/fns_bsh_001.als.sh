@@ -114,3 +114,10 @@ fns_bsh_001_als_epm_upd_pckg() {
 	epm ei -y
 
 }
+
+fns_bsh_001_als_puml2d(){
+
+	fns_bsh_002_puml2d $1 $2 @ -f
+	libreoffice $1/$2.png
+
+}
