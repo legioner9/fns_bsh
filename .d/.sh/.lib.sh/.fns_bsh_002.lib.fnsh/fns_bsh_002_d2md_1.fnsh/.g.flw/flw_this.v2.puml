@@ -1,0 +1,225 @@
+@startmindmap
+*:001.us.sh
+
+<code>
+	fns__pre $arg_1
+	fns__dr $arg_1 \
+		1
+</code>
+;
+**:001.12.pre.us.sh
+
+<code>
+	fns__pre() {
+		fns__find $arg_1
+	}
+</code>
+;
+***:001.12.find.us.sh
+
+<code>
+	fns__find() {
+
+		find $arg_1 -name "*.cpd" -type f
+
+		for fl in $(find $arg_1 -name "*.cpd" -type f); do
+			l_00_echo_warn "fl=$fl"
+		done
+
+	}
+</code>
+;
+**:001.01.dr.us.sh
+
+<code>
+	fns__dr() {
+		# $1 :: $arg_1
+		: >"$2"
+		# $2 deep
+		local deep="$2"
+
+		for item in $(l_02_d2e "$1"); do
+
+			if [[ -d "$1/$item" ]]; then
+
+				fns__dd "$1/$item" $deep
+
+				fns__dr "$1/$item" $(($deep + 1))
+
+			fi
+
+			if [[ -f "$1/$item" ]]; then
+				fns__fl $1/$item $deep
+
+			fi
+
+		done
+	}
+</code>
+;
+***:001.02.dd.us.sh
+
+<code>
+	fns__dd() {
+
+		# $1 dir $2 dip
+
+		local anc_pth=$(fns__anc_pth "$1")
+		local res_str="[$(basename "$1")]("$anc_pth")"
+
+		local rch=$(fns__rch "$2" "#")
+		if [[ ! -f "$1/_d.d" ]]; then
+			echo "[$1]" >"$1/_d.d"
+		fi
+		echo "$rch $rch $(head -n 1 "$1/_d.d") <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$arg_2"
+
+	}
+</code>
+;
+***:001.04.fl.us.sh
+
+<code>
+	fns__fl() {
+
+		# fns__def_type "$1"
+
+		# $1 fl $2 dip tst_var_fl
+		local rch=$(fns__rch "$2" "#")
+		[[ "$tst_var_fl" -eq 1 ]] && l_00_echo_warn "rch=$rch"
+
+		local anc_pth="$(fns__anc_pth "$1")"
+		local main_anc="[$(basename "$1")]("$anc_pth")"
+
+		[[ "$tst_var_fl" -eq 1 ]] && {
+			l_00_echo_warn "fns__def_type $1"
+			fns__def_type "$1"
+			read -p "fns__def_type 2"
+		}
+
+		if [[ "$(fns__def_type "$1")" == "pic" ]]; then
+
+			local anc_pic="![$(basename "$1")]("$anc_pth")"
+
+			echo "$rch  <!-- { --> $rch $(basename "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$arg_2"
+			echo "$anc_pic"$'\n' >>"$arg_2"
+
+		fi
+
+		if [[ "$(fns__def_type "$1")" == "non" ]]; then
+			:
+		fi
+
+		if [[ "$(fns__def_type "$1")" == "@" ]]; then
+
+			echo "$rch  <!-- { --> $rch $(fns__head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$arg_2"
+
+			fns__body "$1" >>"$arg_2"
+
+			echo >>"$arg_2"
+		fi
+
+		if [[ "$(fns__def_type "$1")" == "fre" ]]; then
+
+			echo "$rch  <!-- { --> $rch $(fns__head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$arg_2"
+
+		fi
+</code>
+;
+****:001.03.rch.us.sh
+
+<code>
+	fns__rch() {
+
+		local count=$1
+		local char=$2
+		for ((i = 0; i < count; ++i)); do
+			echo -n "$char"
+		done
+		
+	}
+</code>
+;
+****:001.06.anc_pth.us.sh
+
+<code>
+	fns__anc_pth() {
+		
+		# realpath --relative-to=/путь/к/директории1 /путь/к/директории2
+		# $1=pth_fl "$arg_2"=pth_md $2=
+		# prto::$dr_pth/.src/exa_2/treat.sh
+		local res="$(realpath --relative-to="$(dirname "$arg_2")" "$(dirname "$1")")"/"$(basename "$1")"
+		echo "$res"
+		# echo " [$(basename "$1")]($res)"
+
+	}
+</code>
+;
+****:001.09.def_type.us.sh
+
+<code>
+eval "flow_1_${rnd}=dr"
+$flow_1_${rnd}")
+
+l_01_c_up $dr_pth/.env.sh
+
+if [[ $flow_1_${rnd}") == "dr" ]]; then
+
+	fns__def_type() {
+		source "$dr_pth/.env.sh/init.env.type_fl.0.sh"
+		# $1 fl
+		local ext="$(l_01_prs_f -e "$1")"
+
+		local cur_type=
+		
+		unset i
+		#!!!!!!!! 100 hard core from
+
+		for ((i = 0; i < 100; i++)); do
+
+			if [[ "$cur_type" == "$ext" ]]; then
+				echo "${fns__type_fl[$i, 1]}"
+
+				return 0
+			fi
+
+		done
+
+		echo "@"
+		return 0
+
+	}
+
+fi
+</code>
+;
+****:001.05.head.us.sh
+
+<code>
+fns__head() {
+
+		# $1 pth
+		local str_1=$(tail -n 1 "$1")
+		local ch_2=${str_1:1:1}
+
+		if [[ ! $ch_2 == "@" ]]; then
+			# echo "#@ {$1}" >>"$1"
+			echo "#@ [$1]" >>"$1"
+		fi
+		str_1=$(tail -n 1 "$1")
+		local head_1=${str_1:2}
+		echo "$head_1"
+
+	}
+</code>
+;
+****:001.08.head.us.sh
+
+<code>
+	fns__body() {
+		echo '```'"$(l_01_prs_f -e "$1")"
+		head -n -1 "$1" >>"$arg_2"
+		echo '```'
+	}
+</code>
+;
+@endmindmap

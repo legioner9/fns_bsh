@@ -1,0 +1,253 @@
+@startmindmap
+*:001.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_pre $(eval "echo \$arg_1_fn_${rnd}")
+	fns_bsh_002_d2md_1_dr $(eval "echo \$arg_1_fn_${rnd}") \
+		1
+</code>
+;
+**:001.12.pre.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_pre() {
+
+		fns_bsh_002_d2md_1_find $(eval "echo \$arg_1_fn_${rnd}")
+	}
+</code>
+;
+***:001.12.find.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_find() {
+		l_00_echo_code "find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f"
+		find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f
+
+		for fl in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f); do
+			l_00_echo_warn "fl=$fl"
+			read -p "find"
+		done
+
+	}
+</code>
+;
+**:001.01.dr.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_dr() {
+		# $1 :: $(eval "echo \$arg_1_fn_${rnd}")
+		: >"$2"
+		# $2 deep
+		local deep="$2"
+		# l_00_echo_info "\$deep=$deep"
+		unset item
+		local item=
+
+		for item in $(l_02_d2e "$1"); do
+			# l_00_echo_info "item=$item"
+			if [[ -d "$1/$item" ]]; then
+
+				# cat "$1/$item"/_d.d >>"$(eval "echo \$arg_2_fn_${rnd}")"
+				fns_bsh_002_d2md_1_dd "$1/$item" $deep
+
+				fns_bsh_002_d2md_1_dr "$1/$item" $(($deep + 1))
+
+			fi
+
+			if [[ -f "$1/$item" ]]; then
+				fns_bsh_002_d2md_1_fl $1/$item $deep
+				# echo "$deep $item" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			fi
+
+		done
+	}
+</code>
+;
+***:001.02.dd.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_dd() {
+
+		# $1 dir $2 dip
+
+		local anc_pth=$(fns_bsh_002_d2md_1_anc_pth "$1")
+		local res_str="[$(basename "$1")]("$anc_pth")"
+
+		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
+		if [[ ! -f "$1/_d.d" ]]; then
+			echo "[$1]" >"$1/_d.d"
+		fi
+		echo "$rch $rch $(head -n 1 "$1/_d.d") <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+	}
+</code>
+;
+***:001.04.fl.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_fl() {
+
+		# fns_bsh_002_d2md_1_def_type "$1"
+		# read -p "fns_bsh_002_d2md_1_def_type"
+
+		# $1 fl $2 dip tst_var_fl
+		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
+		[[ "$tst_var_fl" -eq 1 ]] && l_00_echo_warn "rch=$rch"
+
+		local anc_pth="$(fns_bsh_002_d2md_1_anc_pth "$1")"
+		local main_anc="[$(basename "$1")]("$anc_pth")"
+
+		[[ "$tst_var_fl" -eq 1 ]] && {
+			l_00_echo_warn "fns_bsh_002_d2md_1_def_type $1"
+			fns_bsh_002_d2md_1_def_type "$1"
+			read -p "fns_bsh_002_d2md_1_def_type 2"
+		}
+
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "pic" ]]; then
+
+			local anc_pic="![$(basename "$1")]("$anc_pth")"
+
+			echo "$rch  <!-- { --> $rch $(basename "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$anc_pic"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+		fi
+
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "non" ]]; then
+			:
+		fi
+
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "@" ]]; then
+
+			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(fns_bsh_002_d2md_1_head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			fns_bsh_002_d2md_1_body "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		fi
+
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "fre" ]]; then
+
+			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(fns_bsh_002_d2md_1_head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# echo "$res_str"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# fns_bsh_002_d2md_1_body "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+
+			# echo >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		fi
+</code>
+;
+****:001.03.rch.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_rch() {
+
+		local count=$1
+		local char=$2
+		for ((i = 0; i < count; ++i)); do
+			echo -n "$char"
+		done
+		
+	}
+</code>
+;
+****:001.06.anc_pth.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_anc_pth() {
+		# realpath --relative-to=/путь/к/директории1 /путь/к/директории2
+		# $1=pth_fl "$(eval "echo \$arg_2_fn_${rnd}")"=pth_md $2=
+		# prto::$(eval "echo \$dr_pth_fn_${rnd}")/.src/exa_2/treat.sh
+		local res="$(realpath --relative-to="$(dirname "$(eval "echo \$arg_2_fn_${rnd}")")" "$(dirname "$1")")"/"$(basename "$1")"
+		echo "$res"
+		# echo " [$(basename "$1")]($res)"
+
+	}
+</code>
+;
+****:001.09.def_type.us.sh
+
+<code>
+eval "flow_1_${rnd}=dr"
+$(eval "echo \$flow_1_${rnd}")
+l_00_echo_code "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
+l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
+read -p "l_01_c_up fns_bsh_002_d2md_1_def_type"
+if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
+
+	fns_bsh_002_d2md_1_def_type() {
+		source "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/init.env.type_fl.0.sh"
+		# $1 fl
+		local ext="$(l_01_prs_f -e "$1")"
+		[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "ext=$ext \
+$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
+		local cur_type=
+		unset i
+		#!!!!!!!! 100 hard core from
+		for ((i = 0; i < 100; i++)); do
+			# for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
+			# echo i=$i
+			[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "\${fns_bsh_002_d2md_1_type_fl[$i, 0]}=${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
+			cur_type="${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
+
+			[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "echo i=$i cur_type=$cur_type"
+
+			if [[ "$cur_type" == "$ext" ]]; then
+				echo "${fns_bsh_002_d2md_1_type_fl[$i, 1]}"
+
+				[[ "$tst_var_def_type_1" -eq 1 ]] && read -p fns_bsh_002_d2md_1_def_type
+
+				return 0
+			fi
+
+		done
+
+		echo "@"
+		return 0
+
+	}
+
+fi
+</code>
+;
+****:001.05.head.us.sh
+
+<code>
+fns_bsh_002_d2md_1_head() {
+
+		# $1 pth
+		local str_1=$(tail -n 1 "$1")
+		local ch_2=${str_1:1:1}
+		# l_00_echo_warn "str_1=$str_1"
+		# l_00_echo_warn "ch_2=$ch_2"
+
+		if [[ ! $ch_2 == "@" ]]; then
+			# echo "#@ {$1}" >>"$1"
+			echo "#@ [$1]" >>"$1"
+		fi
+		str_1=$(tail -n 1 "$1")
+		local head_1=${str_1:2}
+		echo "$head_1"
+
+	}
+</code>
+;
+****:001.08.head.us.sh
+
+<code>
+	fns_bsh_002_d2md_1_body() {
+		echo '```'"$(l_01_prs_f -e "$1")"
+		head -n -1 "$1" >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		echo '```'
+	}
+</code>
+;
+@endmindmap
