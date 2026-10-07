@@ -2,14 +2,9 @@
 *:001.us.sh
 
 <code>
-
-doing :: IEN=\$1(dr with struct) REN=\$2(.md with anc)
-
 fns__pre $arg_1
-
 fns__dr $arg_1 \
 1
-
 </code>
 ;
 **:001.12.pre.us.sh
@@ -90,7 +85,6 @@ fns__fl() {
 
 # $1 fl $2 dip tst_var_fl
 local rch=$(fns__rch "$2" "#")
-local main_anc="[$(basename "$1")]("$anc_pth")"
 
 if [[ "$(fns__def_type "$1")" == "pic" ]]; then
 
