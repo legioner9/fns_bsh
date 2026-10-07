@@ -43,7 +43,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 $((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
 		local cur_type=
 		unset i
-		#!!!!!!!! 100 hard core from 
+		#!!!!!!!! 100 hard core from
 		for ((i = 0; i < 100; i++)); do
 			# for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
 			# echo i=$i

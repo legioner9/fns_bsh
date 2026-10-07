@@ -42,7 +42,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# l_00_echo_warn "ch_2=$ch_2"
 
 		if [[ ! $ch_2 == "@" ]]; then
-			echo "#@ {$1}" >>"$1"
+			# echo "#@ {$1}" >>"$1"
+			echo "#@ [$1]" >>"$1"
 		fi
 		str_1=$(tail -n 1 "$1")
 		local head_1=${str_1:2}

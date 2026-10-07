@@ -42,7 +42,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		local rch=$(fns_bsh_002_d2md_1_rch "$2" "#")
 		if [[ ! -f "$1/_d.d" ]]; then
-			echo "{$1}" >"$1/_d.d"
+			echo "[$1]" >"$1/_d.d"
 		fi
 		echo "$rch $rch $(head -n 1 "$1/_d.d") <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
