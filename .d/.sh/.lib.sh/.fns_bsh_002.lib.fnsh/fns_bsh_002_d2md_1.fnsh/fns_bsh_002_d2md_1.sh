@@ -214,6 +214,8 @@ fns_bsh_002_d2md_1() {
 	# up to_mem .env.sh dr
 	l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
 
+	read -p "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
+
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
 		if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us && $(l_01_prs_f -e $item_us) == "sh" ]]; then

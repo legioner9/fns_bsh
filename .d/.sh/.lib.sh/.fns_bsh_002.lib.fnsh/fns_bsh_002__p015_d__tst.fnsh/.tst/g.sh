@@ -1,14 +1,18 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_21083_28242(){
-
+fn_30894_3247(){
+	
+	#--~001_start~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_start}}
+			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_21083_28242="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/g.sh"
-    local dr_pth_fn_21083_28242=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/g.sh)
-    local fl_nm_fn_21083_28242=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/g.sh)
-    local rnd=21083_28242
+    local fl_pth_fn_30894_3247="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/g.sh"
+    local dr_pth_fn_30894_3247=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/g.sh)
+    local fl_nm_fn_30894_3247=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/g.sh)
+    local rnd=30894_3247
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -147,21 +151,17 @@ fn_21083_28242(){
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# [[ -f "$1" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
+	# if ! fns_bsh_004_is_ex_a_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
 	# 	return 1
-	# }
+	# fi
 
-	# [[ -n "$1" ]] && {
-	# 	[[ -f "$1" ]] || {
-	# 		# snp "out_err"
-	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
-	# 		return 1
-	# 	}
-	# }
+	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_if_ex_tn_fl $1', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	# [[ -d "$(dirname "$2")" ]] || {
 	# 	# snp "out_err"
@@ -265,7 +265,11 @@ fn_21083_28242(){
 	
 	# {{002_use_l}}
 	
+	#-- ~001_into~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_into.tml
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_into}}
+			# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
@@ -298,8 +302,12 @@ fn_21083_28242(){
 	done
 
     #-- {{002_body}}
-
+	
+	#-- ~001_exit~
+	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml
 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	#-- {{002_exit}}
+			# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
     return 0
 
@@ -307,8 +315,8 @@ fn_21083_28242(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_21083_28242 $@
+fn_30894_3247 $@
 
 # {{002_after}}
 
-#? fn_21083_28242 $@
+#? fn_30894_3247 $@

@@ -12,8 +12,10 @@ fns_bsh_002_d2md_1_type_fl[2, 0]=svg
 fns_bsh_002_d2md_1_type_fl[2, 1]=pic
 fns_bsh_002_d2md_1_type_fl[3, 0]=cpd
 fns_bsh_002_d2md_1_type_fl[3, 1]=non
-fns_bsh_002_d2md_1_type_fl[4, 0]=pdf
-fns_bsh_002_d2md_1_type_fl[4, 1]=fre
+fns_bsh_002_d2md_1_type_fl[4, 0]=cpf
+fns_bsh_002_d2md_1_type_fl[4, 1]=non
+fns_bsh_002_d2md_1_type_fl[5, 0]=pdf
+fns_bsh_002_d2md_1_type_fl[5, 1]=fre
 
 # l_00_echo_sys "set_of_arr :: fns_bsh_002_d2md_1_type_fl ::"
 # echo "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"

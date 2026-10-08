@@ -36,12 +36,17 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	fns_bsh_002_d2md_1_find() {
 		l_00_echo_code "find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f"
 		find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f
-
-		for fl in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f); do
-			l_00_echo_warn "fl=$fl"
-			read -p "find"
+		local fl_1=
+		local fl_2=
+		
+		for fl_1 in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f); do
+			l_00_echo_warn "fl_1=$fl_1"
 		done
 
+		for fl_2 in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpf" -type f); do
+			l_00_echo_warn "fl_2=$fl_2"
+		done
+		read -p "find"
 	}
 
 fi

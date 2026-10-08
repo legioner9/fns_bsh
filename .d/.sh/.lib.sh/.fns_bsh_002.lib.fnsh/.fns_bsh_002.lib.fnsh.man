@@ -12,3 +12,6 @@
 
 # start tst for XXX.sh
     . {.tst/g.sh}
+
+# naming 
+- in .env.sh/init.env.img_var.sh define name global const  fns_bsh_002_d2md_1_env_img_war_[name_const]

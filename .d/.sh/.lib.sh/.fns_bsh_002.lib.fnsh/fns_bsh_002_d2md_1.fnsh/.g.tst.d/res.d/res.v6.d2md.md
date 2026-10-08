@@ -27,7 +27,7 @@ one
 
 ##  <!-- { --> ## alt.svg <!-- } --> <- fl:: [alt.svg](v6/ch2/alt.svg) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/alt.svg -->
 
-![alt.svg](v6/ch2/alt.svg)
+<img src=v6/ch2/alt.svg width=100/>
 
 ## ## [/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3] <- dr:: [ch3](v6/ch2/ch3) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
 
@@ -50,7 +50,7 @@ xxx#@that file3.txt head
 
 ##  <!-- { --> ## e9l91.jpg <!-- } --> <- fl:: [e9l91.jpg](v6/ch2/e9l91.jpg) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/e9l91.jpg -->
 
-![e9l91.jpg](v6/ch2/e9l91.jpg)
+<img src=v6/ch2/e9l91.jpg width=100/>
 
 ##  <!-- { --> ## that file2.code head <!-- } --> <- fl:: [file2.sh](v6/ch2/file2.sh) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/file2.sh -->
 
@@ -69,7 +69,7 @@ two
 
 ##  <!-- { --> ## kva.png <!-- } --> <- fl:: [kva.png](v6/ch2/kva.png) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/ch2/kva.png -->
 
-![kva.png](v6/ch2/kva.png)
+<img src=v6/ch2/kva.png width=100/>
 
 #  <!-- { --> # that file0.txt head <!-- } --> <- fl:: [file0.txt](v6/file0.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.g.tst.d/res.d/v6/file0.txt -->
 
