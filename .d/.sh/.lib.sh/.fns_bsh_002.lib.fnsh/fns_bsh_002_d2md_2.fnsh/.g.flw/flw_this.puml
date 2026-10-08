@@ -1,11 +1,77 @@
 @startmindmap
-*:init.sh
+*:001.us.sh
+
+<code>
+
+fns_bsh_002_d2md_2_gig_d_mkdr
+
+#.. define for use as global for `fn` :: $fns_bsh_002_d2md_2_gig_d_echo
+local fns_bsh_002_d2md_2_dr_dta=$(fns_bsh_002_d2md_2_gig_d_echo)
+
+fns_bsh_002_d2md_2_body
+fns_bsh_002_d2md_2_hdr
+fns_bsh_002_d2md_2_chpt
+
+: >"$(eval "echo \$arg_2_fn_${rnd}")"
+</code>
+;
+**:001.03.body.us.sh
+
+<code>
+fns_bsh_002_d2md_2_body() {
+    fns_bsh_002_d2md_1 \
+        $(eval "echo \$arg_1_fn_${rnd}") \
+        $fns_bsh_002_d2md_2_dr_dta/body.md  
+}
+</code>
+;
+**:001.04.hdr.us.sh
+
+<code>
+fns_bsh_002_d2md_2_hdr() {
+    grep "^#" $fns_bsh_002_d2md_2_dr_dta/body.md | grep -v "^#!" >$fns_bsh_002_d2md_2_dr_dta/hdr.md
+}
+</code>
+;
+**:001.05.chpt.us.sh
+
+<code>
+fns_bsh_002_d2md_2_chpt() {
+    grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns_bsh_002_d2md_2_dr_dta/hdr.md >$fns_bsh_002_d2md_2_dr_dta/chpt.md
+}
+</code>
+;
+**:00X.XXX.us.sh
 
 <code>
 . .bashrc
 </code>
 ;
-**:.bashrc
+**:00X.XXX.us.sh
+
+<code>
+. .bashrc
+</code>
+;
+**:00X.XXX.us.sh
+
+<code>
+. .bashrc
+</code>
+;
+**:00X.XXX.us.sh
+
+<code>
+. .bashrc
+</code>
+;
+**:00X.XXX.us.sh
+
+<code>
+. .bashrc
+</code>
+;
+**:00X.XXX.us.sh
 
 <code>
 . .bashrc

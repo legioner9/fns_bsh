@@ -15,3 +15,7 @@
 
 # naming 
 - in .env.sh/init.env.img_var.sh define name global const  fns_bsh_002_d2md_1_env_img_war_[name_const]
+
+# do
+- .tst/.us/001.us.sh allways prp tst ::
+    - .dta/cp_to_tst.d cp to .g.tst.d/res.d

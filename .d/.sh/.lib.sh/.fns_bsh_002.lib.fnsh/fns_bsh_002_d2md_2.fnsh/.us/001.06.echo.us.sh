@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 001.01.gig_d.us.sh"
+l_00_echo_info "that :: 001.05.hdr.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
@@ -29,24 +29,19 @@ fl - result fl
 # prnt2_dr_pth_fn ::
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
+#! gig_var
+#fns_bsh_002_d2md_2_dr_dta
+
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_gig_d_mkdr() {
-
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
+	fns_bsh_002_d2md_2_gig_d_echo() {
 		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))
 		local nm_dr=_$(l_01_prs_f -ne $(eval "echo \$arg_2_fn_${rnd}")).d
 
-		if ! (
-			rm -f $pr_dr/$nm_dr
-			mkdir $pr_dr/$nm_dr
-		) >/dev/null; then
-			return 1
-		fi
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
+		echo "$pr_dr/$nm_dr"
 	}
 
 fi
