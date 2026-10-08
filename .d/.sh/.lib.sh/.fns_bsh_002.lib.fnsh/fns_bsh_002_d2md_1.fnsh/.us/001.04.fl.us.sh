@@ -54,6 +54,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "pic" ]]; then
 
 			# local anc_pic="![$(basename "$1")]("$anc_pth")"
+			# ..$fns_bsh_002_d2md_1_env_img_war_width_pic define in .env.sh/init.env.img_var.sh
+			\
 			local anc_pic="<img src=$anc_pth width="$fns_bsh_002_d2md_1_env_img_war_width_pic"/>"
 			# <img src="$anc_pth" width="128"/>
 

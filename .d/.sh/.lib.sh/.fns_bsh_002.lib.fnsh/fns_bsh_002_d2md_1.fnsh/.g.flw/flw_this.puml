@@ -25,10 +25,15 @@ fns__find $arg_1
 <code>
 fns__find() {
 
-find $arg_1 -name "*.cpd" -type f
+local fl_1=
+local fl_2=
+    
+for fl_1 in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpd" -type f); do
+,,,,l_00_echo_warn "fl_1=$fl_1"
+done
 
-for fl in $(find $arg_1 -name "*.cpd" -type f); do
-,,,,l_00_echo_warn "fl=$fl"
+for fl_2 in $(find $(eval "echo \$arg_1_fn_${rnd}") -name "*.cpf" -type f); do
+,,,,l_00_echo_warn "fl_2=$fl_2"
 done
 
 }
@@ -94,7 +99,7 @@ local main_anc="[$(basename "$1")]("$anc_pth")"
 
 if [[ "$(fns__def_type "$1")" == "pic" ]]; then
 
-,,,,local anc_pic="![$(basename "$1")]("$anc_pth")"
+,,,,local anc_pic="<img src=$anc_pth width="$fns_bsh_002_d2md_1_env_img_war_width_pic"/>"
 
 ,,,,echo "$rch  <!-- { --> $rch $(basename "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$arg_2"
 ,,,,echo "$anc_pic"$'\n' >>"$arg_2"
