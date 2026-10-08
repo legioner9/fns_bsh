@@ -1,0 +1,14 @@
+# man for ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_XXX.fnsh
+
+# contane dir:
+- .dta/cp_to_tst.d cp to .g.tst.d/res.d for tst action 
+- .g.tst.d sandbox for .tst/g.sh
+- .tst area tst g.sh
+- .g.flw puml area - complane .us step by step
+- .env.sh up to mem before any action in fn(pr)
+- .src example flow 
+- .tst/.us pr for .tst/g.sh
+- .us pr for XXX.sh
+
+# start tst for XXX.sh
+    . {.tst/g.sh}
