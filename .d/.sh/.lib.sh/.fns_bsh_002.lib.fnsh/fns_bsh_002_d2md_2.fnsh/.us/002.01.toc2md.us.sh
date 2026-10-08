@@ -66,6 +66,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		done
 		IFS=
 
+		lfoe_path_to_var $fns_bsh_002_d2md_2_dr_dta/body_toc.md
 		read -p fns_bsh_002_d2md_2_toc2md
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	}
