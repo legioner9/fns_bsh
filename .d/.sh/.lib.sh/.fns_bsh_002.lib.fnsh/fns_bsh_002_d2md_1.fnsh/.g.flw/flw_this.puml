@@ -79,7 +79,7 @@ local res_str="[$(basename "$1")]("$anc_pth")"
 
 local rch=$(fns__rch "$2" "#")
 if [[ ! -f "$1/_d.d" ]]; then
-,,,,echo "[$1]" >"$1/_d.d"
+,,,,echo "[$(basename "$1")]" >"$1/_d.d"
 fi
 echo "$rch $rch $(head -n 1 "$1/_d.d") <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$arg_2"
 

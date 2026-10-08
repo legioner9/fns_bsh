@@ -58,14 +58,10 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			anc="<a id=\"$rnd_1\"></a>"
 			#sed '/^b/i ascsdc' init/init.fl > res.fl
 
-			l_00_echo_info "\$str=$str"
-			l_00_echo_info "\$anc=$anc"
-			l_00_echo_info "\$pnt=$pnt"
-
 			eval "sed -i '/$str/i $anc' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
 			eval "sed -i '/ETOC/i $pnt' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
 
-			read -p "check variables and file://$fns_bsh_002_d2md_2_dr_dta/body_toc.md"
+
 
 		done
 		IFS=

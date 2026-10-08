@@ -59,31 +59,25 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
-- <a href=#v6VbqCauSu3jR39wYSLwA45u5HZ6j58h> # [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md] </a>
-- <a href=#ck4pWiMADrLvRPXZNcEq0cbx5iXsu6dR> ## that file1.code head </a>
-- <a href=#ZWu2T18NioIHCQk7kCAPuHbkDkePhgDU> ## that file1.txt head </a>
-- <a href=#903mvUIpBUFBowbgyGs9IQVPDeSMpLjW> ## alt.svg </a>
-- <a href=#LYek5kVLFeJKOsEppQsH2q0wkQIi7BLx> ### that file3.code head </a>
-- <a href=#6QIUe6n9XDQVGG6eMSz5peCAUEE1UeNP> ### [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt] </a>
-- <a href=#Dvh9al5tQ4wWCCui70wJCHJD7pvwHQIS> ## e9l91.jpg </a>
-- <a href=#LULDD9nqDW2pwUcXG1rOLVF5owjbKwlQ> ## that file2.code head </a>
-- <a href=#XCddfowVb5oA9XpAUKPlxXhhaDTjq6Fw> ## that file2.txt head </a>
-- <a href=#ZPmz5wUjcuR2Du0rU7InmWqF1vqa6MPV> ## kva.png </a>
-- <a href=#N2o5TvWI0WGeQ30hCNVYE5yCMzRHFVpX> # that file0.txt head </a>
-- <a href=#FR50SmRWRjgHFRAO3LyKvQFb2EQn2xKT> # [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/html_1.pdf] </a>
+- <a href=#cPcd0X6Ir7iiuAi9f7EAaa9verxar3cW> # [1.md] </a>
+- <a href=#eaZDB0aPtIOpPry4tgVZ1t5mjNLwu0ZB> ## that file1.code head </a>
+- <a href=#KQT6gBrsoeXCj3JEueckQAJQqYrhU9WW> ## that file1.txt head </a>
+- <a href=#GlnhmaDwQFyb5Sn468mpxPsEIRv6wMBs> ## alt.svg </a>
+- <a href=#HSzbSYJNuEScVeoaatMxsJRUh4fyawAj> ### that file3.code head </a>
+- <a href=#5ZGtlXV1Pw103qIeICRE60HlYMlgdk6Y> ### [file3.txt] </a>
 <!-- ETOC  -->
 
-#  <!-- { --> # [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md] <!-- } --> <- fl:: [1.md](../v6/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md -->
+#  <!-- { --> # [1.md] <!-- } --> <- fl:: [1.md](../v6/1.md) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md -->
 
 ```md
 # /dev/urandom str_32
 
 ```
 
-# # [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1] <- dr:: [ch1](../v6/ch1) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1 --> 
+# # [ch1] <- dr:: [ch1](../v6/ch1) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1 --> 
 
-<a id="ck4pWiMADrLvRPXZNcEq0cbx5iXsu6dR"></a>
-##  <!-- { --> ## that file1.code head <!-- } --> <- fl:: [file1.sh](../v6/ch1/file1.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.sh -->
+<a id="eaZDB0aPtIOpPry4tgVZ1t5mjNLwu0ZB"></a>
+##  <!-- { --> ## that file1.code head <!-- } --> <- fl:: [file1.sh](../v6/ch1/file1.sh) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.sh -->
 
 ```sh
 #!/bin/bash
@@ -91,25 +85,25 @@ Start Contents Menu
 echo "that file1.code"
 ```
 
-<a id="ZWu2T18NioIHCQk7kCAPuHbkDkePhgDU"></a>
-##  <!-- { --> ## that file1.txt head <!-- } --> <- fl:: [file1.txt](../v6/ch1/file1.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.txt -->
+<a id="KQT6gBrsoeXCj3JEueckQAJQqYrhU9WW"></a>
+##  <!-- { --> ## that file1.txt head <!-- } --> <- fl:: [file1.txt](../v6/ch1/file1.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.txt -->
 
 ```txt
 that file1.txt
 one
 ```
 
-# # that ch2 <- dr:: [ch2](../v6/ch2) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2 --> 
+# # that ch2 <- dr:: [ch2](../v6/ch2) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2 --> 
 
-<a id="903mvUIpBUFBowbgyGs9IQVPDeSMpLjW"></a>
-##  <!-- { --> ## alt.svg <!-- } --> <- fl:: [alt.svg](../v6/ch2/alt.svg) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/alt.svg -->
+<a id="GlnhmaDwQFyb5Sn468mpxPsEIRv6wMBs"></a>
+##  <!-- { --> ## alt.svg <!-- } --> <- fl:: [alt.svg](../v6/ch2/alt.svg) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/alt.svg -->
 
 <img src=../v6/ch2/alt.svg width=100/>
 
-## ## [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3] <- dr:: [ch3](../v6/ch2/ch3) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
+## ## [ch3] <- dr:: [ch3](../v6/ch2/ch3) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
 
-<a id="LYek5kVLFeJKOsEppQsH2q0wkQIi7BLx"></a>
-###  <!-- { --> ### that file3.code head <!-- } --> <- fl:: [file3.sh](../v6/ch2/ch3/file3.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.sh -->
+<a id="HSzbSYJNuEScVeoaatMxsJRUh4fyawAj"></a>
+###  <!-- { --> ### that file3.code head <!-- } --> <- fl:: [file3.sh](../v6/ch2/ch3/file3.sh) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.sh -->
 
 ```sh
 #!/bin/bash
@@ -117,7 +111,7 @@ one
 echo "that file3.code"
 ```
 
-###  <!-- { --> ### [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt] <!-- } --> <- fl:: [file3.txt](../v6/ch2/ch3/file3.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt -->
+###  <!-- { --> ### [file3.txt] <!-- } --> <- fl:: file3.txt](../v6/ch2/ch3/file3.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt -->
 
 ```txt
 that file3.txt
@@ -126,13 +120,11 @@ xxx#@that file3.txt head
 
 ```
 
-<a id="Dvh9al5tQ4wWCCui70wJCHJD7pvwHQIS"></a>
-##  <!-- { --> ## e9l91.jpg <!-- } --> <- fl:: [e9l91.jpg](../v6/ch2/e9l91.jpg) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/e9l91.jpg -->
+##  <!-- { --> ## e9l91.jpg <!-- } --> <- fl:: [e9l91.jpg](../v6/ch2/e9l91.jpg) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/e9l91.jpg -->
 
 <img src=../v6/ch2/e9l91.jpg width=100/>
 
-<a id="LULDD9nqDW2pwUcXG1rOLVF5owjbKwlQ"></a>
-##  <!-- { --> ## that file2.code head <!-- } --> <- fl:: [file2.sh](../v6/ch2/file2.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.sh -->
+##  <!-- { --> ## that file2.code head <!-- } --> <- fl:: [file2.sh](../v6/ch2/file2.sh) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.sh -->
 
 ```sh
 #!/bin/bash
@@ -140,26 +132,23 @@ xxx#@that file3.txt head
 echo "that file2.code"
 ```
 
-<a id="XCddfowVb5oA9XpAUKPlxXhhaDTjq6Fw"></a>
-##  <!-- { --> ## that file2.txt head <!-- } --> <- fl:: [file2.txt](../v6/ch2/file2.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.txt -->
+##  <!-- { --> ## that file2.txt head <!-- } --> <- fl:: [file2.txt](../v6/ch2/file2.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.txt -->
 
 ```txt
 that file2.txt
 two
 ```
 
-<a id="ZPmz5wUjcuR2Du0rU7InmWqF1vqa6MPV"></a>
-##  <!-- { --> ## kva.png <!-- } --> <- fl:: [kva.png](../v6/ch2/kva.png) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/kva.png -->
+##  <!-- { --> ## kva.png <!-- } --> <- fl:: [kva.png](../v6/ch2/kva.png) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/kva.png -->
 
 <img src=../v6/ch2/kva.png width=100/>
 
-<a id="N2o5TvWI0WGeQ30hCNVYE5yCMzRHFVpX"></a>
-#  <!-- { --> # that file0.txt head <!-- } --> <- fl:: [file0.txt](../v6/file0.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/file0.txt -->
+#  <!-- { --> # that file0.txt head <!-- } --> <- fl:: [file0.txt](../v6/file0.txt) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/file0.txt -->
 
 ```txt
 that file0.txt
 null
 ```
 
-#  <!-- { --> # [${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/html_1.pdf] <!-- } --> <- fl:: [html_1.pdf](../v6/html_1.pdf) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/html_1.pdf -->
+#  <!-- { --> # [html_1.pdf] <!-- } --> <- fl:: [html_1.pdf](../v6/html_1.pdf) <!-- file:///home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/html_1.pdf -->
 
