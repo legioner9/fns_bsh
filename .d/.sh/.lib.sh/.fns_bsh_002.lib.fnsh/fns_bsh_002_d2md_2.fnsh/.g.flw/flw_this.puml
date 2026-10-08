@@ -2,25 +2,24 @@
 *:001.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_gig_d_mkdr
+	fns__gig_d_mkdr
 
-	local fns_bsh_002_d2md_2_dr_dta=$(fns_bsh_002_d2md_2_gig_d_echo)
+	local fns__dr_dta=$(fns__gig_d_echo)
 
-	l_00_echo_warn "\$fns_bsh_002_d2md_2_dr_dta=$fns_bsh_002_d2md_2_dr_dta"
+	l_00_echo_warn "\$fns__dr_dta=$fns__dr_dta"
 
-	fns_bsh_002_d2md_2_body
-	fns_bsh_002_d2md_2_hdr
-	fns_bsh_002_d2md_2_chpt
+	fns__body
+	fns__hdr
+	fns__chpt
 </code>
 ;
 **:001.01.gig_d_mkdr.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_gig_d_mkdr() {
+	fns__gig_d_mkdr() {
 
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))
-		local nm_dr=_$(l_01_prs_f -ne $(eval "echo \$arg_2_fn_${rnd}")).d
+		local pr_dr=$(l_01_prs_f -d $arg_2)
+		local nm_dr=_$(l_01_prs_f -ne $arg_2).d
 
 		if ! (
 			rm -f $pr_dr/$nm_dr
@@ -28,49 +27,42 @@
 		) >/dev/null; then
 			return 1
 		fi
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 </code>
 ;
 **:001.03.body.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_body() {
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		fns_bsh_002_d2md_1 $(eval "echo \$arg_1_fn_${rnd}") $fns_bsh_002_d2md_2_dr_dta/body.md
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
+	fns__body() {
+		fns_bsh_002_d2md_1 $arg_1 $fns__dr_dta/body.md
 	}
 </code>
 ;
 **:001.04.hdr.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_hdr() {
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		grep "^#" $fns_bsh_002_d2md_2_dr_dta/body.md | grep -v "^#!" >$fns_bsh_002_d2md_2_dr_dta/hdr.md
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
+	fns__hdr() {
+		grep "^#" $fns__dr_dta/body.md | grep -v "^#!" >$fns__dr_dta/hdr.md
 	}
 </code>
 ;
 **:001.05.chpt.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_chpt() {
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		#-- $fns_bsh_002_d2md_2_dr_dta/hdr.md
-		#-- grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
+	fns__chpt() {
+		#-- $fns__dr_dta/hdr.md
+		#-- grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $dr_pth/hdr.lst > $dr_pth/chpt.lst
 
-		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns_bsh_002_d2md_2_dr_dta/hdr.md >$fns_bsh_002_d2md_2_dr_dta/chpt.md
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
+		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns__dr_dta/hdr.md >$fns__dr_dta/chpt.md
 	}
 </code>
 ;
 **:001.06.gig_d_echo.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_gig_d_echo() {
-		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))
-		local nm_dr=_$(l_01_prs_f -ne $(eval "echo \$arg_2_fn_${rnd}")).d
+	fns__gig_d_echo() {
+		local pr_dr=$(l_01_prs_f -d $arg_2)
+		local nm_dr=_$(l_01_prs_f -ne $arg_2).d
 
 		echo "$pr_dr/$nm_dr"
 	}
@@ -80,43 +72,40 @@
 
 <code>
 
-fns_bsh_002_d2md_2_prp_body
-fns_bsh_002_d2md_2_toc2md
+fns__prp_body
+fns__toc2md
 
 </code>
 ;
 **:002.02.prp_body.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_prp_body() {
+	fns__prp_body() {
 
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
-		# $(eval "echo \$dr_pth_fn_${rnd}")/.cdn/pre1.md
-		# $fns_bsh_002_d2md_2_dr_dta/chpt.md
-		# $fns_bsh_002_d2md_2_dr_dta/body.md
-		#! $fns_bsh_002_d2md_2_dr_dta/body_toc.md result
-		cat $(eval "echo \$dr_pth_fn_${rnd}")/.cdn/pre1.md | cat - $fns_bsh_002_d2md_2_dr_dta/body.md >$fns_bsh_002_d2md_2_dr_dta/body_toc.md
+		# $dr_pth/.cdn/pre1.md
+		# $fns__dr_dta/chpt.md
+		# $fns__dr_dta/body.md
+		#! $fns__dr_dta/body_toc.md result
+		cat $dr_pth/.cdn/pre1.md | cat - $fns__dr_dta/body.md >$fns__dr_dta/body_toc.md
 
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	}
 </code>
 ;
 **:002.01.toc2md.us.sh
 
 <code>
-	fns_bsh_002_d2md_2_toc2md() {
-		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	fns__toc2md() {
 
-		# $fns_bsh_002_d2md_2_dr_dta/chpt.md
-		# $fns_bsh_002_d2md_2_dr_dta/body.md
-		#! $fns_bsh_002_d2md_2_dr_dta/body_toc.md result
+		# $fns__dr_dta/chpt.md
+		# $fns__dr_dta/body.md
+		#! $fns__dr_dta/body_toc.md result
 		local pnt=
 		local anc=
 		local str=
 		local rnd_1=
 
 		IFS=$'\n'
-		for str in $(<$fns_bsh_002_d2md_2_dr_dta/chpt.md); do
+		for str in $(<$fns__dr_dta/chpt.md); do
 			echo "$str"
 			#  - <a href=#35a6b9d026864bd79ab8bfd21541e3fa> Local repo opuses</a>
 			#<a id="16d01bbb8a3048f18d8665782e885627"></a>
@@ -125,17 +114,16 @@ fns_bsh_002_d2md_2_toc2md
 			anc="<a id=\"$rnd_1\"></a>"
 			#sed '/^b/i ascsdc' init/init.fl > res.fl
 
-			eval "sed -i '/$str/i $anc' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
-			eval "sed -i '/ETOC/i $pnt' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
+			eval "sed -i '/$str/i $anc' $fns__dr_dta/body_toc.md"
+			eval "sed -i '/ETOC/i $pnt' $fns__dr_dta/body_toc.md"
 
 
 
 		done
 		IFS=
 
-		lfoe_path_to_var $fns_bsh_002_d2md_2_dr_dta/body_toc.md
-		read -p fns_bsh_002_d2md_2_toc2md
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		lfoe_path_to_var $fns__dr_dta/body_toc.md
+		read -p fns__toc2md
 	}
 </code>
 ;

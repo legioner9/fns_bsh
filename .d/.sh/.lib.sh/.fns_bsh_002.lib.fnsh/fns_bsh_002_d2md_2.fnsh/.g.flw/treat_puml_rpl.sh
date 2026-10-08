@@ -278,12 +278,18 @@ fn_16649_17044() {
 	#! _fn_${rnd}")
 	#! $(eval "echo \
 	#! bsh_002_d2md_2
+	#! l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 
-	l_02_s2f '_fn_$\{rnd\}\")\"' @ $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
+	# l_02_s2f '_fn_${rnd}")"' @ $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
 	# l_02_s2f '\"$(eval "echo \' @ $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
 	# l_02_s2f 'bsh_002_d2md_2' @ $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
 
+	sed -i 's/_fn_${rnd}")//g' $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
+	sed -i 's/$(eval "echo \\//g' $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
+	sed -i 's/bsh_002_d2md_2//g' $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
 
+	# sed '/шаблон/d' файл
+	sed -i '/FUNCNAME/d' $(eval "echo \$dr_pth_fn_${rnd}")/flw_this.puml
 
 	#-- {{002_body}}
 
