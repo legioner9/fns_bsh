@@ -43,15 +43,16 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		if [[ ! $ch_2 == "@" ]]; then
 			# echo "#@ {$1}" >>"$1"
-			echo "#@ [$(basename "$1")]" >>"$1"
-			echo "[$(basename "$1")]"
+			echo >>"$1"
+			echo "#@ {$(basename "$1")}" >>"$1"
+			echo "{$(basename "$1")}" | fns_bsh_004_f-f2e 2
 
 			# echo "#@ $(basename "$1")" >>"$1"
 			# echo "$(basename "$1")"
 		else
 			str_1=$(tail -n 1 "$1")
 			local head_1=${str_1:2}
-			echo "$head_1"
+			echo "$head_1" | fns_bsh_004_f-f2e 2
 		fi
 	}
 

@@ -279,20 +279,25 @@ fn_32078_297() {
 
 	# .. fl=$(eval "echo \$dr_pth_fn_${rnd}")/file
 
-	l_00_echo_code "fns_bsh_004_f-exec2e $(eval "echo \$dr_pth_fn_${rnd}")/file"
+	l_00_echo_code "fns_bsh_004_f-f2e 1 $(eval "echo \$dr_pth_fn_${rnd}")/file"
 	fns_bsh_004_f-f2e 1 "$(eval "echo \$dr_pth_fn_${rnd}")/file"
 
 	echo
 
 	# fl=~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-exec2e.tst.d/file
 	l_00_echo_code "cat $(eval "echo \$dr_pth_fn_${rnd}")/file | fns_bsh_004_f-f2e 1 "
-	cat "$(eval "echo \$dr_pth_fn_${rnd}")/file" | fns_bsh_004_f-f2e 1 
+	cat "$(eval "echo \$dr_pth_fn_${rnd}")/file" | fns_bsh_004_f-f2e 1
+
+	echo
+
+	l_00_echo_code "cat $(eval "echo \$dr_pth_fn_${rnd}")/file | fns_bsh_004_f-f2e 2 "
+	cat "$(eval "echo \$dr_pth_fn_${rnd}")/file" | fns_bsh_004_f-f2e 2
 
 	echo
 
 	# fl=~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f-exec2e.tst.d/file
 	l_00_echo_code "fns_bsh_004_f-f2e 1  <$(eval "echo \$dr_pth_fn_${rnd}")/file"
-	fns_bsh_004_f-f2e 1  <"$(eval "echo \$dr_pth_fn_${rnd}")/file"
+	fns_bsh_004_f-f2e 1 <"$(eval "echo \$dr_pth_fn_${rnd}")/file"
 
 	echo
 

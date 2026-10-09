@@ -59,7 +59,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			local anc_pic="<img src=$anc_pth width="$fns_bsh_002_d2md_1_env_img_war_width_pic"/>"
 			# <img src="$anc_pth" width="128"/>
 
-			echo "$rch  <!-- { --> $rch $(basename "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(basename "$1") {${RANDOM}} <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 			echo "$anc_pic"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 		fi

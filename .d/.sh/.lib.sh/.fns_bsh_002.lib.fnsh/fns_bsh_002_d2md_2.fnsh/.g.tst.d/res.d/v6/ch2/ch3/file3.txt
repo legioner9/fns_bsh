@@ -2,4 +2,5 @@ that file3.txt
 three
 xxx#@that file3.txt head
 
-#@ [file3.txt]
+
+#@ {file3.txt}
