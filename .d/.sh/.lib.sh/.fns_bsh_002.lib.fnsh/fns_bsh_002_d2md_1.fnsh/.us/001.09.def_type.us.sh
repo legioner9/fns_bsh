@@ -36,11 +36,12 @@ read -p "l_01_c_up fns_bsh_002_d2md_1_def_type"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_1_def_type() {
-		source "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/init.env.type_fl.0.sh"
+		# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+		# source "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/init.env.type_fl.0.sh"
 		# $1 fl
 		local ext="$(l_01_prs_f -e "$1")"
-		[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "ext=$ext \
-$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
+		# 		[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "ext=$ext \
+		# $((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
 		local cur_type=
 		# unset i
 		# #..100 hard core from
@@ -60,16 +61,30 @@ $((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
 		# 		return 0
 		# 	fi
 		local file_lst_type=
+		# echo "? file://$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d"
 		for file_lst_type in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d lst); do
 
-			l_00_echo_info "\$file_lst_type=$file_lst_type"
+			# l_00_echo_info "\$file_lst_type=$file_lst_type"
+			# l_00_echo_info "\$ext=$ext"
+
+			# file "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d/$file_lst_type"
+
+			if grep "$ext" $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d/$file_lst_type >/dev/null; then
+
+				echo "$(l_01_prs_f -n $file_lst_type)"
+				# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
+
+				# read -p see_result
+
+				return 0
+				
+			fi
 
 		done
 
 		echo "any"
 
-		read -p see_result
-		
+		# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 
 	}

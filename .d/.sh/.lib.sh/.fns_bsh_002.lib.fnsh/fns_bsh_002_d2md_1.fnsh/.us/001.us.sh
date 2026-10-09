@@ -32,12 +32,16 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
+	# del this fns_bsh_002_d2md_1_def_type dsac.sss
+	fns_bsh_002_d2md_1_def_type dsac.png
+	fns_bsh_002_d2md_1_def_type dsac.txt
+	fns_bsh_002_d2md_1_def_type dsac.pdf
 
 	#.. fns_bsh_002_d2md_1_arr_ext
 	fns_bsh_002_d2md_1_pre $(eval "echo \$arg_1_fn_${rnd}")
 	fns_bsh_002_d2md_1_dr $(eval "echo \$arg_1_fn_${rnd}") \
 		1
-		
+
 fi
 
 #-- {{002_001_us_sh}}

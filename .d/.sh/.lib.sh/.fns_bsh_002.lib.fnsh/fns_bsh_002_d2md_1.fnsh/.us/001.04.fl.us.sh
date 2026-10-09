@@ -59,16 +59,16 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			local anc_pic="<img src=$anc_pth width="$fns_bsh_002_d2md_1_env_img_war_width_pic"/>"
 			# <img src="$anc_pth" width="128"/>
 
-			echo "$rch  <!-- { --> $rch $(basename "$1") {${RANDOM}} <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+			echo "$rch  <!-- { --> $rch $(basename "$1") {id${RANDOM}} <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 			echo "$anc_pic"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 		fi
 
-		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "non" ]]; then
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "any" ]]; then
 			:
 		fi
 
-		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "@" ]]; then
+		if [[ "$(fns_bsh_002_d2md_1_def_type "$1")" == "out" ]]; then
 
 			# echo "$rch $(tail -n 1 "$1")"$'\n'>>"$(eval "echo \$arg_2_fn_${rnd}")"
 			echo "$rch  <!-- { --> $rch $(fns_bsh_002_d2md_1_head "$1") <!-- } --> <- fl:: $main_anc <!-- file://$1 -->"$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
