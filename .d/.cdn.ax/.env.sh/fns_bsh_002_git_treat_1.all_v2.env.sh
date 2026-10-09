@@ -28,13 +28,13 @@ l_00_echo_ques "PART_PROGRAM_IS_START :: get and check env for fns_bsh_002_git_t
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
 	aer_foe
 	# rpo/edu_clng
-	# rpo/edu_dta_000
-	# rpo/edu_dta_001
-	# rpo/edu_dta_002
+	rpo/edu_dta_000
+	rpo/edu_dta_001
+	rpo/edu_dta_002
 	rpo/edu_dta_003
-	# rpo/edu_lnx
+	rpo/edu_lnx
 	# rpo/tml_a
-	# rpo/cmn_lex
+	rpo/cmn_lex
 	fns_bsh
 	# rpo/git_flw
 	# rpo/rpo_pax_001
@@ -52,14 +52,14 @@ declare -A fns_bsh_002_git_treat_1_arr_remote
 
 fns_bsh_002_git_treat_1_arr_remote[0, 0]=gf
 fns_bsh_002_git_treat_1_arr_remote[0, 1]=git@gitflic.ru:legioner9
-# fns_bsh_002_git_treat_1_arr_remote[1, 0]=gh
-# fns_bsh_002_git_treat_1_arr_remote[1, 1]=git@github.com:legioner9
-fns_bsh_002_git_treat_1_arr_remote[1, 0]=alt
-fns_bsh_002_git_treat_1_arr_remote[1, 1]=ssh://forgejo@altlinux.space/legioner9
+fns_bsh_002_git_treat_1_arr_remote[1, 0]=gh
+fns_bsh_002_git_treat_1_arr_remote[1, 1]=git@github.com:legioner9
+fns_bsh_002_git_treat_1_arr_remote[2, 0]=alt
+fns_bsh_002_git_treat_1_arr_remote[2, 1]=ssh://forgejo@altlinux.space/legioner9
 # fns_bsh_002_git_treat_1_arr_remote[3, 0]=my_one
 # fns_bsh_002_git_treat_1_arr_remote[3, 1]=/run/media/$USER/MY_ONE
-fns_bsh_002_git_treat_1_arr_remote[2, 0]=tosh
-fns_bsh_002_git_treat_1_arr_remote[2, 1]=/run/media/$USER/TOSH
+fns_bsh_002_git_treat_1_arr_remote[3, 0]=tosh
+fns_bsh_002_git_treat_1_arr_remote[3, 1]=/run/media/$USER/TOSH
 
 l_00_echo_sys "set_of_arr :: fns_bsh_002_git_treat_1_arr_remote ::"
 for ((i = 0; i < "$((${#fns_bsh_002_git_treat_1_arr_remote[@]} / 2))"; i++)); do
