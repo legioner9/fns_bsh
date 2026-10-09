@@ -42,34 +42,27 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "ext=$ext \
 $((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
 		local cur_type=
-		# unset i
-		# #..100 hard core from
-		# for ((i = 0; i < 100; i++)); do
-		# 	# for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
-		# 	# echo i=$i
-		# 	[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "\${fns_bsh_002_d2md_1_type_fl[$i, 0]}=${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
-		# 	cur_type="${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
+		unset i
+		#!!!!!!!! 100 hard core from
+		for ((i = 0; i < 100; i++)); do
+			# for ((i = 0; i < "$((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"; i++)); do
+			# echo i=$i
+			[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "\${fns_bsh_002_d2md_1_type_fl[$i, 0]}=${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
+			cur_type="${fns_bsh_002_d2md_1_type_fl[$i, 0]}"
 
-		# 	[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "echo i=$i cur_type=$cur_type"
+			[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "echo i=$i cur_type=$cur_type"
 
-		# 	if [[ "$cur_type" == "$ext" ]]; then
-		# 		echo "${fns_bsh_002_d2md_1_type_fl[$i, 1]}"
+			if [[ "$cur_type" == "$ext" ]]; then
+				echo "${fns_bsh_002_d2md_1_type_fl[$i, 1]}"
 
-		# 		[[ "$tst_var_def_type_1" -eq 1 ]] && read -p fns_bsh_002_d2md_1_def_type
+				[[ "$tst_var_def_type_1" -eq 1 ]] && read -p fns_bsh_002_d2md_1_def_type
 
-		# 		return 0
-		# 	fi
-		local file_lst_type=
-		for file_lst_type in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d lst); do
-
-			l_00_echo_info "\$file_lst_type=$file_lst_type"
+				return 0
+			fi
 
 		done
 
-		echo "any"
-
-		read -p see_result
-		
+		echo "@"
 		return 0
 
 	}
