@@ -111,6 +111,7 @@ fns_bsh_001_als_epm_upd_prog() {
 fns_bsh_001_als_epm_upd_pckg() {
 
 	epm update -y
+	epm play --update all
 	epm ei -y
 
 }
