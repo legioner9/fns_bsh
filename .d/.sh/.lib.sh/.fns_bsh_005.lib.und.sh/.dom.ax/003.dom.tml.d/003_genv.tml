@@ -1,0 +1,5 @@
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/003.dom.tml.d/003_genv.tml
+
+	eval "fn_mane_name_${rnd}=\$(l_01_prs_f -n2 \$(eval "echo \$dr_pth_fn_${rnd}"))"
+
+#-- {{004_genv}}
