@@ -13,7 +13,7 @@ l_00_echo_info "gig $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${r
 fns_bsh_001_als_gig_fn_sh $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") \
 	$(eval "echo \$arg_2_fn_nm_${rnd}").sh \
 	~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d \
-	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d
+	~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.01.dom.tml.d
 
 # read -p "01 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
 #! dir cp_to_dst.d -> workdr
