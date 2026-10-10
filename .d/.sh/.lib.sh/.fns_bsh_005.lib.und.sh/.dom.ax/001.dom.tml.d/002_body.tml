@@ -1,0 +1,12 @@
+	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/002_body.tml
+
+	#.. up to mem fn.fs
+    
+	l_00_echo_sys "source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh"
+	source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh
+
+	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
+	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+
+    #-- {{003_body}}
