@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_27959_30056(){
+fn_11937_12472(){
 	
 	#--~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
@@ -9,10 +9,10 @@ fn_27959_30056(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_27959_30056="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh"
-    local dr_pth_fn_27959_30056=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh)
-    local fl_nm_fn_27959_30056=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh)
-    local rnd=27959_30056
+    local fl_pth_fn_11937_12472="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh"
+    local dr_pth_fn_11937_12472=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh)
+    local fl_nm_fn_11937_12472=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh)
+    local rnd=11937_12472
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -292,10 +292,14 @@ fn_27959_30056(){
     l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
     #-- ~002_body~
-	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/001_body.tml
-    # l_00_echo_code "002_body :: <${FUNCNAME[0]}>"
+	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/002_body.tml
 
-    #.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	#.. up to mem fn.fs
+    
+	l_00_echo_sys "source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh"
+	source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh
+
+	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
 	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
@@ -313,8 +317,8 @@ fn_27959_30056(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_27959_30056 $@
+fn_11937_12472 $@
 
 # {{002_after}}
 
-#? fn_27959_30056 $@
+#? fn_11937_12472 $@

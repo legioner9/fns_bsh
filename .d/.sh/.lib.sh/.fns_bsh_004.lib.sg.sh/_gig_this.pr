@@ -290,7 +290,7 @@ fn_9208_29592() {
 			"$(eval "echo \$dr_pth_fn_${rnd}")"/.dom.ax/001.dom.tml.d \
 			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh
 
-			# read -p "CHECK :: "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
+		# read -p "CHECK :: "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
 
 	}
 
@@ -313,6 +313,24 @@ fn_9208_29592() {
 	fi
 
 	fns_bsh_001_als_gig_fn_sh_2_q "$(eval "echo \$dr_pth_fn_${rnd}")" "fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").sh"
+
+	read -p $(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/002.dom.tml.d
+	read -p $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").sh
+	fns_bsh_001_df2f \
+		$(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/002.dom.tml.d \
+		$(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").sh
+
+	l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").sh"
+	source $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}").sh
+
+	l_00_echo_sys "fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")"
+	fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}")
+
+	l_00_echo_sys "fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}") -h"
+	fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}") -h
+
+	l_00_echo_sys "fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}") _tst"
+	fns_bsh_004_$(eval "echo \$arg_1_fn_${rnd}") _tst
 
 	#-- {{002_body}}
 

@@ -9,10 +9,10 @@ fns_bsh_004_f2fs(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_32155_29498="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f2fs.sh"
-    local dr_pth_fn_32155_29498=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f2fs.sh)
-    local fl_nm_fn_32155_29498=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f2fs.sh)
-    local rnd=32155_29498
+    local fl_pth_fn_9832_24289="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f2fs.sh"
+    local dr_pth_fn_9832_24289=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f2fs.sh)
+    local fl_nm_fn_9832_24289=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_f2fs.sh)
+    local rnd=9832_24289
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -67,7 +67,21 @@ fns_bsh_004_f2fs(){
 # from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/002_key.tml
 # that 003_key
 
-#-- {{003_key}}
+#-- ~003_key~
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/003_key.tml
+# that 003_key
+
+[[ "$1" == "_tst" ]] && {
+    #..	$(eval "echo \$dr_pth_fn_${rnd}")/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh
+    
+	l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh"
+    source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh
+
+    l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+    return 0
+}
+
+#-- {{004_key}}
 	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
@@ -233,8 +247,8 @@ fns_bsh_004_f2fs(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_32155_29498 $@
+# fn_9832_24289 $@
 
 # {{002_after}}
 
-#? fn_32155_29498 $@
+#? fn_9832_24289 $@

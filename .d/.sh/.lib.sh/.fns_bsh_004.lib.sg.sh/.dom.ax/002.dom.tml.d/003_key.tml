@@ -1,0 +1,14 @@
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/001.dom.tml.d/003_key.tml
+# that 003_key
+
+[[ "$1" == "_tst" ]] && {
+    #..	$(eval "echo \$dr_pth_fn_${rnd}")/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh
+    
+	l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh"
+    source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh
+
+    l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+    return 0
+}
+
+#-- {{004_key}}
