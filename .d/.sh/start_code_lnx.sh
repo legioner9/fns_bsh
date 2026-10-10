@@ -12,4 +12,4 @@ code ~/fns_bsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_3.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_gig_dmd_1.fnsh
-code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_cp_fs_1.fnsh
+code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh
