@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_12918_9141(){
+fn_4645_25763(){
 	
 	#--~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
@@ -9,10 +9,10 @@ fn_12918_9141(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_12918_9141="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_tst.tst.d/start_tst.sh"
-    local dr_pth_fn_12918_9141=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_tst.tst.d/start_tst.sh)
-    local fl_nm_fn_12918_9141=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_tst.tst.d/start_tst.sh)
-    local rnd=12918_9141
+    local fl_pth_fn_4645_25763="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_tst.tst.d/start_tst.sh"
+    local dr_pth_fn_4645_25763=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_tst.tst.d/start_tst.sh)
+    local fl_nm_fn_4645_25763=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_tst.tst.d/start_tst.sh)
+    local rnd=4645_25763
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -36,7 +36,7 @@ fn_12918_9141(){
 	#-- ~003_genv~
 # from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/003.dom.tml.d/003_genv.tml
 
-	eval "fn_mane_name_${rnd}=\$(l_01_prs_f -n2 \$(eval "echo \$dr_pth_fn_${rnd}"))"
+	eval "fn_main_name_${rnd}=\$(l_01_prs_f -n2 \$(eval "echo \$dr_pth_fn_${rnd}"))"
 
 #-- {{004_genv}}
 		
@@ -194,7 +194,7 @@ fn_12918_9141(){
 	#-- ~003_val_ind~
 # from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/003.dom.tml.d/003_val_ind.tml
 
-eval "echo \"fn_mane_name=\$fn_mane_name_${rnd}\""
+eval "echo \"fn_main_name=\$fn_main_name_${rnd}\""
 
 #-- {{004_val_ind}}
 		
@@ -254,7 +254,7 @@ eval "echo \"fn_mane_name=\$fn_mane_name_${rnd}\""
 # from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/003.dom.tml.d/002_stn_env.tml
 
 # fn_mane_name::
-# $(eval "echo \$fn_mane_name_${rnd}")
+# $(eval "echo \$fn_main_name_${rnd}")
 
 #-- {{003_stn_env}}
 
@@ -308,18 +308,21 @@ eval "echo \"fn_mane_name=\$fn_mane_name_${rnd}\""
     l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
     #-- ~002_body~
-	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/002_body.tml
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/002_body.tml
 
-	#.. up to mem fn.fs
-    
-	l_00_echo_sys "source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh"
-	source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh
+#.. up to mem fn.fs
 
-	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
-	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+l_00_echo_sys "source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh"
+source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh
 
-    #-- {{003_body}}
+#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
+cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+
+l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}")"
+$(eval "echo \$fn_main_name_${rnd}")
+
+#-- {{003_body}}
 	
 	#-- ~001_exit~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml
@@ -333,8 +336,8 @@ eval "echo \"fn_mane_name=\$fn_mane_name_${rnd}\""
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_12918_9141 $@
+fn_4645_25763 $@
 
 # {{002_after}}
 
-#? fn_12918_9141 $@
+#? fn_4645_25763 $@
