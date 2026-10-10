@@ -9,9 +9,9 @@ fn_23130_24567() {
 	#-- {{002_start}}
 	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-	local fl_pth_fn_23130_24567="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_cat_fns_bsh_004.sh"
-	local dr_pth_fn_23130_24567=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_cat_fns_bsh_004.sh)
-	local fl_nm_fn_23130_24567=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_cat_fns_bsh_004.sh)
+	local fl_pth_fn_23130_24567="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_cat_fns_bsh_005.sh"
+	local dr_pth_fn_23130_24567=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_cat_fns_bsh_005.sh)
+	local fl_nm_fn_23130_24567=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_cat_fns_bsh_005.sh)
 	local rnd=23130_24567
 
 	#-- ~001_genv~

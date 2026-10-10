@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_28838_7394(){
+fn_21122_13799(){
 	
 	#--~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
@@ -9,10 +9,10 @@ fn_28838_7394(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_28838_7394="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh"
-    local dr_pth_fn_28838_7394=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
-    local fl_nm_fn_28838_7394=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
-    local rnd=28838_7394
+    local fl_pth_fn_21122_13799="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh"
+    local dr_pth_fn_21122_13799=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
+    local fl_nm_fn_21122_13799=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_004_tst.tst.d/start_tst.sh)
+    local rnd=21122_13799
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -37,17 +37,29 @@ fn_28838_7394(){
 		
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_help.tml
+	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
 		echo -e "
-        this -h for <${FUNCNAME[0]}> ::
-        doing :: 
-			\$1 - 
-			\$2 - 
+        this -h for <${FUNCNAME[0]}> '$@' ::
+        doing :: (?) IEN= 
+			REN=
+			\$1 - ?*{IEN}
+			\$2 - ?&{IEN}
 			\$3 - 
+			flow_FN ::
+				SWITCH_ARG in /.us/00N.us.sh :: choce ::
+					- word1 ...
+			flow_tst ::
             exa use ::
             far use ::
+			see about big short (IEN, REN, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
         "
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}
 
@@ -72,24 +84,30 @@ fn_28838_7394(){
 
 	#--~001_key~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
-	[[ "$1" == "_tst" ]] && {
+	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
+	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing_tst :: 
-			\$1 - dr_res
-			\$2 - res.fl
+        doing :: (?) IEN= 
+			REN=
+			\$1 - ?*{IEN}
+			\$2 - ?&{IEN}
 			\$3 - 
 			flow_FN ::
+				SWITCH_ARG in /.us/00N.us.sh :: choce ::
+					- word1 ...
 			flow_tst ::
             exa use ::
-            far use ::			
+            far use ::
+			see about big short (IEN, REN, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
         "
-		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
-		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
-
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
-		
 	}
 
 		[[ "$1" == "_vis" ]] && {
@@ -149,21 +167,17 @@ fn_28838_7394(){
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# [[ -f "$1" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
+	# if ! fns_bsh_004_is_ex_a_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
 	# 	return 1
-	# }
+	# fi
 
-	# [[ -n "$1" ]] && {
-	# 	[[ -f "$1" ]] || {
-	# 		# snp "out_err"
-	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
-	# 		return 1
-	# 	}
-	# }
+	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_if_ex_tn_fl $1', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	# [[ -d "$(dirname "$2")" ]] || {
 	# 	# snp "out_err"
@@ -278,10 +292,14 @@ fn_28838_7394(){
     l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
     #-- ~002_body~
-	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/001_body.tml
-    # l_00_echo_code "002_body :: <${FUNCNAME[0]}>"
+	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/002_body.tml
 
-    #.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	#.. up to mem fn.fs
+    
+	l_00_echo_sys "source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh"
+	source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh
+
+	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
 	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
@@ -299,8 +317,8 @@ fn_28838_7394(){
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_28838_7394 $@
+fn_21122_13799 $@
 
 # {{002_after}}
 
-#? fn_28838_7394 $@
+#? fn_21122_13799 $@

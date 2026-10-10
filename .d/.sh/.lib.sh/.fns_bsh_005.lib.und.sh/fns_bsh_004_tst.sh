@@ -9,10 +9,10 @@ fns_bsh_004_tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_26091_20850="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_004_tst.sh"
-    local dr_pth_fn_26091_20850=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_004_tst.sh)
-    local fl_nm_fn_26091_20850=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_004_tst.sh)
-    local rnd=26091_20850
+    local fl_pth_fn_5252_17933="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_004_tst.sh"
+    local dr_pth_fn_5252_17933=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_004_tst.sh)
+    local fl_nm_fn_5252_17933=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_004_tst.sh)
+    local rnd=5252_17933
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -37,17 +37,29 @@ fns_bsh_004_tst(){
 		
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_help.tml
+	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
 		echo -e "
-        this -h for <${FUNCNAME[0]}> ::
-        doing :: 
-			\$1 - 
-			\$2 - 
+        this -h for <${FUNCNAME[0]}> '$@' ::
+        doing :: (?) IEN= 
+			REN=
+			\$1 - ?*{IEN}
+			\$2 - ?&{IEN}
 			\$3 - 
+			flow_FN ::
+				SWITCH_ARG in /.us/00N.us.sh :: choce ::
+					- word1 ...
+			flow_tst ::
             exa use ::
             far use ::
+			see about big short (IEN, REN, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
         "
-		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}
 
@@ -55,7 +67,21 @@ fns_bsh_004_tst(){
 # from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/002_key.tml
 # that 003_key
 
-#-- {{003_key}}
+#-- ~003_key~
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/003_key.tml
+# that 003_key
+
+[[ "$1" == "_tst" ]] && {
+    #..	$(eval "echo \$dr_pth_fn_${rnd}")/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh
+    
+	l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh"
+    source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh
+
+    l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+    return 0
+}
+
+#-- {{004_key}}
 	
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
@@ -75,15 +101,15 @@ fns_bsh_004_tst(){
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
 
 	#* value indicator
-	# eval "local arg_1_fn_${rnd}=\"\$1\""
+	eval "local arg_1_fn_${rnd}=\"\$1\""
 	# eval "echo \\\$1=\$arg_1_fn_${rnd}"
-	# eval "local arg_2_fn_${rnd}=\"\$2\""
+	eval "local arg_2_fn_${rnd}=\"\$2\""
 	# eval "echo \\\$2=\$arg_2_fn_${rnd}"
-	# eval "local arg_3_fn_${rnd}=\"\$3\""
+	eval "local arg_3_fn_${rnd}=\"\$3\""
 	# eval "echo \\\$3=\$arg_3_fn_${rnd}"
-	# eval "local arg_4_fn_${rnd}=\"\$4\""
+	eval "local arg_4_fn_${rnd}=\"\$4\""
 	# eval "echo \\\$4=\$arg_4_fn_${rnd}"
-	# eval "local arg_5_fn_${rnd}=\"\$5\""
+	eval "local arg_5_fn_${rnd}=\"\$5\""
 	# eval "echo \\\$5=\$arg_5_fn_${rnd}"
 
 	# eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
@@ -104,21 +130,17 @@ fns_bsh_004_tst(){
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# [[ -f "$1" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: NT_EXT+FL+{IEN} :: [[ -f '$1' ]] is {IEN}, return 1${NRM}" >&2
+	# if ! fns_bsh_004_is_ex_a_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
 	# 	return 1
-	# }
+	# fi
 
-	# [[ -n "$1" ]] && {
-	# 	[[ -f "$1" ]] || {
-	# 		# snp "out_err"
-	# 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_1 :: IS_EXT[BUT]NT_FL+{IEN} :: [[ -n '$1' ]] && { ! [[ -f '$1' ]] } is {IEN}, return 1${NRM}" >&2
-	# 		return 1
-	# 	}
-	# }
+	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_if_ex_tn_fl $1', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	# [[ -d "$(dirname "$2")" ]] || {
 	# 	# snp "out_err"
@@ -225,8 +247,8 @@ fns_bsh_004_tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_26091_20850 $@
+# fn_5252_17933 $@
 
 # {{002_after}}
 
-#? fn_26091_20850 $@
+#? fn_5252_17933 $@
