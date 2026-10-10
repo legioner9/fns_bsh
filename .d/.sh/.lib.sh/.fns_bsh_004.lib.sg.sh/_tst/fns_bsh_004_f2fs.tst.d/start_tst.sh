@@ -306,6 +306,8 @@ fn_11937_12472() {
 	l_00_echo_sys "fns_bsh_004_f2fs $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst"
 	fns_bsh_004_f2fs $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst
 
+	tree $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst.d
+	
 	#-- {{003_body}}
 
 	#-- ~001_exit~
