@@ -301,7 +301,9 @@ fn_11937_12472(){
 
 	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	# cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+
+	fns_bsh_004_f2fs $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst
 
     #-- {{003_body}}
 	
