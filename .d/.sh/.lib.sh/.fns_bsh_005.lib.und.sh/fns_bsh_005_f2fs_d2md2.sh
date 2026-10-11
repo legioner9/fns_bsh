@@ -1,18 +1,18 @@
 #!/bin/bash
-# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
+# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml
 
-fn_8016_11054() {
+fns_bsh_005_f2fs_d2md2() {
 
-	#--~001_start~
+	#-- ~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
-	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 	#-- {{002_start}}
 	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-	local fl_pth_fn_8016_11054="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs-d2md_2.tst.d/start_tst.sh"
-	local dr_pth_fn_8016_11054=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs-d2md_2.tst.d/start_tst.sh)
-	local fl_nm_fn_8016_11054=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs-d2md_2.tst.d/start_tst.sh)
-	local rnd=8016_11054
+	local fl_pth_fn_9346_26758="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_005_f2fs_d2md2.sh"
+	local dr_pth_fn_9346_26758=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_005_f2fs_d2md2.sh)
+	local fl_nm_fn_9346_26758=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/fns_bsh_005_f2fs_d2md2.sh)
+	local rnd=9346_26758
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -35,8 +35,6 @@ fn_8016_11054() {
 
 	#-- {{003_genv}}
 
-	eval "fn_mane_name_${rnd}=\$(l_01_prs_f -n2 \$(eval "echo \$dr_pth_fn_${rnd}"))"
-
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_help.tml
 	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
@@ -50,7 +48,7 @@ fn_8016_11054() {
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
-					- word1 ...
+					- (-b) rebild dr
 			flow_tst ::
             exa use ::
             far use ::
@@ -69,7 +67,21 @@ fn_8016_11054() {
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/002_key.tml
 	# that 003_key
 
-	#-- {{003_key}}
+	#-- ~003_key~
+	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/003_key.tml
+	# that 003_key
+
+	[[ "$1" == "_tst" ]] && {
+		#..	$(eval "echo \$dr_pth_fn_${rnd}")/_tst/fns_bsh_004_f2fs.tst.d/start_tst.sh
+
+		l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh"
+		source $(eval "echo \$dr_pth_fn_${rnd}")/_tst/$(eval "echo \$fn_nm_${rnd}").tst.d/start_tst.sh
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		return 0
+	}
+
+	#-- {{004_key}}
 
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
@@ -81,88 +93,37 @@ fn_8016_11054() {
 	#         exa use ::
 	#         far use ::
 	#     "
+	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	# 	return 0
 	# }
-
-	#--~001_key~
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
-	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
-	[[ "$1" == "-h" ]] && {
-		echo -e "
-        this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
-			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
-			\$3 - 
-			flow_FN ::
-				SWITCH_ARG in /.us/00N.us.sh :: choce ::
-					- word1 ...
-			flow_tst ::
-            exa use ::
-            far use ::
-			see about big short (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
-			see about error short ([casual]|[action])+[entety]+[vis] :
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
-			see about causa (EXEC_FAIL, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
-        "
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		return 0
-	}
-
-	[[ "$1" == "_vis" ]] && {
-		echo -e "
-        this [cat .vis] for <${FUNCNAME[0]}> '$@'::
-        doing_vis :: 
-			\$1 - dr_res
-			\$2 - res.fl
-			\$3 - 
-            exa use ::
-            far use ::
-        "
-		l_00_echo_code "cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis"
-		cat $(eval "echo \$g_d_pth_fn_${rnd}")/g.vis
-
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		return 0
-
-	}
-
-	#-- ~002_key~
-	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/002_key.tml
-	# that 003_key
-
-	#-- {{003_key}}
 
 	#-- ~001_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_val_ind.tml
 
 	#* value indicator
 	eval "local arg_1_fn_${rnd}=\"\$1\""
-	eval "echo \\\$1=\$arg_1_fn_${rnd}"
+	# eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
-	eval "echo \\\$2=\$arg_2_fn_${rnd}"
+	# eval "echo \\\$2=\$arg_2_fn_${rnd}"
 	eval "local arg_3_fn_${rnd}=\"\$3\""
-	eval "echo \\\$3=\$arg_3_fn_${rnd}"
+	# eval "echo \\\$3=\$arg_3_fn_${rnd}"
 	eval "local arg_4_fn_${rnd}=\"\$4\""
-	eval "echo \\\$4=\$arg_4_fn_${rnd}"
+	# eval "echo \\\$4=\$arg_4_fn_${rnd}"
 	eval "local arg_5_fn_${rnd}=\"\$5\""
-	eval "echo \\\$5=\$arg_5_fn_${rnd}"
+	# eval "echo \\\$5=\$arg_5_fn_${rnd}"
 
-	eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
-	eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
-	eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
-	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
-	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
-	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
+	# eval "echo \"fl_pth_fn=\$fl_pth_fn_${rnd}\""
+	# eval "echo \"dr_pth_fn=\$dr_pth_fn_${rnd}\""
+	# eval "echo \"fl_nm_fn=\$fl_nm_fn_${rnd}\""
+	# eval "echo \"fn_nm=\$fn_nm_${rnd}\""
+	# eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
+	# eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\"
 
 	#-- ~002_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
-	eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\""       #.d/.p.ax/.p999.d/.tst/g.tst
-	eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\""   #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"fl_tst_pth_fn=\$fl_tst_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"g_d_pth_fn=\$g_d_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
+	# eval "echo \"us_dr_pth_fn=\$us_dr_pth_fn_${rnd}\"" #.d/.p.ax/.p999.d/.tst/g.tst
 	#! ptr_path
 	# eval "local ptr_path_1=\"\$arg_1_fn_${rnd}\""
 	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
@@ -189,28 +150,6 @@ fn_8016_11054() {
 	# }
 
 	#-- {{003_val_ind}}
-
-	eval "echo \"fn_mane_name=\$fn_mane_name_${rnd}\""
-
-	# [[ -z "$1" ]] && {
-	#     # snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs-d2md_2.tst.d/start_tst.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-	#     return 1
-	# }
-
-	#! ptr_path
-	# eval "local ptr_path_1=\"$arg_1_fn_${rnd}\""
-	# ptr_path_1="$(l_01_abs_path "$(pwd)" "ptr_path_1")"
-	# echo "\$ptr_path_1=$ptr_path_1"
-	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
-
-	# [[ -d "$2" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs-d2md_2.tst.d/start_tst.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
@@ -287,42 +226,53 @@ fn_8016_11054() {
 
 	#-- ~001_into~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_into.tml
-	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 	#-- {{002_into}}
 	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
-	l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
+	# l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
-	#-- ~002_body~
-	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/002_body.tml
+	# path lst
+	if [[ $(eval "echo \$arg_2_fn_${rnd}") == "-b" ]]; then
 
-	#.. up to mem fn.fs
-	l_00_echo_sys "fn_mane_name=$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))"
-	l_00_echo_sys "source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh"
-	source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}")).sh
+		fns_bsh_004_f2fs "$1"
 
-	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
-	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	fi
 
-	#-- {{003_body}}
+	fns_bsh_002_d2md_2 "$1".d "$(dirname "$1")/res.$(basename "$1")".md
+
+	if [[ -d $(dirname "$2") ]]; then
+		if [[ -f "$2" ]]; then
+			if ! l_01_is_yes "DO?::RM_FL::$2"; then
+				rm "$2"
+				cp "$(dirname "$1")/res.$(basename "$1")".md "$2"
+			else
+				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EX_FL_NOT_RM : '$2', return 1${NRM}" >&2
+				return 1
+			fi
+
+		fi
+
+	fi
+
+	#-- {{002_body}}
 
 	#-- ~001_exit~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml
-	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	#-- {{002_exit}}
 	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
 	return 0
 
 }
-
 #-- ~001_after~
-# from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_8016_11054 $@
+# from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
+# fn_9346_26758 $@
 
 # {{002_after}}
 
-#? fn_8016_11054 $@
+#? fn_9346_26758 $@
