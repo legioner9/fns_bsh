@@ -45,7 +45,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			# echo "$(basename "$1")" >"$1/_d.d"
 			echo "{$(basename "$1")}" | fns_bsh_004_f-f2e 2 >"$1/_d.d"
 		fi
-		echo "$rch $rch $(head -n 1 "$1/_d.d") <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
+		echo "$rch <!-- { --> $rch $(head -n 1 "$1/_d.d") <!-- } --> <- dr:: $res_str <!-- file://$1 --> "$'\n' >>"$(eval "echo \$arg_2_fn_${rnd}")"
 
 	}
 

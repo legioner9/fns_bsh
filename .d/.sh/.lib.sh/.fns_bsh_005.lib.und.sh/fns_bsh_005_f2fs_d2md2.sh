@@ -247,7 +247,11 @@ fns_bsh_005_f2fs_d2md2() {
 		if [[ -f "$2" ]]; then
 			if ! l_01_is_yes "DO?::RM_FL::$2"; then
 				rm "$2"
-				cp "$(dirname "$1")/res.$(basename "$1")".md "$2"
+				cp "$(dirname "$1")/res.$(basename "$1")".md "$2" || {
+					l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+					echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp "$(dirname "$1")/res.$(basename "$1")".md "$2"', return 1${NRM}" >&2
+					return 1
+				}
 			else
 				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EX_FL_NOT_RM : '$2', return 1${NRM}" >&2

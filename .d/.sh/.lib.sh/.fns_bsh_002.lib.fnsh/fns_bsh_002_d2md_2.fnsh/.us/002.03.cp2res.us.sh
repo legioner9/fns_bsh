@@ -1,5 +1,5 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: 002.01.toc2md.us.sh"
+l_00_echo_info "that :: 002.03.cp2res.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
@@ -37,41 +37,15 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_toc2md() {
+	fns_bsh_002_d2md_2_cp2res() {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-		# $fns_bsh_002_d2md_2_dr_dta/chpt.md
-		# $fns_bsh_002_d2md_2_dr_dta/body.md
-		#! $fns_bsh_002_d2md_2_dr_dta/body_toc.md result
-		local pnt=
-		local anc=
-		local str=
-		local rnd_1=
+		cp "$fns_bsh_002_d2md_2_dr_dta"/body_toc.md $(eval "echo \$arg_2_fn_${rnd}") || {
+			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp "$fns_bsh_002_d2md_2_dr_dta"/body_toc.md $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
+			return 1
+		}
 
-		IFS=$'\n'
-		for str in $(<$fns_bsh_002_d2md_2_dr_dta/chpt.md); do
-			echo "$str"
-			#  - <a href=#35a6b9d026864bd79ab8bfd21541e3fa> Local repo opuses</a>
-			#<a id="16d01bbb8a3048f18d8665782e885627"></a>
-			rnd_1=$(tr -dc 0-9A-Za-z </dev/urandom | head -c 32)
-			pnt="- <a href=#$rnd_1>$str</a>"
-			anc="<a id=\"$rnd_1\"></a>"
-			#sed '/^b/i ascsdc' init/init.fl > res.fl
-
-			# l_00_echo_info "\$str=$str"
-			# l_00_echo_info "\$anc=$anc"
-			# l_00_echo_info "\$pnt=$pnt"
-
-			eval "sed -i '/$str/i $anc' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
-			eval "sed -i '/ETOC/i $pnt' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
-
-			# read -p "check variables and file://$fns_bsh_002_d2md_2_dr_dta/body_toc.md"
-
-		done
-		IFS=
-
-		lfoe_path_to_var $fns_bsh_002_d2md_2_dr_dta/body_toc.md
-		# read -p fns_bsh_002_d2md_2_toc2md
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 
 	}

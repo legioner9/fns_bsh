@@ -37,10 +37,10 @@ fns_bsh_002_d2md_2(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: add toc to .md giged as fns_bsh_002_d2md_1 \$1 see exa : $(eval "echo \$dr_pth_fn_${rnd}")/.src/exa_1.d
+        doing :: add toc to .md giged as fns_bsh_002_d2md_1 IEN=[dr_with_fl::\$1], REN=[res_md_fl::\$2] see exa : $(eval "echo \$dr_pth_fn_${rnd}")/.src/exa_1.d
 			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - {IEN}
+			\$2 - {REN}
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
