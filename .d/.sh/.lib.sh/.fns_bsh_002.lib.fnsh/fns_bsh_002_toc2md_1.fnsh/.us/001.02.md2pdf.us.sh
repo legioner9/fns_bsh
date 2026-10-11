@@ -30,14 +30,14 @@ fl - result fl
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
 #! gig_var
-#fns_bsh_002_d2md_2_dr_dta
+#fns_bsh_002_toc2md_1_dr_dta
 
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
-	fns_bsh_002_d2md_2_md2pdf() {
+	fns_bsh_002_toc2md_1_md2pdf() {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		[[ -f "$1" ]] && {
 			# snp "out_err"

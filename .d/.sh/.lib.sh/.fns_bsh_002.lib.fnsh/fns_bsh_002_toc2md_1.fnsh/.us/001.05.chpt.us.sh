@@ -30,19 +30,19 @@ fl - result fl
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
 #! gig_var
-#fns_bsh_002_d2md_2_dr_dta
+#fns_bsh_002_toc2md_1_dr_dta
 
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_chpt() {
+	fns_bsh_002_toc2md_1_chpt() {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		#-- $fns_bsh_002_d2md_2_dr_dta/hdr.md
+		#-- $fns_bsh_002_toc2md_1_dr_dta/hdr.md
 		#-- grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
 
-		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns_bsh_002_d2md_2_dr_dta/hdr.md >$fns_bsh_002_d2md_2_dr_dta/chpt.md
+		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns_bsh_002_toc2md_1_dr_dta/hdr.md >$fns_bsh_002_toc2md_1_dr_dta/chpt.md
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 

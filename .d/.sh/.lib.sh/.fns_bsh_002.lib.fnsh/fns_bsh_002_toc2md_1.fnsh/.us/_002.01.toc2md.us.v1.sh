@@ -30,26 +30,26 @@ fl - result fl
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
 #! gig_var
-#fns_bsh_002_d2md_2_dr_dta
+#fns_bsh_002_toc2md_1_dr_dta
 
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_toc2md() {
+	fns_bsh_002_toc2md_1_toc2md() {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-		# $fns_bsh_002_d2md_2_dr_dta/chpt.md
-		# $fns_bsh_002_d2md_2_dr_dta/body.md
-		#! $fns_bsh_002_d2md_2_dr_dta/body_toc.md result
+		# $fns_bsh_002_toc2md_1_dr_dta/chpt.md
+		# $fns_bsh_002_toc2md_1_dr_dta/body.md
+		#! $fns_bsh_002_toc2md_1_dr_dta/body_toc.md result
 		local pnt=
 		local anc=
 		local str=
 		local rnd_1=
 
 		IFS=$'\n'
-		for str in $(<$fns_bsh_002_d2md_2_dr_dta/chpt.md); do
+		for str in $(<$fns_bsh_002_toc2md_1_dr_dta/chpt.md); do
 			echo "$str"
 			#  - <a href=#35a6b9d026864bd79ab8bfd21541e3fa> Local repo opuses</a>
 			#<a id="16d01bbb8a3048f18d8665782e885627"></a>
@@ -58,16 +58,16 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			anc="<a id=\"$rnd_1\"></a>"
 			#sed '/^b/i ascsdc' init/init.fl > res.fl
 
-			eval "sed -i '/$str/i $anc' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
-			eval "sed -i '/ETOC/i $pnt' $fns_bsh_002_d2md_2_dr_dta/body_toc.md"
+			eval "sed -i '/$str/i $anc' $fns_bsh_002_toc2md_1_dr_dta/body_toc.md"
+			eval "sed -i '/ETOC/i $pnt' $fns_bsh_002_toc2md_1_dr_dta/body_toc.md"
 
 
 
 		done
 		IFS=
 
-		lfoe_path_to_var $fns_bsh_002_d2md_2_dr_dta/body_toc.md
-		read -p fns_bsh_002_d2md_2_toc2md
+		lfoe_path_to_var $fns_bsh_002_toc2md_1_dr_dta/body_toc.md
+		read -p fns_bsh_002_toc2md_1_toc2md
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	}
 

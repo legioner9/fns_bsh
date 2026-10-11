@@ -34,7 +34,7 @@ eval "flow_1_${rnd}=dr"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_gig_d_mkdr() {
+	fns_bsh_002_toc2md_1_gig_d_mkdr() {
 
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))

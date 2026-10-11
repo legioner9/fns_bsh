@@ -9,9 +9,9 @@ fn_16649_17044() {
 	#-- {{002_start}}
 	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-	local fl_pth_fn_16649_17044="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.flw/treat_puml_rpl.sh"
-	local dr_pth_fn_16649_17044=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.flw/treat_puml_rpl.sh)
-	local fl_nm_fn_16649_17044=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.flw/treat_puml_rpl.sh)
+	local fl_pth_fn_16649_17044="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.g.flw/treat_puml_rpl.sh"
+	local dr_pth_fn_16649_17044=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.g.flw/treat_puml_rpl.sh)
+	local fl_nm_fn_16649_17044=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.g.flw/treat_puml_rpl.sh)
 	local rnd=16649_17044
 
 	#-- ~001_genv~
@@ -173,7 +173,7 @@ fn_16649_17044() {
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.flw/treat_puml_rpl.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.g.flw/treat_puml_rpl.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -186,7 +186,7 @@ fn_16649_17044() {
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.flw/treat_puml_rpl.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.g.flw/treat_puml_rpl.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }
 

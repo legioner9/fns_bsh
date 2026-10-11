@@ -30,19 +30,19 @@ fl - result fl
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
 #! gig_var
-#fns_bsh_002_d2md_2_dr_dta
+#fns_bsh_002_toc2md_1_dr_dta
 
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_cp2res() {
+	fns_bsh_002_toc2md_1_cp2res() {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-		cp "$fns_bsh_002_d2md_2_dr_dta"/body_toc.md $(eval "echo \$arg_2_fn_${rnd}") || {
+		cp "$fns_bsh_002_toc2md_1_dr_dta"/body_toc.md $(eval "echo \$arg_2_fn_${rnd}") || {
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp "$fns_bsh_002_d2md_2_dr_dta"/body_toc.md $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp "$fns_bsh_002_toc2md_1_dr_dta"/body_toc.md $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
 			return 1
 		}
 

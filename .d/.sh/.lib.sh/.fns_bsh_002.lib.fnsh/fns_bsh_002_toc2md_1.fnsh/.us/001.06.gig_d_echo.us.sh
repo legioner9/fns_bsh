@@ -30,14 +30,14 @@ fl - result fl
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
 #! gig_var
-#fns_bsh_002_d2md_2_dr_dta
+#fns_bsh_002_toc2md_1_dr_dta
 
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
-	fns_bsh_002_d2md_2_gig_d_echo() {
+	fns_bsh_002_toc2md_1_gig_d_echo() {
 		local pr_dr=$(l_01_prs_f -d $(eval "echo \$arg_2_fn_${rnd}"))
 		local nm_dr=_$(l_01_prs_f -ne $(eval "echo \$arg_2_fn_${rnd}")).d
 
