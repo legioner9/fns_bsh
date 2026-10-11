@@ -59,37 +59,37 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
-- <a href=#C1y8pQxHl942fNFdGnAA2T2VrL6NHLkN> # {1.md} {id30931} </a>
-- <a href=#flHiNu1r6Ndo9JVHpteK3JeNuxioCjmJ> # {ch1} {id6931} </a>
-- <a href=#FbcZhUbFYHTiNWBjWVSBbqdFERKIO6fk> ## {1.md} {id22420} </a>
-- <a href=#7PDxpDKrgM8VzIgUgvzeOsXcFamRoi2g> ## that file1.code head {id17218} </a>
-- <a href=#iA3G2mKhpcSsiaorHHdjyaD57a8zYlWL> ## that file1.txt head {id1977} </a>
-- <a href=#Fcj17bRT1C6RPqbKGYq84qwBwyaPXe1W> # that ch2 </a>
-- <a href=#psX4ITaBBkyTax4ieh43bnRGmtnpSa4t> ## {1.md} {id3668} </a>
-- <a href=#G2WKZyjn7vhftHyWPXdPYkStOL7k8AXM> ## alt.svg {id12670} </a>
-- <a href=#2PNjKVJcZxBknJFVZ2iPuIgEcDfQvSqy> ## {ch3} {id10757} </a>
-- <a href=#QwTrzHDgvnBEGFUopPkzqL6vZqY5E9gt> ### {1.md} {id2415} </a>
-- <a href=#RlvTI2JV9HMGC6xJVm5gc6lsrA1lZlC1> ### that file3.code head {id19315} </a>
-- <a href=#dW4d4B1IcSu2suhjcOTGV3H3igu6Kuck> ### {file3.txt} {id13253} </a>
-- <a href=#SqNBZtOmraKcDMXwphEq04L9R4x0BwvP> ## e9l91.jpg {id31704} </a>
-- <a href=#P3adMbml8LI6MbHnQ1Cs6tdUidGvBnQH> ## that file2.code head {id7995} </a>
-- <a href=#A4FevnqyDn6qUvjw5WhU8ceUfJAfB48d> ## that file2.txt head {id22406} </a>
-- <a href=#Cz8VA4qpJ2EMUvcIh6LGWE5aEs2mtCK2> ## kva.png {id27925} </a>
-- <a href=#DHeTfbLvsx3ydaNT43enTM5yamRlRfeC> # that file0.txt head {id4192} </a>
-- <a href=#YT643VR2x50aHCxGPT2Jyiq9wXKd02fh> # {html_1.pdf} {id8979} </a>
+- <a href=#1jw2iJBQX9XmwTDmAe8Q2kSDJGhrIKpJ> # {1.md} {id26126} </a>
+- <a href=#HjerJ3QGHl8GL7drH4R7V87ES5imBwyE> # {ch1} {id32736} </a>
+- <a href=#JAKiHLWe0UwdpQIBg6Pm3YNdy1apHnQ5> ## {1.md} {id28358} </a>
+- <a href=#CaFQyKRoopmzj4QN2cZaTcRszmoJfLnM> ## that file1.code head {id1976} </a>
+- <a href=#5gWzXRQC9L24ALGXwgzcmFnNdbcO2xCC> ## that file1.txt head {id26111} </a>
+- <a href=#7lXi7DMcELq8LxCWuG1cmYzlbP2KqvAq> # that ch2 </a>
+- <a href=#lPPAjV2twNE3uVSHAdeGW871huqoECQR> ## {1.md} {id23056} </a>
+- <a href=#cmpx3c8BVMsWJow6Nkqtu1nnSpJGf3UT> ## alt.svg {id26670} </a>
+- <a href=#rP35dry2urFssRR6zo8Tt01FrnAJrlCO> ## {ch3} {id1507} </a>
+- <a href=#7cnhl8jg8DbmPnuctUUeMRs8HU1Cl6YC> ### {1.md} {id15229} </a>
+- <a href=#0TGDb1kx6Nr2wTXeLsNxZ9cqqq0HwLsk> ### that file3.code head {id29104} </a>
+- <a href=#AkQmadL64PI0fr7oorCpeaV9sOCKGzd0> ### {file3.txt} {id6748} </a>
+- <a href=#stFjVGJMpfSci9Gy0Co2e3yK3uyrbVhr> ## e9l91.jpg {id6696} </a>
+- <a href=#HiMQNfhJ6P7Z15iRlqIZLMWEZH2jv5cB> ## that file2.code head {id1156} </a>
+- <a href=#95iaqzZNGy3hSpqrx4BOwNsiiWzQlZbC> ## that file2.txt head {id31167} </a>
+- <a href=#TURTkrzf2x5tsCT4tvop6t58L9X7wUWk> ## kva.png {id25215} </a>
+- <a href=#sJXoUgTASclPqIMpRIsbAX0tWUvTeHAE> # that file0.txt head {id17179} </a>
+- <a href=#9qgq9a7VbhNz15iAzqueVFucVpYvxRkE> # {html_1.pdf} {id15496} </a>
 <!-- ETOC  -->
 
-<a id="C1y8pQxHl942fNFdGnAA2T2VrL6NHLkN"></a>
-#  <!-- { --> # {1.md} {id30931} <!-- } --> <- fl:: [1.md](../v6/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md -->
+<a id="1jw2iJBQX9XmwTDmAe8Q2kSDJGhrIKpJ"></a>
+#  <!-- { --> # {1.md} {id26126} <!-- } --> <- fl:: [1.md](../v6/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/1.md -->
 
-<a id="flHiNu1r6Ndo9JVHpteK3JeNuxioCjmJ"></a>
-# <!-- { --> # {ch1} {id6931} <!-- } --> <- dr:: [ch1](../v6/ch1) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1 --> 
+<a id="HjerJ3QGHl8GL7drH4R7V87ES5imBwyE"></a>
+# <!-- { --> # {ch1} {id32736} <!-- } --> <- dr:: [ch1](../v6/ch1) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1 --> 
 
-<a id="FbcZhUbFYHTiNWBjWVSBbqdFERKIO6fk"></a>
-##  <!-- { --> ## {1.md} {id22420} <!-- } --> <- fl:: [1.md](../v6/ch1/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/1.md -->
+<a id="JAKiHLWe0UwdpQIBg6Pm3YNdy1apHnQ5"></a>
+##  <!-- { --> ## {1.md} {id28358} <!-- } --> <- fl:: [1.md](../v6/ch1/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/1.md -->
 
-<a id="7PDxpDKrgM8VzIgUgvzeOsXcFamRoi2g"></a>
-##  <!-- { --> ## that file1.code head {id17218} <!-- } --> <- fl:: [file1.sh](../v6/ch1/file1.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.sh -->
+<a id="CaFQyKRoopmzj4QN2cZaTcRszmoJfLnM"></a>
+##  <!-- { --> ## that file1.code head {id1976} <!-- } --> <- fl:: [file1.sh](../v6/ch1/file1.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.sh -->
 
 ```sh
 #!/bin/bash
@@ -97,33 +97,33 @@ Start Contents Menu
 echo "that file1.code"
 ```
 
-<a id="iA3G2mKhpcSsiaorHHdjyaD57a8zYlWL"></a>
-##  <!-- { --> ## that file1.txt head {id1977} <!-- } --> <- fl:: [file1.txt](../v6/ch1/file1.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.txt -->
+<a id="5gWzXRQC9L24ALGXwgzcmFnNdbcO2xCC"></a>
+##  <!-- { --> ## that file1.txt head {id26111} <!-- } --> <- fl:: [file1.txt](../v6/ch1/file1.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch1/file1.txt -->
 
 ```txt
 that file1.txt
 one
 ```
 
-<a id="Fcj17bRT1C6RPqbKGYq84qwBwyaPXe1W"></a>
+<a id="7lXi7DMcELq8LxCWuG1cmYzlbP2KqvAq"></a>
 # <!-- { --> # that ch2 <!-- } --> <- dr:: [ch2](../v6/ch2) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2 --> 
 
-<a id="psX4ITaBBkyTax4ieh43bnRGmtnpSa4t"></a>
-##  <!-- { --> ## {1.md} {id3668} <!-- } --> <- fl:: [1.md](../v6/ch2/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/1.md -->
+<a id="lPPAjV2twNE3uVSHAdeGW871huqoECQR"></a>
+##  <!-- { --> ## {1.md} {id23056} <!-- } --> <- fl:: [1.md](../v6/ch2/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/1.md -->
 
-<a id="G2WKZyjn7vhftHyWPXdPYkStOL7k8AXM"></a>
-## <!-- { --> ## alt.svg {id12670} <!-- } --> <- fl:: [alt.svg](../v6/ch2/alt.svg) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/alt.svg -->
+<a id="cmpx3c8BVMsWJow6Nkqtu1nnSpJGf3UT"></a>
+## <!-- { --> ## alt.svg {id26670} <!-- } --> <- fl:: [alt.svg](../v6/ch2/alt.svg) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/alt.svg -->
 
 <img src=../v6/ch2/alt.svg width=100/>
 
-<a id="2PNjKVJcZxBknJFVZ2iPuIgEcDfQvSqy"></a>
-## <!-- { --> ## {ch3} {id10757} <!-- } --> <- dr:: [ch3](../v6/ch2/ch3) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
+<a id="rP35dry2urFssRR6zo8Tt01FrnAJrlCO"></a>
+## <!-- { --> ## {ch3} {id1507} <!-- } --> <- dr:: [ch3](../v6/ch2/ch3) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3 --> 
 
-<a id="QwTrzHDgvnBEGFUopPkzqL6vZqY5E9gt"></a>
-###  <!-- { --> ### {1.md} {id2415} <!-- } --> <- fl:: [1.md](../v6/ch2/ch3/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/1.md -->
+<a id="7cnhl8jg8DbmPnuctUUeMRs8HU1Cl6YC"></a>
+###  <!-- { --> ### {1.md} {id15229} <!-- } --> <- fl:: [1.md](../v6/ch2/ch3/1.md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/1.md -->
 
-<a id="RlvTI2JV9HMGC6xJVm5gc6lsrA1lZlC1"></a>
-###  <!-- { --> ### that file3.code head {id19315} <!-- } --> <- fl:: [file3.sh](../v6/ch2/ch3/file3.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.sh -->
+<a id="0TGDb1kx6Nr2wTXeLsNxZ9cqqq0HwLsk"></a>
+###  <!-- { --> ### that file3.code head {id29104} <!-- } --> <- fl:: [file3.sh](../v6/ch2/ch3/file3.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.sh -->
 
 ```sh
 #!/bin/bash
@@ -131,8 +131,8 @@ one
 echo "that file3.code"
 ```
 
-<a id="dW4d4B1IcSu2suhjcOTGV3H3igu6Kuck"></a>
-###  <!-- { --> ### {file3.txt} {id13253} <!-- } --> <- fl:: [file3.txt](../v6/ch2/ch3/file3.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt -->
+<a id="AkQmadL64PI0fr7oorCpeaV9sOCKGzd0"></a>
+###  <!-- { --> ### {file3.txt} {id6748} <!-- } --> <- fl:: [file3.txt](../v6/ch2/ch3/file3.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/ch3/file3.txt -->
 
 ```txt
 that file3.txt
@@ -142,13 +142,13 @@ xxx#@that file3.txt head
 
 ```
 
-<a id="SqNBZtOmraKcDMXwphEq04L9R4x0BwvP"></a>
-## <!-- { --> ## e9l91.jpg {id31704} <!-- } --> <- fl:: [e9l91.jpg](../v6/ch2/e9l91.jpg) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/e9l91.jpg -->
+<a id="stFjVGJMpfSci9Gy0Co2e3yK3uyrbVhr"></a>
+## <!-- { --> ## e9l91.jpg {id6696} <!-- } --> <- fl:: [e9l91.jpg](../v6/ch2/e9l91.jpg) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/e9l91.jpg -->
 
 <img src=../v6/ch2/e9l91.jpg width=100/>
 
-<a id="P3adMbml8LI6MbHnQ1Cs6tdUidGvBnQH"></a>
-##  <!-- { --> ## that file2.code head {id7995} <!-- } --> <- fl:: [file2.sh](../v6/ch2/file2.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.sh -->
+<a id="HiMQNfhJ6P7Z15iRlqIZLMWEZH2jv5cB"></a>
+##  <!-- { --> ## that file2.code head {id1156} <!-- } --> <- fl:: [file2.sh](../v6/ch2/file2.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.sh -->
 
 ```sh
 #!/bin/bash
@@ -156,27 +156,27 @@ xxx#@that file3.txt head
 echo "that file2.code"
 ```
 
-<a id="A4FevnqyDn6qUvjw5WhU8ceUfJAfB48d"></a>
-##  <!-- { --> ## that file2.txt head {id22406} <!-- } --> <- fl:: [file2.txt](../v6/ch2/file2.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.txt -->
+<a id="95iaqzZNGy3hSpqrx4BOwNsiiWzQlZbC"></a>
+##  <!-- { --> ## that file2.txt head {id31167} <!-- } --> <- fl:: [file2.txt](../v6/ch2/file2.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/file2.txt -->
 
 ```txt
 that file2.txt
 two
 ```
 
-<a id="Cz8VA4qpJ2EMUvcIh6LGWE5aEs2mtCK2"></a>
-## <!-- { --> ## kva.png {id27925} <!-- } --> <- fl:: [kva.png](../v6/ch2/kva.png) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/kva.png -->
+<a id="TURTkrzf2x5tsCT4tvop6t58L9X7wUWk"></a>
+## <!-- { --> ## kva.png {id25215} <!-- } --> <- fl:: [kva.png](../v6/ch2/kva.png) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/ch2/kva.png -->
 
 <img src=../v6/ch2/kva.png width=100/>
 
-<a id="DHeTfbLvsx3ydaNT43enTM5yamRlRfeC"></a>
-#  <!-- { --> # that file0.txt head {id4192} <!-- } --> <- fl:: [file0.txt](../v6/file0.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/file0.txt -->
+<a id="sJXoUgTASclPqIMpRIsbAX0tWUvTeHAE"></a>
+#  <!-- { --> # that file0.txt head {id17179} <!-- } --> <- fl:: [file0.txt](../v6/file0.txt) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/file0.txt -->
 
 ```txt
 that file0.txt
 null
 ```
 
-<a id="YT643VR2x50aHCxGPT2Jyiq9wXKd02fh"></a>
-#  <!-- { --> # {html_1.pdf} {id8979} <!-- } --> <- fl:: [html_1.pdf](../v6/html_1.pdf) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/html_1.pdf -->
+<a id="9qgq9a7VbhNz15iAzqueVFucVpYvxRkE"></a>
+#  <!-- { --> # {html_1.pdf} {id15496} <!-- } --> <- fl:: [html_1.pdf](../v6/html_1.pdf) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_2.fnsh/.g.tst.d/res.d/v6/html_1.pdf -->
 
