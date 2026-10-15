@@ -78,3 +78,7 @@ $ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
 ### tst gig ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_003.lib.prsh/fns_bsh_003__p009_d__tst.prsh/g.sh
 
     . ~/fns_bsh/.d/.p.ax/.p018.d/.tst/g.tst
+
+## IFS_BELONG_DIR ::
+    {EN}
+    ->{EN}=*{EN}/_&{EN}.d

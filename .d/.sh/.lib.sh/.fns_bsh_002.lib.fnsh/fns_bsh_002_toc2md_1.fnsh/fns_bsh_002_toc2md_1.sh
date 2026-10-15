@@ -39,7 +39,7 @@ fns_bsh_002_toc2md_1() {
         this -h for <${FUNCNAME[0]}> '$@' ::
         doing :: add toc to .md IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
 			REN=
-			\$1 - {IEN} 
+			\$1 - {IEN}is{REN}
 			\$2 -
 			\$3 - 
 			flow_FN ::
@@ -114,12 +114,12 @@ fns_bsh_002_toc2md_1() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# [[ -d "$2" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/fns_bsh_002_toc2md_1.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -f "$1" ]] || {
+		# snp "out_err"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/fns_bsh_002_toc2md_1.sh , line=${LINENO} :: ARG_1_NOT_FL is IENisREN, return 1${NRM}" >&2
+		return 1
+	}
 
 	#-- ~001_stn_env~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_stn_env.tml
@@ -152,6 +152,8 @@ fns_bsh_002_toc2md_1() {
 	# $(eval "echo \$us_dr_pth_fn_${rnd}")
 	# fn_nm::
 	# $(eval "echo \$fn_nm_${rnd}")
+
+	#! md_dta_1234fftbarf
 
 	#-- {{002_stn_env}}
 
