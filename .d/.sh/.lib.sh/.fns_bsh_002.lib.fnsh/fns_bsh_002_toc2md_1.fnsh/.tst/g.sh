@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_16818_11231() {
+fn_16818_11231_01() {
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
@@ -101,12 +101,12 @@ fn_16818_11231() {
 
 	}
 
-	[[ -z "$1" ]] && {
-		# snp "out_err"
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.tst/g.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is tst_dr in /.g.tst.d/res.d exa::v6 , return 1 ${NRM}" >&2
-		return 1
-	}
+	# [[ -z "$1" ]] && {
+	# 	# snp "out_err"
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.tst/g.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is tst_dr in /.g.tst.d/res.d exa::v6 , return 1 ${NRM}" >&2
+	# 	return 1
+	# }
 
 	#-- {{002_key}}
 
@@ -273,7 +273,7 @@ fn_16818_11231() {
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_16818_11231 $@
+fn_16818_11231_01 $@
 
 # {{002_after}}
 

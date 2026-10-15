@@ -31,11 +31,11 @@ l_00_echo_warn "START_TST:: ; flw_chr: (?)"
 
 #.. prnt1_dr_pth_fn=/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh
 # -- /home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh/.g.tst.d/res.d/v6
-#? dir_for_gig_md=${prnt1_dr_pth_fn}/.g.tst.d/res.d/v6
+#? dir_for_gig_md=$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/v6
 
-fns_bsh_002_d2md_1 "${prnt1_dr_pth_fn}/.g.tst.d/res.d/v6" "${prnt1_dr_pth_fn}"/.g.tst.d/res.d/init_md.d/init.md
+fns_bsh_002_d2md_1 "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/v6" "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")"/.g.tst.d/res.d/init_md.d/init.md
 
-fns_bsh_002_toc2md_1 "${prnt1_dr_pth_fn}"/.g.tst.d/res.d/init_md.d/init.md
+fns_bsh_002_toc2md_1 "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")"/.g.tst.d/res.d/init_md.d/init.md
 
 # l_00_echo_code "tree $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/$(eval "echo \$arg_1_fn_${rnd}")"
 

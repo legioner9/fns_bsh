@@ -62,6 +62,15 @@ fns_bsh_002_d2md_1() {
 		return 0
 	}
 
+	[[ "$1" == "_tst" ]] && {
+
+		l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/.tst/g.sh"
+		source $(eval "echo \$dr_pth_fn_${rnd}")/.tst/g.sh
+
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		return 0
+	}
+
 	# [[ "$1" == "-h" ]] && {
 	#	echo -e "
 	#     this -h for <${FUNCNAME[0]}> '$@' ::
@@ -193,7 +202,7 @@ fns_bsh_002_d2md_1() {
 	# 		l_00_echo_info "	ass_arr[$i,$j]=${ass_arr[$i, $j]}"
 	# 	done
 	# done
-	
+
 	# {{002_use_l}}
 
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
