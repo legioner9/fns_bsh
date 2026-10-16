@@ -9,10 +9,10 @@ fns_bsh_002__p015_d__tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_30694_32573="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
-    local dr_pth_fn_30694_32573=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local fl_nm_fn_30694_32573=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local rnd=30694_32573
+    local fl_pth_fn_4593_13658="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
+    local dr_pth_fn_4593_13658=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local fl_nm_fn_4593_13658=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local rnd=4593_13658
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -217,6 +217,15 @@ fns_bsh_002__p015_d__tst(){
 	# done
 	
 	# {{002_use_l}}
+
+	g_v(){ #$1=var_1 $2=\$(eval "echo \$arg_1_fn_${rnd}")
+		# eval "us_dr_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
+		eval "$1_${rnd}=$2"
+	}
+
+	e_v(){ #$1=var_1 ->$(eval "echo \$arg_2_fn_${rnd}")
+$(eval "echo \$$1_${rnd}")
+	}
 	
 	#-- ~001_into~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_into.tml
@@ -224,7 +233,37 @@ fns_bsh_002__p015_d__tst(){
 	#-- {{002_into}}
 			# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
-	#-- {{001_body}}
+	#-- ~001_body~
+	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.dom.tml.d/001_body.tml
+	# first:: gig g.pr
+		echo -e " $(date)
+. $(eval "echo \$dr_pth_fn_${rnd}")/g.pr \
+	$(eval "echo \$arg_1_fn_${rnd}") \
+	$(eval "echo \$arg_2_fn_${rnd}") \
+	$(eval "echo \$arg_3_fn_${rnd}")
+	" >> \
+		$(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+
+		lfoe_path_to_var $(eval "echo \$dr_pth_fn_${rnd}")/.g.d/g.lg
+
+		# up to_mem .env.sh dr
+		l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
+	
+	local item_us=
+	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do
+		if [[ -f $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us && $(l_01_prs_f -e $item_us) == "sh" ]]; then
+			l_00_echo_code ". $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us"
+			if . $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us; then
+				:
+			else
+				l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '. $(eval "echo \$dr_pth_fn_${rnd}")/.us/$item_us', return 1${NRM}" >&2
+				return 1
+			fi
+		fi
+	done
+
+    #-- {{002_body}}
 
 	#-- ~001_exit~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml
@@ -237,8 +276,8 @@ fns_bsh_002__p015_d__tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_30694_32573 $@
+# fn_4593_13658 $@
 
 # {{002_after}}
 
-#? fn_30694_32573 $@
+#? fn_4593_13658 $@
