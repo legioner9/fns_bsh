@@ -1,0 +1,8 @@
+# unda is (translation from latin) wave - test of mix utils
+
+# gig fn 
+    . pth/_gig_this.pr [infix_fn]
+
+- be gig 
+    - fns_bsh_004_[infix_fn].sh
+    - tst/fns_bsh_004_[infix_fn].tst.d
