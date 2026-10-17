@@ -41,3 +41,6 @@ code --install-extension timonwong.shellcheck
 
 # plant uml
 code --install-extension jebbs.plantuml
+
+# MermaidChart
+code --install-extension bierner.markdown-mermaid
