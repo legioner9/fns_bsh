@@ -324,6 +324,13 @@ fn_23890_17671() {
 	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") -h"
 	$(eval "echo \$fn_main_name_${rnd}") -h
 
+	local rnd_1="234erXX"
+
+	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") $rnd_1 val_1 this_volume_of_val_1"
+	$(eval "echo \$fn_main_name_${rnd}") $rnd_1 val_1 this_volume_of_val_1
+
+	l_00_echo_info "\$val_1=$(eval "echo \$val_1_${rnd_1}")"
+
 	#-- {{003_body}}
 
 	#-- ~001_exit~

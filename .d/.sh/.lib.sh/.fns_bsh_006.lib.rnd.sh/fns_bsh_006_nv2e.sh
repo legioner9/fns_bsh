@@ -242,6 +242,12 @@ fns_bsh_006_nv2e() {
 		return 0
 	}
 
+	[[ -n "$2" ]] || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} ARG2_NOT_EXST, return 1${NRM}" >&2
+		return 1
+	}
+
 	eval "echo ${2}_${1}"
 
 	#-- {{002_body}}
