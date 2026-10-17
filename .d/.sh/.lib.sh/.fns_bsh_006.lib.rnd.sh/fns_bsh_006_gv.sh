@@ -236,8 +236,8 @@ fns_bsh_006_gv() {
 
 	[[ "$1" == "-h" ]] && {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		echo -e "gig_value :: \$1->rnd \$2->nm \$3->vol
-	g_v()::eval \${2}_\${1}=\${3}"
+		echo -e "	gig_value :: \$1->rnd \$2->nm \$3->vol
+	TYPE::eval \${2}_\${1}=\${3}"
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 		return 0
 	}

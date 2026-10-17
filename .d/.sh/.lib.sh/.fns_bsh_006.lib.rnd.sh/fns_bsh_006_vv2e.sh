@@ -236,7 +236,7 @@ fns_bsh_006_vv2e() {
 
 	[[ $1 == "-h" ]] && {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
-		echo -e "volume_value2echo::\$1->rnd \$2->nm \$3->vol
+		echo -e "	volume_value2echo::\$1->rnd \$2->nm
 	TYPE::eval \"echo \\\$\${2}_\${1}\""
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 		return 0
