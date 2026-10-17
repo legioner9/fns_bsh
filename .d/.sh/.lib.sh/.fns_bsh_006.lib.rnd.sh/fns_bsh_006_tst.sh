@@ -234,6 +234,8 @@ fns_bsh_006_tst(){
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
     # l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
+	$(eval "echo \$fn_nm_${rnd}") -h
+
     #-- {{002_body}}
 
 	#-- ~001_exit~

@@ -11,5 +11,7 @@ cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
 l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}")"
 $(eval "echo \$fn_main_name_${rnd}")
+l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") -h"
+$(eval "echo \$fn_main_name_${rnd}") -h
 
 #-- {{003_body}}
