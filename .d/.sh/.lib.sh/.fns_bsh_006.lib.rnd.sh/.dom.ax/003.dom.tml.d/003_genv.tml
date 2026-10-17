@@ -1,4 +1,4 @@
-# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/003.dom.tml.d/003_genv.tml
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/.dom.ax/003.dom.tml.d/003_genv.tml
 
 	eval "fn_main_name_${rnd}=\$(l_01_prs_f -n2 \$(eval "echo \$dr_pth_fn_${rnd}"))"
 

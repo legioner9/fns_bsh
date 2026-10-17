@@ -5,9 +5,9 @@ fn_9208_29592() {
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-	local fl_pth_fn_9208_29592="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_gig_this.sh"
-	local dr_pth_fn_9208_29592=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_gig_this.sh)
-	local fl_nm_fn_9208_29592=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_gig_this.sh)
+	local fl_pth_fn_9208_29592="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/_gig_this.sh"
+	local dr_pth_fn_9208_29592=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/_gig_this.sh)
+	local fl_nm_fn_9208_29592=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/_gig_this.sh)
 	local rnd=9208_29592
 
 	#-- ~001_genv~
@@ -36,7 +36,7 @@ fn_9208_29592() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: gig in $(eval "echo \$dr_pth_fn_${rnd}") single file with fn 'fns_bsh_005_\$1.sh'
+        doing :: gig in $(eval "echo \$dr_pth_fn_${rnd}") single file with fn 'fns_bsh_006_\$1.sh'
  			\$1 - part of name functions in single file
 			\$2 - 
 			\$3 - 
@@ -164,7 +164,7 @@ fn_9208_29592() {
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_gig_this.pr , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/_gig_this.pr , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -177,7 +177,7 @@ fn_9208_29592() {
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_gig_this.pr , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/_gig_this.pr , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }
 
@@ -260,13 +260,13 @@ fn_9208_29592() {
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
 	l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
-	if [[ -f "$(eval "echo \$dr_pth_fn_${rnd}")"/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh" ]]; then
+	if [[ -f "$(eval "echo \$dr_pth_fn_${rnd}")"/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh" ]]; then
 
-		if ! l_01_is_yes "DO? rm -f "fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh""; then
-			rm -f "fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh"
+		if ! l_01_is_yes "DO? rm -f "fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh""; then
+			rm -f "fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh"
 		else
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} NT_DL+FL+REN : '"$(eval "echo \$dr_pth_fn_${rnd}")"/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh"', return 1${NRM}" >&2
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} NT_DL+FL+REN : '"$(eval "echo \$dr_pth_fn_${rnd}")"/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh"', return 1${NRM}" >&2
 			return 1
 		fi
 
@@ -276,41 +276,41 @@ fn_9208_29592() {
 
 	gig_wdr_dwer34223drthtre34() {
 
-		mkdir "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d
-		fns_bsh_001_als_gig_fl_sh_2 "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d start_tst.sh
+		mkdir "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d
+		fns_bsh_001_als_gig_fl_sh_2 "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d start_tst.sh
 
-		mkdir "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/init.d
-		touch "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/init.d/init.f
+		mkdir "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/init.d
+		touch "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/init.d/init.f
 
 		l_00_echo_warn "fns_bsh_0fns_bsh_001_df2f \
 			"$(eval "echo \$dr_pth_fn_${rnd}")"/.dom.ax/001.dom.tml.d \
-			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
+			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
 
 		fns_bsh_001_df2f \
 			"$(eval "echo \$dr_pth_fn_${rnd}")"/.dom.ax/001.dom.tml.d \
-			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh
+			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh
 
 		l_00_echo_warn "fns_bsh_0fns_bsh_001_df2f \
 			"$(eval "echo \$dr_pth_fn_${rnd}")"/.dom.ax/003.dom.tml.d \
-			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
+			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
 
 		fns_bsh_001_df2f \
 			"$(eval "echo \$dr_pth_fn_${rnd}")"/.dom.ax/003.dom.tml.d \
-			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh
+			"$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh
 
-		# read -p "CHECK :: "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
+		# read -p "CHECK :: "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d/start_tst.sh"
 
 	}
 
-	if [[ -d $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").tst.d ]]; then
+	if [[ -d $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").tst.d ]]; then
 
-		if ! l_01_is_yes "DO? rm -fr $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")"; then
-			rm -fr "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")".tst.d
+		if ! l_01_is_yes "DO? rm -fr $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")"; then
+			rm -fr "$(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")".tst.d
 
 			gig_wdr_dwer34223drthtre34
 
 		else
-			l_00_echo_sys "NOT_RM :: $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")"
+			l_00_echo_sys "NOT_RM :: $(eval "echo \$dr_pth_fn_${rnd}")"/_tst/"fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")"
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 			return 0
 		fi
@@ -320,25 +320,25 @@ fn_9208_29592() {
 
 	fi
 
-	fns_bsh_001_als_gig_fn_sh_2_q "$(eval "echo \$dr_pth_fn_${rnd}")" "fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh"
+	fns_bsh_001_als_gig_fn_sh_2_q "$(eval "echo \$dr_pth_fn_${rnd}")" "fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh"
 
 	# read -p $(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/002.dom.tml.d
-	# read -p $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh
+	# read -p $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh
 	fns_bsh_001_df2f \
 		$(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/002.dom.tml.d \
-		$(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh
+		$(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh
 
-	l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh"
-	source $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}").sh
+	l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh"
+	source $(eval "echo \$dr_pth_fn_${rnd}")/fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}").sh
 
-	l_00_echo_sys "fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")"
-	fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}")
+	l_00_echo_sys "fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")"
+	fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}")
 
-	l_00_echo_sys "fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}") -h"
-	fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}") -h
+	l_00_echo_sys "fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}") -h"
+	fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}") -h
 
-	l_00_echo_sys "fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}") _tst"
-	fns_bsh_005_$(eval "echo \$arg_1_fn_${rnd}") _tst
+	l_00_echo_sys "fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}") _tst"
+	fns_bsh_006_$(eval "echo \$arg_1_fn_${rnd}") _tst
 
 	#-- {{002_body}}
 

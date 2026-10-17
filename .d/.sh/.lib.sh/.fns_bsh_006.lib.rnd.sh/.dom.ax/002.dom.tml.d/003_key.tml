@@ -1,4 +1,4 @@
-# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/.dom.ax/001.dom.tml.d/003_key.tml
+# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh/.dom.ax/001.dom.tml.d/003_key.tml
 # that 003_key
 
 [[ "$1" == "_tst" ]] && {
