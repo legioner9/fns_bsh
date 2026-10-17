@@ -38,30 +38,30 @@ fns_bsh_006_vv2e() {
 	#--~001_help~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_help.tml
 	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
-	[[ "$1" == "-h" ]] && {
-		echo -e "
-        this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
-			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
-			\$3 - 
-			flow_FN ::
-				SWITCH_ARG in /.us/00N.us.sh :: choce ::
-					- word1 ...
-			flow_tst ::
-            exa use ::
-            far use ::
-			see about big short (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
-			see about error short ([casual]|[action])+[entety]+[vis] :
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
-			see about causa (EXEC_FAIL, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
-        "
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		return 0
-	}
+	# [[ "$1" == "-h" ]] && {
+	# 	echo -e "
+    #     this -h for <${FUNCNAME[0]}> '$@' ::
+    #     doing :: (?) IEN= 
+	# 		REN=
+	# 		\$1 - ?*{IEN}
+	# 		\$2 - ?&{IEN}
+	# 		\$3 - 
+	# 		flow_FN ::
+	# 			SWITCH_ARG in /.us/00N.us.sh :: choce ::
+	# 				- word1 ...
+	# 		flow_tst ::
+    #         exa use ::
+    #         far use ::
+	# 		see about big short (IEN, REN, e.c.):
+	# 			$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+	# 		see about error short ([casual]|[action])+[entety]+[vis] :
+	# 			$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+	# 		see about causa (EXEC_FAIL, e.c.):
+	# 			$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+    #     "
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	return 0
+	# }
 
 	#-- ~002_key~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/002_key.tml
@@ -237,7 +237,7 @@ fns_bsh_006_vv2e() {
 	[[ $1 == "-h" ]] && {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		echo -e "volume_value2echo::\$1->rnd \$2->nm \$3->vol
-	TYPE::eval eval "echo \\\$\${2}_\${1}""
+	TYPE::eval \"echo \\\$\${2}_\${1}\""
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 		return 0
 	}
