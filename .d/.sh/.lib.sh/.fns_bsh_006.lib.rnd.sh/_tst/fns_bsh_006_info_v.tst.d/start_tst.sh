@@ -335,6 +335,9 @@ fn_14674_18492() {
 	l_00_echo_sys "fns_bsh_006_nv2e $rnd_4 val_4"
 	fns_bsh_006_nv2e $rnd_4 val_4
 
+	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") $rnd_4 val_4X"
+	$(eval "echo \$fn_main_name_${rnd}") $rnd_4 val_4X
+
 	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") $rnd_4 val_4"
 	$(eval "echo \$fn_main_name_${rnd}") $rnd_4 val_4
 

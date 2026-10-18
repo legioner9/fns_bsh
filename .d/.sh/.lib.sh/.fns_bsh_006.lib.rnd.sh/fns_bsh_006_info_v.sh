@@ -248,7 +248,11 @@ fns_bsh_006_info_v() {
 		return 1
 	}
 
-	l_00_echo_info "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+	l_00_echo_info "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})" || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'l_00_echo_info', return 1${NRM}" >&2
+		return 1
+	}
 
 	#-- {{002_body}}
 

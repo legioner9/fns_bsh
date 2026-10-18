@@ -44,7 +44,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	#! def glob md_dta
 	fns_bsh_006_gv ${rnd} md_dta "$(l_01_prs_f -d $(eval "echo \$arg_1_fn_${rnd}"))/_$(l_01_prs_f -ne $(eval "echo \$arg_1_fn_${rnd}")).d"
 	fns_bsh_006_info_v ${rnd} md_dta
-	read -p "Global value $(fns_bsh_006_nv2e ${rnd} md_dta)"
+	# read -p "Global value $(fns_bsh_006_nv2e ${rnd} md_dta)"
 	fns_bsh_002_toc2md_1_gig_d_mkdr() {
 
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
@@ -59,9 +59,11 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# fi
 
 		if ! (
-			rm -f $(fns_bsh_006_vv2e ${rnd} md_dta)
-			mkdir $(fns_bsh_006_vv2e ${rnd} md_dta)
+			rm -f "$(fns_bsh_006_vv2e ${rnd} md_dta)"
+			mkdir "$(fns_bsh_006_vv2e ${rnd} md_dta)"
 		) >/dev/null; then
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'rm & mkdir $(fns_bsh_006_vv2e ${rnd} md_dta)', return 1${NRM}" >&2
 			return 1
 		fi
 
