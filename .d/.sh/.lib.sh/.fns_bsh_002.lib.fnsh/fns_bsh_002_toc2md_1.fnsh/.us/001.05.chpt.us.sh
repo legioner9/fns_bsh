@@ -42,7 +42,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		#-- $fns_bsh_002_toc2md_1_dr_dta/hdr.md
 		#-- grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(eval "echo \$dr_pth_fn_${rnd}")/hdr.lst > $(eval "echo \$dr_pth_fn_${rnd}")/chpt.lst
 
-		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $fns_bsh_002_toc2md_1_dr_dta/hdr.md >$fns_bsh_002_toc2md_1_dr_dta/chpt.md
+		grep -o -P '(?<=<!-- { -->).*(?=<!-- } -->)' $(fns_bsh_006_vv2e ${rnd} md_dta)/hdr.md >$(fns_bsh_006_vv2e ${rnd} md_dta)/chpt.md
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 	}
 

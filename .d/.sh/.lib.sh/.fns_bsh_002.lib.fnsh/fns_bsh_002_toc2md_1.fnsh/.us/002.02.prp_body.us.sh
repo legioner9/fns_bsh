@@ -44,7 +44,11 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# $fns_bsh_002_toc2md_1_dr_dta/chpt.md
 		# $fns_bsh_002_toc2md_1_dr_dta/body.md
 		#! $fns_bsh_002_toc2md_1_dr_dta/body_toc.md result
-		cat $(eval "echo \$dr_pth_fn_${rnd}")/.cdn/pre1.md | cat - $fns_bsh_002_toc2md_1_dr_dta/body.md >$fns_bsh_002_toc2md_1_dr_dta/body_toc.md
+		# cat $(eval "echo \$dr_pth_fn_${rnd}")/.cdn/pre1.md | cat - $(eval "echo \$arg_1_fn_${rnd}") >$(eval "echo \$arg_1_fn_${rnd}")
+		cat $(eval "echo \$dr_pth_fn_${rnd}")/.cdn/pre1.md | cat - $(eval "echo \$arg_1_fn_${rnd}") >$(eval "echo \$arg_1_fn_${rnd}")_
+		cp $(eval "echo \$arg_1_fn_${rnd}")_ $(eval "echo \$arg_1_fn_${rnd}")
+		rm $(eval "echo \$arg_1_fn_${rnd}")_
+
 
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	}
