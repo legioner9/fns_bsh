@@ -248,6 +248,12 @@ fns_bsh_006_vv2e() {
 		return 1
 	}
 
+	if [[ -z "$(eval "echo \$${2}_${1}")" ]];then
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  REN_NOT_EXST : '$(eval \"echo \\\$\${2}_\${1}\")', return 1${NRM}" >&2
+		return 1
+	fi
+
 	eval "echo \$${2}_${1}"
 
 	#-- {{002_body}}

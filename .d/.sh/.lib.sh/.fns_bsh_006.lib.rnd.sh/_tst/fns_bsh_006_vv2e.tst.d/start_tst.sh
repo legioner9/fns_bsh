@@ -327,7 +327,10 @@ fn_22127_38() {
 	local rnd_2="234erXX"
 
 	fns_bsh_006_gv $rnd_2 val_2 this_volume_of_val_2
-	
+
+	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") $rnd_2 val_2X"
+	$(eval "echo \$fn_main_name_${rnd}") $rnd_2 val_2X
+
 	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") $rnd_2 val_2"
 	$(eval "echo \$fn_main_name_${rnd}") $rnd_2 val_2
 

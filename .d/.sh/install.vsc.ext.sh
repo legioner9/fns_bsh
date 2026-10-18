@@ -44,3 +44,6 @@ code --install-extension jebbs.plantuml
 
 # MermaidChart
 code --install-extension bierner.markdown-mermaid
+
+# STM32
+code --install-extension platformio.platformio-ide
