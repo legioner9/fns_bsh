@@ -20,6 +20,10 @@
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
 			see about causa (EXEC_FAIL, e.c.):
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+
+
+			List global value defined in this::
+				[nm] = [vol]
         "
 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	return 0
