@@ -29,6 +29,12 @@ fl - result fl
 # prnt2_dr_pth_fn ::
 # $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
 
+# fns_bsh_006_gv :: gig_value :: \$1->rnd \$2->nm \$3->vol :: eval "${2}_${1}=${3}"
+# fns_bsh_006_vv2e :: volume_value2echo::\$1->rnd \$2->nm :: eval "echo \$${2}_${1}"
+# fns_bsh_006_nv2e :: name_value2echo::\$1->rnd \$2->nm :: eval "echo ${2}_${1}"
+# fns_bsh_006_info_v :: l_00_echo_info::\$1->rnd \$2->nm :: 
+#	l_00_echo_info "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 

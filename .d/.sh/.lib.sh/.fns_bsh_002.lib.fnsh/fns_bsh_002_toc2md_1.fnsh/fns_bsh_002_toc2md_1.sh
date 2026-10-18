@@ -50,6 +50,9 @@ fns_bsh_002_toc2md_1() {
             far use ::
 			see about big short (IEN, REN, e.c.):
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+
+			global value ::
+				md_dta = *{IEN}/_&{IEN}.d = >{IEN}
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0

@@ -88,4 +88,9 @@ if [[ "$(eval "echo \$arg_3_fn_${rnd}")" == "-v2" ]]; then
 	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/012.dom.tml.d \
 		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.us/_001.0X.fn.us.sh
 fi
+
+	# treat :: /.env.sh/init.env.sh
+	fns_bsh_001_df2f ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/013.dom.tml.d \
+		$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/.env.sh/init.env.sh
+
 # read -p "05 in ~/fns_bsh/.d/.p.ax/.p009.d/.us/002.us.sh"
