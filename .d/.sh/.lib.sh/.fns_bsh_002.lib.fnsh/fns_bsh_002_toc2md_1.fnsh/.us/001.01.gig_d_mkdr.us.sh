@@ -33,8 +33,9 @@ eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
-	local md_dta_1234fftbarf=$(l_01_prs_f -d $(eval "echo \$arg_1_fn_${rnd}"))/_$(l_01_prs_f -ne $(eval "echo \$arg_1_fn_${rnd}")).d
-	l_00_echo_ques "\$md_dta_1234fftbarf=$md_dta_1234fftbarf"
+	# local md_dta_1234fftbarf=$(l_01_prs_f -d $(eval "echo \$arg_1_fn_${rnd}"))/_$(l_01_prs_f -ne $(eval "echo \$arg_1_fn_${rnd}")).d
+	# l_00_echo_ques "\$md_dta_1234fftbarf=$md_dta_1234fftbarf"
+	fns_bsh_006_
 	fns_bsh_002_toc2md_1_gig_d_mkdr() {
 
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit

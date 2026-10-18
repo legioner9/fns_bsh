@@ -237,7 +237,7 @@ fns_bsh_006_info_v() {
 	[[ $1 == "-h" ]] && {
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'" #exit
 		echo -e "	l_00_echo_info::\$1->rnd \$2->nm
-	TYPE::eval \"\\\$\$(nv2e \${1} \${2})=\$(vv2e \${1} \${2})\""
+	TYPE::eval l_00_echo_info \"\\\$\$(fns_bsh_006_nv2e \${1} \${2})=\$(fns_bsh_006_vv2e \${1} \${2})\""
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'" #exit
 		return 0
 	}
