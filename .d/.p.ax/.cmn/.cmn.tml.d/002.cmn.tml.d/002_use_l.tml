@@ -1,0 +1,7 @@
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_use_l.tml
+
+# fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
+# fns_bsh_002_d2md_1 :: IEN=$1(dr with struct) REN=$2(.md with anc)
+# fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
+
+# {{003_use_l}}

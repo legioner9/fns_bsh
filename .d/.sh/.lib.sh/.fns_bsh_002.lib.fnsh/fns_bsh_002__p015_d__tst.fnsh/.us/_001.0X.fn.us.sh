@@ -32,8 +32,12 @@ fl - result fl
 # fns_bsh_006_gv :: gig_value :: \$1->rnd \$2->nm \$3->vol :: eval "${2}_${1}=${3}"
 # fns_bsh_006_vv2e :: volume_value2echo::\$1->rnd \$2->nm :: eval "echo \$${2}_${1}"
 # fns_bsh_006_nv2e :: name_value2echo::\$1->rnd \$2->nm :: eval "echo ${2}_${1}"
-# fns_bsh_006_info_v :: l_00_echo_info::\$1->rnd \$2->nm :: 
+# fns_bsh_006_info_v :: l_00_echo_info::\$1->rnd \$2->nm ::
 #	l_00_echo_info "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+# fns_bsh_006_warn_v :: l_00_echo_warn::\$1->rnd \$2->nm ::
+#	l_00_echo_warn "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+# fns_bsh_006_err_v :: l_00_echo_err::\$1->rnd \$2->nm ::
+#	l_00_echo_err "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
 
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
