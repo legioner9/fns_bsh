@@ -229,6 +229,9 @@ fns_bsh_002_f2fs_1(){
 # fns_bsh_006_err_v :: l_00_echo_err::\$1->rnd \$2->nm ::
 #	l_00_echo_err "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
 
+# fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
+# fns_bsh_002_d2md_1
+
 # {{002_use_l}}
 
 	#-- ~001_into~
