@@ -42,53 +42,67 @@ fl - result fl
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
+
+
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
-	if ! l_01_is_yes "DO? rm -rf $(eval "echo \$arg_2_fn_${rnd}")"; then
 
-		l_00_echo_code "rm -rf $(eval "echo \$arg_2_fn_${rnd}")"
-		rm -rf "$(eval "echo \$arg_2_fn_${rnd}")"
+	#.. from ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d
+local line_52vsddfv=
+	local root_d_5436asd=$(dirname "$1")/$(basename "$1").d
 
-	else
+	l_00_echo_info "\$root_d=$root_d_5436asd"
 
-		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'NT_DL+DR+{REN}', return 1${NRM}" >&2
-		return 1
-
+	if [[ -d "$root_d_5436asd" ]]; then
+		if ! l_01_is_yes "REMOVE_DIR and CONTINUE? $root_d_5436asd"; then
+			rm -r $root_d_5436asd
+		else
+			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  NOT_REMOVE_DIR : '$root_d_5436asd', return 1${NRM}" >&2
+			return 1
+		fi
 	fi
 
-	mkdir -v "$(eval "echo \$arg_2_fn_${rnd}")"
+	local arr_line_43cdsa=()
 
-	local pth_2535vdfs=
-	local dr_nm_234451fsdf=
-	local new_dr_63425tdsfgs=
+	for line_52vsddfv in $(l_02_f2e "$1"); do
+		l_00_echo_info "\$line=$line_52vsddfv"
 
-	for pth_2535vdfs in $(l_02_f2e $(eval "echo \$arg_1_fn_${rnd}")); do
+		IFS=':' read -r -a arr_line_43cdsa <<<"$line_52vsddfv"
+		l_00_echo_info "\${arr_line[0]}=${arr_line_43cdsa[0]}"
+		l_00_echo_info "\${arr_line[1]}=${arr_line_43cdsa[1]}"
 
-		l_00_echo_info $pth_2535vdfs
-		l_00_echo_code "cp -r $pth_2535vdfs $(eval "echo \$arg_2_fn_${rnd}")"
-		cp -r "$pth_2535vdfs" "$(eval "echo \$arg_2_fn_${rnd}")" || {
+		if ! [[ -d "${arr_line_43cdsa[0]}" || -f "${arr_line_43cdsa[0]}" ]]; then
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r $pth_1 $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
-			return 1
-		}
-
-		dr_nm_234451fsdf=$(basename $pth_2535vdfs)
-		l_00_echo_info $dr_nm_234451fsdf
-		# read -p dr_nm_234451fsdf
-		new_dr_63425tdsfgs=$(eval "echo \$arg_2_fn_${rnd}")/$dr_nm_234451fsdf
-
-		if [[ -f $new_dr_63425tdsfgs/.from ]]; then
-			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '[[ -f $new_dr_63425tdsfgs/.from ]], return 1${NRM}" >&2
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} NOT_DR_OR_FL :: EXEC_FAIL : '[[ -d "${arr_line_43cdsa[0]}" || -f "${arr_line_43cdsa[0]}" ]]', return 1${NRM}" >&2
 			return 1
 		fi
 
-		echo "$pth_2535vdfs" >"$new_dr_63425tdsfgs"/.from
-		lfoe_path_to_var "$new_dr_63425tdsfgs"/.from
+		if [[ -n "${arr_line_43cdsa[1]}" ]]; then
+			mkdir -p "$root_d_5436asd/${arr_line_43cdsa[1]}"
+		fi
+
+		if [[ -d "${arr_line_43cdsa[0]}" ]]; then
+
+			cp -r "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}" || {
+				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}"', return 1${NRM}" >&2
+				return 1
+			}
+
+		fi
+		# l_00_echo_code "[[ -f "${arr_line_43cdsa[0]}" ]]"
+		file "${arr_line_43cdsa[0]}"
+		if [[ -f "${arr_line_43cdsa[0]}" ]]; then
+			cp "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}" || {
+				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}"', return 1${NRM}" >&2
+				return 1
+			}
+
+		fi
 
 	done
-
 fi
 
 #-- {{002_001_us_sh}}
