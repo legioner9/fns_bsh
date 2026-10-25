@@ -49,7 +49,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	#.. from ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_f2fs.tst.d
 local line_52vsddfv=
-	local root_d_5436asd=$(dirname "$1")/$(basename "$1").d
+	local root_d_5436asd=$(eval "echo \$arg_2_fn_${rnd}")
+	# local root_d_5436asd=$(dirname "$1")/$(basename "$1").d
 
 	l_00_echo_info "\$root_d=$root_d_5436asd"
 
