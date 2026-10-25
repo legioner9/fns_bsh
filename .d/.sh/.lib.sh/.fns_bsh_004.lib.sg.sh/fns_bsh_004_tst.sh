@@ -9,10 +9,10 @@ fns_bsh_004_tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_21310_19519="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
-    local dr_pth_fn_21310_19519=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local fl_nm_fn_21310_19519=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
-    local rnd=21310_19519
+    local fl_pth_fn_30322_28946="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh"
+    local dr_pth_fn_30322_28946=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local fl_nm_fn_30322_28946=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_tst.sh)
+    local rnd=30322_28946
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -222,11 +222,18 @@ fns_bsh_004_tst(){
 	# 	done
 	# done
 	
-	# {{002_use_l}}
+	# ~002_use_l~
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/003.cmn.tml.d/002_use_l.tml
+
+# fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
+# fns_bsh_002_d2md_1 :: IEN=$1(dr with struct) REN=$2(.md with anc)
+# fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
+
+# {{003_use_l}}
 	
 	#-- ~001_into~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_into.tml
-	# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
+	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 	#-- {{002_into}}
 			# l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"
 
@@ -247,8 +254,8 @@ fns_bsh_004_tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_21310_19519 $@
+# fn_30322_28946 $@
 
 # {{002_after}}
 
-#? fn_21310_19519 $@
+#? fn_30322_28946 $@
