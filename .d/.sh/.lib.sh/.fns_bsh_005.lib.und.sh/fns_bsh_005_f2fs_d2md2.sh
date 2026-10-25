@@ -241,7 +241,7 @@ fns_bsh_005_f2fs_d2md2() {
 
 	fi
 
-	fns_bsh_002_gig_dmd_1 "$1".d "$(dirname "$1")/res.$(basename "$1")".md
+	fns_bsh_002_d2md_2 "$1".d "$(dirname "$1")/res.$(basename "$1")".md
 
 	if [[ -d $(dirname "$2") ]]; then
 		if [[ -f "$2" ]]; then
