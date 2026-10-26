@@ -6,4 +6,4 @@
 ### do fns_bsh_004_gig_bldr
 - {REN} = >{IEN}
     - \$1 = {IEN} \$2 = {par:(-f|-i|'')}
-    - FLOW:: ( if par=-f & REN_EXST thn rm REN | if par=-i & REN_EXST thn ask=?[rm REN] (if 'y' thn rm REN not rm err1)   | par:'' : REN_EXST err1)
+    - FLOW:: ( if [par=-f] & [REN_EXST] thn [rm REN] | if [par=-i] & [REN_EXST] thn [ask=?{rm REN}] (if ['y'] thn [rm REN] els [err1]) | if [par=''] & [REN_EXST] thn [err1])
