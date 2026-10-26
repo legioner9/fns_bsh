@@ -27,5 +27,11 @@
 	# 	return 1
 	# }
 
+	# fns_bsh_004_is_ex_a_dr_o_fl :: \$1 exist and (dir|fl)
+	# fns_bsh_004_is_ex_a_dr :: \$1 exist and dir
+	# fns_bsh_004_is_ex_a_fl :: \$1 exist and fl 
+	# fns_bsh_004_if_ex_tn_dr :: if \$1 exist then dir
+	# fns_bsh_004_if_ex_tn_fl :: if \$1 exist then fl
+
 	#-- {{003_val_ind}}
 	

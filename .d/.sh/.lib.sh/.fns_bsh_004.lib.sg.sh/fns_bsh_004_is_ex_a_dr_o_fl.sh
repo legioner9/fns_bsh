@@ -41,7 +41,7 @@ fns_bsh_004_is_ex_a_dr_o_fl() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing :: \$1 exist and (dir|fl)
 			REN=
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
