@@ -41,16 +41,16 @@ fns_bsh_004_gig_bldr() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
-			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+        doing :: {REN} = >{IEN}, IEN is (f|dr), \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
+			{REN} = >{IEN}
+			\$1 - {IEN}
+			\$2 - {par:(-f|-i|-c|'')}
 			\$3 - 
 			- OVR::
 				- INI:: IEN is (f|dr)
 				- ACT:: {REN} = >{IEN}
-				- ARG:: \$1 = {IEN} \$2 = {par:(-f|-i|'')}
-				- FLW:: ( if [par=-f] & [REN_EXST] thn [rm REN] | if [par=-i] & [REN_EXST] thn [ask=?{rm REN}] ( if ['y'] thn [rm REN] els [err1] ) | if [par=''] & [REN_EXST] thn [err1] ) 
+				- ARG:: \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
+				- FLW:: ( if [par=-f] & [REN_EXST] thn [rm REN] | if [par=-i] & [REN_EXST] thn [ask=?{rm REN}] ( if ['y'] thn [rm REN] els [err1] ) | if [par='-c'] & [REN_EXST] thn [err1] | if [par=''] & [REN_EXST] thn [ret0] ) 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
@@ -107,9 +107,9 @@ fns_bsh_004_gig_bldr() {
 
 	#* value indicator
 	eval "local arg_1_fn_${rnd}=\"\$1\""
-	# eval "echo \\\$1=\$arg_1_fn_${rnd}"
+	eval "echo \\\$1=\$arg_1_fn_${rnd}"
 	eval "local arg_2_fn_${rnd}=\"\$2\""
-	# eval "echo \\\$2=\$arg_2_fn_${rnd}"
+	eval "echo \\\$2=\$arg_2_fn_${rnd}"
 	eval "local arg_3_fn_${rnd}=\"\$3\""
 	# eval "echo \\\$3=\$arg_3_fn_${rnd}"
 	eval "local arg_4_fn_${rnd}=\"\$4\""
@@ -135,11 +135,11 @@ fns_bsh_004_gig_bldr() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# if ! fns_bsh_004_is_ex_a_fl "$1"; then
-	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
-	# 	return 1
-	# fi
+	if ! fns_bsh_004_is_ex_a_dr_o_fl "$1"; then
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_dr_o_fl $1', return 1${NRM}" >&2
+		return 1
+	fi
 
 	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
 	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
@@ -245,6 +245,47 @@ fns_bsh_004_gig_bldr() {
 	#-- ~001_body~
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
 	# l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
+
+	# if [[ "$2" == "-i" ]]
+
+	# read -p "[[ -d "$(dirname $1)/_$(basename $1).d" ]] \$1=$1 \$2=$2"
+
+	if [[ -d "$(dirname $1)/_$(basename $1).d" ]]; then
+
+		if [[ -z "$2" ]]; then
+			# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			# echo -e "${ECHO_SUCC}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  DR_EXST : '$(dirname $1)/_$(basename $1).d', return 0${NRM}"
+			return 0
+		fi
+
+		if [[ "$2" == "-c" ]]; then
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} PAR='', DR_EXT : '$(dirname $1)/_$(basename $1).d', return 1${NRM}" >&2
+			return 1
+		fi
+
+		if [[ "$2" == "-f" ]]; then
+			l_00_echo_code "rm -r $(dirname $1)/_$(basename $1).d"
+			rm -r "$(dirname $1)/_$(basename $1).d"
+		fi
+
+		# l_00_echo_code "[[ $2 == -i ]]"
+
+		if [[ "$2" == "-i" ]]; then
+			# read -p "l_01_is_yes"
+			if ! l_01_is_yes "?RM_DR::$(dirname $1)/_$(basename $1).d"; then
+				l_00_echo_code "rm -r $(dirname $1)/_$(basename $1).d"
+				rm -r "$(dirname $1)/_$(basename $1).d"
+			else
+				l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  PAR='-i' BUT_NOT_YES, DR_EXT : '$(dirname $1)/_$(basename $1).d', return 1${NRM}" >&2
+				return 1
+			fi
+		fi
+	fi
+
+	l_00_echo_code "mkdir $(dirname $1)/_$(basename $1).d"
+	mkdir $(dirname $1)/_$(basename $1).d
 
 	#-- {{002_body}}
 
