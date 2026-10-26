@@ -9,7 +9,8 @@ source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$d
 # l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
 cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
-l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}")"
-$(eval "echo \$fn_main_name_${rnd}")
+fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))
+fns_bsh_006_info_v "${rnd}" main_fn
+$(fns_bsh_006_vv2e ${rnd} main_fn) -h
 
 #-- {{003_body}}

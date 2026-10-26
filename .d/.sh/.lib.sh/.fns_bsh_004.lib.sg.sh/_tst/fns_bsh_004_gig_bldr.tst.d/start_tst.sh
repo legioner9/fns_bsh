@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_31515_3995(){
+fn_9518_21185(){
 	
 	#--~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
@@ -9,10 +9,10 @@ fn_31515_3995(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_31515_3995="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_fns_bsh_004_gig_bldr.tst.d/start_tst.sh"
-    local dr_pth_fn_31515_3995=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_fns_bsh_004_gig_bldr.tst.d/start_tst.sh)
-    local fl_nm_fn_31515_3995=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_fns_bsh_004_gig_bldr.tst.d/start_tst.sh)
-    local rnd=31515_3995
+    local fl_pth_fn_9518_21185="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bldr.tst.d/start_tst.sh"
+    local dr_pth_fn_9518_21185=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bldr.tst.d/start_tst.sh)
+    local fl_nm_fn_9518_21185=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bldr.tst.d/start_tst.sh)
+    local rnd=9518_21185
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -191,7 +191,7 @@ fn_31515_3995(){
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_fns_bsh_004_gig_bldr.tst.d/start_tst.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bldr.tst.d/start_tst.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -204,7 +204,7 @@ fn_31515_3995(){
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_fns_bsh_004_gig_bldr.tst.d/start_tst.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bldr.tst.d/start_tst.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }	
 
@@ -318,11 +318,22 @@ source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$d
 
 #.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 # l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+# cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
 fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))
 fns_bsh_006_info_v "${rnd}" main_fn
-eval "$(fns_bsh_006_vv2e ${rnd} main_fn) arg1 arg2"
+
+
+rm -r $(eval "echo \$dr_pth_fn_${rnd}")/res.d
+cp -r $(eval "echo \$dr_pth_fn_${rnd}")/init.d $(eval "echo \$dr_pth_fn_${rnd}")/res.d 
+
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/ien.f -f
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/ien.f -i
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/ien.f 
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/ien.d 
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/ien.dX 
+
+
 
 #-- {{003_body}}
 	
@@ -338,8 +349,8 @@ eval "$(fns_bsh_006_vv2e ${rnd} main_fn) arg1 arg2"
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_31515_3995 $@
+fn_9518_21185 $@
 
 # {{002_after}}
 
-#? fn_31515_3995 $@
+#? fn_9518_21185 $@
