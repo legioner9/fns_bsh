@@ -31,6 +31,6 @@ l_00_echo_info "this :: name_fn :: $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_
 l_00_echo_info "this :: pth_to_tst_dr_res :: $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d"
 
 l_00_echo_warn "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/file.f2fs.lst $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/cpl.dmd.d"
-$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/file.f2fs.lst $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res_1/cpl.dmd.d
+$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/file.f2fs.lst $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res_1/res.gfs.d
 
 #-- {{002_002_us_sh}}
