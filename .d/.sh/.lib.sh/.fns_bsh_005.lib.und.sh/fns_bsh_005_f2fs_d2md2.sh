@@ -48,7 +48,15 @@ fns_bsh_005_f2fs_d2md2() {
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
-					- (-b) rebild dr
+
+				- INI:: IEN1 is EN, IEN2 is STRING
+				- ACT:: echo \"IEN2\" > [>{IEN1}:lg]
+				- ARG:: \$1 = {IEN1} \$2 = \"IEN2\" \$3 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
+				- FLW:: [[l4]]gig_bldr {IEN1}, echo \"IEN2\" > [>{IEN1}:lg]
+			
+			STP1:: fns_bsh_002_f2fs_1 {IEN} >{IEN}/res.d
+			STP2:: fns_bsh_002_d2md_1 >{IEN}/res.d {REN}
+
 			flow_tst ::
             exa use ::
             far use ::

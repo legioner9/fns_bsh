@@ -46,6 +46,7 @@ fns_bsh_004_s2bllg() {
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
 			\$3 - 
+			- OVR::
 			    - INI:: IEN1 is EN, IEN2 is STRING
     			- ACT:: echo \"IEN2\" > [>{IEN1}:lg]
     			- ARG:: \$1 = {IEN1} \$2 = \"IEN2\" \$3 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}

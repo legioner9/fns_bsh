@@ -8,9 +8,16 @@
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
 			\$3 - 
+			- OVR::
+			    - INI::
+    			- ACT::
+    			- ARG::
+    			- FLW::
+
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
+
 			flow_tst ::
             exa use ::
             far use ::
@@ -20,6 +27,8 @@
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
 			see about causa (EXEC_FAIL, e.c.):
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			exa use big shot (TODO, e.c.)
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
