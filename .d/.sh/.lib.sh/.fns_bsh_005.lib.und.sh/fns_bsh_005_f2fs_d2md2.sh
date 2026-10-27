@@ -267,7 +267,7 @@ fns_bsh_005_f2fs_d2md2() {
 
 	fns_bsh_002_f2fs_1 "$(eval "echo \$arg_1_fn_${rnd}")" $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d
 
-	fns_bsh_002_d2md_2 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d "$(eval "echo \$arg_2_fn_${rnd}")"
+	fns_bsh_002_d2md_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d "$(eval "echo \$arg_2_fn_${rnd}")"
 
 	#-- {{002_body}}
 
