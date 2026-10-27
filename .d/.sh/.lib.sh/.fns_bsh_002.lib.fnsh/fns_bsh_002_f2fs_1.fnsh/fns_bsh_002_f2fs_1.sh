@@ -41,7 +41,7 @@ fns_bsh_002_f2fs_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) \$1 IEN=fl_with path, \$3 REN=res_dr
+        doing :: (?) \$1 IEN=fl_with path, \$2 REN=res_dr
 			IEN :: 
 				
 			\$1 - ?*{IEN}
