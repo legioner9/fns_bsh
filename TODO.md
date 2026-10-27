@@ -9,10 +9,14 @@
 - OVR::
     - INI:: IEN is (f|dr)
     - ACT:: {REN} = >{IEN}
-    - ARG:: \$1 = {IEN} \$2 = {par:(-f|-i|'')}
-    - FLW:: ( if [par=-f] & [REN_EXST] thn [rm REN] | if [par=-i] & [REN_EXST] thn [ask=?{rm REN}] ( if ['y'] thn [rm REN] els [err1] ) | if [par=''] & [REN_EXST] thn [err1] ) 
+    - ARG:: \$1 = {IEN} \$2 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
+    - FLW:: ( if [par=-f] & [REN_EXST] thn [rm REN] | if [par=-i] & [REN_EXST] thn [ask=?{rm REN}] ( if ['y'] thn [rm REN] els [err1] ) | if [par='-c'] & [REN_EXST] thn [err1] | if [par=''] & [REN_EXST] thn [ret0] ) 
+
+> \>{EN} = *{EN}/_&{EN}.d
+            LOG_FL [bllg]:
+                >{EN}:lg = >{EN}/&{EN}.lg.f
 
 ### fns_bsh_004_s2bllg
     - INI:: IEN1 is EN, IEN2 is STRING
-    - ACT:: "IEN2" > >>{IEN1}
-
+    - ACT:: echo "IEN2" > [>{IEN1}:lg]
+    - \$1 = {IEN1} \$2 = "IEN2" \$3 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
