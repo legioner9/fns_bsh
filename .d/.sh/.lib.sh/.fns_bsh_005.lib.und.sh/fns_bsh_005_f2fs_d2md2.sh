@@ -43,8 +43,8 @@ fns_bsh_005_f2fs_d2md2() {
         this -h for <${FUNCNAME[0]}> '$@' ::
         doing :: (?) \$1:IEN=fl_lst_with_path \$2:REN=fl_md 
 			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - \$1:IEN=fl_lst_with_path
+			\$2 - \$2:REN=fl_md
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
@@ -222,6 +222,35 @@ fns_bsh_005_f2fs_d2md2() {
 	# 	done
 	# done
 
+	# fns_bsh_006_gv :: gig_value :: \$1->rnd \$2->nm \$3->vol :: eval "${2}_${1}=${3}"
+	# fns_bsh_006_vv2e :: volume_value2echo::\$1->rnd \$2->nm :: eval "echo \$${2}_${1}"
+	# fns_bsh_006_nv2e :: name_value2echo::\$1->rnd \$2->nm :: eval "echo ${2}_${1}"
+	# fns_bsh_006_info_v :: l_00_echo_info::\$1->rnd \$2->nm ::
+	#	l_00_echo_info "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+	# fns_bsh_006_warn_v :: l_00_echo_warn::\$1->rnd \$2->nm ::
+	#	l_00_echo_warn "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+	# fns_bsh_006_err_v :: l_00_echo_err::\$1->rnd \$2->nm ::
+	#	l_00_echo_err "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
+
+	# fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
+	# fns_bsh_002_d2md_1 :: IEN=$1(dr with struct) REN=$2(.md with anc)
+	# fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
+	# fns_bsh_002_f2fs \$1 IEN=fl_with path, \$2 REN=res_dr
+
+	# IFS:
+	# 	BELONG_DR [bldr]:
+	# 		>{EN} = *{EN}/_&{EN}.d
+	# 		LOG_FL [bllg]:
+	# 			>{EN}:lg = >{EN}/&{EN}.lg.f
+	# 		LOG_FL [blex]:
+	# 			>{EN}:ex = >{EN}/&{EN}.ex.f
+
+	# fns_bsh_004_bldr2e :: \$1 = {IEN1} ACT:: echo \">{IEN}\"
+	# >{EN}:lg = >{EN}/&{EN}.lg.f
+	# fns_bsh_004_bllg2e :: echo \">{EN}:lg\"
+	# fns_bsh_004_gig_bldr :: {REN} = >{IEN}, IEN is (f|dr), \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
+	# fns_bsh_004_s2bllg :: echo \"IEN2\" > [>{IEN1}:lg]
+
 	# {{002_use_l}}
 
 	#-- ~001_into~
@@ -235,32 +264,10 @@ fns_bsh_005_f2fs_d2md2() {
 	# l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
 	# path lst
-	if [[ $(eval "echo \$arg_2_fn_${rnd}") == "-b" ]]; then
 
-		fns_bsh_004_f2fs "$1"
+	fns_bsh_004_f2fs "$(eval "echo \$arg_1_fn_${rnd}")" $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d
 
-	fi
-
-	fns_bsh_002_d2md_2 "$1".d "$(dirname "$1")/res.$(basename "$1")".md
-
-	if [[ -d $(dirname "$2") ]]; then
-		if [[ -f "$2" ]]; then
-			if ! l_01_is_yes "DO?::RM_FL::$2"; then
-				rm "$2"
-				cp "$(dirname "$1")/res.$(basename "$1")".md "$2" || {
-					l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-					echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp "$(dirname "$1")/res.$(basename "$1")".md "$2"', return 1${NRM}" >&2
-					return 1
-				}
-			else
-				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EX_FL_NOT_RM : '$2', return 1${NRM}" >&2
-				return 1
-			fi
-
-		fi
-
-	fi
+	fns_bsh_002_d2md_2 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d "$(eval "echo \$arg_2_fn_${rnd}")"
 
 	#-- {{002_body}}
 
