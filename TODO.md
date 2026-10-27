@@ -4,8 +4,8 @@
 - add :
     - [+]if REN_EXST 
     - in IEN add : pth:pref_pth:dicr_pref_pth wh dicr_pref_pth>pth/pref_pth/_d.d
-
-### fns_bsh_004_gig_bldr
+> fns_bsh_004==[[l4]]
+### fns_bsh_004_gig_bldr == [[l4]]gig_bldr
 - OVR::
     - INI:: IEN is (f|dr)
     - ACT:: {REN} = >{IEN}
@@ -18,5 +18,6 @@
 
 ### fns_bsh_004_s2bllg
     - INI:: IEN1 is EN, IEN2 is STRING
-    - ACT:: echo "IEN2" > [>{IEN1}:lg]
-    - \$1 = {IEN1} \$2 = "IEN2" \$3 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
+    - ACT:: echo \"IEN2\" > [>{IEN1}:lg]
+    - ARG:: \$1 = {IEN1} \$2 = \"IEN2\" \$3 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
+    - FLW:: [[l4]]gig_bldr {IEN1}, echo \"IEN2\" > [>{IEN1}:lg]
