@@ -4,7 +4,11 @@
 - add :
     - [+]if REN_EXST 
     - in IEN add : pth:pref_pth:dicr_pref_pth wh dicr_pref_pth>pth/pref_pth/_d.d
+
+
 > fns_bsh_004==[[fbl4]]
+
+
 ### fns_bsh_004_gig_bldr == [[fbl4]]gig_bldr
 - OVR::
     - INI:: IEN is (f|dr)
