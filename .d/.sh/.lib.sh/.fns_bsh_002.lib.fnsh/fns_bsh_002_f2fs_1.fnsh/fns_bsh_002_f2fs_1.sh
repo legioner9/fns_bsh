@@ -41,11 +41,11 @@ fns_bsh_002_f2fs_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) \$1 IEN=fl_with path, \$2 REN=res_dr
+        doing :: \$1 IEN=fl_with path, \$2 REN=res_dr
 			IEN :: 
 				
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - {IEN}
+			\$2 - {REN}
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
@@ -149,7 +149,7 @@ fns_bsh_002_f2fs_1() {
 
 	# fns_bsh_004_is_ex_a_dr_o_fl :: \$1 exist and (dir|fl)
 	# fns_bsh_004_is_ex_a_dr :: \$1 exist and dir
-	# fns_bsh_004_is_ex_a_fl :: \$1 exist and fl 
+	# fns_bsh_004_is_ex_a_fl :: \$1 exist and fl
 	# fns_bsh_004_if_ex_tn_dr :: if \$1 exist then dir
 	# fns_bsh_004_if_ex_tn_fl :: if \$1 exist then fl
 
@@ -239,6 +239,7 @@ fns_bsh_002_f2fs_1() {
 	# fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
 	# fns_bsh_002_d2md_1 :: IEN=$1(dr with struct) REN=$2(.md with anc)
 	# fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
+	# fns_bsh_002_f2fs \$1 IEN=fl_with path, \$2 REN=res_dr
 
 	# {{002_use_l}}
 

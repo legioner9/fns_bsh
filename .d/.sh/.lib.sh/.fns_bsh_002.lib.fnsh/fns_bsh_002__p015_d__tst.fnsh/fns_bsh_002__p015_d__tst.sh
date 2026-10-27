@@ -9,10 +9,10 @@ fns_bsh_002__p015_d__tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_17597_1965="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
-    local dr_pth_fn_17597_1965=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local fl_nm_fn_17597_1965=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local rnd=17597_1965
+    local fl_pth_fn_21696_509="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
+    local dr_pth_fn_21696_509=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local fl_nm_fn_21696_509=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local rnd=21696_509
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -146,6 +146,12 @@ fns_bsh_002__p015_d__tst(){
 	# 	return 1
 	# }
 
+	# fns_bsh_004_is_ex_a_dr_o_fl :: \$1 exist and (dir|fl)
+	# fns_bsh_004_is_ex_a_dr :: \$1 exist and dir
+	# fns_bsh_004_is_ex_a_fl :: \$1 exist and fl 
+	# fns_bsh_004_if_ex_tn_dr :: if \$1 exist then dir
+	# fns_bsh_004_if_ex_tn_fl :: if \$1 exist then fl
+
 	#-- {{003_val_ind}}
 		
 	#-- ~001_stn_env~
@@ -229,6 +235,11 @@ fns_bsh_002__p015_d__tst(){
 # fns_bsh_006_err_v :: l_00_echo_err::\$1->rnd \$2->nm ::
 #	l_00_echo_err "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
 
+# fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
+# fns_bsh_002_d2md_1 :: IEN=$1(dr with struct) REN=$2(.md with anc)
+# fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
+# fns_bsh_002_f2fs \$1 IEN=fl_with path, \$2 REN=res_dr
+
 # ~002_use_l~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_use_l.tml
 
@@ -287,8 +298,8 @@ fns_bsh_002__p015_d__tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_17597_1965 $@
+# fn_21696_509 $@
 
 # {{002_after}}
 
-#? fn_17597_1965 $@
+#? fn_21696_509 $@
