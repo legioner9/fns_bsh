@@ -284,8 +284,14 @@ fns_bsh_004_gig_bldr() {
 		fi
 	fi
 
-	l_00_echo_code "mkdir $(dirname $1)/_$(basename $1).d"
-	mkdir $(dirname $1)/_$(basename $1).d
+	if ! l_01_is_yes "?DO :: mkdir $(dirname $1)/_$(basename $1).d"; then
+		l_00_echo_code "mkdir $(dirname $1)/_$(basename $1).d"
+		mkdir $(dirname $1)/_$(basename $1).d
+	else
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} ANS_NO : 'mkdir $(dirname $1)/_$(basename $1).d', return 1${NRM}" >&2
+		return 1
+	fi
 
 	#-- {{002_body}}
 

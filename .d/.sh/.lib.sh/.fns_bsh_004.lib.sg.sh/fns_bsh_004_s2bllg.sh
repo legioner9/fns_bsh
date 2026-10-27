@@ -247,7 +247,23 @@ fns_bsh_004_s2bllg() {
 
 	#-- {{002_body}}
 
-	fns_bsh_004_gig_bldr "$(eval "echo \$arg_1_fn_${rnd}")"
+	fns_bsh_004_gig_bldr "$(eval "echo \$arg_1_fn_${rnd}")" || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_gig_bldr "$(eval "echo \$arg_1_fn_${rnd}")"', return 1${NRM}" >&2
+		return 1
+	}
+
+	fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")"
+
+	if ! l_01_is_yes "?DO :: echo '$(eval "echo \$arg_2_fn_${rnd}")' >> $(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")";then
+		echo $(eval "echo \$arg_2_fn_${rnd}") >> $(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")
+	else
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  ANS_NO : 'echo $(eval "echo \$arg_2_fn_${rnd}") >> $(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")', return 1${NRM}" >&2
+		return 1
+	fi
+
+
 
 	#-- ~001_exit~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_exit.tml

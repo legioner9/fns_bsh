@@ -327,8 +327,9 @@ source $(eval "echo \$prnt2_dr_pth_fn_${rnd}")/$(l_01_prs_f -n2 $(eval "echo \$d
 cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 
 fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))
-fns_bsh_006_info_v "${rnd}" main_fn
-$(fns_bsh_006_vv2e ${rnd} main_fn) arg1 arg2
+# fns_bsh_006_info_v "${rnd}" main_fn
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f "first string"
+
 
 #-- {{003_body}}
 	

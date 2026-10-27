@@ -29,3 +29,10 @@
     - ACT:: echo \">{IEN}\"
     - ARG:: \$1 = {IEN1}
     - FLW:: echo \">{IEN}\"
+
+### [[fbl4]]bllg2e
+- OVR::
+    - INI:: IEN1 is EN
+    - ACT:: echo \">{EN}:lg\"
+    - ARG:: \$1 = {IEN1}
+    - FLW:: echo \">{EN}:lg\"
