@@ -40,3 +40,21 @@
     - ACT:: echo \">{EN}:lg\"
     - ARG:: \$1 = {IEN1}
     - FLW:: echo \">{EN}:lg\"
+
+```
+bul (empty exf):
+- OVR::
+    - INI::
+    - ACT::
+    - ARG::
+    - FLW::
+```
+# do fns_bsh_002_cp3d_1
+- OVR::
+    - INI:: {IEN} dr with fl as [*.cpd], [*.cpf] , {REN} is copy {IEN} with diff  
+    - ACT:: cp {IEN} {REN} \\
+                cd {REN}/&{IEN} \\
+                cp $(cat *.cpf) *{*.cpd} \\
+                mv {*.cpd} {*.cpd} \\
+    - ARG::
+    - FLW::

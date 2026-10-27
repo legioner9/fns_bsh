@@ -63,4 +63,8 @@
 # fns_bsh_004_gig_bldr :: {REN} = >{IEN}, IEN is (f|dr), \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
 # fns_bsh_004_s2bllg :: echo \"IEN2\" > [>{IEN1}:lg]
 
+# fns_bsh_005_f2fs_d2md2 \$1:IEN=fl_lst_with_path \$2:REN=fl_md ::
+#   STP1:: fns_bsh_002_f2fs_1 {IEN} >{IEN}/res.d
+#   STP2:: fns_bsh_002_d2md_1 >{IEN}/res.d {REN}
+
 # {{002_use_l}}
