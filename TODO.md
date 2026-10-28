@@ -51,10 +51,12 @@ bul (empty exf):
 ```
 # do fns_bsh_002_cp3d_1
 - OVR::
-    - INI:: {IEN} dr with fl as [*.cpd], [*.cpf] , {REN} is copy {IEN} with diff  
-    - ACT:: cp {IEN} {REN} \\
+    CPE=([*.cpd]|[*.cpf])
+    - INI:: {IEN} dr with CPE , {REN} is copy {IEN} with diff  
+    - ACT:: {REN} is copy {IEN} with diff
+    - ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff
+    - FLW:: cp {IEN} {REN} \\
                 cd {REN}/&{IEN} \\
-                cp $(cat *.cpf) *{*.cpd} \\
-                mv {*.cpd} {*.cpd} \\
-    - ARG::
-    - FLW::
+                mv &{CPE} _&{CPE} \\
+                cp $(cat {CPE}) &{CPE}.d \\
+                mv &{CPE} _&{CPE} \\
