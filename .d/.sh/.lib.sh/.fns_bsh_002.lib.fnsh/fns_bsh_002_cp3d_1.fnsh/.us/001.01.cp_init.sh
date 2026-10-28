@@ -47,12 +47,23 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	fns_bsh_002_cp3d_1_cp_init() {
 
 		l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
-		[[ -z "$1" ]] && {
-			# snp "out_err"
-			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/yy.us.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
-			return 1
-		}
+		# [[ -z "$1" ]] && {
+		# 	# snp "out_err"
+		# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		# 	echo -e "${ECHO_RET1} in $(eval "echo \$dr_pth_fn_${rnd}")/.us/yy.us.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+		# 	return 1
+		# }
+		if [[ -d $(eval "echo \$arg_2_fn_${rnd}") ]]; then
+
+			if ! l_01_is_yes "?DO:: rm -r $(eval "echo \$arg_2_fn_${rnd}")"; then
+				if [[ -d $(eval "echo \$arg_2_fn_${rnd}")~ ]]; then
+					l_00_echo_sys "rm -r $(eval "echo \$arg_2_fn_${rnd}")~"
+					rm -r $(eval "echo \$arg_2_fn_${rnd}")~
+				fi
+				l_00_echo_sys "cp -r $(eval "echo \$arg_2_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")~"
+				cp -r "$(eval "echo \$arg_2_fn_${rnd}")" "$(eval "echo \$arg_2_fn_${rnd}")~"
+			fi
+		fi
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}

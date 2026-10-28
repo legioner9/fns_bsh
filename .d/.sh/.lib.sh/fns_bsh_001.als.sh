@@ -110,15 +110,21 @@ fns_bsh_001_als_epm_upd_prog() {
 
 fns_bsh_001_als_epm_upd_pckg() {
 
+	epm upgrade
+	# epm upgrade "https://download.etersoft.ru/pub/Korinf/x86_64/ALTLinux/p11/eepm-*.noarch.rpm"
 	epm update -y
 	epm play --update all
 	epm ei -y
 
 }
 
-fns_bsh_001_als_puml2d(){
+fns_bsh_001_als_puml2d() {
 
 	fns_bsh_002_puml2d $1 $2 @ -f
 	gwenview $1/$2.png
 
+}
+fns_bsh_001_als_epm_proxy() {
+
+	cat /etc/eepm/eepm.conf
 }
