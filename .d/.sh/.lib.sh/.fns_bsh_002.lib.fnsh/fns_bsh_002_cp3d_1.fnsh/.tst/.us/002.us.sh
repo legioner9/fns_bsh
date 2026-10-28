@@ -33,11 +33,15 @@ l_00_echo_info "this :: pth_to_tst_dr_res :: $(eval "echo \$prnt1_dr_pth_fn_${rn
 # l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
 # $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
 
+# ${rnd} from g.sh
+
 fns_bsh_006_gv ${rnd} main_fn_nm $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")")
 fns_bsh_006_warn_v ${rnd} main_fn_nm
 fns_bsh_006_vv2e ${rnd} main_fn_nm
 
-l_00_echo_sys "$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
-$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
+# l_00_echo_sys "$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
+$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/v61.d $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/result.d/result_1.d
+
+
 
 #-- {{002_002_us_sh}}

@@ -57,6 +57,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# return 0
 	# }
 
+	fns_bsh_002_cp3d_1_cp_init
+
 fi
 
 	#-- {{002_001_us_sh}}
