@@ -9,10 +9,10 @@ fns_bsh_002__p015_d__tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_21696_509="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
-    local dr_pth_fn_21696_509=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local fl_nm_fn_21696_509=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local rnd=21696_509
+    local fl_pth_fn_7979_7961="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
+    local dr_pth_fn_7979_7961=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local fl_nm_fn_7979_7961=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local rnd=7979_7961
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -238,7 +238,25 @@ fns_bsh_002__p015_d__tst(){
 # fns_bsh_004_f2fs :: \$1 :: IEN=fl_with_ent_to_path(pth_src:rel_pth_out_root) , {REN}={IEN}.d
 # fns_bsh_002_d2md_1 :: IEN=$1(dr with struct) REN=$2(.md with anc)
 # fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
-# fns_bsh_002_f2fs \$1 IEN=fl_with path, \$2 REN=res_dr
+# fns_bsh_002_f2fs_1 \$1 IEN=fl_with path, \$2 REN=res_dr
+
+# IFS:
+# 	BELONG_DR [bldr]:
+# 		>{EN} = *{EN}/_&{EN}.d
+# 		LOG_FL [bllg]:
+# 			>{EN}:lg = >{EN}/&{EN}.lg.f
+# 		LOG_FL [blex]:
+# 			>{EN}:ex = >{EN}/&{EN}.ex.f
+
+# fns_bsh_004_bldr2e :: \$1 = {IEN1} ACT:: echo \">{IEN}\"
+# >{EN}:lg = >{EN}/&{EN}.lg.f
+# fns_bsh_004_bllg2e :: echo \">{EN}:lg\"
+# fns_bsh_004_gig_bldr :: {REN} = >{IEN}, IEN is (f|dr), \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
+# fns_bsh_004_s2bllg :: echo \"IEN2\" > [>{IEN1}:lg]
+
+# fns_bsh_005_f2fs_d2md2 \$1:IEN=fl_lst_with_path \$2:REN=fl_md ::
+#   STP1:: fns_bsh_002_f2fs_1 {IEN} >{IEN}/res.d
+#   STP2:: fns_bsh_002_d2md_1 >{IEN}/res.d {REN}
 
 # ~002_use_l~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_use_l.tml
@@ -298,8 +316,8 @@ fns_bsh_002__p015_d__tst(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_21696_509 $@
+# fn_7979_7961 $@
 
 # {{002_after}}
 
-#? fn_21696_509 $@
+#? fn_7979_7961 $@

@@ -42,8 +42,9 @@
     - FLW:: echo \">{EN}:lg\"
 
 ```
-bul (empty exf):
+bul (empty exa):
 - OVR::
+    - DFN::
     - INI::
     - ACT::
     - ARG::
@@ -51,7 +52,7 @@ bul (empty exf):
 ```
 # do fns_bsh_002_cp3d_1
 - OVR::
-    CPE=([*.cpd]|[*.cpf])
+    - DFN:: CPE=([\*.cpd]|[\*.cpf])
     - INI:: {IEN} dr with CPE , {REN} is copy {IEN} with diff  
     - ACT:: {REN} is copy {IEN} with diff
     - ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff

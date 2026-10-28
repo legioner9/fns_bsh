@@ -2,7 +2,7 @@
 l_00_echo_info "that :: 002.us.sh"
 l_00_echo_ques "... DFN:: fn()...| BODY::..."
 # ~001_002_us_sh~
-# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/011.dom.tml.d/001_001_us_sh.tml
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/011.dom.tml.d/001_002_us_sh.tml
 # first::
 # flow :: exec main_fn=$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") with res.d
 
@@ -30,7 +30,15 @@ l_00_echo_err "START_TST:: ; flw_chr: EXAMPLE EXEC(mast be edited) :: fn res.d i
 l_00_echo_info "this :: name_fn :: $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")")"
 l_00_echo_info "this :: pth_to_tst_dr_res :: $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d"
 
-l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
-$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
+# l_00_echo_sys "$(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
+# $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")") $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
+
+fns_bsh_006_gv ${rnd} main_fn_nm $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")")
+fns_bsh_006_warn_v ${rnd} main_fn_nm
+fns_bsh_006_vv2e ${rnd} main_fn_nm
+
+l_00_echo_sys "$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
+$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
+
 
 #-- {{002_002_us_sh}}
