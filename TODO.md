@@ -73,10 +73,17 @@ bul (empty exa):
             
 
 
-## [[fbl4]]bbcp 
+## [[fbl4]]gig_bbcp 
 - OVR::
     - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
     - INI:: {IEN} is (dr|fl)
     - ACT:: cp {IEN} {IEN~}
     - ARG:: \$1 {IEN}
     - FLW:: ifexst {IEN~} thn rm {IEN~} ; cp {IEN} {IEN~}
+
+## [[fbl4]]bbcp2e
+    - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+    - INI:: {IEN} is pth    
+    - ACT:: cp {IEN} {IEN~}
+    - ARG:: \$1 {IEN}
+    - FLW:: echo \"{IEN~}\"
