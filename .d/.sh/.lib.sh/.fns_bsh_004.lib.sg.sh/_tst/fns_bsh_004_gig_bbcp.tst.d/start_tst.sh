@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_14015_13490(){
+fn_26520_7917(){
 	
 	#--~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
@@ -9,10 +9,10 @@ fn_14015_13490(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_14015_13490="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_bbcp.tst.d/start_tst.sh"
-    local dr_pth_fn_14015_13490=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_bbcp.tst.d/start_tst.sh)
-    local fl_nm_fn_14015_13490=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_bbcp.tst.d/start_tst.sh)
-    local rnd=14015_13490
+    local fl_pth_fn_26520_7917="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bbcp.tst.d/start_tst.sh"
+    local dr_pth_fn_26520_7917=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bbcp.tst.d/start_tst.sh)
+    local fl_nm_fn_26520_7917=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bbcp.tst.d/start_tst.sh)
+    local rnd=26520_7917
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -206,7 +206,7 @@ fn_14015_13490(){
 	# [[ -z "$1" ]] && {
 	#     # snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_bbcp.tst.d/start_tst.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
+	#     echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bbcp.tst.d/start_tst.sh , line=${LINENO} :: ARG_1_NOT_DEFINE is ..., return 1${NRM}" >&2
 	#     return 1
 	# }
 
@@ -219,7 +219,7 @@ fn_14015_13490(){
 	# [[ -d "$2" ]] || {
 	# 	# snp "out_err"
 	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'
-	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_bbcp.tst.d/start_tst.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
+	# 	echo -e "${ECHO_RET1}in file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_bbcp.tst.d/start_tst.sh , line=${LINENO} :: ARG_2_NOT_DR is ..., return 1${NRM}" >&2
 	# 	return 1
 	# }	
 
@@ -362,10 +362,13 @@ fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}
 fns_bsh_006_info_v "${rnd}" main_fn
 
 rm -r $(eval "echo \$dr_pth_fn_${rnd}")/res.d
+rm -r $(eval "echo \$dr_pth_fn_${rnd}")/_res.d.d/
 cp -r $(eval "echo \$dr_pth_fn_${rnd}")/init.d $(eval "echo \$dr_pth_fn_${rnd}")/res.d
 
-$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/init.f
+
 $(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d
+$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/init.f
+
 
 #-- {{003_body}}
 	
@@ -381,8 +384,8 @@ $(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_14015_13490 $@
+fn_26520_7917 $@
 
 # {{002_after}}
 
-#? fn_14015_13490 $@
+#? fn_26520_7917 $@
