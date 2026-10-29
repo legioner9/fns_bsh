@@ -72,8 +72,8 @@ bul (empty exa):
 
 ## [[fbl4]]bbcp 
 - OVR::
-    - DFN::
+    - DFN:: {IEN~} = >{IEN}/&{IEN}~
     - INI:: {IEN} is (dr|fl)
-    - ACT:: cp {IEN} >{IEN}/&{IEN}~
-    - ARG::
-    - FLW::
+    - ACT:: cp {IEN} {BIEN}
+    - ARG:: \$1 {IEN}
+    - FLW:: ifexst {BIEN} 
