@@ -41,14 +41,19 @@ fns_bsh_004_gig_bbcp() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing :: cp IEN to {IEN~}
 			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - {IEN} is (dr|fl)
+			\$2 - 
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
+			- DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+			- INI:: {IEN} is (dr|fl)
+			- ACT:: cp {IEN} {IEN~}
+			- ARG:: \$1 {IEN}
+			- FLW:: ifexst {IEN~} thn rm {IEN~} ; cp {IEN} {IEN~}
 			flow_tst ::
             exa use ::
             far use ::
@@ -130,11 +135,11 @@ fns_bsh_004_gig_bbcp() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# if ! fns_bsh_004_is_ex_a_fl "$1"; then
-	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
-	# 	return 1
-	# fi
+	if ! fns_bsh_004_is_ex_a_fl "$1"; then
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
+		return 1
+	fi
 
 	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
 	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"

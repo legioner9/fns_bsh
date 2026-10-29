@@ -62,12 +62,12 @@ bul (empty exa):
                 cp $(cat {CPE}) &{CPE}.d \\
                 mv &{CPE} _&{CPE} \\
 
-## [[fbl4]]qrm_bbcp 
+## [[fbl4]]bbcp_qrm 
 - OVR::
     - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
-    - INI:: {IEN} (dr|fl) {REN} (dr|fl)
-    - ACT:: {REN} = cp with ques bbcp {IEN}
-    - ARG:: \$1 {IEN} \$2 {REN}
+    - INI:: {IEN} (dr|fl)
+    - ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) -a (ques rm {IEN})
+    - ARG:: \$1 {IEN} 
     - FLW:: ifques [DO_RM_IEN] thn <[[fbl4]]bbcp {IEN}> els \<[[err1]]> fi
     
             
