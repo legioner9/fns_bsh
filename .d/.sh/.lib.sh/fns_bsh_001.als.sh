@@ -127,4 +127,5 @@ fns_bsh_001_als_puml2d() {
 fns_bsh_001_als_epm_proxy() {
 
 	cat /etc/eepm/eepm.conf
+	
 }

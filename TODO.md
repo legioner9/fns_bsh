@@ -62,10 +62,18 @@ bul (empty exa):
                 cp $(cat {CPE}) &{CPE}.d \\
                 mv &{CPE} _&{CPE} \\
 
-## [[fbl4]]rm_qu_bcp 
+## [[fbl4]]rm_qu_bbcp 
 - OVR::
     - DFN:: 
     - INI:: {IEN} (dr|fl) {REN} (dr|fl)
     - ACT:: {REN} = cp with ques bcp {IEN}
     - ARG:: \$1 {IEN} \$2 {REN}
-    - FLW:: (if [REN_EXST] thn (ifques [DO_RM_REN] thn (rm {REN}~ ; cp {REN} >{REN}/~ ; )))
+    - FLW:: (if [REN_EXST] thn (ifques [DO_RM_REN] thn (rm {REN}~ ; cp {REN} >{REN}/&{REN}~ ; rm {REN})))
+
+## [[fbl4]]bbcp 
+- OVR::
+    - DFN::
+    - INI:: {IEN} is (dr|fl)
+    - ACT:: cp {IEN} >{IEN}/&{IEN}~
+    - ARG::
+    - FLW::
