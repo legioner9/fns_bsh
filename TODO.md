@@ -68,7 +68,7 @@ bul (empty exa):
     - INI:: {IEN} (dr|fl) {REN} (dr|fl)
     - ACT:: {REN} = cp with ques bbcp {IEN}
     - ARG:: \$1 {IEN} \$2 {REN}
-    - FLW:: ifques [DO_RM_IEN] thn <[[fbl4]]bbcp {IEN}\> els \<err1\>
+    - FLW:: ifques [DO_RM_IEN] thn <[[fbl4]]bbcp {IEN}> els \<[[err1]]> fi
     
             
 
