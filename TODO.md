@@ -53,7 +53,7 @@ bul (empty exa):
 # do fns_bsh_002_cp3d_1
 - OVR::
     - DFN:: CPE=([\*.cpd]|[\*.cpf])
-    - INI:: {IEN} dr with CPE , {REN} is copy {IEN} with diff  
+    - INI:: {IEN} dr with CPE , {REN} is copy {IEN} with diff accoding CPE
     - ACT:: {REN} is copy {IEN} with diff
     - ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff
     - FLW:: cp {IEN} {REN} \\
@@ -69,9 +69,6 @@ bul (empty exa):
     - ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) -a (ques rm {IEN})
     - ARG:: \$1 {IEN} 
     - FLW:: ifques [DO_RM_IEN] thn <[[fbl4]]bbcp {IEN}> els \<[[err1]]> fi
-    
-            
-
 
 ## [[fbl4]]gig_bbcp 
 - OVR::
