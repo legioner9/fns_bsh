@@ -1,0 +1,1 @@
+fns_bsh_002_f2fs_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_cp3d_1.fnsh/.g.tst.d/res.d/v61.d/file1.cp ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_cp3d_1.fnsh/.g.tst.d/res.d/v61.d/file1.cp.tmp

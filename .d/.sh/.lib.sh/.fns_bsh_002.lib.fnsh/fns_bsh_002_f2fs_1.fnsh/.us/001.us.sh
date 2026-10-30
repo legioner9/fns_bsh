@@ -44,7 +44,7 @@ eval "flow_1_${rnd}=dr"
 
 fns_bsh_006_warn_v ${rnd} fn_nm # fns_bsh_002_f2fs_1
 
-echo "$(fns_bsh_006_vv2e ${rnd} fn_nm) '$@'"
+# echo "$(fns_bsh_006_vv2e ${rnd} fn_nm) '$@'"
 
 fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"

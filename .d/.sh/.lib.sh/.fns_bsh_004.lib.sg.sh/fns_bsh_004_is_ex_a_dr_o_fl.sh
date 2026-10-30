@@ -249,7 +249,7 @@ fns_bsh_004_is_ex_a_dr_o_fl() {
 
 	[[ -d "$1" ]] || [[ -f "$1" ]] || {
 		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '[[ -d '$1' ]] || [[ -d '$1' ]]', return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '[[ -d '$1' ]] || [[ -f '$1' ]]', return 1${NRM}" >&2
 		return 1
 	}
 

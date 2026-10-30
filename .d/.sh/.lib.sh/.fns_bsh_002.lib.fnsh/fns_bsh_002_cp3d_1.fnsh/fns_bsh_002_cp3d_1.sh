@@ -56,7 +56,7 @@ fns_bsh_002_cp3d_1() {
 			- ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff
 			- FLW:: <[[fbl4]]gig_bbcp {IEN}>\\    
 						for all {CPE} in *{REN}/*.cp
-							<[[fbl4]]f2fs_1 {CPE} *{IEN}/{&CPE}_
+							<[[fbl2]]f2fs_1 {CPE} *{IEN}/{&				CPE}_
 							<[[fbl4]]bbcp_qrm {CPE}>
 							mv *{IEN}/{&CPE}_ *{IEN}/{&CPE}
 			flow_tst ::
