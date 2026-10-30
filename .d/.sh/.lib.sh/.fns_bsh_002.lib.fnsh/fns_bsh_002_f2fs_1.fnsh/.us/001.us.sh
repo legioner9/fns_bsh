@@ -61,13 +61,14 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	l_00_echo_info "\$root_d=$root_d_5436asd"
 
 	if [[ -d "$root_d_5436asd" ]]; then
-		if ! l_01_is_yes "REMOVE_DIR and CONTINUE? $root_d_5436asd"; then
-			rm -r $root_d_5436asd
-		else
+		# if ! l_01_is_yes "REMOVE_DIR and CONTINUE? $root_d_5436asd"; then
+		rm -r $root_d_5436asd || {
+			# else
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  NOT_REMOVE_DIR : '$root_d_5436asd', return 1${NRM}" >&2
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  FAIL : 'rm -r $root_d_5436asd', return 1${NRM}" >&2
 			return 1
-		fi
+			# fi
+		}
 	fi
 
 	local arr_line_43cdsa=()
