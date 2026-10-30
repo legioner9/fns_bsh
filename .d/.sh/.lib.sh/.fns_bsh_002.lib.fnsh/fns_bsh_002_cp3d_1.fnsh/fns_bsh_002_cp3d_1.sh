@@ -143,11 +143,11 @@ fns_bsh_002_cp3d_1() {
 		return 1
 	fi
 
-	if ! fns_bsh_004_is_ex_a_dr "$(dirname $2)"; then
-		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_dr $(dirname $2)', return 1${NRM}" >&2
-		return 1
-	fi
+	# if ! fns_bsh_004_is_ex_a_dr "$(dirname $2)"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_dr $(dirname $2)', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
 	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"

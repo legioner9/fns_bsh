@@ -40,7 +40,7 @@ fns_bsh_006_warn_v ${rnd} main_fn_nm
 fns_bsh_006_vv2e ${rnd} main_fn_nm
 
 # l_00_echo_sys "$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
-$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/v61.d $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/result.d/result_1.d
+$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/v61.d
 
 
 

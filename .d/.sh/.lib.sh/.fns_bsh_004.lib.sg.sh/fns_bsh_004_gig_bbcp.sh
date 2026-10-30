@@ -135,9 +135,9 @@ fns_bsh_004_gig_bbcp() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	if ! fns_bsh_004_is_ex_a_fl "$1"; then
+	if ! fns_bsh_004_is_ex_a_dr_o_fl "$1"; then
 		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_dr_o_fl $1', return 1${NRM}" >&2
 		return 1
 	fi
 
