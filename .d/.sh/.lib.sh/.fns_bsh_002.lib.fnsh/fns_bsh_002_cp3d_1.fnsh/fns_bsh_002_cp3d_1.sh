@@ -41,14 +41,24 @@ fns_bsh_002_cp3d_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing ::  \$1 IEN , REN is IEN<CPE (see FN_DSL)
 			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - {IEN}
+			\$2 - {IEN}
 			\$3 - 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
+			- DFN:: CPE=fl in {IEN} as ([\*.cp]) with path (fl|dr)
+            		{IEN<CPE} - {IEN} with diff accoding CPE
+			- INI:: {IEN} dr with CPE , {REN}={IEN<CPE}
+			- ACT:: {REN}={IEN<CPE}
+			- ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff
+			- FLW:: <[[fbl4]]gig_bbcp {IEN}>\\    
+						for all {CPE} in *{REN}/*.cp
+							<[[fbl4]]f2fs_1 {CPE} *{IEN}/{&CPE}_
+							<[[fbl4]]bbcp_qrm {CPE}>
+							mv *{IEN}/{&CPE}_ *{IEN}/{&CPE}
 			flow_tst ::
             exa use ::
             far use ::

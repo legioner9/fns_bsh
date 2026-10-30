@@ -52,15 +52,16 @@ bul (empty exa):
 ```
 # do fns_bsh_002_cp3d_1
 - OVR::
-    - DFN:: CPE=([\*.cpd]|[\*.cpf])
-    - INI:: {IEN} dr with CPE , {REN} is copy {IEN} with diff accoding CPE
-    - ACT:: {REN} is copy {IEN} with diff
+    - DFN:: CPE=fl in {IEN} as ([\*.cpd]|[\*.cpf]) with path (dr|fl)
+            {IEN<CPE} - {IEN} with diff accoding CPE
+    - INI:: {IEN} dr with CPE , {REN}={IEN<CPE}
+    - ACT:: {REN}={IEN<CPE}
     - ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff
-    - FLW:: cp {IEN} {REN} \\
-                cd {REN}/&{IEN} \\
-                mv &{CPE} _&{CPE} \\
-                cp $(cat {CPE}) &{CPE}.d \\
-                mv &{CPE} _&{CPE} \\
+    - FLW:: <[[fbl4]]gig_bbcp {IEN}>\\    
+            for all {CPE}         
+                <[[fbl4]]f2fs_1 {CPE} *{IEN}/{&CPE}_
+                <[[fbl4]]_bbcp_qrm {CPE}>
+                mv *{IEN}/{&CPE}_ *{IEN}/{&CPE}
 
 ## [[fbl4]]bbcp_qrm 
 - OVR::
