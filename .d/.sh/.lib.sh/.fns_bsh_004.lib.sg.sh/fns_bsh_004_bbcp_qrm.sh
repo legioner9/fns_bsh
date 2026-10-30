@@ -266,50 +266,50 @@ fns_bsh_004_bbcp_qrm() {
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
 	# l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
-	if ! l_01_is_yes "?DO :: rm $(eval "echo \$arg_1_fn_${rnd}")"; then
-		l_00_echo_sys "fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}")"
-		fns_bsh_004_gig_bbcp $(eval "echo \$arg_1_fn_${rnd}") || {
+	# if ! l_01_is_yes "?DO :: rm $(eval "echo \$arg_1_fn_${rnd}")"; then
+	l_00_echo_sys "fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}")"
+	fns_bsh_004_gig_bbcp $(eval "echo \$arg_1_fn_${rnd}") || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
+		return 1
+	}
+	if [[ -d $(eval "echo \$arg_1_fn_${rnd}") ]]; then
+		l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")"
+
+		#! tst - comment read in production uncomment to test
+		# read -p "up err during rm rename $(eval "echo \$arg_1_fn_${rnd}") to $(eval "echo \$arg_1_fn_${rnd}")X"
+		rm -r $(eval "echo \$arg_1_fn_${rnd}") || {
+
+			# rollback e~
+			l_00_echo_code "rollback e~ :: rm $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))"
+			rm -r $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))
+
 			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'rm -r $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
 			return 1
 		}
-		if [[ -d $(eval "echo \$arg_1_fn_${rnd}") ]]; then
-			l_00_echo_code "rm -r $(eval "echo \$arg_1_fn_${rnd}")"
-
-			#! tst - comment read in production uncomment to test
-			# read -p "up err during rm rename $(eval "echo \$arg_1_fn_${rnd}") to $(eval "echo \$arg_1_fn_${rnd}")X"
-			rm -r $(eval "echo \$arg_1_fn_${rnd}") || {
-
-				# rollback e~
-				l_00_echo_code "rollback e~ :: rm $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))"
-				rm -r $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))
-
-				l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'rm -r $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
-				return 1
-			}
-		fi
-
-		if [[ -f $(eval "echo \$arg_1_fn_${rnd}") ]]; then
-
-			l_00_echo_code "rm $(eval "echo \$arg_1_fn_${rnd}")"
-			rm $(eval "echo \$arg_1_fn_${rnd}") || {
-
-				# rollback e~
-				l_00_echo_code "rollback e~:: rm $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))"
-				rm $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))
-
-				l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'rm -r $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
-				return 1
-			}
-		fi
-
-	else
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  ASWER_NO : '?DO :: rm $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
-		return 1
 	fi
+
+	if [[ -f $(eval "echo \$arg_1_fn_${rnd}") ]]; then
+
+		l_00_echo_code "rm $(eval "echo \$arg_1_fn_${rnd}")"
+		rm $(eval "echo \$arg_1_fn_${rnd}") || {
+
+			# rollback e~
+			l_00_echo_code "rollback e~:: rm $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))"
+			rm $(fns_bsh_004_bbcp2e $(eval "echo \$arg_1_fn_${rnd}"))
+
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'rm -r $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
+			return 1
+		}
+	fi
+
+	# else
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  ASWER_NO : '?DO :: rm $(eval "echo \$arg_1_fn_${rnd}")', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	#-- {{002_body}}
 
