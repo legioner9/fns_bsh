@@ -71,6 +71,14 @@ bul (empty exa):
     - ARG:: \$1 {IEN} 
     - FLW:: ifques [DO_RM_IEN] thn <[[fbl4]]bbcp {IEN}> els \<[[err1]]> fi
 
+## [[fbl4]]bbcp_rm 
+- OVR::
+    - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+    - INI:: {IEN} (dr|fl)
+    - ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) ; (rm {IEN})
+    - ARG:: \$1 {IEN} 
+    - FLW::  <[[fbl4]]bbcp {IEN}> ; [DO_RM_IEN] 
+
 ## [[fbl4]]gig_bbcp 
 - OVR::
     - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)

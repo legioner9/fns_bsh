@@ -41,11 +41,20 @@ fns_bsh_004_bbcp_rm() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing :: (?) \$1 {IEN} (dr|fl) rm with <[[fbl4]]bbcp {IEN}>
 			REN=
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - {IEN} (dr|fl)
+			\$2 -
 			\$3 - 
+			flow_FN ::
+				SWITCH_ARG in /.us/00N.us.sh :: choce ::
+					- word1 ...
+
+			- DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+			- INI:: {IEN} (dr|fl)
+			- ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) -a (rm {IEN})
+			- ARG:: \$1 {IEN} 
+			- FLW::  <[[fbl4]]bbcp {IEN}> ; [DO_RM_IEN] 
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
@@ -135,6 +144,12 @@ fns_bsh_004_bbcp_rm() {
 	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
 	# 	return 1
 	# fi
+
+		if ! fns_bsh_004_is_ex_a_dr_o_fl "$1"; then
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_dr_o_fl $1', return 1${NRM}" >&2
+		return 1
+	fi
 
 	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
 	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"

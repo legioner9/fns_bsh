@@ -103,7 +103,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# rm -r $(dirname $item)/_$(basename $item).tmp.d
 
 		# read -p "be :: fns_bsh_004_bbcp_qrm $item"
-		fns_bsh_004_bbcp_qrm $item || {
+		fns_bsh_004_bbcp_rm $item || {
 			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_bbcp_qrm $item', return 1${NRM}" >&2
 			return 1
