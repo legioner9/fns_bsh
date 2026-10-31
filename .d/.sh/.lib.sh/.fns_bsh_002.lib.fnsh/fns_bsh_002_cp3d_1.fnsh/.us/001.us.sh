@@ -84,16 +84,16 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			return 1
 		}
 		
-		read -p "be :: cp -r $(dirname $item)/$(basename $item).tmp $(dirname $item)"
+		# read -p "be :: cp -r $(dirname $item)/$(basename $item).tmp $(dirname $item)"
 		cp -r $(dirname $item)/$(basename $item).tmp $(dirname $item)
 
-		read -p "be :: rm -r $(dirname $item)/$(basename $item).tmp"
+		# read -p "be :: rm -r $(dirname $item)/$(basename $item).tmp"
 		rm -r $(dirname $item)/$(basename $item).tmp
 
-		read -p "be :: rm -r $(dirname $item)/_$(basename $item).tmp.d"
+		# read -p "be :: rm -r $(dirname $item)/_$(basename $item).tmp.d"
 		rm -r $(dirname $item)/_$(basename $item).tmp.d
 
-		read -p "be :: rm $item"
+		# read -p "be :: rm $item"
 		rm $item
 
 		# fns_bsh_002_f2fs_1 $item $(dirname $item)/$(basename $item)_
