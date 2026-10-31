@@ -85,17 +85,29 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			return 1
 		}
 
-		read -p "be :: cp -r $(dirname $item)/.tmp/$(basename $item).tmp/. $(dirname $item)"
-		cp -r $(dirname $item)/.tmp/$(basename $item).tmp/. $(dirname $item)
+		# read -p "be :: cp -r $(dirname $item)/.tmp/$(basename $item).tmp/. $(dirname $item)"
+		cp -r $(dirname $item)/.tmp/$(basename $item).tmp/. $(dirname $item) || {
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r $(dirname $item)/.tmp/$(basename $item).tmp/. $(dirname $item)', return 1${NRM}" >&2
+			return 1
+		}
 
-		read -p "be :: rm -r $(dirname $item)/.tmp"
-		rm -r $(dirname $item)/.tmp
+		# read -p "be :: rm -r $(dirname $item)/.tmp"
+		rm -r $(dirname $item)/.tmp || {
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'm -r $(dirname $item)/.tmp', return 1${NRM}" >&2
+			return 1
+		}
 
 		# read -p "be :: rm -r $(dirname $item)/_$(basename $item).tmp.d"
 		# rm -r $(dirname $item)/_$(basename $item).tmp.d
 
-		read -p "be :: fns_bsh_004_bbcp_qrm $item"
-		fns_bsh_004_bbcp_qrm $item
+		# read -p "be :: fns_bsh_004_bbcp_qrm $item"
+		fns_bsh_004_bbcp_qrm $item || {
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_bbcp_qrm $item', return 1${NRM}" >&2
+			return 1
+		}
 
 		# fns_bsh_002_f2fs_1 $item $(dirname $item)/$(basename $item)_
 
