@@ -83,10 +83,19 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_002_f2fs_1 $item $(dirname $item)/$(basename $item).tmp', return 1${NRM}" >&2
 			return 1
 		}
-		cp -r $(dirname $item)/$(basename $item).tmp/. $(dirname $item)
+		
+		read -p "be :: cp -r $(dirname $item)/$(basename $item).tmp $(dirname $item)"
+		cp -r $(dirname $item)/$(basename $item).tmp $(dirname $item)
+
+		read -p "be :: rm -r $(dirname $item)/$(basename $item).tmp"
 		rm -r $(dirname $item)/$(basename $item).tmp
+
+		read -p "be :: rm -r $(dirname $item)/_$(basename $item).tmp.d"
 		rm -r $(dirname $item)/_$(basename $item).tmp.d
+
+		read -p "be :: rm $item"
 		rm $item
+
 		# fns_bsh_002_f2fs_1 $item $(dirname $item)/$(basename $item)_
 
 	done
