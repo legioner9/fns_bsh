@@ -317,7 +317,11 @@ fn_3183_20156() {
 
 	#.. init_fl :: $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
 	# l_00_echo_sys "cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f"
-	# cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+	cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+
+	fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))
+	fns_bsh_006_info_v "${rnd}" main_fn
+	$(fns_bsh_006_vv2e ${rnd} main_fn) -h
 
 	rm "$(eval "echo \$dr_pth_fn_${rnd}")/result.md.d/result.md"
 

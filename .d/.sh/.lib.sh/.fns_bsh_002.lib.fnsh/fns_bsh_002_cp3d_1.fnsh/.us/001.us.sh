@@ -68,6 +68,9 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	l_00_echo_sys "fns_bsh_004_gig_bbcp $(eval "echo \$arg_1_fn_${rnd}")"
 	fns_bsh_004_gig_bbcp "$(eval "echo \$arg_1_fn_${rnd}")"
 
+	fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+	# fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+
 	# read -p "before for"
 	local item=
 	for item in $(l_02_dr2e $(eval "echo \$arg_1_fn_${rnd}") cp); do

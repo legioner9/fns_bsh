@@ -273,9 +273,41 @@ fns_bsh_005_f2fs_d2md2() {
 
 	# path lst
 
-	fns_bsh_002_f2fs_1 "$(eval "echo \$arg_1_fn_${rnd}")" $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d
-	fns_bsh_002_cp3d_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d
-	fns_bsh_002_d2md_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d "$(eval "echo \$arg_2_fn_${rnd}")"
+	# cat $(eval "echo \$dr_pth_fn_${rnd}")/init.d/init.f
+
+	# fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))
+	# fns_bsh_006_info_v "${rnd}" main_fn
+	# $(fns_bsh_006_vv2e ${rnd} main_fn) -h
+	# $(fns_bsh_006_vv2e ${rnd} main_fn) arg1 arg2
+
+	fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+	fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+
+	fns_bsh_004_gig_bldr "$($(eval "echo \$arg_1_fn_${rnd}"))"
+
+	mkdir -p $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'mkdir $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d', return 1${NRM}" >&2
+		return 1
+	}
+
+	fns_bsh_002_f2fs_1 "$(eval "echo \$arg_1_fn_${rnd}")" $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_002_f2fs_1 $(eval "echo \$arg_1_fn_${rnd}") $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d', return 1${NRM}" >&2
+		return 1
+	}
+
+	fns_bsh_002_cp3d_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_002_cp3d_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d', return 1${NRM}" >&2
+		return 1
+	}
+
+	fns_bsh_002_d2md_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d "$(eval "echo \$arg_2_fn_${rnd}")" || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '...', return 1${NRM}" >&2
+		return 1
+	}
 
 	#-- {{002_body}}
 
