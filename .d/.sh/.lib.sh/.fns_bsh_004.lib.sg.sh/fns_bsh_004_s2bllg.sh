@@ -267,6 +267,8 @@ fns_bsh_004_s2bllg() {
 	#? v1
 
 	# if ! l_01_is_yes "?DO :: echo '$(eval "echo \$arg_2_fn_${rnd}")' >> $(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")"; then
+	l_00_echo_code "echo # $(date) >>$(fns_bsh_004_bllg2e $(eval "echo \$arg_1_fn_${rnd}"))"
+	echo "# $(date)" >>"$(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")"
 	l_00_echo_code "echo $(eval "echo \$arg_2_fn_${rnd}") >>$(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")"
 	echo "$(eval "echo \$arg_2_fn_${rnd}")" >>"$(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")"
 	lfoe_path_to_var "$(fns_bsh_004_bllg2e "$(eval "echo \$arg_1_fn_${rnd}")")"
