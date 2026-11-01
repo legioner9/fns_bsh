@@ -5,7 +5,7 @@ fns_bsh_004_bbcp2e(){
 
 	#-- ~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
-	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
+	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 

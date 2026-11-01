@@ -41,7 +41,7 @@ fns_bsh_002_f2fs_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: \$1 IEN=fl_with path, \$2 REN=res_dr
+        doing :: \$1 IEN=fl_with path, \$2 REN=res_dr 
 			IEN :: 
 				
 			\$1 - {IEN}
@@ -128,11 +128,11 @@ fns_bsh_002_f2fs_1() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	# if ! fns_bsh_004_is_ex_a_fl "$1"; then
-	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
-	# 	return 1
-	# fi
+	if ! fns_bsh_004_is_ex_a_fl "$1"; then
+		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
+		return 1
+	fi
 
 	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
 	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
@@ -140,12 +140,12 @@ fns_bsh_002_f2fs_1() {
 	# 	return 1
 	# fi
 
-	# [[ -d "$(dirname "$2")" ]] || {
-	# 	# snp "out_err"
-	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_2 :: NT_EXT+DR+*{REN} :: [[ -d $(dirname \'$2\') ]] is *{REN}, return 1${NRM}" >&2
-	# 	return 1
-	# }
+	[[ -d "$(dirname "$2")" ]] || {
+		# snp "out_err"
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO} :: ARG_2 :: NT_EXT+DR+*{REN} :: [[ -d $(dirname \'$2\') ]] is *{REN}, return 1${NRM}" >&2
+		return 1
+	}
 
 	# fns_bsh_004_is_ex_a_dr_o_fl :: \$1 exist and (dir|fl)
 	# fns_bsh_004_is_ex_a_dr :: \$1 exist and dir

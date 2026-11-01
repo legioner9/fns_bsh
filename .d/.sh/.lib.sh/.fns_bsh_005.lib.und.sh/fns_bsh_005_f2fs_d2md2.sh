@@ -281,15 +281,17 @@ fns_bsh_005_f2fs_d2md2() {
 	# $(fns_bsh_006_vv2e ${rnd} main_fn) arg1 arg2
 
 	fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
-	fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+	# fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 
-	fns_bsh_004_gig_bldr "$($(eval "echo \$arg_1_fn_${rnd}"))"
-
+	# fns_bsh_004_gig_bldr "$($(eval "echo \$arg_1_fn_${rnd}"))"
+	l_00_echo_code "mkdir -p $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d"
 	mkdir -p $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d || {
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'mkdir $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d', return 1${NRM}" >&2
 		return 1
 	}
+
+	read -p "CHECK file://$(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d"
 
 	fns_bsh_002_f2fs_1 "$(eval "echo \$arg_1_fn_${rnd}")" $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d || {
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"

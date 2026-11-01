@@ -326,6 +326,8 @@ fn_3183_20156() {
 	rm "$(eval "echo \$dr_pth_fn_${rnd}")/result.md.d/result.md"
 
 	l_00_echo_sys "$(eval "echo \$fn_main_name_${rnd}") $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst $(eval "echo \$dr_pth_fn_${rnd}")/result.md.d/result.md"
+
+	fns_bsh_004_s2bllg $(eval "echo \$fl_pth_fn_${rnd}") "$(eval "echo \$fn_main_name_${rnd}") $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst $(eval "echo \$dr_pth_fn_${rnd}")/result.md.d/result.md"
 	$(eval "echo \$fn_main_name_${rnd}") $(eval "echo \$dr_pth_fn_${rnd}")/file.f2fs.lst \
 		$(eval "echo \$dr_pth_fn_${rnd}")/result.md.d/result.md
 
