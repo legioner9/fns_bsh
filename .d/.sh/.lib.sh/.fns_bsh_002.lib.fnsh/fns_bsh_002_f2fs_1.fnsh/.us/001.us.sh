@@ -48,9 +48,9 @@ fns_bsh_006_warn_v ${rnd} fn_nm # fns_bsh_002_f2fs_1
 
 fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 
-if ! [[ -d "$(eval "echo \$arg_2_fn_${rnd}")" ]]; then
-	mkdir "$(eval "echo \$arg_2_fn_${rnd}")"
-fi
+# if ! [[ -d "$(eval "echo \$arg_2_fn_${rnd}")" ]]; then
+# 	mkdir "$(eval "echo \$arg_2_fn_${rnd}")"
+# fi
 
 # fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 
@@ -67,6 +67,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	if [[ -d "$root_d_5436asd" ]]; then
 		# if ! l_01_is_yes "REMOVE_DIR and CONTINUE? $root_d_5436asd"; then
+		l_00_echo_code "rm -r $root_d_5436asd"
 		rm -r $root_d_5436asd || {
 			# else
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
@@ -74,6 +75,11 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			return 1
 			# fi
 		}
+	fi
+
+	if ! [[ -d "$(eval "echo \$arg_2_fn_${rnd}")" ]]; then
+		l_00_echo_code "mkdir $(eval "echo \$arg_2_fn_${rnd}")"
+		mkdir "$(eval "echo \$arg_2_fn_${rnd}")"
 	fi
 
 	local arr_line_43cdsa=()
