@@ -32,12 +32,18 @@ fl - result fl
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
+fns_bsh_006_warn_v ${rnd} fn_nm # fns_bsh_002_f2fs_1
+
+fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}")"
+# fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+# fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_toc2md_1_gig_d_mkdr
 
 	# read -p "check file://$(l_01_prs_f -d $(eval "echo \$arg_1_fn_${rnd}"))/_$(l_01_prs_f -ne $(eval "echo \$arg_1_fn_${rnd}")).d"
-	
+
 	# local fns_bsh_002_toc2md_1_dr_dta=$(fns_bsh_002_toc2md_1_gig_d_echo)
 
 	# l_00_echo_warn "\$fns_bsh_002_toc2md_1_dr_dta=$fns_bsh_002_toc2md_1_dr_dta"

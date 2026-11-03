@@ -307,7 +307,13 @@ fns_bsh_005_f2fs_d2md2() {
 
 	fns_bsh_002_d2md_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d "$(eval "echo \$arg_2_fn_${rnd}")" || {
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '...', return 1${NRM}" >&2
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_002_d2md_1 $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
+		return 1
+	}
+
+	fns_bsh_002_toc2md_1 "$(eval "echo \$arg_2_fn_${rnd}")" || {
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_002_toc2md_1 $(eval "echo \$arg_2_fn_${rnd}")', return 1${NRM}" >&2
 		return 1
 	}
 
