@@ -92,11 +92,12 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		fi
 
 		if [[ -n "${arr_line_43cdsa[1]}" ]]; then
+			l_00_echo_code "mkdir -p $root_d_5436asd/${arr_line_43cdsa[1]}"
 			mkdir -p "$root_d_5436asd/${arr_line_43cdsa[1]}"
 		fi
 
 		if [[ -d "${arr_line_43cdsa[0]}" ]]; then
-
+			l_00_echo_code "cp -r ${arr_line_43cdsa[0]} $root_d_5436asd/${arr_line_43cdsa[1]}"
 			cp -r "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}" || {
 				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}"', return 1${NRM}" >&2
@@ -105,8 +106,10 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		fi
 		# l_00_echo_code "[[ -f "${arr_line_43cdsa[0]}" ]]"
-		file "${arr_line_43cdsa[0]}"
+
+		# file "${arr_line_43cdsa[0]}"
 		if [[ -f "${arr_line_43cdsa[0]}" ]]; then
+			l_00_echo_code "cp ${arr_line_43cdsa[0]} $root_d_5436asd/${arr_line_43cdsa[1]}"
 			cp "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}" || {
 				l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
 				echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'cp -r "${arr_line_43cdsa[0]}" "$root_d_5436asd/${arr_line_43cdsa[1]}"', return 1${NRM}" >&2
