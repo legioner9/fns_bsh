@@ -46,13 +46,13 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			echo "{$(basename "$1")}" | fns_bsh_004_f-f2e 2 >"$1/_d.d"
 		fi
 		if [[ -f "$1/_d.d" ]]; then
-			if [[ -z $(<"$1/_d.d") ]]; then
+			if [[ -z $(cat "$1/_d.d") ]]; then
 				echo "{$(basename "$1")}" | fns_bsh_004_f-f2e 2 >"$1/_d.d"
 			fi
 			if [[ -n $(<"$1/_d.d") ]]; then
-				if ! grep "{*}" "$1/_d.d"; then
-					echo $(echo "$(<"$1/_d.d")" | fns_bsh_004_f-f2e 2) >"$1/_d.d"
-				fi
+				# if ! grep "{*}" "$1/_d.d"; then
+					echo "$(echo "$(cat "$1/_d.d")" | fns_bsh_004_f-f2e 2)" >"$1/_d.d"
+				# fi
 			fi
 
 		fi
