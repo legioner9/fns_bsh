@@ -97,7 +97,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		str="${arr_line_43cdsa[1]}"
 		l_00_echo_info "\$str=$str"
-		
+
 		word=
 		arr_line_dr_43cddc=()
 
@@ -123,6 +123,9 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		if [[ -n "${arr_line_dr_43cddc[0]}" ]]; then
 			l_00_echo_code "mkdir -p $root_d_5436asd/${arr_line_dr_43cddc[0]}"
 			mkdir -p "$root_d_5436asd/${arr_line_dr_43cddc[0]}"
+			if [[ -n "${arr_line_dr_43cddc[1]}" ]]; then
+				echo "${arr_line_dr_43cddc[1]}" >"$root_d_5436asd/${arr_line_dr_43cddc[0]}"/_d.d
+			fi
 		fi
 
 		if [[ -d "${arr_line_43cdsa[0]}" ]]; then

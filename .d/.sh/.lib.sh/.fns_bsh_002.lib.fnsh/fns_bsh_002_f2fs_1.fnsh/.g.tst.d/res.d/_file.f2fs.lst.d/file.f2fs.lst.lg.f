@@ -1,2 +1,2 @@
-# Вс 08 ноя 2026 06:05:24 +07
+# Вс 08 ноя 2026 09:57:14 +07
 fns_bsh_002_f2fs_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_f2fs_1.fnsh/.g.tst.d/res.d/file.f2fs.lst ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_f2fs_1.fnsh/.g.tst.d/res.d/res_1/res.gfs.d
