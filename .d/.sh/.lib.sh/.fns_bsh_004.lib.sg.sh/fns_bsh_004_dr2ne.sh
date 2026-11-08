@@ -265,10 +265,10 @@ fns_bsh_004_dr2ne() {
 	if [[ "$1" == "@" ]]; then
 		for item in $(ls -A | sort); do
 			if [ -z "$2" ]; then
-				if {
-					[ -d "$item" ] || [ -f "$item" ]
-				}; then
-					echo "$item"
+				if [ -d "$item" ] || [ -f "$item" ]; then
+					if [ "${item:0:1}" != "_" ]; then
+						echo "$item"
+					fi
 				fi
 				if [ -d "$item" ] && [ "${item:0:1}" != "_" ]; then
 					fns_bsh_004_dr2ne "$item"
@@ -279,7 +279,9 @@ fns_bsh_004_dr2ne() {
 				if {
 					[ -d "$item" ] || [ -f "$item" ]
 				} && [ "${_dr2e_ext}" == "$2" ]; then
-					echo "$item"
+					if [ "${item:0:1}" != "_" ]; then
+						echo "$item"
+					fi
 				fi
 				if [ -d "$item" ] && [ "${item:0:1}" != "_" ]; then
 					fns_bsh_004_dr2ne "$item" "$2"
@@ -297,7 +299,10 @@ fns_bsh_004_dr2ne() {
 				if {
 					[ -d "$ptr_path/$item" ] || [ -f "$ptr_path/$item" ]
 				}; then
-					echo "$ptr_path/$item"
+					if [ "${item:0:1}" != "_" ]; then
+						echo "$ptr_path/$item"
+					fi
+
 				fi
 				if [ -d "$ptr_path/$item" ] && [ "${item:0:1}" != "_" ]; then
 					fns_bsh_004_dr2ne "$ptr_path/$item"
@@ -308,7 +313,10 @@ fns_bsh_004_dr2ne() {
 				if {
 					[ -d "$ptr_path/$item" ] || [ -f "$ptr_path/$item" ]
 				} && [ "${_dr2e_ext}" == "$2" ]; then
-					echo "$ptr_path/$item"
+					if [ "${item:0:1}" != "_" ]; then
+						echo "$ptr_path/$item"
+					fi
+
 				fi
 				if [ -d "$ptr_path/$item" ] && [ "${item:0:1}" != "_" ]; then
 					fns_bsh_004_dr2ne "$ptr_path/$item" "$2"

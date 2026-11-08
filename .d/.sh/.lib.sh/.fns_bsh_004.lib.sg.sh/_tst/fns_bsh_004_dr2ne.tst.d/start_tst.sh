@@ -97,7 +97,7 @@ fn_25875_29902() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing :: like l_02_dr2e - include dot entity, exclude '_' entity
 			REN=
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
@@ -361,7 +361,12 @@ fn_25875_29902() {
 	fns_bsh_006_gv "${rnd}" main_fn $(l_01_prs_f -n2 $(eval "echo \$dr_pth_fn_${rnd}"))
 	fns_bsh_006_info_v "${rnd}" main_fn
 	# $(fns_bsh_006_vv2e ${rnd} main_fn) -h
+
+	l_00_echo_code "$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/TST"
 	$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/TST
+
+	l_00_echo_code "$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/TST file"
+	$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/TST file
 
 	# fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 	# fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
