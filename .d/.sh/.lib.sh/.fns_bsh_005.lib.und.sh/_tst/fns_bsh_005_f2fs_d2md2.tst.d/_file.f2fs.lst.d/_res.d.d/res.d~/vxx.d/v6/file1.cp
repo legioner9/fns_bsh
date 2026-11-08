@@ -1,0 +1,1 @@
+${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/.dta/dir_for_cp_file1.d:inner.d^that inner.d content
