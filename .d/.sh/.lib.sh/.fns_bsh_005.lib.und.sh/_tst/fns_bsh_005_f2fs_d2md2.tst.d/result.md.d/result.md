@@ -59,13 +59,9 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
-- <a href=#woKR1WdelW0wgsE3O7Y9lyRsDkSWMaA2> # see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id22802} </a>
-- <a href=#BZhyqrRXkiDyEw84rDJ9Lc14QtoLxGbi> ## that fl.f {fl.f} {id14020} </a>
+- <a href=#2CgMT9U9YLRFw51nn7OEBg7BORcBRgs2> # see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id27454} </a>
 <!-- ETOC  -->
 
-<a id="woKR1WdelW0wgsE3O7Y9lyRsDkSWMaA2"></a>
-# <!-- { --> # see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id22802} <!-- } --> <- dr:: [dir_for_cp_file1.d](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d --> 
-
-<a id="BZhyqrRXkiDyEw84rDJ9Lc14QtoLxGbi"></a>
-##  <!-- { --> ## that fl.f {fl.f} {id14020} <!-- } --> <- fl:: [fl.f](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/fl.f) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/fl.f -->
+<a id="2CgMT9U9YLRFw51nn7OEBg7BORcBRgs2"></a>
+# <!-- { --> # see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id27454} <!-- } --> <- dr:: [dir_for_cp_file1.d](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d --> 
 
