@@ -169,3 +169,21 @@ fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/f
 fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
 # Вс 08 ноя 2026 16:40:49 +07
 fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md
+# Вс 08 ноя 2026 17:50:00 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Вс 08 ноя 2026 17:50:01 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Вс 08 ноя 2026 17:50:03 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md
+# Вс 08 ноя 2026 17:50:35 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Вс 08 ноя 2026 17:50:36 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Вс 08 ноя 2026 17:50:39 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md
+# Вс 08 ноя 2026 17:54:07 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Вс 08 ноя 2026 17:54:08 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Вс 08 ноя 2026 17:54:10 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md

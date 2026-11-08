@@ -41,7 +41,7 @@ fns_bsh_004_dr2ne() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= 
+        doing :: like l_02_dr2e entity dot include, '_' exclude
 			REN=
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
