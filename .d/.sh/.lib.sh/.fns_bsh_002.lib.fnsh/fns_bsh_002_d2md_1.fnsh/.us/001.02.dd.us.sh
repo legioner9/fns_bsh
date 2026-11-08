@@ -51,7 +51,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			fi
 			if [[ -n $(<"$1/_d.d") ]]; then
 				# if ! grep "{*}" "$1/_d.d"; then
-					echo "$(echo "$(cat "$1/_d.d")" | fns_bsh_004_f-f2e 2)" >"$1/_d.d"
+					echo "$(echo "$(cat "$1/_d.d") {$(basename "$1")}" | fns_bsh_004_f-f2e 2)" >"$1/_d.d"
 				# fi
 			fi
 
