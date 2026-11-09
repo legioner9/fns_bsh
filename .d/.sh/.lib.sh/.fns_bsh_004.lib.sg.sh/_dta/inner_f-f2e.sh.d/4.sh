@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# add tab as ((num #..#))-1
+
+# if [[ "${line:0:1}" != "#" ]]; then
+# 	eval "echo ${line} \<p hidden\>${RANDOM}\<\/p\>"
+# fi
+
+# eval "echo ${line} | grep -o ^#*"
+rrr=$(echo ${line} | grep -o ^#*)
+echo ${#rrr}

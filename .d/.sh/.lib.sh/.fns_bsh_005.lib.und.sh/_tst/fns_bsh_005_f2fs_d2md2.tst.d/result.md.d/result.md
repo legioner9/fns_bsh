@@ -59,17 +59,50 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
-- <a href=#cUX8cFjYv7Pu4OduCdpTHJ2BXwjP5LX0> # that cnt for dr {dir_for_cp_file1.d} {id9448} </a>
-    - <a href=#M6cGS4h0KpmXte0xeaDDfimnpWXuKY8S> ## that fl.f {.fl.f} {id9858} </a>
-- <a href=#NMi1sMcGFyqLXyLIrHjs55Ji0EDyOa5E> # that fl.f {.fl.f} {id27889} </a>
+- <a href=#mvxXEzoSkpmmZVvyZTppHm3u2eR1c2LV> # that cnt for dr {dir_for_cp_file1.d} {id13145} </a>
+- <a href=#kpyQimurBmv6WBWPUK3ZwdC2VuopbIca> ## that cnt for dr {dir_for_cp_file_in.d} {id28216} </a>
+- <a href=#1THaGYWgspBDYny5ogtzbzpHzYQpDKc7> ### that fl.f {.fl.f} {id13601} </a>
+- <a href=#JD0c0yJzWg1OE3MzUmhwEgCc7cd3EXeN> ## that fl.f {.fl.sh} {id9086} </a>
+- <a href=#hYMj7XsubFKGEvQ1dS0dEIIxt0stwAHL> # that fl.f {.fl.sh} {id5549} </a>
+- <a href=#cm83wpqF6MbxZysNCLBHg6lNZEJvRp1N> # that fl.f {.fl.sh} {id22028} </a>
 <!-- ETOC  -->
 
-<a id="cUX8cFjYv7Pu4OduCdpTHJ2BXwjP5LX0"></a>
-# <!-- { --> # that cnt for dr {dir_for_cp_file1.d} {id9448} <!-- } --> <- dr:: [dir_for_cp_file1.d](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d --> 
+<a id="mvxXEzoSkpmmZVvyZTppHm3u2eR1c2LV"></a>
+# <!-- { --> # that cnt for dr {dir_for_cp_file1.d} {id13145} <!-- } --> <- dr:: [dir_for_cp_file1.d](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d --> 
 
-<a id="M6cGS4h0KpmXte0xeaDDfimnpWXuKY8S"></a>
-##  <!-- { --> ## that fl.f {.fl.f} {id9858} <!-- } --> <- fl:: [.fl.f](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/.fl.f) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/.fl.f -->
+<a id="kpyQimurBmv6WBWPUK3ZwdC2VuopbIca"></a>
+## <!-- { --> ## that cnt for dr {dir_for_cp_file_in.d} {id28216} <!-- } --> <- dr:: [dir_for_cp_file_in.d](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/dir_for_cp_file_in.d) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/dir_for_cp_file_in.d --> 
 
-<a id="NMi1sMcGFyqLXyLIrHjs55Ji0EDyOa5E"></a>
-#  <!-- { --> # that fl.f {.fl.f} {id27889} <!-- } --> <- fl:: [.fl.f](../_file.f2fs.lst.d/res.d/.fl.f) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/.fl.f -->
+<a id="1THaGYWgspBDYny5ogtzbzpHzYQpDKc7"></a>
+###  <!-- { --> ### that fl.f {.fl.f} {id13601} <!-- } --> <- fl:: [.fl.f](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/dir_for_cp_file_in.d/.fl.f) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/dir_for_cp_file_in.d/.fl.f -->
+
+<a id="JD0c0yJzWg1OE3MzUmhwEgCc7cd3EXeN"></a>
+##  <!-- { --> ## that fl.f {.fl.sh} {id9086} <!-- } --> <- fl:: [.fl.sh](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/.fl.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d/.fl.sh -->
+
+```sh
+#!/bin/bash
+
+l_00_echo_info "\$HOME=$HOME"
+
+```
+
+<a id="hYMj7XsubFKGEvQ1dS0dEIIxt0stwAHL"></a>
+#  <!-- { --> # that fl.f {.fl.sh} {id5549} <!-- } --> <- fl:: [.fl.sh](../_file.f2fs.lst.d/res.d/.fl.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/.fl.sh -->
+
+```sh
+#!/bin/bash
+
+l_00_echo_info "\$HOME=$HOME"
+
+```
+
+<a id="cm83wpqF6MbxZysNCLBHg6lNZEJvRp1N"></a>
+#  <!-- { --> # that fl.f {.fl.sh} {id22028} <!-- } --> <- fl:: [.fl.sh](../_file.f2fs.lst.d/res.d/.fl.sh) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/.fl.sh -->
+
+```sh
+#!/bin/bash
+
+l_00_echo_info "\$HOME=$HOME"
+
+```
 

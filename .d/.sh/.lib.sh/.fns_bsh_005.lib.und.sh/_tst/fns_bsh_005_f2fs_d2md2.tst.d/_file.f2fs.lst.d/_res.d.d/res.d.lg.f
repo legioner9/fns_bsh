@@ -146,3 +146,15 @@ fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/f
 fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
 # Пн 09 ноя 2026 17:20:24 +07
 fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md
+# Пн 09 ноя 2026 17:32:47 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Пн 09 ноя 2026 17:32:48 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Пн 09 ноя 2026 17:32:49 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md
+# Пн 09 ноя 2026 17:35:35 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Пн 09 ноя 2026 17:35:35 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d
+# Пн 09 ноя 2026 17:35:36 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/result.md.d/result.md
