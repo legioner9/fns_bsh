@@ -259,9 +259,9 @@ fns_bsh_004_d2ne(){
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_body.tml
     # l_00_echo_code "001_body :: <${FUNCNAME[0]}>"
 
-	local PPWD=${PWD}
-	local ptr_path="$1"
-	ptr_path="$(l_01_abs_path "${PPWD}" "ptr_path")"
+	# local PPWD=${PWD}
+	# local ptr_path="$1"
+	# ptr_path="$(l_01_abs_path "${PPWD}" "ptr_path")"
 	local item=
 	if [[ "$1" == "@" ]]; then
 		for item in $(ls -A | sort); do
@@ -295,13 +295,13 @@ fns_bsh_004_d2ne(){
 			cd "$PPWD" || echo -e "${ECHO_WARN}in fs= file://${fn_nm} , line=${LINENO} , EXEC_FAIL : 'cd $PPWD' : continue${NRM}"
 			return 1
 		}
-		for item in $(ls -A $ptr_path | sort); do
+		for item in $(ls -A "$1" | sort); do
 			if [ -z "$2" ]; then
 				if {
-					[ -d "$ptr_path/$item" ] || [ -f "$ptr_path/$item" ]
+					[ -d "$1/$item" ] || [ -f "$1/$item" ]
 				}; then
 					if [ "${item:0:1}" != "_" ]; then
-						echo "$ptr_path/$item"
+						echo "$item"
 					fi
 
 				fi
@@ -312,10 +312,10 @@ fns_bsh_004_d2ne(){
 				local _dr2e_ext=
 				_dr2e_ext=$(l_01_prs_f -e "$item")
 				if {
-					[ -d "$ptr_path/$item" ] || [ -f "$ptr_path/$item" ]
+					[ -d "$1/$item" ] || [ -f "$1/$item" ]
 				} && [ "${_dr2e_ext}" == "$2" ]; then
 					if [ "${item:0:1}" != "_" ]; then
-						echo "$ptr_path/$item"
+						echo "$item"
 					fi
 
 				fi

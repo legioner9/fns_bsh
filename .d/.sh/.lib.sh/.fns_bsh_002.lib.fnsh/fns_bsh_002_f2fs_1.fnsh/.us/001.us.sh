@@ -112,7 +112,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 		IFS=$' \n\t'
 
-		read -p "see"
+		# read -p "see"
 
 		if ! [[ -d "${arr_line_43cdsa[0]}" || -f "${arr_line_43cdsa[0]}" ]]; then
 			l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"

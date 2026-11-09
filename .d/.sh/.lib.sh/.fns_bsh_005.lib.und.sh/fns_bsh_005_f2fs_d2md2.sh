@@ -291,7 +291,7 @@ fns_bsh_005_f2fs_d2md2() {
 		return 1
 	}
 
-	read -p "CHECK file://$(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d"
+	# read -p "CHECK file://$(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d"
 
 	fns_bsh_002_f2fs_1 "$(eval "echo \$arg_1_fn_${rnd}")" $(fns_bsh_004_bldr2e $(eval "echo \$arg_1_fn_${rnd}"))/res.d || {
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"

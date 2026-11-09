@@ -5,6 +5,8 @@ fns_bsh_002_d2md_1() {
 
 	l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
+	# read -p start
+
 	local fl_pth_fn_21612_15065="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh"
 	local dr_pth_fn_21612_15065=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh)
 	local fl_nm_fn_21612_15065=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh)
@@ -64,8 +66,12 @@ fns_bsh_002_d2md_1() {
 
 	[[ "$1" == "_tst" ]] && {
 
-		l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/.tst/g.sh"
-		source $(eval "echo \$dr_pth_fn_${rnd}")/.tst/g.sh
+		echo TST
+
+		. ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/fns_bsh_002_d2md_1.sh
+
+		l_00_echo_sys "source $(eval "echo \$dr_pth_fn_${rnd}")/g.sh"
+		source ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/g.sh
 
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
@@ -223,7 +229,7 @@ fns_bsh_002_d2md_1() {
 	# up to_mem .env.sh dr
 	l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
 
-	read -p "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
+	# read -p "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
 
 	local item_us=
 	for item_us in $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}")/.us); do

@@ -32,7 +32,7 @@ eval "flow_1_${rnd}=dr"
 $(eval "echo \$flow_1_${rnd}")
 l_00_echo_code "l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh"
 l_01_c_up $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh
-read -p "l_01_c_up fns_bsh_002_d2md_1_def_type"
+# read -p "l_01_c_up fns_bsh_002_d2md_1_def_type"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	fns_bsh_002_d2md_1_def_type() {

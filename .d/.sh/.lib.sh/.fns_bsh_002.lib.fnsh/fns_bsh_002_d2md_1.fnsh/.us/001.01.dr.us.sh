@@ -46,6 +46,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		unset item
 		local item=
 
+		# for item in $(l_02_d2e "$1"); do
 		for item in $(fns_bsh_004_d2ne "$1"); do
 			# l_00_echo_info "\$item=$item"
 			# read -p "see item"
