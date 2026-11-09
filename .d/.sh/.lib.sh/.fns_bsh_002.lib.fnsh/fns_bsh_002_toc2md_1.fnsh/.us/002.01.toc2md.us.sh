@@ -47,14 +47,21 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		local anc=
 		local str=
 		local rnd_1=
+		local tbs=
 
 		IFS=$'\n'
 		for str in $(<$(fns_bsh_006_vv2e ${rnd} md_dta)/chpt.md); do
 			echo "$str"
+			tbs=$(echo "$str" | sed 's/^[ \t]*//;s/[ \t]*$//' | fns_bsh_004_f-f2e 4)
+			echo "$tbs"
 			#  - <a href=#35a6b9d026864bd79ab8bfd21541e3fa> Local repo opuses</a>
 			#<a id="16d01bbb8a3048f18d8665782e885627"></a>
 			rnd_1=$(tr -dc 0-9A-Za-z </dev/urandom | head -c 32)
 			pnt="- <a href=#$rnd_1>$str</a>"
+			for ((i = 0; i < tbs; i++)); do
+				pnt="	"$pnt
+			done
+			echo "$pnt"
 			anc="<a id=\"$rnd_1\"></a>"
 			#sed '/^b/i ascsdc' init/init.fl > res.fl
 
@@ -63,7 +70,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			# l_00_echo_info "\$pnt=$pnt"
 
 			eval "sed -i '/$str/i $anc' $(eval "echo \$arg_1_fn_${rnd}")"
-			eval "sed -i '/ETOC/i $pnt' $(eval "echo \$arg_1_fn_${rnd}")"
+			eval "sed -i '/ETOC/i\ $pnt' $(eval "echo \$arg_1_fn_${rnd}")"
 
 			# read -p "check variables and file://$fns_bsh_002_toc2md_1_dr_dta/body_toc.md"
 

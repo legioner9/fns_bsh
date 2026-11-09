@@ -8,4 +8,11 @@
 
 # eval "echo ${line} | grep -o ^#*"
 rrr=$(echo ${line} | grep -o ^#*)
-echo ${#rrr}
+# num=${#rrr}
+# for ((i = 0; i < num - 1; i++)); do
+# 	echo $i
+# 	line="	"$line
+# done
+
+# echo "$line"
+echo $((${#rrr} - 1))
