@@ -19,3 +19,4 @@
 # do
 - .tst/.us/001.us.sh allways prp tst ::
     - .dta/cp_to_tst.d cp to .g.tst.d/res.d
+#@ {.fns_bsh_002.lib.fnsh.man}

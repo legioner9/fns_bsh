@@ -59,5 +59,33 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
+ - <a href=#GuzyGMyFcOWWP8xXjxHqCAwKRYuvFAIQ> # {.fns_bsh_002.lib.fnsh.man} {id14140} </a>
 <!-- ETOC  -->
+
+<a id="GuzyGMyFcOWWP8xXjxHqCAwKRYuvFAIQ"></a>
+#  <!-- { --> # {.fns_bsh_002.lib.fnsh.man} {id14140} <!-- } --> <- fl:: [.fns_bsh_002.lib.fnsh.man](_READMEd.lst.d/res.d/.fns_bsh_002.lib.fnsh.man) <!-- file://${HOME}/fns_bsh/READMEd.md.d/_READMEd.lst.d/res.d/.fns_bsh_002.lib.fnsh.man -->
+
+```man
+# man for ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_XXX.fnsh
+
+# contane dir:
+- .dta/cp_to_tst.d cp to .g.tst.d/res.d for tst action 
+- .g.tst.d sandbox for .tst/g.sh
+- .tst area tst g.sh
+- .g.flw puml area - complane .us step by step
+- .env.sh up to mem before any action in fn(pr)
+- .src example flow 
+- .tst/.us pr for .tst/g.sh
+- .us pr for XXX.sh
+
+# start tst for XXX.sh
+    . {.tst/g.sh}
+
+# naming 
+- in .env.sh/init.env.img_var.sh define name global const  fns_bsh_002_d2md_1_env_img_war_[name_const]
+
+# do
+- .tst/.us/001.us.sh allways prp tst ::
+    - .dta/cp_to_tst.d cp to .g.tst.d/res.d
+```
 
