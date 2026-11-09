@@ -1,1 +1,1 @@
-see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id10714}
+see that dir_for_cp_file1.d

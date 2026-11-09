@@ -59,7 +59,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# fi
 
 		if ! (
-			rm -f "$(fns_bsh_006_vv2e ${rnd} md_dta)"
+			rm -fr "$(fns_bsh_006_vv2e ${rnd} md_dta)"
 			mkdir "$(fns_bsh_006_vv2e ${rnd} md_dta)"
 		) >/dev/null; then
 			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"

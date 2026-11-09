@@ -59,9 +59,5 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
-- <a href=#TNJYRXocjOV1TJeGYZ9zoURs80yO8c6N> # see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id10714} </a>
 <!-- ETOC  -->
-
-<a id="TNJYRXocjOV1TJeGYZ9zoURs80yO8c6N"></a>
-# <!-- { --> # see that dir_for_cp_file1.d {dir_for_cp_file1.d} {id10714} <!-- } --> <- dr:: [dir_for_cp_file1.d](../_file.f2fs.lst.d/res.d/dir_for_cp_file1.d) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh/_tst/fns_bsh_005_f2fs_d2md2.tst.d/_file.f2fs.lst.d/res.d/dir_for_cp_file1.d --> 
 
