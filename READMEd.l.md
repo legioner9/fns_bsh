@@ -1,0 +1,1 @@
+/home/st/fns_bsh/READMEd.md.d/READMEd.md
