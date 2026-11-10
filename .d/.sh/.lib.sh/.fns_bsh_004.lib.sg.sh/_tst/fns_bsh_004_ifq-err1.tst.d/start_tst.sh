@@ -374,8 +374,14 @@ fn_13072_12258() {
 	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/init.d $(eval "echo \$dr_pth_fn_${rnd}")/res.d
 
 	$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/for_rm.d
-	$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/for_rm.f
+	read -p "see rm for_rm.d"
 
+	rm -r $(eval "echo \$dr_pth_fn_${rnd}")/res.d
+	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/init.d $(eval "echo \$dr_pth_fn_${rnd}")/res.d
+
+	$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d/for_rm.f
+	read -p "see rm for_rm.f"
+	
 	#-- {{003_body}}
 
 	#-- ~001_exit~
