@@ -9,10 +9,10 @@ fns_bsh_004_gig_td_1(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_21982_10610="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh"
-    local dr_pth_fn_21982_10610=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh)
-    local fl_nm_fn_21982_10610=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh)
-    local rnd=21982_10610
+    local fl_pth_fn_13488_24297="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh"
+    local dr_pth_fn_13488_24297=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh)
+    local fl_nm_fn_13488_24297=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh)
+    local rnd=13488_24297
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -41,19 +41,26 @@ fns_bsh_004_gig_td_1(){
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: \$1 {IEN1} parent dr for 
-			REN=
+        doing :: IEN1={dr} , IEN2 "nm_fl"
+			
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}
 			\$3 - 
-			flow_FN ::
-				SWITCH_ARG in /.us/00N.us.sh :: choce ::
-					- word1 ...
-			flow_tst ::
-            exa use ::
-            far use ::
-			see about big short (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+
+			- OVR::
+				- DFN:: RDR={IEN1}/\"IEN2\".md.d
+				- INI::IEN1={dr} , IEN2 "nm_fl" REN=FLS
+				- ACT:: mk {RDR}; mk {RDR}/...
+				- ARG::\$1 = {IEN1} \$2 = \"IEN2\"
+				- FLW::
+					 - (ifq-){RDR}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+
+			see examples OVR:
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
 			see about error short ([casual]|[action])+[entety]+[vis] :
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
 			see about causa (EXEC_FAIL, e.c.):
@@ -272,8 +279,8 @@ fns_bsh_004_gig_td_1(){
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_21982_10610 $@
+# fn_13488_24297 $@
 
 # {{002_after}}
 
-#? fn_21982_10610 $@
+#? fn_13488_24297 $@

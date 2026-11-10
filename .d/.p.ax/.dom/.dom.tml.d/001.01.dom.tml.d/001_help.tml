@@ -21,8 +21,8 @@
 
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
-			see about big short ST_DSL (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
 			see about error short ([casual]|[action])+[entety]+[vis] :
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
 			see about causa (EXEC_FAIL, e.c.):
