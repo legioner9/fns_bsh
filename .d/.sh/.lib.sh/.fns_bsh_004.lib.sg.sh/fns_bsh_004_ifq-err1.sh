@@ -55,7 +55,7 @@ fns_bsh_004_ifq-err1() {
 				- FLW:: ifqes \"?DO::rm {IEN}\"
 						- [yes] - (rm {IEN})
 						- [no] - (err1)
-						
+
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
 			see ST_DSL:
@@ -138,11 +138,11 @@ fns_bsh_004_ifq-err1() {
 	# echo "\$ptr_path_1=$ptr_path_1"
 	# eval "arg_1_fn_${rnd}=\$ptr_path_1"
 
-	if ! fns_bsh_004_is_ex_a_dr_o_fl "$1"; then
-		l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
-		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
-		return 1
-	fi
+	# if ! fns_bsh_004_is_ex_a_dr_o_fl "$1"; then
+	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_is_ex_a_fl $1', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	# if ! fns_bsh_004_if_ex_tn_fl "$1"; then
 	# 	l_00_echo_code "end :: <${FUNCNAME[0]}> '$@'"
