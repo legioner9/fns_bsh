@@ -53,9 +53,9 @@ fns_bsh_004_gig_td_1(){
 				- ACT:: mk {RDR}; mk {RDR}/...
 				- ARG::\$1 = {IEN1} \$2 = \"IEN2\"
 				- FLW::
-					 - (ifq-){RDR}
-					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
-					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+					 - (ifq-err){RDR}
+					 - echo #pth_e:post_dr^str_to_post_dr > {RDR}/\"IEN2\".lst
+					 - gig pr.f with body :: fn_gig_md {RDR}/\"IEN2\".lst {RDR}/\"IEN2\".MD
 
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
