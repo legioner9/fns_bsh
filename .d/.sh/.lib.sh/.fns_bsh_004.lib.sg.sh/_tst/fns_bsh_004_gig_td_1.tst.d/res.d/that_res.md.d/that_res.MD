@@ -59,5 +59,21 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
+ - <a href=#N0SFsi9LSsIcIhad8E21U4zOLaGejTkA> # str_to_post_dr {post_dr} {id12501} </a>
+ 	- <a href=#ArUNHnXvya6nnSNHh2qji1vgUl8BqxPc> ## {d2md} {id18039} {d2md} {id32413} </a>
+ 		- <a href=#LHod6DBdytmkhjaMcrRddIc7bkzDnFO8> ### {edu1.lst} {id6274} </a>
 <!-- ETOC  -->
+
+<a id="N0SFsi9LSsIcIhad8E21U4zOLaGejTkA"></a>
+# <!-- { --> # str_to_post_dr {post_dr} {id12501} <!-- } --> <- dr:: [post_dr](_that_res.lst.d/res.d/post_dr) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/_that_res.lst.d/res.d/post_dr --> 
+
+<a id="ArUNHnXvya6nnSNHh2qji1vgUl8BqxPc"></a>
+## <!-- { --> ## {d2md} {id18039} {d2md} {id32413} <!-- } --> <- dr:: [d2md](_that_res.lst.d/res.d/post_dr/d2md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/_that_res.lst.d/res.d/post_dr/d2md --> 
+
+<a id="LHod6DBdytmkhjaMcrRddIc7bkzDnFO8"></a>
+###  <!-- { --> ### {edu1.lst} {id6274} <!-- } --> <- fl:: [edu1.lst](_that_res.lst.d/res.d/post_dr/d2md/edu1.lst) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/_that_res.lst.d/res.d/post_dr/d2md/edu1.lst -->
+
+```lst
+${HOME}/rpo/edu_lnx/.d/.osdn/bash
+```
 

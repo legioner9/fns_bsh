@@ -1,7 +1,7 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_23637_22030() {
+fn_26946_28073() {
 
 	#--~001_start~
 	# from:: ~/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_start.tml
@@ -9,10 +9,10 @@ fn_23637_22030() {
 	#-- {{002_start}}
 	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-	local fl_pth_fn_23637_22030="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/start.sh"
-	local dr_pth_fn_23637_22030=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/start.sh)
-	local fl_nm_fn_23637_22030=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/start.sh)
-	local rnd=23637_22030
+	local fl_pth_fn_26946_28073="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/start.sh"
+	local dr_pth_fn_26946_28073=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/start.sh)
+	local fl_nm_fn_26946_28073=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/start.sh)
+	local rnd=26946_28073
 
 	#-- ~001_genv~
 	# [[ -d "$2" ]] || {
@@ -358,11 +358,42 @@ fn_23637_22030() {
 	#-- ~002_body~
 	# from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d/002_body.tml
 
-	fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/that_res.lst $(eval "echo \$dr_pth_fn_${rnd}")/that_res.MD
+	# name of MD::nm_md
+	fns_bsh_006_gv ${rnd} nm_md $(l_01_prs_f -n $(l_02_d2e $(eval "echo \$dr_pth_fn_${rnd}" lst)))
+	fns_bsh_006_vv2e ${rnd} nm_md
+
+	l_00_echo_code "rm $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).MD"
+	if ! (fns_bsh_004_ifq-err1 "$(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md)".MD); then
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_ifq-err1 "$(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md)".MD', return 1${NRM}" >&2
+		return 1
+	fi
+
+	if ! (fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).MD); then
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).MD', return 1${NRM}" >&2
+		return 1
+	fi
 
 	if [[ -n "$(eval "echo \$arg_1_fn_${rnd}")" ]]; then
 
-		fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/that_res.lst "$(eval "echo \$arg_1_fn_${rnd}")"
+		if [[ "MD" != $(l_01_prs_f -e $(eval "echo \$arg_1_fn_${rnd}")) ]]; then
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '[[ \"MD\" != $(l_01_prs_f -e $(eval "echo \$arg_1_fn_${rnd}")) ]]', return 1${NRM}" >&2
+			return 1
+		fi
+
+		if ! (fns_bsh_004_ifq-err1 "$(eval "echo \$arg_1_fn_${rnd}")"); then
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_004_ifq-err1 "$(eval "echo \$arg_1_fn_${rnd}")"', return 1${NRM}" >&2
+			return 1
+		fi
+
+		if ! (fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst "$(eval "echo \$arg_1_fn_${rnd}")"); then
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst "$(eval "echo \$arg_1_fn_${rnd}")"', return 1${NRM}" >&2
+			return 1
+		fi
 
 	fi
 
@@ -380,8 +411,8 @@ fn_23637_22030() {
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_23637_22030 $@
+fn_26946_28073 $@
 
 # {{002_after}}
 
-#? fn_23637_22030 $@
+#? fn_26946_28073 $@
