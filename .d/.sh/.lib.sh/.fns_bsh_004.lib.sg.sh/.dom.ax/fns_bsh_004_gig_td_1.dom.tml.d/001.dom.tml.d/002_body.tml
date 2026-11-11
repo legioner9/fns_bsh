@@ -2,4 +2,10 @@
 
 fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/that_res.lst $(eval "echo \$dr_pth_fn_${rnd}")/that_res.MD
 
+if [[ -n "$(eval "echo \$arg_1_fn_${rnd}")" ]]; then
+
+	fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/that_res.lst "$(eval "echo \$arg_1_fn_${rnd}")"
+
+fi
+
 #-- {{003_body}}

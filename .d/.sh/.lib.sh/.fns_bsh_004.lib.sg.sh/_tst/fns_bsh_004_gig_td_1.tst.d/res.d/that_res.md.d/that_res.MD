@@ -59,13 +59,5 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
- - <a href=#oHE6ILDbgufjJSEl9hdpb89yL07IBmjg> # str_to_post_dr {post_dr} {id22847} </a>
- 	- <a href=#od5LIJJbkh4pDgNBol0p2fiFVXfITZaf> ## {d2md} {id14107} {d2md} {id31615} </a>
 <!-- ETOC  -->
-
-<a id="oHE6ILDbgufjJSEl9hdpb89yL07IBmjg"></a>
-# <!-- { --> # str_to_post_dr {post_dr} {id22847} <!-- } --> <- dr:: [post_dr](_that_res.lst.d/res.d/post_dr) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/_that_res.lst.d/res.d/post_dr --> 
-
-<a id="od5LIJJbkh4pDgNBol0p2fiFVXfITZaf"></a>
-## <!-- { --> ## {d2md} {id14107} {d2md} {id31615} <!-- } --> <- dr:: [d2md](_that_res.lst.d/res.d/post_dr/d2md) <!-- file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/_tst/fns_bsh_004_gig_td_1.tst.d/res.d/that_res.md.d/_that_res.lst.d/res.d/post_dr/d2md --> 
 
