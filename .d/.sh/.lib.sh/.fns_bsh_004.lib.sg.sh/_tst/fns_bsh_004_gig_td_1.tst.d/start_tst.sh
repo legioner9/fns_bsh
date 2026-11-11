@@ -376,6 +376,8 @@ fn_22738_29132() {
 
 	$(fns_bsh_006_vv2e ${rnd} main_fn) $(eval "echo \$dr_pth_fn_${rnd}")/res.d that_res
 
+	
+
 	#-- {{003_body}}
 
 	#-- ~001_exit~

@@ -223,6 +223,8 @@ fns_bsh_004_gig_td_1() {
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
 
+	# fns_bsh_001_df2f :: $1 dr with ins fl [nm_fl.tml] -> in $2 rcv fl with {{[nm_fl]}}
+
 	# 	declare -A ass_arr
 	# ass_arr[0, 0]=png
 	# ass_arr[0, 1]=pic
@@ -299,10 +301,20 @@ fns_bsh_004_gig_td_1() {
 	}
 
 	l_00_echo_code "echo #pth_e:post_dr^str_to_post_dr >$(fns_bsh_006_vv2e ${rnd} ien)/$(eval "echo \$arg_2_fn_${rnd}").lst"
-	echo "#pth_e:post_dr^str_to_post_dr" >"$(fns_bsh_006_vv2e "${rnd}" ien)/$(eval "echo \$arg_2_fn_${rnd}").lst"
+	echo '#${HOME}/fns_bsh/.d/.cdn.ax/d2md:post_dr^str_to_post_dr' >"$(fns_bsh_006_vv2e "${rnd}" ien)/$(eval "echo \$arg_2_fn_${rnd}").lst"
 
 	l_00_echo_code "cat $(fns_bsh_006_vv2e "${rnd}" ien)/$(eval "echo \$arg_2_fn_${rnd}").lst"
 	cat "$(fns_bsh_006_vv2e "${rnd}" ien)/$(eval "echo \$arg_2_fn_${rnd}").lst"
+
+	fns_bsh_001_als_gig_fl_sh_2 $(fns_bsh_006_vv2e "${rnd}" ien) start.sh
+
+	#/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d
+	#/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh
+
+	read -p "? $(eval "echo \$dr_pth_fn_${rnd}")"
+	l_00_echo_code "fns_bsh_001_df2f $(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d  $(fns_bsh_006_vv2e "${rnd}" ien)/start.sh"
+	read -p "?DO"
+	fns_bsh_001_df2f $(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d $(fns_bsh_006_vv2e "${rnd}" ien)/start.sh
 
 	# if fns_bsh_004_ifq-err1 $(eval "echo \$arg_1_fn_${rnd}")
 
