@@ -373,7 +373,7 @@ fn_16131_26573() {
 	local item=
 	for item in $(l_02_d2e "$(eval "echo \$dr_pth_fn_${rnd}")" sh); do
 		(
-			echo "$(l_01_prs_f -n $item) -h ::"
+			echo "$(l_01_prs_f -n $item) -h"
 			sed -n '/##begin_hlp/,/##end_hlp/p' "$(eval "echo \$dr_pth_fn_${rnd}")/$item" | grep -Evw "##begin_hlp|##end_hlp"
 			echo
 			echo "#@ $(l_01_prs_f -n $item) -h"

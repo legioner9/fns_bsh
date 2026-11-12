@@ -375,6 +375,7 @@ fn_31718_22900() {
 		(
 			echo "$(l_01_prs_f -n $item) -h ::"
 			sed -n '/##begin_hlp/,/##end_hlp/p' "$(eval "echo \$dr_pth_fn_${rnd}")/$item" | grep -Evw "##begin_hlp|##end_hlp"
+			echo
 			echo "#@ $(l_01_prs_f -n $item) -h"
 		) > \
 			$(eval "echo \$dr_pth_fn_${rnd}")/.hlp.md.d/$item.hlp.md

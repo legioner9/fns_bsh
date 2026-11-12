@@ -347,7 +347,7 @@ fn_31484_9351() {
 
 		local add_dr=$(l_01_prs_f -n "$(l_01_prs_f -n2 "$(l_01_prs_f -d "$item")")")
 
-		echo "$(l_01_prs_f -d "$item")/.hlp.md.d:${add_dr:1}^${add_dr:1} lib" >>$(eval "echo \$fl_pth_fn_${rnd}").lst
+		echo "$(l_01_prs_f -d "$item")/.hlp.md.d:${add_dr:1}^${add_dr:1}" >>$(eval "echo \$fl_pth_fn_${rnd}").lst
 
 	done
 
