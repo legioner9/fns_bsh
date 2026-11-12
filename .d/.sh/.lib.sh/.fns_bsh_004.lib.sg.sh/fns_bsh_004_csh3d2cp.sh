@@ -53,10 +53,10 @@ fns_bsh_004_csh3d2cp(){
 				- ACT::{IEN} -> {REN}=(pr){IEN}
 				- ARG::\$1 = {IEN} 
 				- FLW::
-					 - (source {CSH} *{CSH}) -> *{CSH}/{CSH^}.cp
-					 - [fbl4]bbcp_rm {CSH}
+					- (source {CSH} *{CSH}) -> *{CSH}/{FLS:[{CSH^}.cp,[*.*]]}
+					- [[fbl4]]bbcp_rm {CSH}
 				- NTE::
-					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+					- 
 
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
