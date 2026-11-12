@@ -25,6 +25,8 @@ fn_5524_20486() {
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_genv.tml
 	eval "local prnt1_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/..)"
 	eval "local prnt2_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../..)"
+	eval "local prnt3_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../../..)"
+	eval "local prnt4_dr_pth_fn_${rnd}=\$(readlink -m \$(eval echo \"\\\$dr_pth_fn_${rnd}\")/../../../..)"
 	eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 
 	#-- ~002_genv~
@@ -164,6 +166,8 @@ fn_5524_20486() {
 	eval "echo \"fn_nm=\$fn_nm_${rnd}\""
 	eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
 	eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\""
+	eval "echo \"prnt3_dr_pth_fn=\$prnt3_dr_pth_fn_${rnd}\""
+	eval "echo \"prnt4_dr_pth_fn=\$prnt4_dr_pth_fn_${rnd}\""
 
 	#-- ~002_val_ind~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/002_val_ind.tml
@@ -252,6 +256,10 @@ fn_5524_20486() {
 	# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
 	# prnt2_dr_pth_fn ::
 	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+	# prnt3_dr_pth_fn ::
+	# $(eval "echo \$prnt3_dr_pth_fn_${rnd}")
+	# prnt4_dr_pth_fn ::
+	# $(eval "echo \$prnt4_dr_pth_fn_${rnd}")
 	# fl_tst_pth_fn ::
 	# $(eval "echo \$fl_tst_pth_fn_${rnd}")
 	# g_d_pth_fn ::
@@ -386,6 +394,16 @@ fn_5524_20486() {
 	cp -r $(eval "echo \$dr_pth_fn_${rnd}")/init.d $(eval "echo \$dr_pth_fn_${rnd}")/res.d
 
 	fns_bsh_001_als_gig_fl_sh_2 $(eval "echo \$dr_pth_fn_${rnd}")/res.d this_1.c_sh
+
+	l_00_echo_warn "	fns_bsh_001_df2f \
+		$(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_csh3d2fls.dom.tml.d/001.dom.tml.d \
+		$(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh"
+
+	fns_bsh_001_df2f \
+		$(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_csh3d2fls.dom.tml.d/001.dom.tml.d \
+		$(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh
+
+	source $(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh
 
 	# fns_bsh_001_df2f
 
