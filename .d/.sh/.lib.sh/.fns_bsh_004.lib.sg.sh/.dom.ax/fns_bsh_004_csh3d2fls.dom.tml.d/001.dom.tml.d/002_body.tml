@@ -1,6 +1,11 @@
 # from:: ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/fns_bsh_004_csh3d2fls.dom.tml.d/001.dom.tml.d/002_body.tml
 
-l_00_echo_sys "touch $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp"
-# touch $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp
+l_00_echo_sys "echo \"#${HOME}/fns_bsh/.d/.cdn.ax/d2md:post_dr^str_to_post_dr\" > $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp"
+echo '#${HOME}/fns_bsh/.d/.cdn.ax/d2md:post_dr^str_to_post_dr' >$(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp
+# fl_nm_fn 
+# echo $(eval "echo \$fl_pth_fn_${rnd}")
 
+fns_bsh_004_s2bllg $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp "from :: <$(eval "echo \$fl_pth_fn_${rnd}")> '$@'"
+fns_bsh_004_s2bllg $(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp "echo '#${HOME}/fns_bsh/.d/.cdn.ax/d2md:post_dr^str_to_post_dr' >$(eval "echo \$dr_pth_fn_${rnd}")/$(eval "echo \$fn_nm_${rnd}").cp"
+read -p see_fl_pth_fn 
 #-- {{003_body}}

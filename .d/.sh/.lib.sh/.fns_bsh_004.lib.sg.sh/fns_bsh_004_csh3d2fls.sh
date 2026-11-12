@@ -276,8 +276,9 @@ fns_bsh_004_csh3d2fls() {
 
 	for item in $(l_02_dr2e "$(eval "echo \$arg_1_fn_${rnd}")" c_sh); do
 		l_00_echo_info "\$item=$item"
-		l_00_echo_code source "$item"
+		l_00_echo_code "source $item"
 		source "$item"
+		fns_bsh_004_bbcp_rm "$item"
 	done
 
 	#-- {{002_body}}

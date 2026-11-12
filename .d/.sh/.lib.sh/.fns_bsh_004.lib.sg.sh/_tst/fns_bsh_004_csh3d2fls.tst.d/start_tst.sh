@@ -399,11 +399,19 @@ fn_5524_20486() {
 		$(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_csh3d2fls.dom.tml.d/001.dom.tml.d \
 		$(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh"
 
-	fns_bsh_001_df2f \
+	if ! fns_bsh_001_df2f \
 		$(eval "echo \$prnt2_dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_csh3d2fls.dom.tml.d/001.dom.tml.d \
-		$(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh
+		$(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh; then
+		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '...', return 1${NRM}" >&2
+		return 1
+	fi
 
-	source $(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh
+	# if ! source $(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh; then
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : '(source $(eval "echo \$dr_pth_fn_${rnd}")/res.d/this_1.c_sh)', return 1${NRM}" >&2
+	# 	return 1
+	# fi
 
 	# fns_bsh_001_df2f
 
