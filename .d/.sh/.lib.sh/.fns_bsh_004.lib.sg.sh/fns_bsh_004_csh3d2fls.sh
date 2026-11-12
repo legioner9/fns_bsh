@@ -46,7 +46,7 @@ fns_bsh_004_csh3d2fls() {
 			\$1 - {IEN} - dr
 			\$2 - 
 			\$3 - 
-
+##begin_hlp
 			- OVR::
 				- DFN::{CSH}={IEN:*.c_sh} - fl {IEN}/*/*.csh
 				- INI::IEN - dr with *.c_sh, REN - IEN with c_sh->cp
@@ -57,7 +57,7 @@ fns_bsh_004_csh3d2fls() {
 					- [[fbl4]]bbcp_rm {CSH}
 				- NTE::
 					- 
-
+##end_hlp
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
 			see ST_DSL:
