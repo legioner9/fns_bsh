@@ -241,6 +241,8 @@ fns_bsh_002_f2fs_1() {
 	# fns_bsh_002_toc2md_1 ::add toc to .md \$1 :: IEN=fl_md - instead (utl_d=_fns_bsh_002_toc2md_1.utl.d)
 	# fns_bsh_002_f2fs \$1 IEN=fl_with path, \$2 REN=res_dr
 
+	# fns_bsh_001_df2f :: $1 dr with ins fl [nm_fl.tml] -> in $2 rcv fl with {{[nm_fl]}}
+
 	# {{002_use_l}}
 
 	#-- ~001_into~

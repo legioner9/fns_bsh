@@ -17,4 +17,6 @@
 	# fns_bsh_001_als_gig_fl_sh :: gig in \$1 dr \$2 fl[with .ext] use ~/fns_bsh/.d/.p.ax/.p006.d (like .p004.d) [,\$3 cmn.d [,\$4 dom.d]]
 	# lfoe_path_to_var ::  insert pth \${HOME} into string '${HOME}'
 	# lfoe_gig_sh :: create $2 file in $1 dir from ${HOME}/aer_foe/.d/.sh/.lib.sh/.dta/.tml/sh1.tml
+
+	# fns_bsh_001_df2f :: $1 dr with ins fl [nm_fl.tml] -> in $2 rcv fl with {{[nm_fl]}}
 	# {{002_use_l}}

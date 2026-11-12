@@ -18,6 +18,8 @@
 	# eval "echo \"fn_nm=\$fn_nm_${rnd}\""
 	# eval "echo \"prnt1_dr_pth_fn=\$prnt1_dr_pth_fn_${rnd}\""
 	# eval "echo \"prnt2_dr_pth_fn=\$prnt2_dr_pth_fn_${rnd}\"
+	# eval "echo \"prnt3_dr_pth_fn=\$prnt3_dr_pth_fn_${rnd}\"
+	# eval "echo \"prnt4_dr_pth_fn=\$prnt4_dr_pth_fn_${rnd}\""
 	
 	#-- {{002_val_ind}}
 	

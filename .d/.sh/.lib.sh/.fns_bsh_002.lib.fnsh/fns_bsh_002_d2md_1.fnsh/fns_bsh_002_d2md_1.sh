@@ -209,6 +209,8 @@ fns_bsh_002_d2md_1() {
 	# 	done
 	# done
 
+	# fns_bsh_001_df2f :: $1 dr with ins fl [nm_fl.tml] -> in $2 rcv fl with {{[nm_fl]}}
+
 	# {{002_use_l}}
 
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"

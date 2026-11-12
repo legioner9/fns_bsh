@@ -20,6 +20,10 @@
 	# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")
 	# prnt2_dr_pth_fn ::
 	# $(eval "echo \$prnt2_dr_pth_fn_${rnd}")
+	# prnt3_dr_pth_fn ::
+	# $(eval "echo \$prnt3_dr_pth_fn_${rnd}")
+	# prnt4_dr_pth_fn ::
+	# $(eval "echo \$prnt4_dr_pth_fn_${rnd}")
 	# fl_tst_pth_fn ::
 	# $(eval "echo \$fl_tst_pth_fn_${rnd}")
 	# g_d_pth_fn ::

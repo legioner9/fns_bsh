@@ -201,6 +201,8 @@ fns_bsh_002_toc2md_1() {
 	# fns_bsh_006_info_v :: l_00_echo_info::\$1->rnd \$2->nm :: 
 	#	l_00_echo_info "\$$(fns_bsh_006_nv2e ${1} ${2})=$(fns_bsh_006_vv2e ${1} ${2})"
 
+	# fns_bsh_001_df2f :: $1 dr with ins fl [nm_fl.tml] -> in $2 rcv fl with {{[nm_fl]}}
+
 	# {{002_use_l}}
 
 	l_00_echo_code "body :: <${FUNCNAME[0]}> '$@'"

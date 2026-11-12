@@ -52,4 +52,6 @@
 # fns_bsh_004_gig_bldr :: {REN} = >{IEN}, IEN is (f|dr), \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
 # fns_bsh_004_s2bllg :: echo \"IEN2\" > [>{IEN1}:lg]
 
+# fns_bsh_001_df2f :: $1 dr with ins fl [nm_fl.tml] -> in $2 rcv fl with {{[nm_fl]}}
+
 # {{002_use_l}}
