@@ -40,6 +40,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# source "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/init.env.type_fl.0.sh"
 		# $1 fl
 		local ext="$(l_01_prs_f -e "$1")"
+		#! dev
+		# l_00_echo_info "\$ext=$ext"
 		# 		[[ "$tst_var_def_type_1" -eq 1 ]] && l_00_echo_warn "ext=$ext \
 		# $((${#fns_bsh_002_d2md_1_type_fl[@]} / 2))"
 		local cur_type=
@@ -68,6 +70,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			# l_00_echo_info "\$ext=$ext"
 
 			# file "$(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d/$file_lst_type"
+			#! dev
+			# l_00_echo_code "grep $ext $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d/$file_lst_type"
 
 			if grep "$ext" $(eval "echo \$dr_pth_fn_${rnd}")/.env.sh/env.type.lst.d/$file_lst_type >/dev/null; then
 
@@ -77,7 +81,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 				# read -p see_result
 
 				return 0
-				
+
 			fi
 
 		done

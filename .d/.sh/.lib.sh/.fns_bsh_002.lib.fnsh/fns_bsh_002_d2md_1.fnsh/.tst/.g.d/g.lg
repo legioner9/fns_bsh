@@ -682,3 +682,23 @@
 [0;30m[2m[42m[7ml_02_s2f $1 :: 'rcv_str = ${HOME}'[0m
 [0;30m[2m[42m[7ml_02_s2f $2 :: 'ins_str = ${HOME}'[0m
 [0;30m[2m[42m[7ml_02_s2f $3 :: 'rcv_fl = file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg '[0m
+[0;30m[2m[104m[7m'l_02_s2f ${HOME} ${HOME} ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg'[0m
+[0;30m[2m[42m[7ml_02_s2f $1 :: 'rcv_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $2 :: 'ins_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $3 :: 'rcv_fl = file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg '[0m
+[0;30m[2m[104m[7m'l_02_s2f ${HOME} ${HOME} ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg'[0m
+[0;30m[2m[42m[7ml_02_s2f $1 :: 'rcv_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $2 :: 'ins_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $3 :: 'rcv_fl = file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg '[0m
+[0;30m[2m[104m[7m'l_02_s2f ${HOME} ${HOME} ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg'[0m
+[0;30m[2m[42m[7ml_02_s2f $1 :: 'rcv_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $2 :: 'ins_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $3 :: 'rcv_fl = file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg '[0m
+[0;30m[2m[104m[7m'l_02_s2f ${HOME} ${HOME} ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg'[0m
+[0;30m[2m[42m[7ml_02_s2f $1 :: 'rcv_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $2 :: 'ins_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $3 :: 'rcv_fl = file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg '[0m
+[0;30m[2m[104m[7m'l_02_s2f ${HOME} ${HOME} ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg'[0m
+[0;30m[2m[42m[7ml_02_s2f $1 :: 'rcv_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $2 :: 'ins_str = ${HOME}'[0m
+[0;30m[2m[42m[7ml_02_s2f $3 :: 'rcv_fl = file://${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh/.tst/.g.d/g.lg '[0m
