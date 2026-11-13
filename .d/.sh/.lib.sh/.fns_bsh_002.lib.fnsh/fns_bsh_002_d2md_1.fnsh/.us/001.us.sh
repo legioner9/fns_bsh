@@ -39,9 +39,21 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 	# read -p LG_write
 	# del this fns_bsh_002_d2md_1_def_type dsac.sss
+	l_00_echo_code "fns_bsh_002_d2md_1_def_type dsac.png"
 	fns_bsh_002_d2md_1_def_type dsac.png
+	l_00_echo_code "fns_bsh_002_d2md_1_def_type dsac.txt"
 	fns_bsh_002_d2md_1_def_type dsac.txt
+	l_00_echo_code "fns_bsh_002_d2md_1_def_type dsac.pdf"
 	fns_bsh_002_d2md_1_def_type dsac.pdf
+	l_00_echo_code "fns_bsh_002_d2md_1_def_type dsac.md"
+	fns_bsh_002_d2md_1_def_type dsac.md
+	l_00_echo_code "fns_bsh_002_d2md_1_def_type dsac.man"
+	fns_bsh_002_d2md_1_def_type dsac.man
+	l_00_echo_code "fns_bsh_002_d2md_1_def_type dsac.py"
+	fns_bsh_002_d2md_1_def_type dsac.py
+	# fns_bsh_002_d2md_1_def_type dsac.pdf
+
+	read -p see
 
 	#.. fns_bsh_002_d2md_1_arr_ext
 	fns_bsh_002_d2md_1_pre $(eval "echo \$arg_1_fn_${rnd}")
