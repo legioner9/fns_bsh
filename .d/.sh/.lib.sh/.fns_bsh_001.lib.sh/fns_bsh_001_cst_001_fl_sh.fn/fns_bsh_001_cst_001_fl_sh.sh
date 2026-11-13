@@ -20,10 +20,23 @@ fns_bsh_001_cst_001_fl_sh() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: gig fl.sh by flw::001 [use ~/fns_bsh/.d/.p.ax/.p003.d]
+        doing :: gig fl.sh by flw::001 \\\[use ~/fns_bsh/.d/.p.ax/.p003.d\\\]
 			\$1 - dr root
 			\$2 - nm fl (with .ext)
 			\$3 - 
+
+##begin_hlp
+			- OVR::
+				- DFN::?{CSH}={IEN:*.c_sh} - fl {IEN}/*/*.csh
+				- INI::?IEN - dr with *.c_sh, REN - IEN with c_sh->cp
+				- ACT::?{IEN} -> {REN}=(pr){IEN}
+				- ARG::?\$1 = {IEN} 
+				- FLW::?
+					-? (source {CSH} *{CSH}) -> *{CSH}/{FLS:[{CSH^}.cp,[*.*]]}
+					-? [[fbl4]]bbcp_rm {CSH}
+				- NTE::
+					- 
+##end_hlp
             exa use ::
             far use ::
         "

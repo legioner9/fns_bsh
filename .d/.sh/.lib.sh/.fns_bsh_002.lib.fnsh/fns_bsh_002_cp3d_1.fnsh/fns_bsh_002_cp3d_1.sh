@@ -41,7 +41,7 @@ fns_bsh_002_cp3d_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing ::  IEN1 , REN is IEN<CPE (see FN_DSL)
+        doing ::  {IEN1} with .cp, {REN}={IEN1 with cp fls}
 			REN=
 			\$1 - {IEN}
 			\$2 - {IEN}
