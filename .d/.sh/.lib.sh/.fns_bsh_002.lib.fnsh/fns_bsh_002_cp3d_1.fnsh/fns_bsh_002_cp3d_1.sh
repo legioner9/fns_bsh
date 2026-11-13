@@ -41,12 +41,12 @@ fns_bsh_002_cp3d_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing ::  \$1 IEN , REN is IEN<CPE (see FN_DSL)
+        doing ::  IEN1 , REN is IEN<CPE (see FN_DSL)
 			REN=
 			\$1 - {IEN}
 			\$2 - {IEN}
 			\$3 - 
-
+##begin_hlp
 			- DFN:: CPE=fl in {IEN} as ([\*.cp]) with path (fl|dr)
             		{IEN<CPE} - {IEN} with diff accoding CPE
 			- INI:: {IEN} dr with CPE , {REN}={IEN<CPE}
@@ -57,6 +57,7 @@ fns_bsh_002_cp3d_1() {
 							<[[fbl2]]f2fs_1 {CPE} *{CPE}/.tmp/{&CPE}.tmp
 							<[[fbl4]]bbcp_rm {CPE}
 							cp *{CPE}/.tmp/{&CPE}.tmp/. *{CPE}
+##end_hlp
 			flow_tst ::
             exa use ::
             far use ::
