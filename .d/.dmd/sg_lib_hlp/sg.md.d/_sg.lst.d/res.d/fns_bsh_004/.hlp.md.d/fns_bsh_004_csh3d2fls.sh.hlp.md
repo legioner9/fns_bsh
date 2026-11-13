@@ -10,4 +10,4 @@ fns_bsh_004_csh3d2fls
 				- NTE::
 					- 
 
-#@ fns_bsh_004_csh3d2fls :: doing :: $1 IEN - dr with *.csh, REN - IEN with csh->fls
+#@ fns_bsh_004_csh3d2fls :: doing :: IEN1 - dr with *.csh, REN - IEN with csh->fls

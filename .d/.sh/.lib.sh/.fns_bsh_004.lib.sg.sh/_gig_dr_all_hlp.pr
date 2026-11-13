@@ -377,7 +377,9 @@ fn_16131_26573() {
 		doing=$(grep 'doing ::' $(eval "echo \$dr_pth_fn_${rnd}")/$item | xargs)
 		echo "${doing:9}"
 		#! dev
-		read -p doing
+		# $(l_01_prs_f -n $item) -h
+		# l_00_echo_info "\$item=$item"
+		# read -p doing
 		(
 			echo "$(l_01_prs_f -n $(eval "echo \$dr_pth_fn_${rnd}")/$item)"
 			sed -n '/##begin_hlp/,/##end_hlp/p' "$(eval "echo \$dr_pth_fn_${rnd}")/$item" | grep -Evw "##begin_hlp|##end_hlp"

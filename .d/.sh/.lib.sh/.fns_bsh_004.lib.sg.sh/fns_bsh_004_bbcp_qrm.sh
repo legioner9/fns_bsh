@@ -41,7 +41,7 @@ fns_bsh_004_bbcp_qrm() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: \(?\) \$1 {IEN} \(dr|fl\) rm with <[[fbl4]]bbcp {IEN}>
+        doing :: {IEN1} dr -o fl rm with fbl4_bbcp {-:~^!@#%?*+_=.} \\\(\\\) \\\[\\\] \\\& \\\< \\\>
 			REN=
 			\$1 - {IEN} (dr|fl)
 			\$2 -

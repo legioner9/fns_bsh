@@ -41,7 +41,7 @@ fns_bsh_004_csh3d2fls() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-         doing :: \$1 IEN - dr with *.csh, REN - IEN with csh->fls
+         doing :: IEN1 - dr with *.csh, REN - IEN with csh->fls
 			
 			\$1 - {IEN} - dr
 			\$2 - 
