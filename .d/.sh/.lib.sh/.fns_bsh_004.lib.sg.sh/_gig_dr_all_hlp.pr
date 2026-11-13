@@ -371,12 +371,18 @@ fn_16131_26573() {
 
 	#.. see ~/rpo/edu_lnx/.d/.osdn/_man/between_mask
 	local item=
+	local doing=
 	for item in $(l_02_d2e "$(eval "echo \$dr_pth_fn_${rnd}")" sh); do
+
+		doing=$(grep 'doing ::' $(eval "echo \$dr_pth_fn_${rnd}")/$item | xargs)
+		echo "${doing:9}"
+		#! dev
+		read -p doing
 		(
-			echo "$(l_01_prs_f -n $item) -h"
+			echo "$(l_01_prs_f -n $(eval "echo \$dr_pth_fn_${rnd}")/$item)"
 			sed -n '/##begin_hlp/,/##end_hlp/p' "$(eval "echo \$dr_pth_fn_${rnd}")/$item" | grep -Evw "##begin_hlp|##end_hlp"
 			echo
-			echo "#@ $(l_01_prs_f -n $item) -h"
+			echo "#@ $(l_01_prs_f -n $item) :: $doing"
 		) > \
 			$(eval "echo \$dr_pth_fn_${rnd}")/.hlp.md.d/$item.hlp.md
 	done

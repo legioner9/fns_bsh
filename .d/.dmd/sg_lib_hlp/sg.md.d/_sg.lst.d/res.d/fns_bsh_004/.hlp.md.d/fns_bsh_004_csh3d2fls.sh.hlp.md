@@ -1,4 +1,4 @@
-fns_bsh_004_csh3d2fls -h
+fns_bsh_004_csh3d2fls
 			- OVR::
 				- DFN::{CSH}={IEN:*.c_sh} - fl {IEN}/*/*.csh
 				- INI::IEN - dr with *.c_sh, REN - IEN with c_sh->cp
@@ -10,4 +10,4 @@ fns_bsh_004_csh3d2fls -h
 				- NTE::
 					- 
 
-#@ fns_bsh_004_csh3d2fls -h
+#@ fns_bsh_004_csh3d2fls :: doing :: $1 IEN - dr with *.csh, REN - IEN with csh->fls

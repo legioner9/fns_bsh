@@ -41,7 +41,7 @@ fns_bsh_004_gig_bldr() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: {REN} = >{IEN}, IEN is (f|dr), \$1 = {IEN} \$2 = {par:(-f|-i|-c|'')}
+        doing :: {REN} = >{IEN}, IEN is \(f|dr\), \$1 = {IEN} \$2 = {par:\(-f|-i|-c|''\)}
 			{REN} = >{IEN}
 			\$1 - {IEN}
 			\$2 - {par:(-f|-i|-c|'')}
