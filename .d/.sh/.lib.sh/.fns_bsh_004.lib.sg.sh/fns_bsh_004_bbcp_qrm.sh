@@ -39,9 +39,9 @@ fns_bsh_004_bbcp_qrm() {
 	# from:: ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d/001_help.tml
 	# exa:: ~/fns_bsh/.d/.p.ax/.p015.d/g.pr
 	[[ "$1" == "-h" ]] && {
-		echo -e "
+		echo -e " work{-:~^!@#%?+_=.} \\(\\\)\\\&\\\<\\\>\\\|  all{-:~^!@#%?*+_=.}\\\(\\\) \\\[\\\] \\\& \\\<\\\> \\\|
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: {IEN1} dr -o fl rm with fbl4_bbcp {-:~^!@#%?*+_=.} \\\(\\\) \\\[\\\] \\\& \\\<\\\> \\\|
+        doing :: {IEN1} dr -o fl rm with fbl4_bbcp {-:~^!@#%?+_=.} \\(\\\)\\\&\\\<\\\>\\\|
 			REN=
 			\$1 - {IEN} (dr|fl)
 			\$2 -
