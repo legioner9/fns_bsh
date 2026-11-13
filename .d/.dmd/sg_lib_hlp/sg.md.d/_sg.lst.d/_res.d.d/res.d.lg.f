@@ -460,3 +460,9 @@ fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
 fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
 # Пт 13 ноя 2026 15:12:14 +07
 fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Пт 13 ноя 2026 17:04:21 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Пт 13 ноя 2026 17:04:22 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Пт 13 ноя 2026 17:04:22 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
