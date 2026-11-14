@@ -383,6 +383,9 @@ fn_24683_6438() {
 	l_00_echo_info "rbld sg libs :: source ~/fns_bsh/.d/.sh/.lib.sh/_rbld_sg_pth_d_hlp2e.sh"
 	source ~/fns_bsh/.d/.sh/.lib.sh/_rbld_sg_pth_d_hlp2e.sh
 
+	rm $(eval "echo \$dr_pth_fn_${rnd}")/sg.lst
+	cp ~/fns_bsh/.d/.sh/.lib.sh/_rbld_sg_pth_d_hlp2e.sh.lst $(eval "echo \$dr_pth_fn_${rnd}")/sg.lst
+	#//read -p cp
 	if ! (fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).MD); then
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).MD', return 1${NRM}" >&2

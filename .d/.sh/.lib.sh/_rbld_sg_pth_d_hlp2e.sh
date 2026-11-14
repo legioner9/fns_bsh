@@ -339,6 +339,7 @@ fn_31484_9351() {
 
 	# find ~/fns_bsh/.d/.sh/.lib.sh -type f -name _gig_dr_all_hlp.pr
 	: >~/fns_bsh/.d/.sh/.lib.sh/_rbld_sg_pth_d_hlp2e.sh.lst
+	: >$(eval "echo \$fl_pth_fn_${rnd}").lst
 	local item=
 	for item in $(find ~/fns_bsh/.d/.sh/.lib.sh -type f -name _gig_dr_all_hlp.pr); do
 		# source $item >/dev/null
@@ -346,6 +347,16 @@ fn_31484_9351() {
 		source "$item"
 
 		local add_dr=$(l_01_prs_f -n "$(l_01_prs_f -n2 "$(l_01_prs_f -d "$item")")")
+
+		#// lib1 & lib2 naming not standart - correct ::
+		if [[ -z ${add_dr} ]]; then
+			add_dr="$(l_01_prs_f -n2 "$(l_01_prs_f -d "$item")")"
+			if [[ -z ${add_dr} ]]; then
+				add_dr="$(l_01_prs_f -n "$(l_01_prs_f -d "$item")")"
+			fi
+		fi
+
+		# read -p "\$add_dr=$add_dr"
 
 		echo "$(l_01_prs_f -d "$item")/.hlp.md.d:${add_dr:1}^${add_dr:1}" >>$(eval "echo \$fl_pth_fn_${rnd}").lst
 

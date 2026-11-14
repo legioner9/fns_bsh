@@ -1,1 +1,1 @@
-fns_bsh_006 lib {fns_bsh_006} {id3422}
+fns_bsh_006 {fns_bsh_006} {id32660}

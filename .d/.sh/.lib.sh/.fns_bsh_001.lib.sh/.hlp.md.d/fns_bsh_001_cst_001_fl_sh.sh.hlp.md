@@ -10,4 +10,4 @@ fns_bsh_001_cst_001_fl_sh
 				- NTE::
 					- 
 
-#@ fns_bsh_001_cst_001_fl_sh :: doing :: gig fl.sh by flw::001 \[use ~/fns_bsh/.d/.p.ax/.p003.d\]
+#@ fns_bsh_001_cst_001_fl_sh :: doing :: gig fl.sh by flw::001 use ~\|fns_bsh\|.d\|.p.ax\|.p003.d

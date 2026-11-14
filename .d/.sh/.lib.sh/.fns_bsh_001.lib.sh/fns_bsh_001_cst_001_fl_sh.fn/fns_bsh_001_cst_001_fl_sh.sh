@@ -20,7 +20,7 @@ fns_bsh_001_cst_001_fl_sh() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: gig fl.sh by flw::001 \\\[use ~/fns_bsh/.d/.p.ax/.p003.d\\\]
+        doing :: gig fl.sh by flw::001 use ~\\|fns_bsh\\\|.d\\\|.p.ax\\\|.p003.d
 			\$1 - dr root
 			\$2 - nm fl (with .ext)
 			\$3 - 
