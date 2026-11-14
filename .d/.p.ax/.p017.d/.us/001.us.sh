@@ -14,21 +14,30 @@ fl - result fl
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
+fns_bsh_004_s2bllg $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")\
+	". ~/fns_bsh/.d/.p.ax/.p017.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 	. ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}") -v2
 	l_00_echo_err "CHECK! . ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}") -v2"
+
+	fns_bsh_004_s2bllg $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") \
+		"in ~/fns_bsh/.d/.p.ax/.p017.d/g.pr :: . ~/fns_bsh/.d/.p.ax/.p015.d/g.pr $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}") -v2 "
 
 	l_00_echo_code "man=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$arg_2_fn_${rnd}")).man"
 	man=$(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")/$(l_01_prs_f -n $(eval "echo \$arg_2_fn_${rnd}")).man
 	echo "$man" >"$man"
 	lfoe_path_to_var "$man"
 	unset man
-	read -p "1"
+	# read -p "1"
 
 	. ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst
 	l_00_echo_err "CHECK! . ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst"
-	read -p "2"
+	# read -p "2"
+
+	fns_bsh_004_s2bllg $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") \
+		"in ~/fns_bsh/.d/.p.ax/.p017.d/g.pr :: . ~/fns_bsh/.d/.p.ax/.p009.d/g.pr $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}") .tst -tst"
 fi
 
 #-- {{002_001_us_sh}}

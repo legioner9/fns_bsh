@@ -9,10 +9,10 @@ fns_bsh_002__p015_d__tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_740_1154="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
-    local dr_pth_fn_740_1154=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local fl_nm_fn_740_1154=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local rnd=740_1154
+    local fl_pth_fn_19625_16946="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
+    local dr_pth_fn_19625_16946=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local fl_nm_fn_19625_16946=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local rnd=19625_16946
 
 	#-- ~001_genv~
 # [[ -d "$2" ]] || {
@@ -343,8 +343,8 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_740_1154 $@
+# fn_19625_16946 $@
 
 # {{002_after}}
 
-#? fn_740_1154 $@
+#? fn_19625_16946 $@
