@@ -1,3 +1,14 @@
 fns_bsh_002_gig_dmd_1
+			- OVR::
+				- DFN::?\"IEN:ln\" - line of IEN
+				- INI::?IEN - fl with pth, REN - dr after cp
+				- ACT::?{IEN} -> {REN}
+				- ARG::?\$1 = {IEN} \$2 = {REN}
+				- FLW::?
+					 -? (-){REN}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+				- NTE::
+					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_gig_dmd_1 :: doing :: (?)$1 :: IEN=fl_with_lst_{DR} $2 :: REN={DR_from_{IEN}}
+#@ fns_bsh_002_gig_dmd_1 :: doing :: ?IEN1=fl_with_lst_{DR} IEN2 :: REN={DR_from_{IEN}}

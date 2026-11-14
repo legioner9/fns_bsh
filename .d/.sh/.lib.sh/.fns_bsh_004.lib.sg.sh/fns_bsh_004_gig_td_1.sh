@@ -41,12 +41,12 @@ fns_bsh_004_gig_td_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: {IEN1}={dr} , \"IEN2\" "nm_fl"
+        doing :: \\\{IEN1\\\} - dr , .d.IEN2.d. .d.nm_fl.d.
 			
 			\$1 - {IEN1}={dr}
 			\$2 - \"IEN2\" "nm_fl"
 			\$3 - 
-
+##begin_hlp
 			- OVR:: gig template dir 1
 				- DFN:: RDR={IEN1}/\"IEN2\".md.d
 				- INI:: IEN1={dr} , IEN2 "nm_fl" REN=FLS
@@ -59,6 +59,7 @@ fns_bsh_004_gig_td_1() {
 					 - G_PR with body :: <fn_gig_md {RDR}/\"IEN2\".lst {RDR}/\"IEN2\".MD>
 			- NTE::
 				-(. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+##end_hlp
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
 			see ST_DSL:
@@ -67,6 +68,8 @@ fns_bsh_004_gig_td_1() {
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
 			see about causa (EXEC_FAIL, e.c.):
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			see global recommendation NTE[n]:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0

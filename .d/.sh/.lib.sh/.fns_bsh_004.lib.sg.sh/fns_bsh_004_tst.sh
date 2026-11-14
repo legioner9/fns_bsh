@@ -43,7 +43,7 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= REN=
+        doing :: ? IEN= REN=
 			
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}

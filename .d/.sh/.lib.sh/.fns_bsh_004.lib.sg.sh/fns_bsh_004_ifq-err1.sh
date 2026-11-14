@@ -41,12 +41,12 @@ fns_bsh_004_ifq-err1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: {IEN}=(fl|dr) , REN=(pr){IEN}
+        doing :: \\\{IEN\\\}=\\\(fl|\\\dr\\\) , REN=\\\(pr\\\)\\\{IEN\\\}
 			
 			\$1 - {IEN}=(fl|dr)
 			\$2 -
 			\$3 - 
-
+##begin_hlp
 			- OVR:: rm with ques
 				- DFN::
 				- INI::{IEN} - (fl|dr)
@@ -55,7 +55,7 @@ fns_bsh_004_ifq-err1() {
 				- FLW:: ifqes \"?DO::rm {IEN}\"
 						- [yes] - (rm {IEN})
 						- [no] - (err1)
-
+##end_hlp
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
 			see ST_DSL:

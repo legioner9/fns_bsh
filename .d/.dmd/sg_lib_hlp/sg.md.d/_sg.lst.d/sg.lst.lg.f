@@ -342,3 +342,11 @@ fns_bsh_002_f2fs_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns
 fns_bsh_005_f2fs_d2md2 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
 # Сб 14 ноя 2026 17:08:13 +07
 fns_bsh_002_f2fs_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 03:28:58 +07
+fns_bsh_005_f2fs_d2md2 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Вс 15 ноя 2026 03:28:58 +07
+fns_bsh_002_f2fs_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 03:31:03 +07
+fns_bsh_005_f2fs_d2md2 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Вс 15 ноя 2026 03:31:04 +07
+fns_bsh_002_f2fs_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.lst ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d

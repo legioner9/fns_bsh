@@ -41,7 +41,7 @@ fns_bsh_004_f2fs() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: IEN1=fl_with_ent_to_path pth_src:rel_pth_out_root , \\\{REN\\\}=\\\{IEN\\\}.d
+        doing :: IEN1=fl_with_ent_to_path\\\(pth_src:rel_pth_out_root\\\) , \\\{REN\\\}=\\\{IEN\\\}.d
 			REN=
 			\$1 - {IEN}
 			\$2 -
