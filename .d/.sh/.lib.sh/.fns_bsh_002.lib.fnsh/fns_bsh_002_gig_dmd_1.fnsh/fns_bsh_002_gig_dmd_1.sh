@@ -64,6 +64,7 @@ fns_bsh_002_gig_dmd_1() {
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
 			see global recommendation NTE[n]:
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
+				"
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
 	}
