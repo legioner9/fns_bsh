@@ -312,11 +312,13 @@ fns_bsh_004_gig_td_1() {
 	#/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d
 	#/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh/fns_bsh_004_gig_td_1.sh
 
-	read -p "? $(eval "echo \$dr_pth_fn_${rnd}")"
+	# read -p "? $(eval "echo \$dr_pth_fn_${rnd}")"
 	l_00_echo_code "fns_bsh_001_df2f $(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d  $(fns_bsh_006_vv2e "${rnd}" ien)/start.sh"
-	read -p "?DO"
+	# read -p "?DO"
 	fns_bsh_001_df2f $(eval "echo \$dr_pth_fn_${rnd}")/.dom.ax/fns_bsh_004_gig_td_1.dom.tml.d/001.dom.tml.d $(fns_bsh_006_vv2e "${rnd}" ien)/start.sh
 
+	#// bllog ien 
+	fns_bsh_004_s2bllg $(fns_bsh_006_vv2e "${rnd}" ien) "$(eval "echo \$fn_nm_${rnd}") $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 	# if fns_bsh_004_ifq-err1 $(eval "echo \$arg_1_fn_${rnd}")
 
 	#-- {{002_body}}

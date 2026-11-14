@@ -26,6 +26,9 @@ fns_bsh_001_als_gig_fn_sh_2() {
 		$2 \
 		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d \
 		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d
+
+	fns_bsh_004_s2bllg "$1/$2" "fns_bsh_001_als_gig_fn_sh_2 $1 $2"
+	fns_bsh_004_s2bllg "$1/$2" ". ~/fns_bsh/.d/.p.ax/.p005.d/g.pr $1 $2 ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d"
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
 }
@@ -42,10 +45,12 @@ fns_bsh_001_als_gig_fn_sh_2_q() {
 	l_00_echo_ques "FULL1, NO ECHO"
 
 	. ~/fns_bsh/.d/.p.ax/.p005.d/g.pr \
-		$1 \
-		$2 \
+		"$1" \
+		"$2 " \
 		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/003.cmn.tml.d \
 		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.01.dom.tml.d
+
+	fns_bsh_004_s2bllg "$1/$2" ". ~/fns_bsh/.d/.p.ax/.p005.d/g.pr $1 $2 ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/003.cmn.tml.d ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.01.dom.tml.d"
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
 }
@@ -78,6 +83,10 @@ fns_bsh_001_als_gig_fl_sh_2() {
 		"$2" \
 		~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d \
 		~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d
+
+		fns_bsh_004_s2bllg "$1/$2" "fns_bsh_001_als_gig_fl_sh_2 $1 $2"
+
+	fns_bsh_004_s2bllg "$1/$2" ". ~/fns_bsh/.d/.p.ax/.p006.d/g.pr $1 $2 ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/001.dom.tml.d"
 	l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 
 }
@@ -127,5 +136,5 @@ fns_bsh_001_als_puml2d() {
 fns_bsh_001_als_epm_proxy() {
 
 	cat /etc/eepm/eepm.conf
-	
+
 }
