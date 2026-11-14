@@ -44,7 +44,7 @@ fns_bsh_002_cp3d_1() {
         doing ::  {IEN1} with .cp, {REN}={IEN1 with cp fls}
 			REN=
 			\$1 - {IEN}
-			\$2 - {IEN}
+			\$2 - 
 			\$3 - 
 ##begin_hlp
 			- DFN:: CPE=fl in {IEN} as ([\*.cp]) with path (fl|dr)
