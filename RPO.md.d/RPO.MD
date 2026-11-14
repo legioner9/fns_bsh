@@ -59,21 +59,13 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
- - <a href=#ctlTxOWGLyvqcbqfquT9MUK27V2K3hrD> # str_to_post_dr {post_dr} {id28504} </a>
- 	- <a href=#YG9VCt2gVN3l6gpznHchcUmAIx7lYgE5> ## {d2md} {id21569} {d2md} {id24443} </a>
- 		- <a href=#lk7fZjwMqp4i1SRjOAszTHXXl7w8Zhw4> ### {edu1.lst} {id25871} </a>
+ - <a href=#gEs58SEXKcmUGYOvPEbWqSOO17Ni6hYQ> # st_dsl style hlp {all_lib_hlp_this_rpo} {id7748} </a>
+ 	- <a href=#cmrcHs56MmavaBHedXkD1wxtLpZ4k8c4> ## {sg.MD} {id32346} </a>
 <!-- ETOC  -->
 
-<a id="ctlTxOWGLyvqcbqfquT9MUK27V2K3hrD"></a>
-# <!-- { --> # str_to_post_dr {post_dr} {id28504} <!-- } --> <- dr:: [post_dr](_READMEd.lst.d/res.d/post_dr) <!-- file://${HOME}/fns_bsh/READMEd.md.d/_READMEd.lst.d/res.d/post_dr --> 
+<a id="gEs58SEXKcmUGYOvPEbWqSOO17Ni6hYQ"></a>
+# <!-- { --> # st_dsl style hlp {all_lib_hlp_this_rpo} {id7748} <!-- } --> <- dr:: [all_lib_hlp_this_rpo](_RPO.lst.d/res.d/all_lib_hlp_this_rpo) <!-- file://${HOME}/fns_bsh/RPO.md.d/_RPO.lst.d/res.d/all_lib_hlp_this_rpo --> 
 
-<a id="YG9VCt2gVN3l6gpznHchcUmAIx7lYgE5"></a>
-## <!-- { --> ## {d2md} {id21569} {d2md} {id24443} <!-- } --> <- dr:: [d2md](_READMEd.lst.d/res.d/post_dr/d2md) <!-- file://${HOME}/fns_bsh/READMEd.md.d/_READMEd.lst.d/res.d/post_dr/d2md --> 
-
-<a id="lk7fZjwMqp4i1SRjOAszTHXXl7w8Zhw4"></a>
-###  <!-- { --> ### {edu1.lst} {id25871} <!-- } --> <- fl:: [edu1.lst](_READMEd.lst.d/res.d/post_dr/d2md/edu1.lst) <!-- file://${HOME}/fns_bsh/READMEd.md.d/_READMEd.lst.d/res.d/post_dr/d2md/edu1.lst -->
-
-```lst
-${HOME}/rpo/edu_lnx/.d/.osdn/bash
-```
+<a id="cmrcHs56MmavaBHedXkD1wxtLpZ4k8c4"></a>
+##  <!-- { --> ## {sg.MD} {id32346} <!-- } --> <- fl:: [sg.MD](_RPO.lst.d/res.d/all_lib_hlp_this_rpo/sg.MD) <!-- file://${HOME}/fns_bsh/RPO.md.d/_RPO.lst.d/res.d/all_lib_hlp_this_rpo/sg.MD -->
 
