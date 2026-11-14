@@ -36,7 +36,8 @@ fns_bsh_002_puml2d() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: (+) IEN=fl.puml REN=fl.puml.png \$1=*{IEN} \$2=&{IEN}
+        doing :: + IEN=fl.puml REN=fl.puml.png IEN1=*{IEN} IEN2=&{IEN}
+##begin_hlp		
 			REN=fl.puml.png
 			\$1 - *{IEN}
 			\$2 - &{IEN}
@@ -44,14 +45,29 @@ fns_bsh_002_puml2d() {
 			\$4 - flw_char : 
 				-f - {REN}=*{REN}/&{IEN}.png
 				-d - {REN}=*{REN}/&{IEN}.d/&{IEN}.png
-			flow_FN ::
-				HAND_SWITCH in /.us/00N.us.sh :: choce ::
-					- word1 ...
-			flow_tst ::
-            exa use ::
-            far use ::
-			see about big short (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+
+			- OVR::
+				- DFN::?\"IEN:ln\" - line of IEN
+				- INI::?IEN - fl with pth, REN - dr after cp
+				- ACT::?{IEN} -> {REN}
+				- ARG::?\$1 = {IEN} \$2 = {REN}
+				- FLW::?
+					 -? (-){REN}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+				- NTE::
+					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+##end_hlp
+			see examples OVR:
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			see global recommendation NTE[n]:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
 "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0

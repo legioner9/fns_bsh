@@ -35,17 +35,34 @@ fns_bsh_002_d4d() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: + cp \$1:dr_upath to \$2:dr_upath \$3:(-int|-rm|-err)
+        doing :: + cp IEN1:dr_upath to IEN2:dr_upath IEN3:-int-rm-err
 			\$1 - 
 			\$2 - 
 			\$3 - 
-			flow_FN :: if \$3 ::
-				-int {exist dst->is_ques before rm dst}
-				-rm {exist dst->remove dst} 
-				-err {exist dst->return err} 
-			flow_tst ::
-            exa use ::
-            far use ::
+
+##begin_hlp
+			- OVR::
+				- DFN::?\"IEN:ln\" - line of IEN
+				- INI::?IEN - fl with pth, REN - dr after cp
+				- ACT::?{IEN} -> {REN}
+				- ARG::?\$1 = {IEN} \$2 = {REN}
+				- FLW::?
+					 -? (-){REN}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+				- NTE::
+					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+##end_hlp
+			see examples OVR:
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			see global recommendation NTE[n]:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0
