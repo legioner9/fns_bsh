@@ -40,12 +40,33 @@ fns_bsh_004_f-f2e() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> ::
-        doing :: inner_sh :: $(eval "echo \$dr_pth_fn_${rnd}")/_dta/inner_f-f2e.sh.d/\$1.sh [, treat file \$2]
+        doing :: inner_sh :: _dta/inner_f-f2e.sh.d/IEN1.sh [, treat file IEN2]
 			\$1 - 
 			\$2 - 
 			\$3 - 
-            exa use ::
-            far use ::
+##begin_hlp
+			- OVR::
+				- DFN::?\"IEN:ln\" - line of IEN
+				- INI::?IEN - fl with pth, REN - dr after cp
+				- ACT::?{IEN} -> {REN}
+				- ARG::?\$1 = {IEN} \$2 = {REN}
+				- FLW::?
+					 -? (-){REN}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+				- NTE::
+					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+##end_hlp
+			see examples OVR:
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			see global recommendation NTE[n]:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}>"
 		return 0

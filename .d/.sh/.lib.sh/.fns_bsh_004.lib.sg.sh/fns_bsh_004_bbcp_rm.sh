@@ -41,7 +41,7 @@ fns_bsh_004_bbcp_rm() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) \$1 {IEN} (dr|fl) rm with <[[fbl4]]bbcp {IEN}>
+        doing :: ?  {IEN1} - dr fl rm with fbl4_bbcp {IEN}pic
 			REN=
 			\$1 - {IEN} (dr|fl)
 			\$2 -
@@ -49,24 +49,35 @@ fns_bsh_004_bbcp_rm() {
 			flow_FN ::
 				SWITCH_ARG in /.us/00N.us.sh :: choce ::
 					- word1 ...
-
+##begin_hlp
 			- DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
 			- INI:: {IEN} (dr|fl)
 			- ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) -a (rm {IEN})
 			- ARG:: \$1 {IEN} 
 			- FLW::  <[[fbl4]]bbcp {IEN}> ; [DO_RM_IEN] 
-			flow_FN ::
-				SWITCH_ARG in /.us/00N.us.sh :: choce ::
-					- word1 ...
-			flow_tst ::
-            exa use ::
-            far use ::
-			see about big short (IEN, REN, e.c.):
-				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=bshort.md
+
+			- OVR::
+				- DFN::?\"IEN:ln\" - line of IEN
+				- INI::?IEN - fl with pth, REN - dr after cp
+				- ACT::?{IEN} -> {REN}
+				- ARG::?\$1 = {IEN} \$2 = {REN}
+				- FLW::?
+					 -? (-){REN}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+				- NTE::
+					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+##end_hlp
+			see examples OVR:
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
 			see about error short ([casual]|[action])+[entety]+[vis] :
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
 			see about causa (EXEC_FAIL, e.c.):
 				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			see global recommendation NTE[n]:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
         "
 		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 		return 0
