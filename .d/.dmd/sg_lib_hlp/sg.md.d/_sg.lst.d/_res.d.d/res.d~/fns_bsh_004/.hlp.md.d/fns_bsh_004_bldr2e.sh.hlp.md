@@ -17,4 +17,4 @@ fns_bsh_004_bldr2e
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_bldr2e :: doing :: {IEN1} ACT:: echo \>{IEN}
+#@ fns_bsh_004_bldr2e :: {IEN1} ACT:: echo \>{IEN}

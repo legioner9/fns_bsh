@@ -8,4 +8,4 @@ fns_bsh_004_ifq-err1
 						- [yes] - (rm {IEN})
 						- [no] - (err1)
 
-#@ fns_bsh_004_ifq-err1 :: doing :: \{IEN\}=\(fl|\dr\) , REN=\(pr\)\{IEN\}
+#@ fns_bsh_004_ifq-err1 :: {IEN}=\(fl\|dr\) , REN=\(pr\){IEN}

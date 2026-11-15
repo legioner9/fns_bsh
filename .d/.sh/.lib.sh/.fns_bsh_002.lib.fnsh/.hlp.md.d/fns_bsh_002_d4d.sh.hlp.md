@@ -11,4 +11,4 @@ fns_bsh_002_d4d
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_d4d :: doing :: + cp IEN1:dr_upath to IEN2:dr_upath IEN3:-int-rm-err
+#@ fns_bsh_002_d4d :: + cp IEN1:dr_upath to IEN2:dr_upath IEN3:-int-rm-err

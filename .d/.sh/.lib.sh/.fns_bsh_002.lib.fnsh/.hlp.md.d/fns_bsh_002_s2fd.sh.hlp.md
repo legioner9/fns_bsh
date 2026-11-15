@@ -11,4 +11,4 @@ fns_bsh_002_s2fd
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_s2fd :: doing :: ? giged from .p007.d:g.tst as exa
+#@ fns_bsh_002_s2fd :: ? giged from .p007.d:g.tst as exa

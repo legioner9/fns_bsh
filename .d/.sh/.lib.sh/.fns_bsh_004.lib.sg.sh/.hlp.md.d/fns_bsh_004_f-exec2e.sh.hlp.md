@@ -11,4 +11,4 @@ fns_bsh_004_f-exec2e
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_f-exec2e :: doing :: fl last empty line!!! or stdin \> eval echo .dol.line if dol\{line:0:1\} != .u.#.u.
+#@ fns_bsh_004_f-exec2e :: fl last empty line!!! or stdin \> eval echo .dol.line if dol\{line:0:1\} != .u.#.u.

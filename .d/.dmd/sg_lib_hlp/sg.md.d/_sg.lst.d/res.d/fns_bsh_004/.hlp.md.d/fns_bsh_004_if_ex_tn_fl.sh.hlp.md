@@ -11,4 +11,4 @@ fns_bsh_004_if_ex_tn_fl
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_if_ex_tn_fl :: doing :: if IEN1 exist then file
+#@ fns_bsh_004_if_ex_tn_fl :: if IEN1 exist then file

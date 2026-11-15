@@ -375,7 +375,8 @@ fn_16131_26573() {
 	for item in $(l_02_d2e "$(eval "echo \$dr_pth_fn_${rnd}")" sh); do
 
 		doing=$(grep 'doing ::' $(eval "echo \$dr_pth_fn_${rnd}")/$item | xargs)
-		echo "${doing:9}"
+		doing=${doing:9}
+		echo "${doing}"
 		#! dev
 		# $(l_01_prs_f -n $item) -h
 		# l_00_echo_info "\$item=$item"

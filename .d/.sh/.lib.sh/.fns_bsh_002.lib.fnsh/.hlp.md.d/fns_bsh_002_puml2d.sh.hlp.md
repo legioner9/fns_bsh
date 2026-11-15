@@ -19,4 +19,4 @@ fns_bsh_002_puml2d
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_puml2d :: doing :: + IEN=fl.puml REN=fl.puml.png IEN1=*{IEN} IEN2=&{IEN}
+#@ fns_bsh_002_puml2d :: + IEN=fl.puml REN=fl.puml.png IEN1=*{IEN} IEN2=&{IEN}

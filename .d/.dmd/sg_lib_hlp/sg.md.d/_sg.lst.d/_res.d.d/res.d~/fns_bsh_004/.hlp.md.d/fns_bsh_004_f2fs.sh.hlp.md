@@ -11,4 +11,4 @@ fns_bsh_004_f2fs
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_f2fs :: doing :: IEN1=fl_with_ent_to_path\(pth_src:rel_pth_out_root\) , \{REN\}=\{IEN\}.d
+#@ fns_bsh_004_f2fs :: IEN1=fl_with_ent_to_path\(pth_src:rel_pth_out_root\) , \{REN\}=\{IEN\}.d

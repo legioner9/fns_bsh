@@ -17,4 +17,4 @@ fns_bsh_004_gig_bbcp
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_gig_bbcp :: doing :: cp IEN to \{IEN~\}
+#@ fns_bsh_004_gig_bbcp :: cp IEN to \{IEN~\}

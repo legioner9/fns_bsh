@@ -380,16 +380,17 @@ fn_16131_26573() {
 		item=$item0/$(l_01_prs_f -n "$item0").sh
 
 		doing=$(grep 'doing ::' $(eval "echo \$dr_pth_fn_${rnd}")/$item | xargs)
-		echo "${doing:9}"
+		doing=${doing:9}
+		echo "${doing}"
 		#! dev
 		# $(l_01_prs_f -n $item) -h
 		# l_00_echo_info "\$item=$item"
-		# read -p doing
+		# read -p see_doing_/home/st/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_001.lib.sh/_gig_dr_all_hlp.pr
 		(
 			echo "$(l_01_prs_f -n $(eval "echo \$dr_pth_fn_${rnd}")/$item)"
 			sed -n '/##begin_hlp/,/##end_hlp/p' "$(eval "echo \$dr_pth_fn_${rnd}")/$item" | grep -Evw "##begin_hlp|##end_hlp"
 			echo
-			echo "#@ $(l_01_prs_f -n $item) :: $doing"
+			echo "#@ $(l_01_prs_f -n "$item") :: $doing"
 		) > \
 			$(eval "echo \$dr_pth_fn_${rnd}")/.hlp.md.d/$(l_01_prs_f -n "$item0").sh.hlp.md
 	done

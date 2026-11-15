@@ -11,4 +11,4 @@ fns_bsh_004_f-f2e
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_f-f2e :: doing :: inner_sh :: _dta/inner_f-f2e.sh.d/IEN1.sh [, treat file IEN2]
+#@ fns_bsh_004_f-f2e :: inner_sh :: _dta/inner_f-f2e.sh.d/IEN1.sh [, treat file IEN2]

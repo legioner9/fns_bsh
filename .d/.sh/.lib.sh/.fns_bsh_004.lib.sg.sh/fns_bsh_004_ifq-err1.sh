@@ -41,7 +41,7 @@ fns_bsh_004_ifq-err1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: \\\{IEN\\\}=\\\(fl|\\\dr\\\) , REN=\\\(pr\\\)\\\{IEN\\\}
+        doing :: {IEN}=\\\(fl\\\|dr\\\) , REN=\\\(pr\\\){IEN}
 			
 			\$1 - {IEN}=(fl|dr)
 			\$2 -

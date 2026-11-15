@@ -18,4 +18,4 @@ fns_bsh_004_bllg2e
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_bllg2e :: doing :: ? IEN=
+#@ fns_bsh_004_bllg2e :: ? IEN=

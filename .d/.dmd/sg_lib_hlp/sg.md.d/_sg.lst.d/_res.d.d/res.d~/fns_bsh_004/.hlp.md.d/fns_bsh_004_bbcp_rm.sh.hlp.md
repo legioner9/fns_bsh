@@ -17,4 +17,4 @@ fns_bsh_004_bbcp_rm
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_bbcp_rm :: doing :: ? {IEN1} - dr fl rm with fbl4_bbcp {IEN}pic
+#@ fns_bsh_004_bbcp_rm :: ? {IEN1} - dr fl rm with fbl4_bbcp {IEN}pic

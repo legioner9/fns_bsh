@@ -11,4 +11,4 @@ fns_bsh_002__p015_d__tst
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002__p015_d__tst :: doing :: ?IEN1= REN=
+#@ fns_bsh_002__p015_d__tst :: ?IEN1= REN=

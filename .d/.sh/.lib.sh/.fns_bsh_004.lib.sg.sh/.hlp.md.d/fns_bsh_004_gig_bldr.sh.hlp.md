@@ -18,4 +18,4 @@ fns_bsh_004_gig_bldr
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_gig_bldr :: doing :: {REN} = \>{IEN}, IEN is \(f\|dr\), IEN1 = {IEN} IEN2 = {par:\(-f\|-i\|-c\| \)}
+#@ fns_bsh_004_gig_bldr :: {REN} = \>{IEN}, IEN is \(f\|dr\), IEN1 = {IEN} IEN2 = {par:\(-f\|-i\|-c\| \)}

@@ -11,4 +11,4 @@ fns_bsh_004_d2ne
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_d2ne :: doing :: like l_02_d2e entity dot include, _ exclude
+#@ fns_bsh_004_d2ne :: like l_02_d2e entity dot include, _ exclude

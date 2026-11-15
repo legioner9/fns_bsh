@@ -17,4 +17,4 @@ fns_bsh_004_s2bllg
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_s2bllg :: doing :: \{IEN1\} ent, IEN2 = .d.IEN2.d. str, IEN3 = \{par.cl.fns_bsh_004_gig_bldr.cr.:\(-f\|-i\|-c\|.u..u.)}
+#@ fns_bsh_004_s2bllg :: {IEN1} ent, IEN2 = .d.IEN2.d. str, IEN3 = {par.cl.fns_bsh_004_gig_bldr.cr.:\(-f\|-i\|-c\|.u..u.\)}

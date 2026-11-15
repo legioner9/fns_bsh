@@ -11,4 +11,4 @@ fns_bsh_002_d2md_2
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_d2md_2 :: doing :: !!DPR!! add toc to .md giged as fns_bsh_002_d2md_1 IEN= dr_with_fl::IEN1 , REN=res_md_fl::IEN2 see exa : .src exa_1.d
+#@ fns_bsh_002_d2md_2 :: !!DPR!! add toc to .md giged as fns_bsh_002_d2md_1 IEN= dr_with_fl::IEN1 , REN=res_md_fl::IEN2 see exa : .src exa_1.d

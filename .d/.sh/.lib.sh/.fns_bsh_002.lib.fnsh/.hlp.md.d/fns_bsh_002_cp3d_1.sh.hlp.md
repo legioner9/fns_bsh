@@ -10,4 +10,4 @@ fns_bsh_002_cp3d_1
 							<[[fbl4]]bbcp_rm {CPE}
 							cp *{CPE}/.tmp/{&CPE}.tmp/. *{CPE}
 
-#@ fns_bsh_002_cp3d_1 :: doing :: {IEN1} with .cp, {REN}={IEN1 with cp fls}
+#@ fns_bsh_002_cp3d_1 :: {IEN1} with .cp, {REN}={IEN1 with cp fls}

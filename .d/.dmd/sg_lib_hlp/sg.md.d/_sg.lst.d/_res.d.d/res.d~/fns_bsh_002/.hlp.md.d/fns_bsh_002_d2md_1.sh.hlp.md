@@ -11,4 +11,4 @@ fns_bsh_002_d2md_1
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_d2md_1 :: doing :: IEN1 - dr with struct REN=IEN2 .md with anc
+#@ fns_bsh_002_d2md_1 :: IEN1 - dr with struct REN=IEN2 .md with anc

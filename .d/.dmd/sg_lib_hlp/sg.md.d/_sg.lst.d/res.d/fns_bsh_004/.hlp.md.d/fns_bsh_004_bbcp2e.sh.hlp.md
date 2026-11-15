@@ -17,4 +17,4 @@ fns_bsh_004_bbcp2e
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_bbcp2e :: doing :: IEN1 is pth, echo str{IEN~}
+#@ fns_bsh_004_bbcp2e :: IEN1 is pth, echo str{IEN~}

@@ -12,4 +12,4 @@ fns_bsh_004_gig_td_1
 			- NTE::
 				-(. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_gig_td_1 :: doing :: \{IEN1\} - dr , .d.IEN2.d. .d.nm_fl.d.
+#@ fns_bsh_004_gig_td_1 :: {IEN1} - dr , .d.IEN2.d. .d.nm_fl.d.

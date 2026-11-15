@@ -10,7 +10,7 @@ fn_16131_26573() {
 	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
 	# /fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/_gig_dr_all_hlp.pr
-	
+
 	local fl_pth_fn_16131_26573="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/_gig_dr_all_hlp.pr"
 	local dr_pth_fn_16131_26573=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/_gig_dr_all_hlp.pr)
 	local fl_nm_fn_16131_26573=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/_gig_dr_all_hlp.pr)
@@ -380,7 +380,8 @@ fn_16131_26573() {
 		item=$item0/$(l_01_prs_f -n "$item0").sh
 
 		doing=$(grep 'doing ::' $(eval "echo \$dr_pth_fn_${rnd}")/$item | xargs)
-		echo "${doing:9}"
+		doing=${doing:9}
+		echo "${doing}"
 		#! dev
 		# $(l_01_prs_f -n $item) -h
 		# l_00_echo_info "\$item=$item"

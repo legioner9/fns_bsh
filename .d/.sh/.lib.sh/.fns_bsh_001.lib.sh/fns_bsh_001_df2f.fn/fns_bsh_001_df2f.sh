@@ -22,7 +22,7 @@ fns_bsh_001_df2f() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: IEN1 dr with ins fl \\\[nm_fl.tml\\\] -> in IEN2 rcv fl with \\\{\\\{\\\[nm_fl\\\]\\\}\\\}
+        doing :: IEN1 dr with ins fl nm_fl.tml -\\\> in IEN2 rcv fl with {{nm_fl}}
 			\$1 - dr with ins fl [nm_fl.tml] 
 			\$2 - rcv fl with {{[nm_fl]}} strings
 			\$3 - 

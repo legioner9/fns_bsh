@@ -11,4 +11,4 @@ fns_bsh_002_d2md_3
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_d2md_3 :: doing :: ? fns_bsh_002_d2md_2 + fns_bsh_002_dmd_1 IEN1=fl_dmd IEN2=fl_md with ancs
+#@ fns_bsh_002_d2md_3 :: ? fns_bsh_002_d2md_2 + fns_bsh_002_dmd_1 IEN1=fl_dmd IEN2=fl_md with ancs

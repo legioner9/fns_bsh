@@ -41,7 +41,7 @@ fns_bsh_004_s2bllg() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: \\\{IEN1\\\} ent, IEN2 = .d.IEN2.d. str, IEN3 = \\\{par.cl.fns_bsh_004_gig_bldr.cr.:\\\(-f\\\|-i\\\|-c\\\|.u..u.)} 
+        doing :: {IEN1} ent, IEN2 = .d.IEN2.d. str, IEN3 = {par.cl.fns_bsh_004_gig_bldr.cr.:\\\(-f\\\|-i\\\|-c\\\|.u..u.\\\)} 
 			REN=
 			\$1 - ?*{IEN}
 			\$2 - ?&{IEN}

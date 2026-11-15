@@ -11,4 +11,4 @@ fns_bsh_002_toc2md_1
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_toc2md_1 :: doing :: add toc to .md IEN=fl_md - instead utl_d=_fns_bsh_002_toc2md_1.utl.d
+#@ fns_bsh_002_toc2md_1 :: add toc to .md IEN=fl_md - instead utl_d=_fns_bsh_002_toc2md_1.utl.d

@@ -11,4 +11,4 @@ fns_bsh_002_f2fs_1
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_f2fs_1 :: doing :: IEN1=fl_with path, IEN2=res_dr
+#@ fns_bsh_002_f2fs_1 :: IEN1=fl_with path, IEN2=res_dr

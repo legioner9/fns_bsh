@@ -11,4 +11,4 @@ fns_bsh_004_is_ex_a_dr
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_004_is_ex_a_dr :: doing :: IEN1 exist and dir
+#@ fns_bsh_004_is_ex_a_dr :: IEN1 exist and dir

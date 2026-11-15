@@ -11,4 +11,4 @@ fns_bsh_002_git_treat_1
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
 
-#@ fns_bsh_002_git_treat_1 :: doing :: ?IEN1= REN=
+#@ fns_bsh_002_git_treat_1 :: ?IEN1= REN=
