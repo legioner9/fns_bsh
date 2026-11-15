@@ -368,6 +368,8 @@ fn_24683_6438() {
 		return 1
 	fi
 
+	(retext $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).MD)&
+
 	if [[ -n "$(eval "echo \$arg_1_fn_${rnd}")" ]]; then
 
 		if [[ "MD" != $(l_01_prs_f -e $(eval "echo \$arg_1_fn_${rnd}")) ]]; then
@@ -387,6 +389,8 @@ fn_24683_6438() {
 			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'fns_bsh_005_f2fs_d2md2 $(eval "echo \$dr_pth_fn_${rnd}")/$(fns_bsh_006_vv2e ${rnd} nm_md).lst "$(eval "echo \$arg_1_fn_${rnd}")"', return 1${NRM}" >&2
 			return 1
 		fi
+
+		(retext $(eval "echo \$arg_1_fn_${rnd}"))&
 
 	fi
 

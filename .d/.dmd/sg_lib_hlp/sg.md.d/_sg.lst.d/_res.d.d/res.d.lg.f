@@ -520,3 +520,27 @@ fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
 fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
 # Вс 15 ноя 2026 03:31:06 +07
 fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Вс 15 ноя 2026 07:38:49 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:38:50 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:38:50 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Вс 15 ноя 2026 07:39:52 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:39:52 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:39:53 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Вс 15 ноя 2026 07:47:24 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:47:25 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:47:25 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD
+# Вс 15 ноя 2026 07:58:29 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:58:29 +07
+fns_bsh_002_cp3d_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d
+# Вс 15 ноя 2026 07:58:30 +07
+fns_bsh_002_d2md_1 ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/_sg.lst.d/res.d ${HOME}/fns_bsh/.d/.dmd/sg_lib_hlp/sg.md.d/sg.MD

@@ -1,15 +1,15 @@
 #!/bin/bash
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml
 
-fn_12493_32539(){
+fn_6402_15849(){
 	
 	#--{{001_start}}
 	# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_12493_32539="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/.tst/g.tst"
-    local dr_pth_fn_12493_32539=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/.tst/g.tst)
-    local fl_nm_fn_12493_32539=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/.tst/g.tst)
-    local rnd=12493_32539
+    local fl_pth_fn_6402_15849="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/.tst/g.tst"
+    local dr_pth_fn_6402_15849=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/.tst/g.tst)
+    local fl_nm_fn_6402_15849=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/.tst/.tst/g.tst)
+    local rnd=6402_15849
 
 	#-- ~001_genv~
 # from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/001.cmn.tml.d/001_genv.tml
@@ -31,12 +31,12 @@ eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= REN=
+         doing :: ?IEN1= REN=
 			
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - ?{IEN1}
+			\$2 - ?{IEN2}
 			\$3 - 
-
+##begin_hlp
 			- OVR::
 				- DFN::?\"IEN:ln\" - line of IEN
 				- INI::?IEN - fl with pth, REN - dr after cp
@@ -48,7 +48,7 @@ eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
-
+##end_hlp
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
 			see ST_DSL:
@@ -220,8 +220,8 @@ eval "us_pth_fn_${rnd}=\$dr_pth_fn_${rnd}/.us"
 
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p006.d/.p001/fl_nm.tml.d/001_after.tml
-fn_12493_32539 $@
+fn_6402_15849 $@
 
 # {{002_after}}
 
-#? fn_12493_32539 $@
+#? fn_6402_15849 $@

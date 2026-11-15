@@ -22,12 +22,33 @@ fns_bsh_001_df2f() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for $(eval "echo \$fl_pth_fn_${rnd}") ::
-        doing :: \$1 dr with ins fl [nm_fl.tml] -> in \$2 rcv fl with {{[nm_fl]}}
+        doing :: IEN1 dr with ins fl \\\[nm_fl.tml\\\] -> in IEN2 rcv fl with \\\{\\\{\\\[nm_fl\\\]\\\}\\\}
 			\$1 - dr with ins fl [nm_fl.tml] 
 			\$2 - rcv fl with {{[nm_fl]}} strings
 			\$3 - 
-            exa use ::
-            far use ::
+##begin_hlp
+			- OVR::
+				- DFN::?\"IEN:ln\" - line of IEN
+				- INI::?IEN - fl with pth, REN - dr after cp
+				- ACT::?{IEN} -> {REN}
+				- ARG::?\$1 = {IEN} \$2 = {REN}
+				- FLW::?
+					 -? (-){REN}
+					 -? DFN::\"IEN:ln\" == \"IEN:pth\"[:\"IEN:add\"[^\"IEN:str\"]]
+					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
+				- NTE::
+					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
+##end_hlp
+			see examples OVR:
+				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
+			see ST_DSL:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_dsl.md
+			see about error short ([casual]|[action])+[entety]+[vis] :
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=eshort.md
+			see about causa (EXEC_FAIL, e.c.):
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=cshort.md
+			see global recommendation NTE[n]:
+				$ curl https://gitflic.ru/project/legioner9/cmn_lex/blob/raw?file=st_note.md
         "
 		return 0
 	}

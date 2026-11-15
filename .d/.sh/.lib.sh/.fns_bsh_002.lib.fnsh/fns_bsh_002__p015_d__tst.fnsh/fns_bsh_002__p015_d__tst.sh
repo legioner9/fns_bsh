@@ -9,10 +9,10 @@ fns_bsh_002__p015_d__tst(){
 	#-- {{002_start}}
 			# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 
-    local fl_pth_fn_17899_20948="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
-    local dr_pth_fn_17899_20948=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local fl_nm_fn_17899_20948=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
-    local rnd=17899_20948
+    local fl_pth_fn_28648_19672="${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh"
+    local dr_pth_fn_28648_19672=$(dirname ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local fl_nm_fn_28648_19672=$(basename ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002__p015_d__tst.fnsh/fns_bsh_002__p015_d__tst.sh)
+    local rnd=28648_19672
 
 	#-- ~001_genv~
 # [[ -d "$2" ]] || {
@@ -43,12 +43,12 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: (?) IEN= REN=
+        doing :: ?IEN1= REN=
 			
-			\$1 - ?*{IEN}
-			\$2 - ?&{IEN}
+			\$1 - ?{IEN1}
+			\$2 - ?{IEN2}
 			\$3 - 
-
+##begin_hlp
 			- OVR::
 				- DFN::?\"IEN:ln\" - line of IEN
 				- INI::?IEN - fl with pth, REN - dr after cp
@@ -60,7 +60,7 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 					 -? cp {\"IEN:pth\"} {REN}/\"IEN:add\"
 				- NTE::
 					-? (. start.sh {arg.MD}) gig {arg.MD} from {*.lst}
-
+##end_hlp
 			see examples OVR:
 				$ curl https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=TODO.md
 			see ST_DSL:
@@ -343,8 +343,8 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 }
 #-- ~001_after~
 # from:: ~/fns_bsh/.d/.p.ax/.p005.d/.p001/fl_nm.tml.d/001_after.tml
-# fn_17899_20948 $@
+# fn_28648_19672 $@
 
 # {{002_after}}
 
-#? fn_17899_20948 $@
+#? fn_28648_19672 $@
