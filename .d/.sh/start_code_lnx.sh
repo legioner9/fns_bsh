@@ -8,17 +8,18 @@ code ~/fns_bsh
 # code ~/rpo/edu_dta
 # code ~/rpo/tml_a
 # code /run/media/st/TOSHIBA_EXT/_OLD_REPO_26+08/_unzip/
-# code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh
+code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_004.lib.sg.sh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_005.lib.und.sh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_006.lib.rnd.sh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_1.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_toc2md_1.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_d2md_3.fnsh
-# code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_gig_dmd_1.fnsh
+code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_gig_lmd_1.fnsh
+code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_gig_dmd_1.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_cp3d_1.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_f2fs_1.fnsh
 
-code ~/rpo/cmn_lex/st_dsl.md
-code ~/rpo/cmn_lex/st_note.md
-code ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.01.dom.tml.d/001_help.tml
+# code ~/rpo/cmn_lex/st_dsl.md
+# code ~/rpo/cmn_lex/st_note.md
+# code ~/fns_bsh/.d/.p.ax/.dom/.dom.tml.d/002.01.dom.tml.d/001_help.tml
