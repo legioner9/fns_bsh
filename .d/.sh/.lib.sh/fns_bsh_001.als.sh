@@ -156,6 +156,8 @@ fns_bsh_001_als_puml2d() {
 
 	fns_bsh_004_s2bllg "$1/$2" "in fns_bsh_001_als_puml2d :: fns_bsh_002_puml2d $1 $2  @ -f"
 
+	fns_bsh_004_s2bllg "$1/$2" "in fns_bsh_001_als_puml2d :: gwenview $1/$2.png"
+
 }
 fns_bsh_001_als_epm_proxy() {
 
