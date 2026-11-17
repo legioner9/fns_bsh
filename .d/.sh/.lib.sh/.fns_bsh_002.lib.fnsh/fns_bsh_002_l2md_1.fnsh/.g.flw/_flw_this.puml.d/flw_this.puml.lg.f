@@ -4,3 +4,9 @@ fns_bsh_001_als_puml2d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_
 in fns_bsh_001_als_puml2d :: fns_bsh_002_puml2d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_l2md_1.fnsh/.g.flw flw_this.puml @ -f
 # Вт 17 ноя 2026 05:51:38 +07
 in fns_bsh_001_als_puml2d :: gwenview ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_l2md_1.fnsh/.g.flw/flw_this.puml.png
+# Ср 18 ноя 2026 06:01:32 +07
+fns_bsh_001_als_puml2d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_l2md_1.fnsh/.g.flw flw_this.puml
+# Ср 18 ноя 2026 06:01:33 +07
+in fns_bsh_001_als_puml2d :: fns_bsh_002_puml2d ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_l2md_1.fnsh/.g.flw flw_this.puml @ -f
+# Ср 18 ноя 2026 06:01:34 +07
+in fns_bsh_001_als_puml2d :: gwenview ${HOME}/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_l2md_1.fnsh/.g.flw/flw_this.puml.png
