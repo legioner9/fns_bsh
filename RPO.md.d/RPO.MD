@@ -59,13 +59,13 @@ Start Contents Menu
 
 <!-- STOC  --> 
 
- - <a href=#gEs58SEXKcmUGYOvPEbWqSOO17Ni6hYQ> # st_dsl style hlp {all_lib_hlp_this_rpo} {id7748} </a>
- 	- <a href=#cmrcHs56MmavaBHedXkD1wxtLpZ4k8c4> ## {sg.MD} {id32346} </a>
+ - <a href=#CpLv33n70tHQARLYFCZxfAkMUensmzZc> # st_dsl style hlp {all_lib_hlp_this_rpo} {id28849} </a>
+ 	- <a href=#uNLPk0BF7leLsRXBBtMAKggRStJbHg8Z> ## {sg.MD} {id20678} </a>
 <!-- ETOC  -->
 
-<a id="gEs58SEXKcmUGYOvPEbWqSOO17Ni6hYQ"></a>
-# <!-- { --> # st_dsl style hlp {all_lib_hlp_this_rpo} {id7748} <!-- } --> <- dr:: [all_lib_hlp_this_rpo](_RPO.lst.d/res.d/all_lib_hlp_this_rpo) <!-- file://${HOME}/fns_bsh/RPO.md.d/_RPO.lst.d/res.d/all_lib_hlp_this_rpo --> 
+<a id="CpLv33n70tHQARLYFCZxfAkMUensmzZc"></a>
+# <!-- { --> # st_dsl style hlp {all_lib_hlp_this_rpo} {id28849} <!-- } --> <- dr:: [all_lib_hlp_this_rpo](_RPO.lst.d/res.d/all_lib_hlp_this_rpo) <!-- file://${HOME}/fns_bsh/RPO.md.d/_RPO.lst.d/res.d/all_lib_hlp_this_rpo --> 
 
-<a id="cmrcHs56MmavaBHedXkD1wxtLpZ4k8c4"></a>
-##  <!-- { --> ## {sg.MD} {id32346} <!-- } --> <- fl:: [sg.MD](_RPO.lst.d/res.d/all_lib_hlp_this_rpo/sg.MD) <!-- file://${HOME}/fns_bsh/RPO.md.d/_RPO.lst.d/res.d/all_lib_hlp_this_rpo/sg.MD -->
+<a id="uNLPk0BF7leLsRXBBtMAKggRStJbHg8Z"></a>
+##  <!-- { --> ## {sg.MD} {id20678} <!-- } --> <- fl:: [sg.MD](_RPO.lst.d/res.d/all_lib_hlp_this_rpo/sg.MD) <!-- file://${HOME}/fns_bsh/RPO.md.d/_RPO.lst.d/res.d/all_lib_hlp_this_rpo/sg.MD -->
 
