@@ -1,0 +1,28 @@
+# * gig group
+sudo groupadd gitf
+# * check exist group
+getent group | grep gitf
+# * add user to group
+sudo usermod -aG gitf $USER
+# * do group owner of dr
+sudo chgrp -R gitf /run/media/stl/TOSH/new_bare/
+or
+sudo chown :gitf /run/media/stl/TOSH/new_bare/
+# * add right to wright (chmod g - gr)
+sudo chmod -R g+w /run/media/stl/TOSH/new_bare/
+# ! main command
+sudo chown -R $USER /run/media/stl/TOSH/new_bare/
+
+    # additionl flow for
+    # sudo find /run/media/stl/TOSH/ -type d -exec chmod 755 {} \;
+    # sudo find /run/media/stl/TOSH/ -type f -exec chmod 644 {} \;
+
+
+    # stat -c "%U %G" /run/media/stl/TOSH/
+    # stat -c "%U" /run/media/stl/TOSH/
+    # owner (therd col)
+    # ls -ld /run/media/stl/TOSH/ | awk '{print $3}'
+    # owner for nm
+    # find /tmp -type f -printf '%u\n' | sort -u 
+    # owner for id
+    # find /tmp -type f -printf '%U\n' | sort -u

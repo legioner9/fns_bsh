@@ -1,0 +1,38 @@
+sudo apt-get install shared-desktop-icons
+/etc/xdg/autostart/shared-desktop-icons.desktop
+/usr/bin/shared-desktop-icons-sync
+/usr/share/Desktop
+
+~/.kde4/share
+in this custom-file.desktop
+
+[Desktop Entry]
+Name=Моё приложение
+Comment=Моя замечательная программа
+GenericName=Тестовая программа
+Keywords=раз;два;три;
+Exec=/путь/к/исполняемому/файлу
+Terminal=false
+Type=Application
+Icon=/путь/к/файлу/с/иконкой
+Categories=
+Path=/путь/к/рабочему/каталогу/приложения
+NoDisplay=false
+
+?work
+[Desktop Entry]
+Terminal=true
+Type=Application
+Exec=/bin/bash . ~/.bashrc & . ~/aer_foe/.d/.sh/rpo2git.sh & read
+Comment=Запуск Firefox с профилем разработчика
+Actions=
+Icon=~/edu_dta/fl.d/0004.fl.d/material_icon.png/_main/baseline_code_black_48dp.png
+
+!work
+[Desktop Entry]
+Terminal=true
+Type=Application
+Exec=/bin/bash ~/aer_foe/.d/.tmp/for_arr.sh & read
+Comment=Запуск Firefox с профилем разработчика
+Actions=
+Icon=~/Загрузки/google-material-design-icons-b3f05bf/material_icon.png/hardware/computer/materialicons/48dp/2x/baseline_computer_black_48dp.png

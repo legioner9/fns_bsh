@@ -1,0 +1,5 @@
+# local --bare::
+
+# git config --global --add safe.directory /run/media/stl/TOSH/new_bare/tml_a
+
+# git config --global safe.directory

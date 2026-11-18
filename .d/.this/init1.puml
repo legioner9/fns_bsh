@@ -1,0 +1,21 @@
+@startmindmap
+*:. .bashrc
+
+<code>
+for {} in (aer_foe fns_bsh)
+    $HOME/{}/.d/.repo.d/.repo.rc
+</code>
+;
+**:aer_foe//.repo.rc
+<code>
+. .bashrc
+</code>
+;
+**:fns_bsh//.repo.rc cnt ::
+<code>
+    in dr fns_bsh/ ::
+    . l.sh
+    l_01_c_up .lib.sh
+</code>
+;
+@endmindmap

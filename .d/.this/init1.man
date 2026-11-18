@@ -1,0 +1,66 @@
+su -
+apt-get update
+apt-get dist-upgrade
+apt-get install sudo git eepm appinstall zip go shfmt gnome-terminal
+  clang22.1-tools qt-creator nautilus mate-terminal gitk git-gui pandoc texlive
+   java-17-openjdk graphviz retext htop -y
+
+unalias -a # del sys alias
+(check this: alias)
+
+EDITOR=mcedit visudo
+in /usr/bin/ file visudo
+
+WHEEL_USERS ALL=(ALL) ALL
+
+git config --global user.email "legioner9@inbox.ru"
+git config --global user.name "legioner9"
+
+cd ~
+git clone https://gitflic.ru/project/legioner9/aer_foe.git
+git clone https://gitflic.ru/project/legioner9/fns_bsh.git
+
+ssh dir done?
+.bashrc done?
+
+. ~/aer_foe/.d/.sh/rpo2git.sh
+
+. ~/aer_foe/.d/.depo/fonts/.sh/install_fonts.sh
+. ~/aer_foe/.d/.sh/install.vsc.ext.sh
+. ~/aer_foe/.d/.sh/bcp_dpl.sh/dpl.vsc.env.sh
+
+cp ~/aer_foe/.d/.bcp_dpl/i_wt/.desktop ~/Рабочий стол
+-------------------------------------
+https://www.onlinewebfonts.com/download/e997d4775f35d8fad319d34dab07e857
+. ~/aer_foe/.d/.depo/fonts/.sh/install_fonts.sh
+
+format bash :: shfmt (apt install)
+https://github.com/mvdan/sh
+? go install mvdan.cc/sh/v3/cmd/shfmt@latest
+"shellformat.path": "/usr/bin/shfmt",
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "workbench.colorTheme": "bashling",
+-------------------------------------
+^F2 gnome-terminal
+^F3 code
+^F4 dolphin --sudo
+
+renameuser dir
+LANG=C xdg-user-dirs-update --force
+LC_ALL=en_US xdg-user-dirs-update --force
+
+автоматическое монтирование usb
+
+?gnome-panel
+~/.local/share/icons/
+~/.local/share/applications/
+
+clang-format -style=llvm -dump-config > .clang-format
+AllowShortFunctionsOnASingleLine: Never
+IndentWidth:     4
+
+
+
+
