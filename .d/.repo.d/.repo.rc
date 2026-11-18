@@ -1,40 +1,58 @@
 #!/bin/bash
 
 fn_caewmjfh345etr4gdwqdwq() {
-# alias dkr="docker"
+	# alias dkr="docker"
 
-    unalias -a
-    
-    pro_pth=$HOME/fns_bsh
-    fn_nm=$pro_pth/.d/.repo.d/.repo.rc
-    als_nm=$pro_pth/.d/.repo.d/.repo.als
-    
-    
-    echo "start $fn_nm"
-    
-    . "$als_nm"
-    
-    if [[ -f "$pro_pth/.d/.sh/l.sh" ]];then
-        . "$pro_pth/.d/.sh/l.sh" || {
-            echo ". $pro_pth/.d/.sh/l.sh - EXEC_ERROR" >&2
-        }
-    else
-        echo ". $pro_pth/.d/.sh/l.sh - NOT_EXIST" >&2
-    fi
-    
-    l_01_c_up $pro_pth/.d/.sh/.lib.sh || {
-        echo -e "${ECHO_RET1}in file://${fn_nm} , line=${LINENO} :: EXEC : 'l_01_c_up $pro_pth/.d/.sh/.lib.sh', 'RESUME :: LIBERR' return 1${NRM}" >&2
-        return 1
-    }
-    
-    [[ $(type -t lfoe_is_fn) == "function" ]] || {
-        echo -e "${ECHO_RET1}in file://${fn_nm} , line=${LINENO} :: EXEC : '[[ \$(type -t lfoe_is_fn) == \"function\" ]]', 'RESUME :: in $HOME/aer_foe/.d/.sh/.lib.sh ERROR' return 1${NRM}" >&2
-        return 1
-    }
-    
-    # if [[ -z "$(sudo systemctl status docker| grep running)" ]] ;then
-    #     sudo systemctl start docker
-    # fi
+	unalias -a
+
+	local pro_pth=$HOME/fns_bsh
+	local fn_nm=$pro_pth/.d/.repo.d/.repo.rc
+	local als_nm=$pro_pth/.d/.repo.d/.repo.als
+
+	echo "start $fn_nm"
+
+	. "$als_nm"
+
+	# ~/fns_bsh/.d/.sh/.lib.sh/l.sh
+	# ~/fns_bsh/.d/.sh/.lib.sh/lfoe.lib.sh
+
+	local fns_bsh_lib=$HOME/fns_bsh/.d/.sh/.lib.sh
+	if [[ -f $fns_bsh_lib/l.sh ]]; then
+		. "$fns_bsh_lib/l.sh" || {
+			echo ". $fns_bsh_lib/l.sh - EXEC_ERROR" >&2
+		}
+	else
+		echo "$fns_bsh_lib/l.sh - NOT_EXIST" >&2
+		return 1
+	fi
+
+	if [[ -f "$fns_bsh_lib/lfoe.lib.sh" ]]; then
+		. "$fns_bsh_lib//lfoe.lib.sh" || {
+			echo ". $fns_bsh_lib//lfoe.lib.sh - EXEC_ERROR" >&2
+		}
+	else
+		echo "$fns_bsh_lib//lfoe.lib.sh - NOT_EXIST" >&2
+		return 1
+	fi
+
+	l_01_c_up $fns_bsh_lib || {
+		echo -e "${ECHO_RET1}in file://${fn_nm} , line=${LINENO} :: EXEC : 'l_01_c_up $pro_pth/.d/.sh/.lib.sh', 'RESUME :: LIBERR' return 1${NRM}" >&2
+		return 1
+	}
+
+	# l_01_c_up $pro_pth/.d/.sh/.lib.sh || {
+	# 	echo -e "${ECHO_RET1}in file://${fn_nm} , line=${LINENO} :: EXEC : 'l_01_c_up $pro_pth/.d/.sh/.lib.sh', 'RESUME :: LIBERR' return 1${NRM}" >&2
+	# 	return 1
+	# }
+
+	[[ $(type -t lfoe_is_fn) == "function" ]] || {
+		echo -e "${ECHO_RET1}in file://${fn_nm} , line=${LINENO} :: EXEC : '[[ \$(type -t lfoe_is_fn) == \"function\" ]]', 'RESUME :: in $HOME/aer_foe/.d/.sh/.lib.sh ERROR' return 1${NRM}" >&2
+		return 1
+	}
+
+	# if [[ -z "$(sudo systemctl status docker| grep running)" ]] ;then
+	#     sudo systemctl start docker
+	# fi
 
 }
 
