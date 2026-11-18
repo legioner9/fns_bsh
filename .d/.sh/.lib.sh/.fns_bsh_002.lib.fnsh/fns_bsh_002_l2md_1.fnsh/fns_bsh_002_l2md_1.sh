@@ -46,7 +46,7 @@ fns_bsh_002_l2md_1() {
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: IEN1 - dr with struct REN=IEN2 .md with anc
+        doing :: not IEN1 - dr with struct REN=IEN2 .md with anc
 			REN=
 			\$1 - dr with struct
 			\$2 - fl.md with anc
