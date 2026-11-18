@@ -1,0 +1,117 @@
+# do fns_bsh_002_f2fs_1
+
+- OVR::
+    - DFN:: "IEN:ln" - line of IEN
+    - INI:: IEN - fl with pth, REN - dr after cp
+    - ACT:: {IEN} -> {REN}
+    - ARG:: \$1 = {IEN} \$2 = {REN}
+    - FLW:: 
+        - (-){REN}
+        - DFN::"IEN:ln" == "IEN:pth"[:"IEN:add"[^"IEN:str"]]
+        - cp {"IEN:pth"} {REN}/"IEN:add" 
+            - if EXST "IEN:pth" thn echo "IEN:str" > {REN}/"IEN:add"/_d.d 
+
+## add \$2 to fns_bsh_004_f2fs -> fns_bsh_002_f2fs_1
+- add :
+    - [+]if REN_EXST 
+    - in IEN add : pth:pref_pth:dicr_pref_pth wh dicr_pref_pth>pth/pref_pth/_d.d
+
+
+> fns_bsh_004==[[fbl4]]
+
+
+### fns_bsh_004_gig_bldr == [[fbl4]]gig_bldr
+- OVR::
+    - INI:: IEN is (f|dr)
+    - ACT:: {REN} = >{IEN}
+    - ARG:: \$1 = {IEN} \$2 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
+    - FLW:: ( if [par=-f] & [REN_EXST] thn [rm REN] | if [par=-i] & [REN_EXST] thn [ask=?{rm REN}] ( if ['y'] thn [rm REN] els [err1] ) | if [par='-c'] & [REN_EXST] thn [err1] | if [par=''] & [REN_EXST] thn [ret0] ) 
+
+> \>{EN} = *{EN}/_&{EN}.d
+            LOG_FL [bllg]:
+                >{EN}:lg = >{EN}/&{EN}.lg.f
+
+### fns_bsh_004_s2bllg
+- OVR::
+    - INI:: IEN1 is EN, IEN2 is STRING
+    - ACT:: echo \"IEN2\" > [>{IEN1}:lg]
+    - ARG:: \$1 = {IEN1} \$2 = \"IEN2\" \$3 = {par[fns_bsh_004_gig_bldr]:(-f|-i|-c|'')}
+    - FLW:: [[l4]]gig_bldr {IEN1}, echo \"IEN2\" > [>{IEN1}:lg]
+
+### [[fbl4]]bldr2e
+- OVR::
+    - INI:: IEN1 is EN
+    - ACT:: echo \">{IEN}\"
+    - ARG:: \$1 = {IEN1}
+    - FLW:: echo \">{IEN}\"
+
+### [[fbl4]]bllg2e
+- OVR::
+    - INI:: IEN1 is EN
+    - ACT:: echo \">{EN}:lg\"
+    - ARG:: \$1 = {IEN1}
+    - FLW:: echo \">{EN}:lg\"
+
+```
+bul (empty exa):
+- OVR::
+    - DFN::
+    - INI::
+    - ACT::
+    - ARG::
+    - FLW::
+```
+# do fns_bsh_002_cp3d_1
+- OVR::
+    - DFN:: CPE=fl in {IEN} as ([\*.cpd]|[\*.cpf]) with path (dr|fl)
+            {IEN<CPE} - {IEN} with diff accoding CPE
+    - INI:: {IEN} dr with CPE , {REN}={IEN<CPE}
+    - ACT:: {REN}={IEN<CPE}
+    - ARG:: \$1 {IEN} dr with CPE ,\$2 {REN} is copy {IEN} with diff
+    - FLW:: <[[fbl4]]gig_bbcp {IEN}>\\    
+            for all {CPE}         
+                <[[fbl4]]f2fs_1 {CPE} *{IEN}/{&CPE}_
+                <[[fbl4]]_bbcp_qrm {CPE}>
+                mv *{IEN}/{&CPE}_ *{IEN}/{&CPE}
+
+## [[fbl4]]bbcp_qrm 
+- OVR::
+    - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+    - INI:: {IEN} (dr|fl)
+    - ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) -a (ques rm {IEN})
+    - ARG:: \$1 {IEN} 
+    - FLW:: ifques [DO_RM_IEN] thn <[[fbl4]]bbcp {IEN}> els \<[[err1]]> fi
+
+## [[fbl4]]bbcp_rm 
+- OVR::
+    - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+    - INI:: {IEN} (dr|fl)
+    - ACT:: (<[[fbl4]]gig_bbcp {IEN}\>) ; (rm {IEN})
+    - ARG:: \$1 {IEN} 
+    - FLW::  <[[fbl4]]bbcp {IEN}> ; [DO_RM_IEN] 
+
+## [[fbl4]]gig_bbcp 
+- OVR::
+    - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+    - INI:: {IEN} is (dr|fl)
+    - ACT:: cp {IEN} {IEN~}
+    - ARG:: \$1 {IEN}
+    - FLW:: ifexst {IEN~} thn rm {IEN~} ; cp {IEN} {IEN~}
+
+## [[fbl4]]bbcp2e
+    - DFN:: {IEN~} (tmp_link_ST_DSL: {>e} = {*e}/_{&e}.d, {e~} = {>e}/{&e}~)
+    - INI:: {IEN} is pth    
+    - ACT:: cp {IEN} {IEN~}
+    - ARG:: \$1 {IEN}
+    - FLW:: echo \"{IEN~}\"
+
+## [[fbl4]]gig_td_1
+- OVR:: gig template dir 1
+    - DFN:: RDR={IEN1}/\"IEN2\".md.d
+    - INI:: IEN1={dr} , IEN2 "nm_fl" , REN=FLS
+    - ACT:: mk {RDR}; mk {RDR}/...
+    - ARG::\$1 = {IEN1} \$2 = \"IEN2\"
+    - FLW::
+            - (ifq-err){RDR}
+            - echo #pth_e:post_dr^str_to_post_dr > {RDR}/\"IEN2\".lst
+            - G_PR with body :: fn_gig_md {RDR}/\"IEN2\".lst {RDR}/\"IEN2\".MD
