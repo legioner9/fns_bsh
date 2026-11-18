@@ -1,3 +1,6 @@
+install bsh and aer
+curl -s https://gitflic.ru/project/legioner9/fns_bsh/blob/raw?file=.d%2F.this%2Finit1.sh | bash
+
 su -
 apt-get update
 apt-get dist-upgrade
