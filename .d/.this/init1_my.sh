@@ -2,6 +2,8 @@
 
 cd $HOME || echo "EXEC_FAIL 'cd $HOME'" >&2
 
+echo "start ~/fns_bsh/.d/.this/init1_my.sh"
+
 # NM_RPO:: (aer_foe fns_bsh)
 # git@gitflic.ru:legioner9/NM_RPO.git
 # git@github.com:legioner9/NM_RPO.git
