@@ -2,8 +2,10 @@
 
 cd $HOME || echo "EXEC_FAIL 'cd $HOME'" >&2
 
-read -p "DO? git clone https://gitflic.ru/project/legioner9/aer_foe.git"
-git clone https://gitflic.ru/project/legioner9/aer_foe.git
+# NM_RPO:: (fns_bsh)
+# git@gitflic.ru:legioner9/NM_RPO.git
+# git@github.com:legioner9/NM_RPO.git
+# ssh://forgejo@altlinux.space/legioner9/NM_RPO.git
 
 read -p "DO? git clone https://gitflic.ru/project/legioner9/fns_bsh.git"
 git clone https://gitflic.ru/project/legioner9/fns_bsh.git
