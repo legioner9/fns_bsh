@@ -30,6 +30,7 @@ fns_bsh_002_git_treat_1_arr_remote_addr_and_alias=(
 
 fns_bsh_002_git_treat_1_arr_rpo_pth=(
 	aer_foe
+	rpo/dmd_1
 	edu_clng
 	edu_dta_001
 	edu_dta_002
