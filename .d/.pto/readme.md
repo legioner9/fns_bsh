@@ -7,10 +7,12 @@
 
 #### rdx::
 
-    {RDX}.rdx/{16NUM}.cel/
+    {RDX}.rdx/{16NUM.cel}/
     /_vis
         /.pth
-            - pnt_1:pnt_2...
+            - {{ARB}.d1f/{RAM}/{RAM}}^str_pnt_1
+            - pnt_2^str_pnt_2
+            ...
     /_data
 
 
@@ -18,7 +20,7 @@
 
     {ARB}.d1f/{RAM}
     /{RAM}
-    /{BUD::{16NUM}}.f1f
+    /{BUD::{16NUM.cel}:pnt_1^str_pnt_1}.f1f
 
 
 
