@@ -1,9 +1,10 @@
 # for prototipe of technology
 
 ## rdx2md
+###rdx2arb2md
 
-### rdx2arb 
-### arb2md
+#### rdx2arb 
+#### arb2md
 
 #### rdx::
 
@@ -63,3 +64,14 @@ latina:
     /_data
     /grot
     _main.sh
+
+###rdx2tg2md
+
+    {CEL}={GRN}.grn/{RDX}.rdx/{16NUM}.cel/
+        /_vis.d
+            /tg.vis.lst
+        /_data
+        /_main.sh
+
+
+
