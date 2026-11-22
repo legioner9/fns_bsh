@@ -2,6 +2,27 @@
 
 ## rdx2md
 
+### rdx2arb 
+### arb2md
+
+#### rdx::
+
+    {RDX}.rdx/{16NUM}.cel/
+    /_vis
+        /.pth
+            - pnt_1:pnt_2...
+    /_data
+
+
+#### arb::
+
+    {ARB}.d1f/{RAM}
+    /{RAM}
+    /{BUD::{16NUM}}.f1f
+
+
+
+::ADDS::
 latina:
 
     phylum        - тип
