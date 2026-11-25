@@ -43,13 +43,21 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: ?IEN1= REN=
+        doing :: {IEN1}={rdx.d} {IEN2}={lqt.lst.d} {IEN3}={REN}={arb.d}
 			
 			\$1 - ?{IEN1}
 			\$2 - ?{IEN2}
 			\$3 - 
 ##begin_hlp
 			- OVR::
+				{rdx.d}={NM.cel}/_vis.d/
+					/arb.lst{nnnn:mmmm}
+					/tag.lst{nnnn:mmmm}
+				{lqt.lst.d}={lqt.lst.d}/
+					/arb.lst.d
+						/[nnnn].[prt].lst{mmmm:[subprt]^[cnt_subprt]}
+					/tag.lst.d
+						/[nnnn].[tg].tg.lst{mmmm:[subtg]}
 				- DFN::?\"IEN:ln\" - line of IEN
 				- INI::?IEN - fl with pth, REN - dr after cp
 				- ACT::?{IEN} -> {REN}
