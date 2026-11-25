@@ -59,6 +59,8 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 						/[nnnn].[prt].lst{ln:mmmm:[subprt]^[cnt_subprt]}
 					/tag.lst.d
 						/[nnnn].[tg].tg.lst{ln:mmmm:[subtg]}
+				{ARB}={arb.d}/
+					/[nnnn].[prt].
 				
 				- INI::?IEN - fl with pth, REN - dr after cp
 				- ACT::?{IEN} -> {REN}

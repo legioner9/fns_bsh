@@ -24,7 +24,6 @@ l_00_echo_info "res_dr=file://$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/r
 # @endmindmap" >"${res_dr_6734sadc}/init.puml"
 # l_00_echo_warn "START_TST:: in puml : .bashrc2; flw_chr: -f"
 
-
 l_00_echo_err "START_TST:: ; flw_chr: EXAMPLE EXEC(mast be edited) :: fn res.d init.puml"
 
 l_00_echo_info "this :: name_fn :: $(l_01_prs_f -n "$(eval "echo \$prnt1_dr_pth_fn_${rnd}")")"
@@ -40,7 +39,11 @@ fns_bsh_006_warn_v ${rnd} main_fn_nm
 fns_bsh_006_vv2e ${rnd} main_fn_nm
 
 l_00_echo_sys "$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
-$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml
-
+# $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/nm.rdx
+#
+$(fns_bsh_006_vv2e ${rnd} main_fn_nm) \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/nm.rdx.d \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/lqt.lst.d \
+	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/res.arb.d
 
 #-- {{002_002_us_sh}}

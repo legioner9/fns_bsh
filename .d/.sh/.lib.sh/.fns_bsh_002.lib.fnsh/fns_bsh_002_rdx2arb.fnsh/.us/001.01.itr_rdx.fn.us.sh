@@ -1,18 +1,18 @@
 # from:: ~/fns_bsh/.d/.p.ax/.p007.d/.dta/.pXXX.dtml/.us/001.us.sh
-l_00_echo_info "that :: _001.0X.fn.us.sh"
-l_00_echo_ques "... DFN:: fn()...| BODY::..."
+# l_00_echo_info "that :: _001.0X.fn.us.sh"
+# l_00_echo_ques "... DFN:: fn()...| BODY::..."
 
 # ~001_001_us_sh~
-	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
-	# first:: for .p015.d gig 001.us.sh
+# from:: ~/fns_bsh/.d/.p.ax/.cmn/.dom.tml.d/0012.dom.tml.d/001_001_us_sh.tml
+# first:: for .p015.d gig 001.us.sh
 
 # check exist $(eval "echo \$arg_1_fn_${rnd}")/$(eval "echo \$arg_2_fn_${rnd}")
-echo -e " arg_flow ::
-if src_dir :: $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
-\$1 root_dr \$2 ::
-dr - result dr
-fl - result fl
-"
+# echo -e " arg_flow ::
+# if src_dir :: $(eval "echo \$dr_pth_fn_${rnd}")/.dta/cp_to_dst.d
+# \$1 root_dr \$2 ::
+# dr - result dr
+# fl - result fl
+# "
 # arg1 ::
 # $(eval "echo \$arg_1_fn_${rnd}")
 # arg2 ::
@@ -42,17 +42,17 @@ fl - result fl
 eval "flow_1_${rnd}=dr"
 # $(eval "echo \$flow_1_${rnd}")
 
-fns_bsh_006_warn_v ${rnd} fn_nm # fns_bsh_002_f2fs_1
+# fns_bsh_006_warn_v ${rnd} fn_nm # fns_bsh_002_f2fs_1
 
 # echo "$(fns_bsh_006_vv2e ${rnd} fn_nm) '$@'"
-#.. bllog to arg 
+#.. bllog to arg
 # fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 # fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
-	# fns_bsh_002_xx() {
-		:
+	fns_bsh_002_rdx2arb_itr_rdx() {
+
 		# l_00_echo_code "start :: <${FUNCNAME[0]}> '$@'"
 		# [[ -z "$1" ]] && {
 		# 	# snp "out_err"
@@ -61,10 +61,14 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		# 	return 1
 		# }
 		# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		# return 0
-	# }
+		local item=
+		for item in $(l_02_d2e $(eval "echo \$arg_1_fn_${rnd}") cel); do
+			#.. ADD tag filter(if)
+			echo "$item"
+		done
+		return 0
+	}
 
 fi
 
-	#-- {{002_001_us_sh}}
-		
+#-- {{002_001_us_sh}}
