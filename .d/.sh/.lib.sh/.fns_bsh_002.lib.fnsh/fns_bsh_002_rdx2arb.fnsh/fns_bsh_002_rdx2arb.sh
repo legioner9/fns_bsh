@@ -43,7 +43,7 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 	[[ "$1" == "-h" ]] && {
 		echo -e "
         this -h for <${FUNCNAME[0]}> '$@' ::
-        doing :: {IEN1}={rdx.d} {IEN2}={lqt.lst.d} {IEN3}={REN}={arb.d}
+        doing :: {IEN1}={rdx.d} {IEN2}={lqt.lst.d} {IEN3}={REN}={arb.d} \\\(,{IEN4}={lim.f})\\\]
 			
 			\$1 - ?{IEN1}
 			\$2 - ?{IEN2}
@@ -61,6 +61,8 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 						/[nnnn].[tg].tg.lst{ln:mmmm:[subtg]}
 				{ARB}={arb.d}/
 					/[nnnn].[prt].
+
+				{LIM}={lim.f::ln[limit tags]::(@|nnnn):(@:mmmm)}
 				
 				- INI::?IEN - fl with pth, REN - dr after cp
 				- ACT::?{IEN} -> {REN}
