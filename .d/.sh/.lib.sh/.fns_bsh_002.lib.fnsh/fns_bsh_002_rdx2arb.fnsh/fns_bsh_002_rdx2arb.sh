@@ -50,15 +50,16 @@ eval "fn_nm_${rnd}=\$(l_01_prs_f -n \$fl_nm_fn_${rnd})"
 			\$3 - 
 ##begin_hlp
 			- OVR::
-				{rdx.d}={NM.cel}/_vis.d/
-					/arb.lst{nnnn:mmmm}
-					/tag.lst{nnnn:mmmm}
-				{lqt.lst.d}={lqt.lst.d}/
+				- DFN::
+				{RDX}={rdx.d}={NM.cel}/_vis.d/
+					/{RDX::arb}=arb.lst{ln::nnnn:mmmm}
+					/{RDX::tag}=tag.lst{ln::nnnn:mmmm}
+				{LQT}={lqt.lst.d}/
 					/arb.lst.d
-						/[nnnn].[prt].lst{mmmm:[subprt]^[cnt_subprt]}
+						/[nnnn].[prt].lst{ln:mmmm:[subprt]^[cnt_subprt]}
 					/tag.lst.d
-						/[nnnn].[tg].tg.lst{mmmm:[subtg]}
-				- DFN::?\"IEN:ln\" - line of IEN
+						/[nnnn].[tg].tg.lst{ln:mmmm:[subtg]}
+				
 				- INI::?IEN - fl with pth, REN - dr after cp
 				- ACT::?{IEN} -> {REN}
 				- ARG::?\$1 = {IEN} \$2 = {REN}

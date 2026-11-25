@@ -19,6 +19,7 @@ code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_gig_dmd_1.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_cp3d_1.fnsh
 # code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_f2fs_1.fnsh
+code ~/fns_bsh/.d/.sh/.lib.sh/.fns_bsh_002.lib.fnsh/fns_bsh_002_rdx2arb.fnsh
 
 # code ~/rpo/cmn_lex/st_dsl.md
 # code ~/rpo/cmn_lex/st_note.md
