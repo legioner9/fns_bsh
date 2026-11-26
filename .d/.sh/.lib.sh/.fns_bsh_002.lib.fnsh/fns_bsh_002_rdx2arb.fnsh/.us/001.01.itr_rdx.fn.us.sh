@@ -64,7 +64,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 		local item=
 		for item in $(l_02_d2e $(eval "echo \$arg_1_fn_${rnd}") cel); do
 			#.. inplace ADD tag filter(if)
-			echo "$item"
+			echo "$(eval "echo \$arg_1_fn_${rnd}")/$item"
 		done
 		return 0
 	}
