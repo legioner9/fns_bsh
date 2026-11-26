@@ -76,7 +76,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	for item in $(fns_bsh_002_rdx2arb_itr_rdx); do
 		l_00_echo_info "\$item=$item"
 		for item2 in $(l_02_f2e $item/_vis.d/arb.lst); do
-			# eval "sed 's|${HOME}|\${HOME}|'"
+			# echo ${HOME}/cdsa/cawe | eval "sed 's|${HOME}|\${HOME}|'"
 			l_00_echo_info "\$item2=$item2"
 		done
 	done
