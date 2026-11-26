@@ -41,6 +41,7 @@ fns_bsh_006_vv2e ${rnd} main_fn_nm
 l_00_echo_sys "$(fns_bsh_006_vv2e ${rnd} main_fn_nm) $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d init.puml"
 # $(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/nm.rdx
 #
+
 $(fns_bsh_006_vv2e ${rnd} main_fn_nm) \
 	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/nm.rdx.d \
 	$(eval "echo \$prnt1_dr_pth_fn_${rnd}")/.g.tst.d/res.d/lqt.lst.d \

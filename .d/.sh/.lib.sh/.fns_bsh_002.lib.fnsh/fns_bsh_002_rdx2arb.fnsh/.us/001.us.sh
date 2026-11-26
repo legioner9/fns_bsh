@@ -48,7 +48,15 @@ fns_bsh_006_warn_v ${rnd} fn_nm # fns_bsh_002_f2fs_1
 #.. bllog to arg
 # fns_bsh_004_s2bllg "$(eval "echo \$arg_1_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
 # fns_bsh_004_s2bllg "$(eval "echo \$arg_2_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}")"
+# fns_bsh_004_s2bllg "$(eval "echo \$arg_3_fn_${rnd}")" "$(fns_bsh_006_vv2e ${rnd} fn_nm) $(eval "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_2_fn_${rnd}" "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_3_fn_${rnd}" "echo \$arg_1_fn_${rnd}") $(eval "echo \$arg_4_fn_${rnd}")"
 
+fns_bsh_004_s2bllg "$(eval "echo \$arg_3_fn_${rnd}")" \
+	"$(fns_bsh_006_vv2e ${rnd} fn_nm) \
+$(eval "echo \$arg_1_fn_${rnd}") \
+$(eval "echo \$arg_2_fn_${rnd}") \
+$(eval "echo \$arg_3_fn_${rnd}") \
+$(eval "echo \$arg_4_fn_${rnd}") \
+"
 if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	:
 	# fns_bsh_002_xx() {
