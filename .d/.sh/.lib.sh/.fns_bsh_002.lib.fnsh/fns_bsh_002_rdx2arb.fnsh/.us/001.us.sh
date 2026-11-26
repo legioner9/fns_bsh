@@ -71,6 +71,14 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	# l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
 	# return 0
 	# }
+	[ -d $(eval "echo \$arg_3_fn_${rnd}") ] || {
+		l_00_echo_code "mkdir "$(eval "echo \$arg_3_fn_${rnd}")""
+		mkdir "$(eval "echo \$arg_3_fn_${rnd}")" || {
+			l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+			echo -e "${ECHO_RET1}in file://$(eval "echo \$fl_pth_fn_${rnd}") , line=${LINENO}  EXEC_FAIL : 'mkdir "$(eval "echo \$arg_3_fn_${rnd}")"', return 1${NRM}" >&2
+			return 1
+		}
+	}
 	local item=
 	local item2=
 	for item in $(fns_bsh_002_rdx2arb_itr_rdx); do
