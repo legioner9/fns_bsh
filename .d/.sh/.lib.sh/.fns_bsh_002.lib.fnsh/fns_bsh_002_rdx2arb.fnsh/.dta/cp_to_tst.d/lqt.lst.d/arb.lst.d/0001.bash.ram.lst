@@ -1,4 +1,4 @@
 # part :: bash , subtag::{num}:{name}^{contane}
-0001:cat^cat util
-0002:regexp_man^regexp man
-0003:regexp_exa^regexp example
+0001.cat^cat util
+0002.regexp_man^regexp man
+0003.regexp_exa^regexp example

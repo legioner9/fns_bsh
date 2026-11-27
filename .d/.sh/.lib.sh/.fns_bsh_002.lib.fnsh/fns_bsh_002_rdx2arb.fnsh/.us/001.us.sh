@@ -84,7 +84,7 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	local item2_arr=()
 	local arb_nn_dr=
 	local f1f_nn_fl=
-	local f1f_nn_lst=
+	local f1f_nm_lst=
 	local dr_in_res=
 	for item in $(fns_bsh_002_rdx2arb_itr_rdx); do
 		l_00_echo_info "\$item=$item"
@@ -96,14 +96,19 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			arb_nn_dr=${item2_arr[0]}
 			f1f_nn_fl=${item2_arr[1]}
 
-			# f1f_nn_lst as {0001.bash.ram.lst}
-			f1f_nn_lst=$item/_vis.d/arb.lst/$(fns_bsh_002_rdx2arb_arb_nn2arb_nm "$arb_nn_dr")
-			# dr_in_res
-			dr_in_res="$(l_01_prs_f -n2 "$f1f_nn_lst")"
+			l_00_echo_info "\$arb_nn_dr=$arb_nn_dr" # nn fl lqt.lst.d/arb.lst.d/[nn].[].ram.lst - define dr_in_res
+			l_00_echo_info "\$f1f_nn_fl=$f1f_nn_fl" # nn in fl lqt.lst.d/arb.lst.d/[nn].[].ram.lst - define fl_in_dr_in_res
+
+			f1f_nm_lst=$(eval "echo \$arg_2_fn_${rnd}")/arb.lst.d/$(fns_bsh_002_rdx2arb_arb_nn2arb_nm "$arb_nn_dr")
+
+			file $f1f_nm_lst
+
+			dr_in_res="$(l_01_prs_f -n2 "$f1f_nm_lst")"
+			l_00_echo_info "\$dr_in_res=$dr_in_res"
 			# sdr_in_res :: subdir
 			fns_bsh_002_rdx2arb_mk_dr_in_res ${dr_in_res}
-	
 
+			fns_bsh_002_rdx2arb_str_in_ram_lst2e ${f1f_nm_lst} ${f1f_nn_fl}
 
 		done
 	done
