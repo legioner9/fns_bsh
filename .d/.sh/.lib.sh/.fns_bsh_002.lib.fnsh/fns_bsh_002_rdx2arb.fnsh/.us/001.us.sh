@@ -82,7 +82,10 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	local item=
 	local item2=
 	local item2_arr=()
-	local arb_dir=
+	local arb_nn_dr=
+	local f1f_nn_fl=
+	local f1f_nn_lst=
+	local dr_in_res=
 	for item in $(fns_bsh_002_rdx2arb_itr_rdx); do
 		l_00_echo_info "\$item=$item"
 		for item2 in $(l_02_f2e "$item/_vis.d/arb.lst"); do
@@ -93,7 +96,15 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			arb_nn_dr=${item2_arr[0]}
 			f1f_nn_fl=${item2_arr[1]}
 
-			fns_bsh_002_rdx2arb_arb_nn2arb_nm "$arb_nn_dr"
+			# f1f_nn_lst as {0001.bash.ram.lst}
+			f1f_nn_lst=$item/_vis.d/arb.lst/$(fns_bsh_002_rdx2arb_arb_nn2arb_nm "$arb_nn_dr")
+			# dr_in_res
+			dr_in_res="$(l_01_prs_f -n2 "$f1f_nn_lst")"
+			# sdr_in_res :: subdir
+			fns_bsh_002_rdx2arb_mk_dr_in_res ${dr_in_res}
+	
+
+
 		done
 	done
 
