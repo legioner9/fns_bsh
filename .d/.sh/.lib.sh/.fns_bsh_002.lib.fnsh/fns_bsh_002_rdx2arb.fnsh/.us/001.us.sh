@@ -131,6 +131,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 
 			echo $item >$(eval "echo \$arg_3_fn_${rnd}")/${dr_in_res}/$nm_sdr/$nm_cel
 
+			lfoe_path_to_var $(eval "echo \$arg_3_fn_${rnd}")/${dr_in_res}/$nm_sdr/$nm_cel
+
 		done
 	done
 
