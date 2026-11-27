@@ -86,6 +86,8 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 	local f1f_nn_fl=
 	local f1f_nm_lst=
 	local dr_in_res=
+	local sub_dr_a_cnt=
+	local sub_dr_a_cnt_arr=()
 	for item in $(fns_bsh_002_rdx2arb_itr_rdx); do
 		l_00_echo_info "\$item=$item"
 		for item2 in $(l_02_f2e "$item/_vis.d/arb.lst"); do
@@ -108,7 +110,20 @@ if [[ $(eval "echo \$flow_1_${rnd}") == "dr" ]]; then
 			# sdr_in_res :: subdir
 			fns_bsh_002_rdx2arb_mk_dr_in_res ${dr_in_res}
 
-			fns_bsh_002_rdx2arb_str_in_ram_lst2e ${f1f_nm_lst} ${f1f_nn_fl}
+			sub_dr_a_cnt=$(fns_bsh_002_rdx2arb_str_in_ram_lst2e ${f1f_nm_lst} ${f1f_nn_fl})
+			l_00_echo_info "\$sub_sdr_a_cnt=$sub_dr_a_cnt"
+
+			IFS='^' read -r -a sub_dr_a_cnt_arr <<<"$sub_dr_a_cnt"
+			nm_sdr=${sub_dr_a_cnt_arr[0]}
+			cnt_sdr=${sub_dr_a_cnt_arr[1]}
+
+			l_00_echo_info "\$nm_sdr=$nm_sdr"
+			l_00_echo_info "\$cnt_sdr=$cnt_sdr"
+			if [[ ! -d $(eval "echo \$arg_3_fn_${rnd}")/${dr_in_res}/$nm_sdr ]]; then
+				l_00_echo_code "mkdir $(eval "echo \$arg_3_fn_${rnd}")/${dr_in_res}/$nm_sdr"
+				mkdir "$(eval "echo \$arg_3_fn_${rnd}")/${dr_in_res}/$nm_sdr"
+			fi
+			echo $cnt_sdr >$(eval "echo \$arg_3_fn_${rnd}")/${dr_in_res}/$nm_sdr/_d.d
 
 		done
 	done
