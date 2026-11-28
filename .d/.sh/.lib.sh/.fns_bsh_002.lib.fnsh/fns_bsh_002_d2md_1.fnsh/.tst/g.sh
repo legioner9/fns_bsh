@@ -63,25 +63,25 @@ fn_7629_31195() {
 
 	#--~001_key~
 	# from:: ~/fns_bsh/.d/.p.ax/.cmn/.cmn.tml.d/002.cmn.tml.d/001_key.tml
-	[[ "$1" == "_tst" ]] && {
-		echo -e "
-        this -h for <${FUNCNAME[0]}> '$@' ::
-        doing_tst :: 
-			\$1 - dr_res
-			\$2 - res.fl
-			\$3 - 
-			flow_FN ::
-			flow_tst ::
-            exa use ::
-            far use ::			
-        "
-		l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
-		. $(eval "echo \$fl_tst_pth_fn_${rnd}")
+	# [[ "$1" == "_tst" ]] && {
+	# 	echo -e "
+    #     this -h for <${FUNCNAME[0]}> '$@' ::
+    #     doing_tst :: 
+	# 		\$1 - dr_res
+	# 		\$2 - res.fl
+	# 		\$3 - 
+	# 		flow_FN ::
+	# 		flow_tst ::
+    #         exa use ::
+    #         far use ::			
+    #     "
+	# 	l_00_echo_code ". $(eval "echo \$fl_tst_pth_fn_${rnd}")"
+	# 	. $(eval "echo \$fl_tst_pth_fn_${rnd}")
 
-		l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
-		return 0
+	# 	l_00_echo_code "exit :: <${FUNCNAME[0]}> '$@'"
+	# 	return 0
 
-	}
+	# }
 
 	[[ "$1" == "_vis" ]] && {
 		echo -e "
